@@ -1,0 +1,136 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+/*
+    STRUCTURE
+    Set a background color
+*/
+
+body {
+	background-color: #FFEBCD;
+}
+
+.container {
+    width: 720px;
+    margin: 35px auto; /* centers the container */
+    border: 1px solid black;
+    padding: 50px;
+	background-color: #FAFAFA;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+}
+
+/*
+    TYPOGRAPHY
+    https://www.thoughtco.com/web-safe-font-stacks-3467429
+    Set a default font for all text-containing HTML elements
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, serif;
+	line-height: 1.2em;
+}
+
+small, p, td, li, figcaption {
+	font-family: 'Trebuchet MS', 'Helvetica', sans-serif;
+	line-height: 1.2em;
+}
+
+/*
+    IMAGES
+    You need to place AT LEAST two images in your HTML
+    And 1+ of them needs to be styled using figure / img / figcaption
+*/
+img {
+    width: 100%;
+    display: block;
+}
+
+figure {
+	margin: 1.0em 0 0 0;
+}
+
+figcaption {
+	font-size: 10px;
+	line-height: 1.3em;
+	margin: 1.0em 0 2.0em;
+}
+
+/* clearfix - in case you decide to float elements */
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+    LINKS
+    Set for all four states we discussed in class
+*/
+
+
+a:link, a:visited {
+	color: #D2691E;
+	text-decoration: none;
+}
+
+a:active, a:hover {
+	color: blue;
+
+}
+
+/*
+    TABLES
+    You need at least one table in your project
+*/
+
+td {
+	padding: 0 1.0em;
+}
+
+.timeTable {
+	padding-left: 0;
+	border-left: 1px dashed #BDBDBD;
+}
+
+/*
+    RECIPE PAGE
+    Try assigning classes to some of the paragraphs to differentiate their styles e.g. subtitle or byline
+*/
+
+h1 {
+	font-size: 36px;
+	margin: 0.5em 0;
+}
+
+.subtitle {
+	font-size: 16px;
+	margin: 0.5em 1.0em;
+}
+
+.byline {
+	font-size: 12px;
+	color: #D2691E;
+}

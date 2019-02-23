@@ -1,0 +1,3158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:dc="http://purl.org/dc/terms/" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:product="http://ogp.me/ns/product#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#">
+  <head>
+    <script>
+    window.mdp = window.mdp || {};
+    window.mdp.gdpr = window.mdp.gdpr || {};
+    window.mdp.gdpr.siteLogoHtml = '<img src="https://secureimages.allrecipes.com/ar-images/ARlogo.svg" />';
+    window.mdp.gdpr.cookieDomain = '.allrecipes.com';
+    </script>
+    <script src="https://geoscripts.meredith.services/public/javascripts/mdp.javascript.gdpr.min.1.0.0.js"></script>
+    <script>
+    (function () {
+      function getCookie(name) {
+        var dc = document.cookie;
+        var prefix = name + "=";
+        var begin = dc.indexOf("; " + prefix);
+        if (begin === -1) {
+          begin = dc.indexOf(prefix);
+          if (begin !== 0) return null;
+        }
+        else {
+          begin += 2;
+          var end = document.cookie.indexOf(";", begin);
+          if (end === -1) {
+            end = dc.length;
+          }
+        }
+        return decodeURI(dc.substring(begin + prefix.length, end));
+      }      
+      window.mdp = window.mdp || {};
+      window.mdp.gdpr = window.mdp.gdpr || {};
+      var uid = getCookie('euConsentId') || getCookie('globalTI_SID') || '';
+      var dsarFormLink = 'https://app-de.onetrust.com/app/#/webform/0c410d51-8e85-4308-9bb9-37c24a461ccb?uid=' + uid;
+      window.mdp.gdpr.dsarFormLink = dsarFormLink;
+    })();
+    </script>
+    <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="title" content="Dinner Spinner Tv Show | Allrecipes" />
+<meta property="og:site_name" content="Allrecipes" />
+<meta name="twitter:card" content="summary" />
+<meta property="fb:pages" content="71158748377" />
+<link rel="canonical" href="http://dish.allrecipes.com/dinner-spinner-tv-show/" />
+<meta name="twitter:title" content="Dinner Spinner Tv Show" />
+<meta property="fb:app_id" content="66102450266" />
+<meta name="description" content="*/" />
+<meta name="twitter:site" content="@Allrecipes" />
+<meta property="og:url" content="http://dish.allrecipes.com/dinner-spinner-tv-show/" />
+<meta property="og:title" content="Dinner Spinner Tv Show" />
+<meta name="twitter:url" content="http://dish.allrecipes.com/dinner-spinner-tv-show/" />
+<meta property="og:updated_time" content="Mon, 05/21/2018 - 15:19" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/themes/dish/images/favicon-96x96.png" type="image/png" />
+<link rel="revision" href="/dinner-spinner-tv-show/" />
+<!-- Krux Controltag -->
+<script class="kxct" data-id="TK" data-version="async:1.7" type="text/javascript">
+  window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+  (function(){
+  var k=document.createElement('script');k.type='text/javascript';k.async=true;
+  var m,src=(m=location.href.match(/\bkxsrc=([^&]+)/))&&decodeURIComponent(m[1]);
+  k.src = /^https?:\/\/([^\/]+\.)?krxd\.net(:\d{1,5})?\//i.test(src) ? src : src === "disable" ? "" :
+  (location.protocol==="https:"?"https:":"http:")+"//cdn.krxd.net/controltag?confid=TK";
+  var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+  })();
+</script>
+<!-- End Krux Controltag -->
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "sameAs": [],
+    "name": "Allrecipes",
+    "url": "http://dish.allrecipes.com",
+    "logo": {
+        "@context": "http://schema.org",
+        "@type": "ImageObject",
+        "url": "http://dish.allrecipes.com/themes/dish/images/logo-dish.png",
+        "height": 60,
+        "width": 121
+    }
+}</script>
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "http://dish.allrecipes.com"
+}</script>
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@id": "http://dish.allrecipes.com/",
+                "name": "Home"
+            }
+        }
+    ]
+}</script>
+
+    <title>Dinner Spinner Tv Show | Allrecipes</title>
+    <link rel="stylesheet" href="/s3fs-css/css/css_o3VQ_t8LtMAYFNMtckpk8z4muXYiCBBVK2Czw0hLaqU.css?pcbtcu" media="all" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C400%2C300&amp;ver=1" media="all" />
+<link rel="stylesheet" href="/s3fs-css/css/css_Hzisw7x54FzUpdDShh2mX5yfU8OaOiHabR0_POyUfQk.css?pcbtcu" media="all" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" media="all" />
+<link rel="stylesheet" href="/s3fs-css/css/css_TkDyfQMjsoVKWcSBXTVPwF1icCrb5bxHr4NLF_rCYnw.css?pcbtcu" media="all" />
+
+    
+<!--[if lte IE 8]>
+<script src="/s3fs-js/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="https://assets.adobedtm.com/1c2ad567a53f27e563c4dc2c278a904b84dc5fde/satelliteLib-9f46f93c6b7aa623feaba0956d41ba2358d7e3a4.js" async id="meredith_atm_external_script"></script>
+<script src="https://karma.mdpcdn.com/service/js-min/karma.header.js" async></script>
+
+  </head>
+  <body class="et_divi_builder">
+        <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+      <!-- Google Tag Manager -->
+  <script>dataLayer = [{}];</script>
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N3NQL5"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N3NQL5');</script>
+  <!-- End Google Tag Manager -->
+
+    <div id="block-karma-slot">
+  
+    
+  <div class="karma-slot karma-slot--header">
+  <div  id="div-gpt-leaderboard-flex-1" data-tier="1"></div>
+</div>
+
+</div>
+
+<header class="header new-nav">
+  <section>
+    <div class="full-header clearfix">
+      <nav class="ar-nav">
+        <ul>
+          <li class="ar-logo-tab">
+            <a href="https://www.allrecipes.com/" class="ar-logo">
+              <img alt="Allrecipes" src="/themes/dish/images/ARlogo.svg" width="96" height="36" scale="0">
+            </a>
+          </li>
+          <li class="menutoggle browse-recipes">
+            <a href="#browse-recipesdrop" class="showdrop">
+              <span>
+                BROWSE
+              </span>
+              <span class="icon apicon-chevron-down">
+              </span>
+            </a>
+            <div id="browse-recipesdrop" class="nav-tab menudrop">
+              <div class="underline_hero_link nav-tab__options clearfix">
+                <div class="clearfix">
+                  <a title="Appetizer Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/76/appetizers-and-snacks/">
+                    <img class="hero-link__item__image" alt="Appetizer Recipes" src="https://images.media-allrecipes.com/images/60583.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Appetizer
+                    </span>
+                  </a>
+                  <a title="Breakfast &amp; Brunch Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/78/breakfast-and-brunch/">
+                    <img class="hero-link__item__image" alt="Breakfast &amp; Brunch Recipes" src="https://images.media-allrecipes.com/images/60586.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Breakfast &amp; Brunch
+                    </span>
+                  </a>
+                  <a title="Chicken Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/201/meat-and-poultry/chicken/">
+                    <img class="hero-link__item__image" alt="Chicken Recipes" src="https://images.media-allrecipes.com/images/60628.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Chicken
+                    </span>
+                  </a>
+                  <a title="Dessert Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/79/desserts/">
+                    <img class="hero-link__item__image" alt="Dessert Recipes" src="https://images.media-allrecipes.com/images/60587.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Dessert
+                    </span>
+                  </a>
+                  <a title="Healthy Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/84/healthy-recipes/">
+                    <img class="hero-link__item__image" alt="Healthy Recipes" src="https://images.media-allrecipes.com/images/60592.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Healthy
+                    </span>
+                  </a>
+                  <a title="Holidays and Events Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/85/holidays-and-events/">
+                    <img class="hero-link__item__image" alt="Holidays and Events Recipes" src="https://images.media-allrecipes.com/images/60593.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Holidays and Events
+                    </span>
+                  </a>
+                  <a title="Main Dish Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/80/main-dish/">
+                    <img class="hero-link__item__image" alt="Main Dish Recipes" src="https://images.media-allrecipes.com/images/60596.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Main Dish
+                    </span>
+                  </a>
+                  <a title="Quick &amp; Easy Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/1947/everyday-cooking/quick-and-easy/">
+                    <img class="hero-link__item__image" alt="Quick &amp; Easy Recipes" src="https://images.media-allrecipes.com/images/60629.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Quick &amp; Easy
+                    </span>
+                  </a>
+                  <a title="Salad Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/96/salad/">
+                    <img class="hero-link__item__image" alt="Salad Recipes" src="https://images.media-allrecipes.com/images/60599.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Salad
+                    </span>
+                  </a>
+                  <a title="Slow Cooker Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/253/everyday-cooking/slow-cooker/">
+                    <img class="hero-link__item__image" alt="Slow Cooker Recipes" src="https://images.media-allrecipes.com/images/60630.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Slow Cooker
+                    </span>
+                  </a>
+                  <a title="Trusted Brands Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/82/trusted-brands-recipes-and-tips/">
+                    <img class="hero-link__item__image" alt="Trusted Brands Recipes" src="https://images.media-allrecipes.com/images/60603.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Trusted Brands
+                    </span>
+                  </a>
+                  <a title="Vegetarian Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/87/everyday-cooking/vegetarian/">
+                    <img class="hero-link__item__image" alt="Vegetarian Recipes" src="https://images.media-allrecipes.com/images/60631.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Vegetarian
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <a href="https://www.allrecipes.com/recipes?grouping=all" class="recipe-hero-link__item__text">
+                All Categories
+              </a>
+            </div>
+          </li>
+          <li class="menutoggle hublink-togg pull-right">
+            <a href="#hublinks" class="showdrop">
+              <div>
+                <span class="browse-recipes-iconbar">
+                </span>
+                <span class="browse-recipes-iconbar">
+                </span>
+                <span class="browse-recipes-iconbar">
+                </span>
+              </div>
+            </a>
+            <div id="hublinks" class="nav-tab menudrop">
+              <ul class="nav-tab__options">
+                <li class="underline_link">
+                  <a id="navmenu_recipes" href="https://www.allrecipes.com/recipes/">
+                    <span class="icon apicon-spoons">
+                    </span>
+                    <span>
+                      Browse Recipes
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a id="navmenu_magazine" href="http://armagazine.com/mobile-site">
+                    <span class="icon apicon-magazine">
+                    </span>
+                    <span>
+                      Allrecipes Magazine
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a id="navmenu_shop" href="http://shop.allrecipes.com/shop">
+                    <span class="icon apicon-bag">
+                    </span>
+                    <span>
+                      Shop
+                    </span>
+                  </a>
+                </li>
+                <li class="underline_link">
+                  <a id="navmenu_cooking_school" href="http://cookingschool.allrecipes.com/">
+                    <span class="icon apicon-cap">
+                    </span>
+                    <span>
+                      Cooking School
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a id="navmenu_social_gallery" href="https://www.allrecipes.com/cook/my/account-settings/">
+                    <span class="icon apicon-tower">
+                    </span>
+                    <span>
+                      Newsletters
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a id="navmenu_dish" href="http://dish.allrecipes.com/ask-the-community/">
+                    <span class="icon apicon-q">
+                    </span>
+                    <span>
+                      Ask the Community
+                    </span>
+                  </a>
+                </li>
+                <li class="underline_link">
+                  <a id="navmenu_help" href="http://dish.allrecipes.com/customer-service/">
+                    <span class="icon apicon-help">
+                    </span>
+                    <span>
+                      Help
+                    </span>
+                  </a>
+                </li>
+                <li class="small-links">
+                  <a href="http://dish.allrecipes.com/allrecipes-jobs-2/">
+                    Jobs
+                  </a>
+                  <a href="http://press.allrecipes.com/">
+                    Newsroom
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="search-tab">
+            <div class="nav-search">
+              <form class="search-form recipe-search-form" role="search" method="get" action="https://www.allrecipes.com/search/results/">
+                <label>
+                  <input class="search-text" name="wt" type="text" placeholder="Find a recipe">
+                </label>
+                <span id="ingredientSearch" class="ingredient-searchtxt">
+                  Ingredient Search
+                </span>
+                <button class="search-button btn-basic--small apicon-search" type="submit">
+                </button>
+              </form>
+            </div>
+          </li>
+          <li class="nav-profile menutoggle">
+            <a id="navmenu_signin_signup" class="btn-basic--large btn-gold signin__btn" href="https://www.allrecipes.com/account/signin/?loginreferrerurl=http://dish.allrecipes.com/dinner-spinner-tv-show/&loginreferrertype=dish">
+              Sign In 
+              <em>
+                or
+              </em>
+              Sign Up
+            </a>
+          </li>
+          <li class="nav-favorites">
+            <a href="https://www.allrecipes.com/cook/my/favorites/" target="_self">
+              <span class="apicon-heart">
+              </span>
+            </a>
+          </li>
+          <li class="search-tab small-screen hide">
+            <a href="#">
+              <span>
+                <img alt="search" height="23" src="https://images.media-allrecipes.com/ar-images/icons/NavSearchIcon.svg" width="23" scale="0">
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav-tab nav-tab__search">
+      <form role="search" method="get" class="search-form recipe-search-form-advanced" action="https://www.allrecipes.com/search/results/">
+        <span class="icon--close" title="Close Ingredient Search">
+        </span>
+        <div class="input-wrap--home">
+          <label>
+            <img class="search-icon" alt="Search" src="https://images.media-allrecipes.com/ar-images/icons/NavSearchIcon.svg" scale="0">
+            <input class="search-text" name="wt" type="text" placeholder="Keywords">
+          </label>
+        </div>
+        <div class="input-wrap--home ingredients">
+          <div class="ingredient-add-exclude">
+            <input id="includeIngText" type="text" name="ingIncl" placeholder="Include ingredients" value="" style="display: none;">
+          </div>
+          <a class="btn-basic--small include" href="#">
+            <span>
+              +
+            </span>
+          </a>
+        </div>
+        <div class="input-wrap--home ingredients">
+          <div class="ingredient-add-exclude">
+            <input id="excludeIngText" type="text" name="ingExcl" placeholder="Exclude ingredients" value="" style="display: none;">
+          </div>
+          <a class="btn-basic--small exclude" href="#">
+            <span>
+              —
+            </span>
+          </a>
+        </div>
+        <div class="nav-tab__buttons">
+          <button class="btn-basic--small btn-search">
+            Go
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+</header>
+
+<div class="content-container">
+    <a id="main-content" tabindex="-1"></a>
+  
+
+  
+        
+  <div class="content content--centered">
+    <div class="primary-content">
+        <div>
+    <div id="block-dish-page-title">
+  
+    
+  <header class="entry-header">
+  
+    
+</header>
+
+</div>
+<div id="block-karma-slot-2">
+  
+    
+  <div class="karma-slot karma-slot--lazy" id="karma-lazy-sponsorLogo" data-tier="1">
+  <div ></div>
+</div>
+
+</div>
+<article id="" class="post- post type-post status-publish format-standard has-post-thumbnail hentry category- " role="article">
+    <div class="entry-content">
+    
+            <div><style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+.et_divi_builder #et_builder_outer_content .et_pb_slide_26.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_26.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_27.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_27.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_25.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_25.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_23.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_24.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_24.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_28.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_28.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_31.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_32.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_32.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_31.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_30.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_29.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_29.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_30.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_23.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_22.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slider_5 .et_pb_slide_description {
+    padding-left: 30px;
+    padding-right: 30px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slider_5 .et_pb_slide_image {
+    height: 250px;
+    width: 188px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_13.et_pb_row {
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    padding-top: 5px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 40px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_13 {
+    background-color: #1f1f1f
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_19.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_19.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_17.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_18.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_18.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_text_15 {
+    padding-top: 0px !important;
+    margin-top: 0px !important
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_14.et_pb_row {
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 0px;
+    padding-left: 40px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_21.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_21.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_22.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_20.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_20.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_14 {
+    background-color: #141414
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_15.et_pb_row {
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    padding-top: 0px;
+    padding-bottom: 0px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_15 {
+    background-color: #141414
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_33.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_33.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_47.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_47.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_48.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_48.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_46.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_46.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_44.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_45.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_45.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_49.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_49.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slider_7 .et_pb_slide_image {
+    height: 250px;
+    width: 188px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_16.et_pb_row {
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    padding-left: 40px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_16 {
+    background-color: #1f1f1f
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slider_7 .et_pb_slide_description {
+    padding-left: 30px;
+    padding-right: 30px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_51.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_50.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_50.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_51.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_44.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_43.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_36.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_37.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_37.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_38.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_36.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_35.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_34.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_34.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_35.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_38.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_39.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_42.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_42.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_43.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_41.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_41.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_39.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_40.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_40.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_17.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_16.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_7.et_pb_row {
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 0px;
+    padding-left: 40px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_7 {
+    background-color: #1f1f1f
+}
+.et_divi_builder #et_builder_outer_content .et_pb_column_11 {
+    padding-bottom: 0px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_text_11 {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important
+}
+.et_divi_builder #et_builder_outer_content .et_pb_image_2 {
+    margin-bottom: 10px !important;
+    margin-left: 0
+}
+.et_divi_builder #et_builder_outer_content .et_pb_column_10 {
+    padding-right: 10px;
+    padding-left: 10px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_6.et_pb_row {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_column_9 {
+    padding-right: 10px;
+    padding-left: 10px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_image_1 {
+    margin-bottom: 10px !important;
+    text-align: right;
+    margin-right: 0
+}
+.et_divi_builder #et_builder_outer_content .et_pb_text_12 {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_8.et_pb_row {
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    padding-top: 0px;
+    padding-bottom: 0px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slider_1 .et_pb_slide_description {
+    padding-left: 30px;
+    padding-right: 30px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slider_1 .et_pb_slide_image {
+    height: 250px;
+    width: 188px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_9.et_pb_row {
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 0px;
+    padding-left: 40px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_1.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_1.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_column_12 {
+    padding-top: 0px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_0.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_0.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_column_8 {
+    padding-right: 20px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_text_9 {
+    padding-bottom: 20px !important
+}
+.et_divi_builder #et_builder_outer_content .et_pb_text_2 h1 {
+    font-size: 12px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_text_2 p {
+    line-height: 1em
+}
+.et_divi_builder #et_builder_outer_content .et_pb_text_2 {
+    font-size: 8px;
+    line-height: 1em;
+    padding-right: 10px !important;
+    padding-bottom: 0px !important;
+    padding-left: 10px !important;
+    margin-bottom: 10px !important
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_1.et_pb_row {
+    margin-bottom: 0px !important;
+    padding-bottom: 0px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_image_0 {
+    text-align: center
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_0.et_pb_row {
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    padding-top: 10px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+    padding-left: 60px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_0 {
+    width: 100%;
+    background-color: #1f1f1f
+}
+.et_divi_builder #et_builder_outer_content .et_pb_column_0 {
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    padding-left: 0px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_column_3 {
+    padding-right: 20px;
+    padding-left: 30px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_text_4 {
+    padding-right: 20px !important;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_5.et_pb_row {
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_5 {
+    background-color: #1f1f1f
+}
+.et_divi_builder #et_builder_outer_content .et_pb_column_7 {
+    padding-right: 20px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_column_5 {
+    padding-right: 20px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_column_4 {
+    padding-right: 20px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_text_5 {
+    padding-top: 16px !important
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_4.et_pb_row {
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    padding-left: 40px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_4 {
+    background-color: #1f1f1f
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_9 {
+    background-color: #141414
+}
+.et_divi_builder #et_builder_outer_content .et_pb_column_13 {
+    padding-bottom: 0px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_11 {
+    background-color: #1f1f1f
+}
+.et_divi_builder #et_builder_outer_content .et_pb_column_15 {
+    padding-bottom: 0px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_text_14 {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_12.et_pb_row {
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    padding-top: 0px;
+    padding-bottom: 0px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_11.et_pb_row {
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 0px;
+    padding-left: 40px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slider_3 .et_pb_slide_image {
+    height: 250px;
+    width: 188px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_11.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_11.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slider_3 .et_pb_slide_description {
+    padding-left: 30px;
+    padding-right: 30px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_12 {
+    background-color: #1f1f1f
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_12.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_15.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_15.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_16.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_14.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_14.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_12.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_13.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_13.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_10.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_10.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_3.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_3.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_4.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_4.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_2.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_2.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_text_13 {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_10.et_pb_row {
+    margin-top: 0px !important;
+    margin-right: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
+    padding-top: 0px;
+    padding-bottom: 0px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_row_10 {
+    background-color: #141414
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_5.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_5.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_8.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_9.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_9.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_8.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_7.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_6.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_6.et_pb_slider_with_text_overlay .et_pb_slide_content {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_slide_7.et_pb_slider_with_text_overlay h2.et_pb_slide_title {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px
+}
+.et_divi_builder #et_builder_outer_content .et_pb_section_0.et_pb_section {
+    background-color: #141414 !important;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px
+}
+@media only screen and ( min-width: 981px) {
+    .et_divi_builder #et_builder_outer_content .et_pb_slider_3 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_slider_5 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_slider_7 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_slider_1 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_row_5 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_text_3 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_row_3.et_pb_row {
+        padding-top: 20px;
+        padding-right: 40px;
+        padding-bottom: 20px;
+        padding-left: 40px
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_text_5 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_text_2 {
+        display: none !important
+    }
+}
+@media only screen and ( min-width: 768px) and ( max-width: 980px) {
+    .et_divi_builder #et_builder_outer_content .et_pb_slider_3 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_slider_5 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_slider_7 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_slider_1 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_row_4 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_text_3 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_text_4 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_text_2 {
+        display: none !important
+    }
+}
+@media only screen and ( max-width: 767px) {
+    .et_divi_builder #et_builder_outer_content .et_pb_slider_2 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_slider_4 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_slider_6 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_slider_0 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_row_4 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_text_1 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_text_4 {
+        display: none !important
+    }
+    .et_divi_builder #et_builder_outer_content .et_pb_text_0 {
+        display: none !important
+    }
+}
+.et_divi_builder #et_builder_outer_content {
+    background-color: rgba(255, 255, 255, 0)
+}
+
+/*--><!]]>*/
+</style><div class="content divi-c">
+<div class="et_builder_outer_content" id="et_builder_outer_content">
+<div class="et_builder_inner_content et_pb_gutters3">
+<div class="et_pb_section et_pb_section_0 et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_0 et_pb_gutters1 et_pb_row_fullwidth">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_0">
+<div class="et_pb_module et-waypoint et_pb_image et_pb_animation_off et_pb_image_0 et_always_center_on_mobile et_pb_image_sticky et-animated"><img alt="Allrecipes Dinner Spinner - The Show" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/ar-ds-show-logo-589x92-1.png" title="dinner spinner logo" /></div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_1 et_pb_gutters1 et_pb_row_fullwidth">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_1">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_left et_pb_text_0">
+<p style="font-size: 24pt; text-align: center;">Saturday Mornings on The CW.</p>
+</div>
+
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_left et_pb_text_1">
+<p style="font-size: 14pt; text-align: center;"><a href="http://www.onemagnificentmorning.com/schedule/" style="color: #ff9900;" target="_blank">Check local listings for time.</a></p>
+</div>
+
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_left et_pb_text_2">
+<p style="font-size: 13pt; text-align: center;">Saturday Mornings on The CW.</p>
+</div>
+
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_left et_pb_text_3">
+<p style="font-size: 10pt; text-align: center;"><a href="http://www.onemagnificentmorning.com/schedule/" style="color: #ff9900;" target="_blank">Check local listings for time.</a></p>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_3 et_pb_gutters1 et_pb_row_fullwidth">
+<div class="et_pb_column et_pb_column_2_3 et_pb_column_2">
+<div class="et_pb_code et_pb_module et_pb_code_0">
+<div class="fluid-width-video-wrapper" style="padding-top: 56.25%;"><iframe allowfullscreen="" frameborder="0" id="fitvid0" name="fitvid0" src="https://player.vimeo.com/video/184059008?autoplay=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;amp;wmode=opaque"></iframe></div>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_3 et_pb_column_3">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_left et_pb_text_4"><span style="font-size: 26pt;"><strong><span style="color: #ef692f;">Allrecipes is on TV!</span></strong></span>
+
+<p style="font-size: 13pt; color: #ffffff;">Allrecipes brings you Dinner Spinner TV, part of One Magnificent Morning on The CW. It’s the new cooking competition from the world’s largest community of home cooks. Watch two home cooks battle it out in a kitchen competition based on the popular Allrecipes Dinner Spinner app!</p>
+</div>
+
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_left et_pb_text_5"><span style="font-size: 24pt;"><strong><span style="color: #ef692f;">Allrecipes is on TV!</span></strong></span>
+
+<p style="font-size: 13pt; color: #ffffff;">Allrecipes brings you Dinner Spinner TV, part of One Magnificent Morning on The CW. It’s the new cooking competition from the world’s largest community of home cooks. Watch two home cooks battle it out in a kitchen competition based on the popular Allrecipes Dinner Spinner app!</p>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_4 et_pb_gutters1 et_pb_row_fullwidth">
+<div class="et_pb_column et_pb_column_1_3 et_pb_column_4">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_left et_pb_text_6">
+<p style="color: #ffffff;"><strong><span style="font-size: 14pt;">EPISODES</span></strong></p>
+
+<p style="font-size: 14pt;"><a href="http://dish.allrecipes.com/dinner-spinner-tv-episode-1/" style="color: #ff9900;">Episode 1: School Night Suppers</a></p>
+
+<p style="font-size: 14pt;"><a href="http://dish.allrecipes.com/catch-the-salmon-throwdown-on-dinner-spinner-tv-episode-2/" style="color: #ff9900;">Episode 2: Dinner &amp; Chill</a></p>
+
+<p style="font-size: 14pt;"><a href="http://dish.allrecipes.com/dinner-spinners-epic-breakfast-battle-of-the-bros/" style="color: #ff9900;">Episode 3: Food for a Crowd</a></p>
+
+<p style="font-size: 14pt;"><a href="http://dish.allrecipes.com/is-tofu-gross-or-glorious-dinner-spinner-tv-heats-up-the-debate/" style="color: #ff9900;">Episode 4: Meatless Menu</a></p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_3 et_pb_column_5">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_left et_pb_text_7">
+<p style="color: #ffffff;"><strong><span style="font-size: 14pt;"> </span></strong></p>
+
+<p style="font-size: 14pt;"><a href="http://dish.allrecipes.com/dinner-spinner-tv-episode-5/" style="color: #ff9900;">Episode 5: Tricks &amp; Treats!</a></p>
+
+<p style="font-size: 14pt;"><a href="http://dish.allrecipes.com/a-quick-beefy-dinner-for-the-family-dinner-spinner-tv-episode-6/" style="color: #ff9900;">Episode 6: Easy Family Dinner</a></p>
+
+<p style="font-size: 14pt;"><a href="http://dish.allrecipes.com/dinner-spinner-tv-episode-7/" style="color: #ff9900;">Episode 7: Savory Supper</a></p>
+
+<p style="font-size: 14pt;"><a href="http://dish.allrecipes.com/dinner-spinner-tv-episode-8/" style="color: #ff9900;">Episode 8: Holiday Celebration</a></p>
+
+<p><span style="font-size: 4pt;"> </span></p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_3 et_pb_column_6">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_left et_pb_text_8">
+<p><span style="color: #ffffff;"><strong><span style="font-size: 14pt;">GET MORE</span></strong></span></p>
+
+<p style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/dinnerspinnertvshow/" style="color: #ff9900;">See show recipes on Allrecipes.com</a></p>
+
+<p style="font-size: 14pt;"><a href="https://secure.allrecipesmagazine.com/order/?containerName=i68vtri03&amp;psrc=I609TTFW320DFA" style="color: #ff9900;">Subscribe to Allrecipes Magazine</a></p>
+
+<p style="font-size: 14pt; color: #666666;"><a href="http://dish.allrecipes.com/mobile-apps/" style="color: #ff9900;">Download the Allrecipes Dinner Spinner app</a></p>
+
+<p style="font-size: 14pt;"><a href="https://twitter.com/Allrecipes" style="color: #ff9900;">Follow us on Twitter</a></p>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_5 et_pb_gutters1 et_pb_row_fullwidth">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_7">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_left et_pb_text_9">
+<p style="color: #ffffff;"><strong><span style="font-size: 14pt;">EPISODES</span></strong></p>
+
+<p style="font-size: 14pt;"><a href="http://dish.allrecipes.com/dinner-spinner-tv-episode-1/" style="color: #ff9900;">Episode 1: School Night Suppers</a></p>
+
+<p style="font-size: 14pt;"><a href="http://dish.allrecipes.com/catch-the-salmon-throwdown-on-dinner-spinner-tv-episode-2/" style="color: #ff9900;">Episode 2: Dinner &amp; Chill</a></p>
+
+<p style="font-size: 14pt;"><a href="http://dish.allrecipes.com/dinner-spinners-epic-breakfast-battle-of-the-bros/" style="color: #ff9900;">Episode 3: Food for a Crowd</a></p>
+
+<p style="font-size: 14pt;"><a href="http://dish.allrecipes.com/is-tofu-gross-or-glorious-dinner-spinner-tv-heats-up-the-debate/" style="color: #ff9900;">Episode 4: Meatless Menu</a></p>
+
+<p style="font-size: 14pt;"><a href="http://dish.allrecipes.com/dinner-spinner-tv-episode-5/" style="color: #ff9900;">Episode 5: Tricks &amp; Treats!</a></p>
+
+<p style="font-size: 14pt;"><a href="http://dish.allrecipes.com/a-quick-beefy-dinner-for-the-family-dinner-spinner-tv-episode-6/" style="color: #ff9900;">Episode 6: Easy Family Dinner</a></p>
+
+<p style="font-size: 14pt;"><a href="http://dish.allrecipes.com/dinner-spinner-tv-episode-7/" style="color: #ff9900;">Episode 7: Savory Supper</a></p>
+
+<p style="font-size: 14pt;"><a href="http://dish.allrecipes.com/dinner-spinner-tv-episode-8/" style="color: #ff9900;">Episode 8: Holiday Celebration</a></p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_8">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_left et_pb_text_10">
+<p><span style="color: #ffffff;"><strong><span style="font-size: 14pt;">GET MORE</span></strong></span></p>
+
+<p style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/dinnerspinnertvshow/" style="color: #ff9900;">See show recipes on Allrecipes.com</a></p>
+
+<p style="font-size: 14pt;"><a href="https://secure.allrecipesmagazine.com/order/?containerName=i68vtri03&amp;psrc=I609TTFW320DFA" style="color: #ff9900;">Subscribe to Allrecipes Magazine</a></p>
+
+<p style="font-size: 14pt; color: #666666;"><a href="http://dish.allrecipes.com/mobile-apps/" style="color: #ff9900;">Download the Allrecipes Dinner Spinner app</a></p>
+
+<p style="font-size: 14pt;"><a href="https://twitter.com/Allrecipes" style="color: #ff9900;">Follow us on Twitter</a></p>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_6 et_pb_gutters1 et_pb_row_fullwidth">
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_9">
+<div class="et_pb_module et-waypoint et_pb_image et_pb_animation_off et_pb_image_1 et_always_center_on_mobile et_pb_image_sticky"><a href="https://www.allrecipes.com/cook/dinnerspinnertvshow/"><img alt="Follow The Show" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/follow-show-button-227x45-1.png" title="Follow the Show" /></a></div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_2 et_pb_column_10">
+<div class="et_pb_module et-waypoint et_pb_image et_pb_animation_off et_pb_image_2 et_always_center_on_mobile"><a href="http://dish.allrecipes.com/mobile-apps/"><img alt="Download the app" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/download-app-button-227x45.png" title="Download the app" /></a></div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_7 et_pb_gutters1 et_pb_row_fullwidth">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_11">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_center et_pb_text_11">
+<p style="color: #ffffff;"><strong><span style="font-size: 14pt;">CAST AND CONTESTANTS</span></strong></p>
+</div>
+
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_center et_pb_text_12">
+<p><span style="font-size: 14pt; color: #ff6600;">THE HOST</span></p>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_8 et_pb_gutters1 et_pb_row_fullwidth">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_12">
+<div class="et_pb_module et_pb_slider et_pb_slider_fullwidth_off et_pb_slider_0 et_pb_bg_layout_dark">
+<div class="et_pb_slides">
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_0 et-pb-active-slide" style="background-color:#1f1f1f;">
+<div class="et_pb_container clearfix" style="height: 542px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image" style="margin-top: -200px;"><img alt="" class="active" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/gabe-300x400.jpg" style="max-height: 433.6px;" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title">Chef Gabe Kennedy</h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">Gabe is a professional chef, world traveler, and environmental advocate who’s passionate about connecting people, food, and culture. His mission is to inspire people to explore the kitchen and their senses, and rediscover the joys of cooking. Gabe was recently a winner on the prime-time show The Taste, and was deemed “America’s best undiscovered cook” by Anthony Bourdain.</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_module et_pb_slider et_pb_slider_fullwidth_off et_pb_slider_1 et_pb_bg_layout_dark" style="">
+<div class="et_pb_slides">
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_1 et-pb-active-slide" style="background-color:#1f1f1f;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image" style="margin-top: -125px;"><img alt="" class="active" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/gabe-300x400.jpg" style="max-height: 0px;" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title">Chef Gabe Kennedy</h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">Gabe is a professional chef, world traveler, and environmental advocate who’s passionate about connecting people, food, and culture. His mission is to inspire people to explore the kitchen and their senses, and rediscover the joys of cooking. Gabe was recently a winner on the prime-time show The Taste, and was deemed “America’s best undiscovered cook” by Anthony Bourdain.</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_9 et_pb_gutters1 et_pb_row_fullwidth">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_13">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_center et_pb_text_13">
+<p><span style="font-size: 14pt; color: #ff6600;">THE JUDGES</span></p>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_10 et_pb_gutters1 et_pb_row_fullwidth">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_14">
+<div class="et_pb_module et_pb_slider et_pb_slider_fullwidth_off et_slider_auto et_slider_speed_7000 et_pb_slider_2 et_slide_transition_to_next et_pb_bg_layout_dark">
+<div class="et_pb_slides">
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_2 et-pb-moved-slide" style="background-color: rgb(20, 20, 20); z-index: 2; display: none; opacity: 0;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image" style="margin-top: -200px;"><img alt="" class="active" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/ali-landry-300x400.jpg" style="max-height: 451.2px;" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/alilandry/">Ali Landry</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">An actress, mother of three, and mompreneur who’s passionate about food, she’s the co-founder of Favored.by and Red Carpet Safety Event. Ali is focused on preparing healthy, clean foods for her family, but admits she has a weakness for southern foods and has a serious sweet tooth.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/alilandry/">Follow Ali</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_3 et-pb-active-slide" style="background-color: rgb(20, 20, 20); z-index: 1; display: block; opacity: 1;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image" style="margin-top: -200px;"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/john-300x400.jpg" style="max-height: 451.2px;" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/foodwisheswithchefjohn/">Chef John</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">A former chef instructor at the prestigious California Culinary Academy, Chef John runs the multiple award-winning blog, Food Wishes, and has one of the most popular food channels on YouTube. He is a regular contributor to Allrecipes, where his followers find his recipes, tips, and puns totally addictive.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/foodwisheswithchefjohn/">Follow Chef John</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_4" style="background-color: rgb(20, 20, 20); z-index: 1; display: none; opacity: 0;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image" style="margin-top: -200px;"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/courtney.jpg" style="max-height: 451.2px;" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/courtneylopez/">Courtney Lopez</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">An actress, producer, and mother of two kids ages 3 and 6, Courtney is known for her roles in Mario &amp; Courtney’s Wedding, Extra, and Mario Lopez: Saved by the Baby. The busy mom is always looking for new ideas for getting dinner on the table – and learning how to make new things.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/courtneylopez/">Follow Courtney</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_5" style="background-color: rgb(20, 20, 20); z-index: 1; display: none; opacity: 0;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image" style="margin-top: -200px;"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/laila-300x400.jpg" style="max-height: 451.2px;" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/lailaali/">Laila Ali</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">A four-time undefeated boxing champion, mother of two, and TV star in shows including Dancing with the Stars, George Lopez, and the upcoming The New Celebrity Apprentice. She’s also an accomplished chef who focuses on clean eating. She’s currently working on a cookbook of healthy comfort food.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/lailaali/">Follow Ali</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_6" style="background-color: rgb(20, 20, 20); z-index: 1; display: none; opacity: 0;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image" style="margin-top: -200px;"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/ali-300x400.jpg" style="max-height: 451.2px;" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/allis/">Alli Shircliff</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">Alli is a certified nutritionist, editor and food-trend expert at Allrecipes, author for Allrecipes Dish nutrition-related articles, and yoga instructor. She believes that cooking and eating a whole foods-based diet, exercising and walking every day, and a glass of wine are the key to a healthy lifestyle.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/allis/">Follow Alli</a></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="et-pb-slider-arrows"><a class="et-pb-arrow-prev" href="#" style="color: inherit;"><span>Previous</span></a><a class="et-pb-arrow-next" href="#" style="color: inherit;"><span>Next</span></a></div>
+
+<div class="et-pb-controllers"><a href="#">1</a><a class="et-pb-active-control" href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a></div>
+</div>
+
+<div class="et_pb_module et_pb_slider et_pb_slider_fullwidth_off et_slider_auto et_slider_speed_7000 et_pb_slider_3 et_slide_transition_to_next et_pb_bg_layout_dark" style="">
+<div class="et_pb_slides">
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_7 et-pb-moved-slide" style="background-color: rgb(20, 20, 20); z-index: 2; display: none; opacity: 0;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image" style="margin-top: -125px;"><img alt="" class="active" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/ali-landry-300x400.jpg" style="max-height: 0px;" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/alilandry/">Ali Landry</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">An actress, mother of three, and mompreneur who’s passionate about food, she’s the co-founder of Favored.by and Red Carpet Safety Event. Ali is focused on preparing healthy, clean foods for her family, but admits she has a weakness for southern foods and has a serious sweet tooth.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/alilandry/">Follow Ali</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_8 et-pb-active-slide" style="background-color: rgb(20, 20, 20); z-index: 1; display: block; opacity: 1;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image" style="margin-top: -125px;"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/john-300x400.jpg" style="max-height: 0px;" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/foodwisheswithchefjohn/">Chef John</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">A former chef instructor at the prestigious California Culinary Academy, Chef John runs the multiple award-winning blog, Food Wishes, and has one of the most popular food channels on YouTube. He is a regular contributor to Allrecipes, where his followers find his recipes, tips, and puns totally addictive.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/foodwisheswithchefjohn/">Follow Chef John</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_9" style="background-color: rgb(20, 20, 20); z-index: 1; display: none; opacity: 0;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image" style="margin-top: -125px;"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/courtney.jpg" style="max-height: 0px;" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/courtneylopez/">Courtney Lopez</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">An actress, producer, and mother of two kids ages 3 and 6, Courtney is known for her roles in Mario &amp; Courtney’s Wedding, Extra, and Mario Lopez: Saved by the Baby. The busy mom is always looking for new ideas for getting dinner on the table – and learning how to make new things.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/courtneylopez/">Follow Courtney</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_10" style="background-color: rgb(20, 20, 20); z-index: 1; display: none; opacity: 0;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image" style="margin-top: -125px;"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/laila-300x400.jpg" style="max-height: 0px;" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/lailaali/">Laila Ali</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">A four-time undefeated boxing champion, mother of two, and TV star in shows including Dancing with the Stars, George Lopez, and the upcoming The New Celebrity Apprentice. She’s also an accomplished chef who focuses on clean eating. She’s currently working on a cookbook of healthy comfort food.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/lailaali/">Follow Ali</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_11" style="background-color: rgb(20, 20, 20); z-index: 1; display: none; opacity: 0;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image" style="margin-top: -125px;"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/ali-300x400.jpg" style="max-height: 0px;" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/allis/">Alli Shircliff</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">Alli is a certified nutritionist, editor and food-trend expert at Allrecipes, author for Allrecipes Dish nutrition-related articles, and yoga instructor. She believes that cooking and eating a whole foods-based diet, exercising and walking every day, and a glass of wine are the key to a healthy lifestyle.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/allis/">Follow Alli</a></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="et-pb-slider-arrows"><a class="et-pb-arrow-prev" href="#" style="color: inherit;"><span>Previous</span></a><a class="et-pb-arrow-next" href="#" style="color: inherit;"><span>Next</span></a></div>
+
+<div class="et-pb-controllers"><a href="#">1</a><a class="et-pb-active-control" href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_11 et_pb_gutters1 et_pb_row_fullwidth">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_15">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_center et_pb_text_14">
+<p><span style="font-size: 14pt; color: #ff6600;">ALLRECIPES ALLSTARS</span></p>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_12 et_pb_gutters1 et_pb_row_fullwidth">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_16">
+<div class="et_pb_module et_pb_slider et_pb_slider_fullwidth_off et_pb_slider_4 et_pb_bg_layout_dark">
+<div class="et_pb_slides">
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_12 et-pb-active-slide" style="background-color:#1f1f1f;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image" style="margin-top: -200px;"><img alt="" class="active" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/angela-sackett-300x400.jpg" style="max-height: 451.2px;" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/6549646">Angela Sackett</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">A semi-finalist for The Next Food Network Star, Angela focuses on clean eating and natural foods. She’s now focusing on her photography business and home-educating her five growing chefs in Long Beach Island, NJ.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/6549646">Follow Angela</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_13" style="background-color:#1f1f1f;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/diana-bishop-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/1800959">Diana Bishop</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">A Colorado Springs, CO mother of two teenagers, Diana believes in healthy eating using raw ingredients. She’s passionate about cooking and involves her kids in planning, shopping, and cooking meals.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/1800959">Follow Diana</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_14" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/jamie-yost-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/2493475">Jamie Justice Yost</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">A Southern girl at heart, Jamie loves Southern cooking. The Tennessee native grew up learning how to cook what was grown in the garden.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/2493475">Follow Jamie</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_15" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/rosalind-600x600.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/foodieroz/">Rosalind Brazel</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">Now a communications director for a nonprofit that fights for racial, social, and economic justice, Rosalind really got into cooking when she worked in Louisiana as a TV reporter. She has a tiny kitchen that is jam-packed with tools, including a deep fryer, a pasta maker, and a pressure cooker.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/foodieroz/">Follow Rosalind</a></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="et-pb-slider-arrows"><a class="et-pb-arrow-prev" href="#" style="color: inherit;"><span>Previous</span></a><a class="et-pb-arrow-next" href="#" style="color: inherit;"><span>Next</span></a></div>
+
+<div class="et-pb-controllers"><a class="et-pb-active-control" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a></div>
+</div>
+
+<div class="et_pb_module et_pb_slider et_pb_slider_fullwidth_off et_pb_slider_5 et_pb_bg_layout_dark" style="">
+<div class="et_pb_slides">
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_16 et-pb-active-slide" style="background-color:#1f1f1f;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image" style="margin-top: -125px;"><img alt="" class="active" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/angela-sackett-300x400.jpg" style="max-height: 0px;" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/6549646">Angela Sackett</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">A semi-finalist for The Next Food Network Star, Angela focuses on clean eating and natural foods. She’s now focusing on her photography business and home-educating her five growing chefs in Long Beach Island, NJ.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/6549646">Follow Angela</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_17" style="background-color:#1f1f1f;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/diana-bishop-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/1800959">Diana Bishop</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">A Colorado Springs, CO mother of two teenagers, Diana believes in healthy eating using raw ingredients. She’s passionate about cooking and involves her kids in planning, shopping, and cooking meals.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/1800959">Follow Diana</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_18" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/jamie-yost-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/2493475">Jamie Justice Yost</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">A Southern girl at heart, Jamie loves Southern cooking. The Tennessee native grew up learning how to cook what was grown in the garden.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/2493475">Follow Jamie</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_19" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/rosalind-600x600.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/foodieroz/">Rosalind Brazel</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">Now a communications director for a nonprofit that fights for racial, social, and economic justice, Rosalind really got into cooking when she worked in Louisiana as a TV reporter. She has a tiny kitchen that is jam-packed with tools, including a deep fryer, a pasta maker, and a pressure cooker.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/foodieroz/">Follow Rosalind</a></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="et-pb-slider-arrows"><a class="et-pb-arrow-prev" href="#" style="color: inherit;"><span>Previous</span></a><a class="et-pb-arrow-next" href="#" style="color: inherit;"><span>Next</span></a></div>
+
+<div class="et-pb-controllers"><a class="et-pb-active-control" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_13 et_pb_gutters1 et_pb_row_fullwidth">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_17">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_center et_pb_text_15">
+<p><a href="http://dish.allrecipes.com/customer-service/faq-allstars/"><span style="font-size: 14pt; color: #ff9900;">Learn how to become an Allrecipes Allstar</span></a></p>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_14 et_pb_gutters1 et_pb_row_fullwidth">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_18">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_center et_pb_text_16">
+<p><span style="font-size: 14pt; color: #ff6600;">THE CONTESTANTS</span></p>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_15 et_pb_gutters1 et_pb_row_fullwidth">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_19">
+<div class="et_pb_module et_pb_slider et_pb_slider_fullwidth_off et_pb_slider_6 et_pb_bg_layout_dark">
+<div class="et_pb_slides">
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_20 et-pb-active-slide" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image" style="margin-top: -200px;"><img alt="" class="active" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/amy-amurro-300x400.jpg" style="max-height: 451.2px;" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/amyamaro/">Amy Amaro</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">She grew up eating her grandmother’s meatballs, but she’s not tied to tradition. You’ll often find her in the kitchen using one of her latest obsession ingredients. Right now, it’s miso!</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/amyamaro/">Follow Amy</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_21" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/kristy-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/kristyratliff/">Kristy Ratliff</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">She dreams of one day driving a Ferrari on the autobahn. She loves vegan food and formerly had a catering company called the Vegan Housewife. She’s always looking to change up her clean eating recipes – and can’t wait to try spiralizing next!</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/kristyratliff/">Follow Kristy</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_22" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/Nayza-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/nayzagordon/">Nayza Gordon</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">She’s loved cooking since she was 7 years old. She grew up watching Martha Stewart and loving her recipes. She started baking and mastered glazes and frostings and pie crust – and is now working her way up to cakes from scratch. She grew up vegetarian — but no longer!</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/nayzagordon/">Follow Nayza</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_23" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/Lauren-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/laurencaldaronello/">Lauren Caldaronello</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">She revels in cooking every day for her family of four. Her husband even gets into the action when he BBQs. He’s practically a professional!</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/laurencaldaronello/">Follow Lauren</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_24" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/holly-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/hollyhaines/">Holly Haines</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">Though she’s lactose intolerant and have an itty bitty kitchen, she doesn’t let it get her down! She still whips up some of the best recipes out there and even sneak in some cheese every once in a while.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/hollyhaines/">Follow Holly</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_25" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/seth-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/sexycookingdad/">Seth GaRoo Baxter</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">He’s a full time dad who was raised with 17 other brothers and sisters. He enjoys cooking for events, BBQs, his buddies, and most of all his son and his friends. His cooking style is soul food/sinful healthy.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/sexycookingdad/">Follow Seth</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_26" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/nikki-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/nikkinelson/">Nikki Nelson</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">She’s been cooking comfort food since she was a kid. She loves cooking for her two daughters and is now teaching them how to cook. They love eating her mac and cheese!</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/nikkinelson/">Follow Nikki</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_27" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/eric-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/ericadler/">Eric Adler</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">He’s a doctor who loves to cook. He’s always inspired by what’s new in BBQ! He loves to pass down his cooking knowledge to his daughters. He wants everyone to know they can enjoy flavorful food that’s real and nutritious.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/ericadler/">Follow Eric</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_28" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/Ann-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/annsayegh/">Ann Sayegh</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">She grew up in a very traditional Palestinian family and learned to cook early. She loves entertaining and often throws BBQs for her friends. Don’t pass her anything spicy—she’s not a fan!</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/annsayegh/">Follow Ann</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_29" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/sabrina-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/16391699/">Sabrina</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">She started cooking as a kid with her mom. She considers herself a Southern girl, and loves Southern hospitality. She’s also a dog lover — she has three Shar-Peis and likes to bake them dog treats.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/16391699/">Follow Sabrina</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_30" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/carrie-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/carrieportman/">Carrie Portman</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">Her boys have recently left the nest, so she and her husband are enjoying their new-found freedom. Carrie loves creating new recipes with her husband and going on culinary trips around the world!</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/carrieportman/">Follow Carrie</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_31" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/Jacob-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/jacobwelshans/">Jacob Welshans</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">A television producer originally from Michigan, he loves breakfast and kickball (and his fiance!). His mom inspired him to start cooking when he was in high school — and it stuck. <a href="http://www.sundayswithjake.com/" style="font-size: 13pt; color: #ff9900;" target="_blank">Check out his blog!</a></span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/jacobwelshans/">Follow Jacob</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_32" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/jackie-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/10968184/">Jackie Lin</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">She learned to cook when she was very young, and really started cooking after she moved to LA several years go and couldn’t find great Asian food. She loves to feed her friends, and also does professional recipe development. <a href="http://www.cooksinheels.com/" style="font-size: 13pt; color: #ff9900;" target=" _blank">Check out her blog!</a></span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/10968184/">Follow Jackie</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_33" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/troy-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/troyslaten/">Troy Slaten</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">He’s a legal analyst for entertainment and news programs. His love for cooking grew from an early age with his mom making meatloaf. These days, he enjoys the production and flavor of Korean and Japanese food.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/troyslaten/">Follow Troy</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_34" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show//cliff-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/10248289/">Cliff Hutson</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">He’s had a passion for food for as long as he can remember. His favorite is Mexican food — chile verde, and anything with cheese. He’s a restaurant manager by trade.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/10248289/">Follow Cliff</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_35" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="height: 564px;">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/Vincent-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/vincentvernhes/">Vincent Vernhes</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">His mother and grandmother taught him the basics of cooking: pasta and tomato sauce. He’s since expanded to the delicacies of France, Spain, and the Mediterranean. He loves planning meals for his wife and two kids.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/vincentvernhes/">Follow Vincent</a></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="et-pb-slider-arrows"><a class="et-pb-arrow-prev" href="#" style="color: inherit;"><span>Previous</span></a><a class="et-pb-arrow-next" href="#" style="color: inherit;"><span>Next</span></a></div>
+
+<div class="et-pb-controllers"><a class="et-pb-active-control" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><a href="#">9</a><a href="#">10</a><a href="#">11</a><a href="#">12</a><a href="#">13</a><a href="#">14</a><a href="#">15</a><a href="#">16</a></div>
+</div>
+
+<div class="et_pb_module et_pb_slider et_pb_slider_fullwidth_off et_pb_slider_7 et_pb_bg_layout_dark" style="">
+<div class="et_pb_slides">
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_36 et-pb-active-slide" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image" style="margin-top: -125px;"><img alt="" class="active" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/amy-amurro-300x400.jpg" style="max-height: 0px;" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/amyamaro/">Amy Amaro</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">She grew up eating her grandmother’s meatballs, but she’s not tied to tradition. You’ll often find her in the kitchen using one of her latest obsession ingredients. Right now, it’s miso!</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/amyamaro/">Follow Amy</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_37" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/kristy-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/kristyratliff/">Kristy Ratliff</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">She dreams of one day driving a Ferrari on the autobahn. She loves vegan food and formerly had a catering company called the Vegan Housewife. She’s always looking to change up her clean eating recipes – and can’t wait to try spiralizing next!</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/kristyratliff/">Follow Kristy</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_38" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/Nayza-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/nayzagordon/">Nayza Gordon</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">She’s loved cooking since she was 7 years old. She grew up watching Martha Stewart and loving her recipes. She started baking and mastered glazes and frostings and pie crust – and is now working her way up to cakes from scratch. She grew up vegetarian — but no longer!</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/nayzagordon/">Follow Nayza</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_39" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/Lauren-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/laurencaldaronello/">Lauren Caldaronello</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">She revels in cooking every day for her family of four. Her husband even gets into the action when he BBQs. He’s practically a professional!</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/laurencaldaronello/">Follow Lauren</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_40" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/holly-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/hollyhaines/">Holly Haines</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">Though she’s lactose intolerant and have an itty bitty kitchen, she doesn’t let it get her down! She still whips up some of the best recipes out there and even sneak in some cheese every once in a while.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/hollyhaines/">Follow Holly</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_41" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/seth-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/sexycookingdad/">Seth GaRoo Baxter</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">He’s a full time dad who was raised with 17 other brothers and sisters. He enjoys cooking for events, BBQs, his buddies, and most of all his son and his friends. His cooking style is soul food/sinful healthy.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/sexycookingdad/">Follow Seth</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_42" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/nikki-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/nikkinelson/">Nikki Nelson</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">She’s been cooking comfort food since she was a kid. She loves cooking for her two daughters and is now teaching them how to cook. They love eating her mac and cheese!</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/nikkinelson/">Follow Nikki</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_43" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/eric-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/ericadler/">Eric Adler</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">He’s a doctor who loves to cook. He’s always inspired by what’s new in BBQ! He loves to pass down his cooking knowledge to his daughters. He wants everyone to know they can enjoy flavorful food that’s real and nutritious.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/ericadler/">Follow Eric</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_44" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/Ann-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/annsayegh/">Ann Sayegh</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">She grew up in a very traditional Palestinian family and learned to cook early. She loves entertaining and often throws BBQs for her friends. Don’t pass her anything spicy—she’s not a fan!</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/annsayegh/">Follow Ann</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_45" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/sabrina-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/16391699/">Sabrina</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">She started cooking as a kid with her mom. She considers herself a Southern girl, and loves Southern hospitality. She’s also a dog lover — she has three Shar-Peis and likes to bake them dog treats.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/16391699/">Follow Sabrina</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_46" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/carrie-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/carrieportman/">Carrie Portman</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">Her boys have recently left the nest, so she and her husband are enjoying their new-found freedom. Carrie loves creating new recipes with her husband and going on culinary trips around the world!</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/carrieportman/">Follow Carrie</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_47" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/Jacob-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/jacobwelshans/">Jacob Welshans</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">A television producer originally from Michigan, he loves breakfast and kickball (and his fiance!). His mom inspired him to start cooking when he was in high school — and it stuck. <a href="http://www.sundayswithjake.com/" style="font-size: 13pt; color: #ff9900;" target="_blank">Check out his blog!</a></span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/jacobwelshans/">Follow Jacob</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_48" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/jackie-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/10968184/">Jackie Lin</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">She learned to cook when she was very young, and really started cooking after she moved to LA several years go and couldn’t find great Asian food. She loves to feed her friends, and also does professional recipe development. <a href="http://www.cooksinheels.com/" style="font-size: 13pt; color: #ff9900;" target=" _blank">Check out her blog!</a></span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/10968184/">Follow Jackie</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_49" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/troy-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/troyslaten/">Troy Slaten</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">He’s a legal analyst for entertainment and news programs. His love for cooking grew from an early age with his mom making meatloaf. These days, he enjoys the production and flavor of Korean and Japanese food.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/troyslaten/">Follow Troy</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_50" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/cliff-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/10248289/">Cliff Hutson</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">He’s had a passion for food for as long as he can remember. His favorite is Mexican food — chile verde, and anything with cheese. He’s a restaurant manager by trade.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/10248289/">Follow Cliff</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_slide et_pb_slide_with_image et_pb_bg_layout_dark et_pb_media_alignment_center et_pb_slide_51" style="background-color:#141414;">
+<div class="et_pb_container clearfix" style="">
+<div class="et_pb_slider_container_inner">
+<div class="et_pb_slide_image"><img alt="" src="/sites/dish.allrecipes.com/modules/dish_static_pages/files/dinner-spinner-tv-show/Vincent-300x400.jpg" /></div>
+
+<div class="et_pb_slide_description">
+<h2 class="et_pb_slide_title"><a href="https://www.allrecipes.com/cook/vincentvernhes/">Vincent Vernhes</a></h2>
+
+<div class="et_pb_slide_content">
+<p style="text-align: left;"><span style="font-size: 13pt;">His mother and grandmother taught him the basics of cooking: pasta and tomato sauce. He’s since expanded to the delicacies of France, Spain, and the Mediterranean. He loves planning meals for his wife and two kids.</span></p>
+</div>
+<a class="et_pb_more_button et_pb_button" href="https://www.allrecipes.com/cook/vincentvernhes/">Follow Vincent</a></div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="et-pb-slider-arrows"><a class="et-pb-arrow-prev" href="#" style="color: inherit;"><span>Previous</span></a><a class="et-pb-arrow-next" href="#" style="color: inherit;"><span>Next</span></a></div>
+
+<div class="et-pb-controllers"><a class="et-pb-active-control" href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a><a href="#">6</a><a href="#">7</a><a href="#">8</a><a href="#">9</a><a href="#">10</a><a href="#">11</a><a href="#">12</a><a href="#">13</a><a href="#">14</a><a href="#">15</a><a href="#">16</a></div>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_16 et_pb_gutters1 et_pb_row_fullwidth">
+<div class="et_pb_column et_pb_column_4_4 et_pb_column_20">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_center et_pb_text_17">
+<p style="font-size: 14pt;"><span style="color: #ff6600;">ABOUT THE CW</span></p>
+</div>
+
+<div class="et_pb_text et_pb_module et_pb_bg_layout_dark et_pb_text_align_left et_pb_text_18">
+<p style="font-size: 14pt; color: #ffffff;">Saturdays are “One Magnificent Morning” on The CW. Dinner Spinner TV joins the line-up that offers inspiring and educational information, tailored just for families.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+      
+  </div>
+</article>
+
+  </div>
+
+      
+    </div>
+          </div>
+</div><footer id="pageFooter" class="page-footer-container">
+    <div>
+    <div id="block-karma-slot-7">
+  
+    
+  <div class="karma-slot karma-slot--footer-fixed karma-slot--mobile">
+  <div  id="div-gpt-mob-adhesive-banner-fixed" data-tier="1"></div>
+</div>
+
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    <div class="footer-columns-container">
+      <div class="footer-column">
+          <div>
+    <div id="block-footersociallinks">
+  
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul class="social-sharing__icons">
+    <li>
+      <a id="footer_facebook" href="https://www.facebook.com/allrecipes" title="Facebook" target="_blank" class="ui-link">
+        <img title="Facebook" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Facebook" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_pinterest" href="http://pinterest.com/allrecipes/" title="Pinterest" target="_blank" class="ui-link">
+        <img title="Pinterest" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Pinterest" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_twitter" href="https://twitter.com/Allrecipes" title="Twitter" target="_blank" class="ui-link">
+        <img id="ctl00_Image3" title="Twitter" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Twitter" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_instagram" href="http://instagram.com/allrecipes" title="Instagram" target="_blank" class="ui-link">
+        <img title="Instagram" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Instagram" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_tumblr" href="http://allrecipes.tumblr.com/" title="Tumblr" target="_blank" class="ui-link">
+        <img title="Tumblr" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Tumblr" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_googleplus" href="https://plus.google.com/+allrecipes/" title="Google Plus" target="_blank" class="ui-link">
+        <img title="Google Plus" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Google Plus" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_stumbleupon" href="http://www.stumbleupon.com/stumbler/Allrecipes" title="StumbleUpon" target="_blank" class="ui-link">
+        <img title="StumbleUpon" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="StumbleUpon" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_youtube" href="https://www.youtube.com/user/allrecipes" title="YouTube" target="_blank" class="ui-link">
+        <img title="YouTube" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="YouTube" scale="0">
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+<div id="block-moreallrecipeslinks">
+  
+      <h2 class="heading-2">More Allrecipes</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul>
+    <li>
+      <a id="footer_magazine" href="http://armagazine.com/mobile-footer" target="_self">
+        Allrecipes Magazine
+        <span style="color:#ff7e1a;">
+          <span>
+            –
+          </span>
+          Subscribe
+        </span>
+      </a>
+    </li>
+    <li>
+      <a id="footer_apps" href="http://dish.allrecipes.com/mobile-apps" target="_self">
+        Allrecipes Apps
+      </a>
+    </li>
+    <li>
+      <a id="footer_foodwishes" href="http://youtube.com/foodwishes" target="_self">
+        Food Wishes Videos
+      </a>
+    </li>
+    <li>
+      <a id="footer_freshbites" href="http://freshbitesblog.com/" target="_self">
+        Fresh Bites Blog
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+
+  </div>
+
+      </div>
+      <div class="footer-column">
+          <div>
+    <div id="block-aboutuslinks">
+  
+      <h2 class="heading-2">About Us</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul>
+    <li>
+      <a id="footer_newsroom" href="http://press.allrecipes.com/" target="_self">
+        Newsroom
+      </a>
+    </li>
+    <li>
+      <a id="footer_jobs" href="http://dish.allrecipes.com/allrecipes-jobs/" target="_self">
+        Jobs at Allrecipes
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+<div id="block-supportlinks">
+  
+      <h2 class="heading-2">Support</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul>
+    <li>
+      <a id="footer_sitemap" href="http://dish.allrecipes.com/faq-sitemap/" target="_self">
+        Site Map
+      </a>
+    </li>
+    <li>
+      <a id="footer_contactus" href="http://dish.allrecipes.com/customer-service/contact-us-2/" target="_self">
+        Contact Us
+      </a>
+    </li>
+    <li>
+      <a id="footer_customersupport" href="http://dish.allrecipes.com/customer-service/" target="_self">
+        Customer Support
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+
+  </div>
+
+      </div>
+      <div class="footer-column">
+          <div>
+    <div id="block-advertisinglinks">
+  
+      <h2 class="heading-2">Advertising</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix footer_advertising">
+  <ul>
+    <li>
+      <a id="footer_advertisewithus" class="" href="http://www.meredith.com/national-media/digital" target="_self">
+        Advertise with Us
+      </a>
+    </li>
+    <li>
+      <a id="footer_womensnetwork" class="" href="http://www.meredith.com/marketing_solutions/interactive_media.html" target="_self">
+        Meredith Women's Network
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+<div id="block-globalcommunitylinks">
+  
+      <h2 class="heading-2">Global Community</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul>
+    <li>
+      <select id="country-selector">
+        <option value="" label="Select location">
+        Select location
+        </option>
+        <option value="http://allrecipes.com.ar/" label="Argentina">
+        Argentina
+        </option>
+        <option value="http://allrecipes.com.au/" label="Australia &amp; New Zealand">
+        Australia &amp; New Zealand
+        </option>
+        <option value="http://allrecipes.com.br/" label="Brazil">
+        Brazil
+        </option>
+        <option value="http://allrecipes.com/?country=CA" label="Canada">
+        Canada
+        </option>
+        <option value="http://allrecipes.cn/" label="China">
+        China
+        </option>
+        <option value="http://allrecipes.fr/" label="France">
+        France
+        </option>
+        <option value="http://de.allrecipes.com/" label="Germany">
+        Germany
+        </option>
+        <option value="http://allrecipes.co.in/" label="India">
+        India
+        </option>
+        <option value="http://allrecipes.it/" label="Italy">
+        Italy
+        </option>
+        <option value="http://allrecipes.kr/" label="Korea">
+        Korea
+        </option>
+        <option value="http://allrecipes.com.mx/" label="Mexico">
+        Mexico
+        </option>
+        <option value="http://allrecipes.nl/" label="Netherlands">
+        Netherlands
+        </option>
+        <option value="http://allrecipes.pl/" label="Poland">
+        Poland
+        </option>
+        <option value="http://qc.allrecipes.ca/" label="Quebec">
+        Quebec
+        </option>
+        <option value="http://allrecipes.ru/" label="Russia">
+        Russia
+        </option>
+        <option value="http://allrecipes.asia/" label="SE Asia">
+        SE Asia
+        </option>
+        <option value="http://allrecipes.co.uk/" label="United Kingdom &amp; Ireland">
+        United Kingdom &amp; Ireland
+        </option>
+        <option value="https://www.allrecipes.com/" label="United States">
+        United States
+        </option>
+      </select>
+    </li>
+  </ul>
+</article>
+
+</div>
+<div id="block-legallinks">
+  
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <h2>
+    © 2017 Allrecipes.com 
+    <br>
+    All Rights Reserved
+  </h2>
+  <ul>
+    <li>
+      <a id="footer_privacypolicy" href="http://www.meredith.com/legal/privacy" target="_blank">
+        Privacy Policy Your California Rights
+      </a>
+    </li>
+    <li>
+      <a id="footer_eu_privacypolicy" href="http://www.meredith.com/legal/eu-privacy" target="_blank">
+        EU Privacy Policy
+      </a>
+    </li>
+    <li>
+      <script>if (window.mdp.gdpr.dsarFormLink) document.write('<a href="' + window.mdp.gdpr.dsarFormLink + '" target="_blank">EU Data Subject Requests</a>');</script>
+    </li>
+    <li>
+      <a id="footer_termconditions" href="http://www.meredith.com/legal/terms">
+        <span style="color:red;font-weight:bold">
+          New!&nbsp;
+        </span>
+        Terms of Service
+      </a>
+    </li>
+    <li>
+      <a id="footer_datapolicy" href="http://www.meredith.com/datapolicy.html" target="_blank">
+        Data Policy
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="http://info.evidon.com/pub_info/282?v=1" id="_bapw-link">
+        <span style="vertical-align:middle !important;padding-right:5px" id="footer_adchoices">
+          AdChoices
+        </span>
+        <img height="11" style="border:0 !important;display:inline !important;vertical-align:middle !important;padding-right:5px !important;" id="_bapw-icon" src="http://cdn.betrad.com/pub/icon1.png" scale="0">
+      </a>
+    </li>
+  </ul>
+  <a id="back-to-top-button" href="#">
+    Top
+  </a>
+</article>
+
+</div>
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script type="javascript/template" id="usermenuSubmenuTemplate">
+  <ul class="nav-tab__options">
+    <li>
+      <a href="https://allrecipes.com/" id="navmenu_myFeed" target="_self">
+        <span class="icon apicon-home2"></span>
+        <span class="itemText">
+          Feed
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/cook/my/" id="navmenu_myprofile" target="_self">
+        <span class="icon apicon-profile"></span>
+        <span class="itemText">
+          Profile
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/cook/my/favorites/" rel="nofollow" id="navmenu_recipebox" target="_self">
+        <span class="icon apicon-heart"></span>
+        <span class="itemText">
+          Favorites
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/cook/my/findfriends/" rel="nofollow" id="navmenu_findfriends" target="_self">
+        <span class="icon apicon-users"></span>
+        <span class="itemText">
+          Friends
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/my/shopping-lists/" rel="nofollow" id="navmenu_shoppinglist" target="_self">
+        <span class="icon apicon-bag"></span>
+        <span class="itemText">
+          Shopping List
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/cook/my/account-settings/" rel="nofollow" id="navmenu_settings" target="_self">
+        <span class="icon apicon-gear"></span>
+        <span class="itemText">
+          Settings
+        </span>
+      </a>
+    </li>
+  </ul>
+  <div class="signout">
+    <button onclick="location.href='https://allrecipes.com/account/signout'" class="btn-basic--large" id="offCanvasSignOutBtn">
+      Sign out
+    </button>
+  </div>
+</script>
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/8484","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","breakpoints":{"small":{"name":"small","media_query":"all and (min-width: 0em)","multipliers":["1x"]},"small-med":{"name":"small-med","media_query":"all and (min-width: 26em)","multipliers":["1x"]},"small-large":{"name":"small-large","media_query":"all and (min-width: 41em)","multipliers":["1x"]},"medium":{"name":"medium","media_query":"all and (min-width: 48em)","multipliers":["1x"]},"large":{"name":"large","media_query":"all and (min-width: 61.25em)","multipliers":["1x"]}},"meredithKarma":{"adService":{"mobileAds":false,"unitValues":{"channel":"dishblog","parent":"","child":""},"pageTargetingValues":{"id":"node_8484","type":"basic_page","search":""}}},"meredithGtm":{"variables":{"Page Name":"Dinner Spinner Tv Show","Content Type":"basic_page","Content ID":"basic_page:8484","Content Creation Date":"04\/11\/2018","Channel":"Dinner Spinner Tv Show"},"event":"pageview"},"user":{"uid":0,"permissionsHash":"af8f9ebc72924439ea270f4cf96e39bf48f25bba1aece53df7dec4064345a051"}}</script>
+<script src="/s3fs-js/js/js_trnZtgVL0yyf9VBsW5hkMa_fUVivVLp2nbxOoyA_BmU.js"></script>
+
+<!--[if lte IE 8]>
+<script src="/s3fs-js/js/js_5nllavJCRoAQPuHBn7iZjMZosGtZPxfTsjw8dXdmOIQ.js"></script>
+<![endif]-->
+<script src="/s3fs-js/js/js_Q2444-CgQaTvl3HXXKzfh4o7dX8uqBSkXgP0Z5o6fdg.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"55db0cb698","applicationID":"90588990","transactionName":"YwABYUUDXUIABRZbCVpKIlZDC1xfThYDVQNrBgJWXwc=","queueTime":0,"applicationTime":15,"atts":"T0cCFw0ZTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

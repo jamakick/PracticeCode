@@ -1,0 +1,170 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Browser Upgrade Prompt */
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+/*
+    STRUCTURE
+*/
+
+.container {
+	width: 700px;
+	height: 1000px;
+	margin: 80px 0 0 600px;
+	padding: 3.0em 2.0em 2.0em;
+	/*background: rgba(0,0,0,0.6);*/
+	position: relative;
+}
+
+
+/*
+	BACKGROUNDS
+*/
+
+body {
+	/*Graveyard Background - https://wallpapercave.com/w/Fb3qPCI*/
+	background: #000000 url('../images/graveyard.png') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+
+/*
+    TYPOGRAPHY
+*/
+
+q, p {
+	color: azure;
+	font-family: 'Bilbo Swash Caps', cursive, sans-serif;
+	font-size: 30px;
+	position: relative;
+
+}
+
+.quote {
+	font-size: 60px;
+}
+
+.capital {
+	color: white;
+	font-weight: 600;
+}
+
+.accent {
+	font-family: 'Fondamento', cursive, sans-serif;
+	font-size: 40px;
+}
+
+.credit {
+	position: absolute;
+	top: 850px;
+	left: 150px;
+	font-size: 40px;
+	letter-spacing: 2px;
+}
+
+q::before {
+content: "\201C";
+position: absolute;  /* one positioning method */
+top: 0;
+left: 0;
+}
+
+/*
+    IMAGES
+*/
+img {
+	width: 100%;
+    display: block;
+}
+
+/* clearfix - in case you decide to float elements */
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.skull {
+	width: 50%;
+	position: absolute;
+	left: -400px;
+	top: 200px;
+	opacity: 0.75;
+}
+
+/*
+    LINKS
+*/
+
+
+/*
+    TABLES
+*/
+
+
+/*
+    HOME
+*/
+
+
+/*
+    ANOTHER PAGE
+*/
+
+/* MEDIA QUERIES */
+/* X-Small devices (portait phones, less than 576px) */
+/* All styles up to this point in the stylesheet are for X-Small */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    /* body { background-color: orange; } */
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* body { background-color: green; } */
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* body { background-color: blue; } */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* body { background-color: purple; } */
+}

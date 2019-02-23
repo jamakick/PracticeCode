@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:dc="http://purl.org/dc/terms/" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:product="http://ogp.me/ns/product#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#">
+  <head>
+    <script>
+    window.mdp = window.mdp || {};
+    window.mdp.gdpr = window.mdp.gdpr || {};
+    window.mdp.gdpr.siteLogoHtml = '<img src="https://secureimages.allrecipes.com/ar-images/ARlogo.svg" />';
+    window.mdp.gdpr.cookieDomain = '.allrecipes.com';
+    </script>
+    <script src="https://geoscripts.meredith.services/public/javascripts/mdp.javascript.gdpr.min.1.0.0.js"></script>
+    <script>
+    (function () {
+      function getCookie(name) {
+        var dc = document.cookie;
+        var prefix = name + "=";
+        var begin = dc.indexOf("; " + prefix);
+        if (begin === -1) {
+          begin = dc.indexOf(prefix);
+          if (begin !== 0) return null;
+        }
+        else {
+          begin += 2;
+          var end = document.cookie.indexOf(";", begin);
+          if (end === -1) {
+            end = dc.length;
+          }
+        }
+        return decodeURI(dc.substring(begin + prefix.length, end));
+      }      
+      window.mdp = window.mdp || {};
+      window.mdp.gdpr = window.mdp.gdpr || {};
+      var uid = getCookie('euConsentId') || getCookie('globalTI_SID') || '';
+      var dsarFormLink = 'https://app-de.onetrust.com/app/#/webform/0c410d51-8e85-4308-9bb9-37c24a461ccb?uid=' + uid;
+      window.mdp.gdpr.dsarFormLink = dsarFormLink;
+    })();
+    </script>
+    <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="title" content="Trusted Brand Pages | Allrecipes" />
+<meta property="og:site_name" content="Allrecipes" />
+<meta name="twitter:card" content="summary" />
+<meta property="fb:pages" content="71158748377" />
+<link rel="canonical" href="http://dish.allrecipes.com/trusted-brand-pages/" />
+<meta name="twitter:title" content="Trusted Brand Pages" />
+<meta property="fb:app_id" content="66102450266" />
+<meta name="description" content="Trusted Brands" />
+<meta name="twitter:site" content="@Allrecipes" />
+<meta property="og:url" content="http://dish.allrecipes.com/trusted-brand-pages/" />
+<meta property="og:title" content="Trusted Brand Pages" />
+<meta name="twitter:url" content="http://dish.allrecipes.com/trusted-brand-pages/" />
+<meta property="og:updated_time" content="Tue, 06/26/2018 - 13:07" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/themes/dish/images/favicon-96x96.png" type="image/png" />
+<link rel="revision" href="/trusted-brand-pages/" />
+<!-- Krux Controltag -->
+<script class="kxct" data-id="TK" data-version="async:1.7" type="text/javascript">
+  window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+  (function(){
+  var k=document.createElement('script');k.type='text/javascript';k.async=true;
+  var m,src=(m=location.href.match(/\bkxsrc=([^&]+)/))&&decodeURIComponent(m[1]);
+  k.src = /^https?:\/\/([^\/]+\.)?krxd\.net(:\d{1,5})?\//i.test(src) ? src : src === "disable" ? "" :
+  (location.protocol==="https:"?"https:":"http:")+"//cdn.krxd.net/controltag?confid=TK";
+  var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+  })();
+</script>
+<!-- End Krux Controltag -->
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "sameAs": [],
+    "name": "Allrecipes",
+    "url": "http://dish.allrecipes.com",
+    "logo": {
+        "@context": "http://schema.org",
+        "@type": "ImageObject",
+        "url": "http://dish.allrecipes.com/themes/dish/images/logo-dish.png",
+        "height": 60,
+        "width": 121
+    }
+}</script>
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "http://dish.allrecipes.com"
+}</script>
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@id": "http://dish.allrecipes.com/",
+                "name": "Home"
+            }
+        }
+    ]
+}</script>
+
+    <title>Trusted Brand Pages | Allrecipes</title>
+    <link rel="stylesheet" href="/s3fs-css/css/css_o3VQ_t8LtMAYFNMtckpk8z4muXYiCBBVK2Czw0hLaqU.css?pcbtcu" media="all" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C400%2C300&amp;ver=1" media="all" />
+<link rel="stylesheet" href="/s3fs-css/css/css_Hzisw7x54FzUpdDShh2mX5yfU8OaOiHabR0_POyUfQk.css?pcbtcu" media="all" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" media="all" />
+<link rel="stylesheet" href="/s3fs-css/css/css_TkDyfQMjsoVKWcSBXTVPwF1icCrb5bxHr4NLF_rCYnw.css?pcbtcu" media="all" />
+
+    
+<!--[if lte IE 8]>
+<script src="/s3fs-js/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="https://assets.adobedtm.com/1c2ad567a53f27e563c4dc2c278a904b84dc5fde/satelliteLib-9f46f93c6b7aa623feaba0956d41ba2358d7e3a4.js" async id="meredith_atm_external_script"></script>
+<script src="https://karma.mdpcdn.com/service/js-min/karma.header.js" async></script>
+
+  </head>
+  <body class="et_divi_builder">
+        <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+      <!-- Google Tag Manager -->
+  <script>dataLayer = [{}];</script>
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N3NQL5"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N3NQL5');</script>
+  <!-- End Google Tag Manager -->
+
+    <div id="block-karma-slot">
+  
+    
+  <div class="karma-slot karma-slot--header">
+  <div  id="div-gpt-leaderboard-flex-1" data-tier="1"></div>
+</div>
+
+</div>
+
+<header class="header new-nav">
+  <section>
+    <div class="full-header clearfix">
+      <nav class="ar-nav">
+        <ul>
+          <li class="ar-logo-tab">
+            <a href="https://www.allrecipes.com/" class="ar-logo">
+              <img alt="Allrecipes" src="/themes/dish/images/ARlogo.svg" width="96" height="36" scale="0">
+            </a>
+          </li>
+          <li class="menutoggle browse-recipes">
+            <a href="#browse-recipesdrop" class="showdrop">
+              <span>
+                BROWSE
+              </span>
+              <span class="icon apicon-chevron-down">
+              </span>
+            </a>
+            <div id="browse-recipesdrop" class="nav-tab menudrop">
+              <div class="underline_hero_link nav-tab__options clearfix">
+                <div class="clearfix">
+                  <a title="Appetizer Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/76/appetizers-and-snacks/">
+                    <img class="hero-link__item__image" alt="Appetizer Recipes" src="https://images.media-allrecipes.com/images/60583.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Appetizer
+                    </span>
+                  </a>
+                  <a title="Breakfast &amp; Brunch Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/78/breakfast-and-brunch/">
+                    <img class="hero-link__item__image" alt="Breakfast &amp; Brunch Recipes" src="https://images.media-allrecipes.com/images/60586.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Breakfast &amp; Brunch
+                    </span>
+                  </a>
+                  <a title="Chicken Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/201/meat-and-poultry/chicken/">
+                    <img class="hero-link__item__image" alt="Chicken Recipes" src="https://images.media-allrecipes.com/images/60628.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Chicken
+                    </span>
+                  </a>
+                  <a title="Dessert Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/79/desserts/">
+                    <img class="hero-link__item__image" alt="Dessert Recipes" src="https://images.media-allrecipes.com/images/60587.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Dessert
+                    </span>
+                  </a>
+                  <a title="Healthy Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/84/healthy-recipes/">
+                    <img class="hero-link__item__image" alt="Healthy Recipes" src="https://images.media-allrecipes.com/images/60592.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Healthy
+                    </span>
+                  </a>
+                  <a title="Holidays and Events Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/85/holidays-and-events/">
+                    <img class="hero-link__item__image" alt="Holidays and Events Recipes" src="https://images.media-allrecipes.com/images/60593.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Holidays and Events
+                    </span>
+                  </a>
+                  <a title="Main Dish Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/80/main-dish/">
+                    <img class="hero-link__item__image" alt="Main Dish Recipes" src="https://images.media-allrecipes.com/images/60596.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Main Dish
+                    </span>
+                  </a>
+                  <a title="Quick &amp; Easy Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/1947/everyday-cooking/quick-and-easy/">
+                    <img class="hero-link__item__image" alt="Quick &amp; Easy Recipes" src="https://images.media-allrecipes.com/images/60629.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Quick &amp; Easy
+                    </span>
+                  </a>
+                  <a title="Salad Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/96/salad/">
+                    <img class="hero-link__item__image" alt="Salad Recipes" src="https://images.media-allrecipes.com/images/60599.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Salad
+                    </span>
+                  </a>
+                  <a title="Slow Cooker Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/253/everyday-cooking/slow-cooker/">
+                    <img class="hero-link__item__image" alt="Slow Cooker Recipes" src="https://images.media-allrecipes.com/images/60630.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Slow Cooker
+                    </span>
+                  </a>
+                  <a title="Trusted Brands Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/82/trusted-brands-recipes-and-tips/">
+                    <img class="hero-link__item__image" alt="Trusted Brands Recipes" src="https://images.media-allrecipes.com/images/60603.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Trusted Brands
+                    </span>
+                  </a>
+                  <a title="Vegetarian Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/87/everyday-cooking/vegetarian/">
+                    <img class="hero-link__item__image" alt="Vegetarian Recipes" src="https://images.media-allrecipes.com/images/60631.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Vegetarian
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <a href="https://www.allrecipes.com/recipes?grouping=all" class="recipe-hero-link__item__text">
+                All Categories
+              </a>
+            </div>
+          </li>
+          <li class="menutoggle hublink-togg pull-right">
+            <a href="#hublinks" class="showdrop">
+              <div>
+                <span class="browse-recipes-iconbar">
+                </span>
+                <span class="browse-recipes-iconbar">
+                </span>
+                <span class="browse-recipes-iconbar">
+                </span>
+              </div>
+            </a>
+            <div id="hublinks" class="nav-tab menudrop">
+              <ul class="nav-tab__options">
+                <li class="underline_link">
+                  <a id="navmenu_recipes" href="https://www.allrecipes.com/recipes/">
+                    <span class="icon apicon-spoons">
+                    </span>
+                    <span>
+                      Browse Recipes
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a id="navmenu_magazine" href="http://armagazine.com/mobile-site">
+                    <span class="icon apicon-magazine">
+                    </span>
+                    <span>
+                      Allrecipes Magazine
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a id="navmenu_shop" href="http://shop.allrecipes.com/shop">
+                    <span class="icon apicon-bag">
+                    </span>
+                    <span>
+                      Shop
+                    </span>
+                  </a>
+                </li>
+                <li class="underline_link">
+                  <a id="navmenu_cooking_school" href="http://cookingschool.allrecipes.com/">
+                    <span class="icon apicon-cap">
+                    </span>
+                    <span>
+                      Cooking School
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a id="navmenu_social_gallery" href="https://www.allrecipes.com/cook/my/account-settings/">
+                    <span class="icon apicon-tower">
+                    </span>
+                    <span>
+                      Newsletters
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a id="navmenu_dish" href="http://dish.allrecipes.com/ask-the-community/">
+                    <span class="icon apicon-q">
+                    </span>
+                    <span>
+                      Ask the Community
+                    </span>
+                  </a>
+                </li>
+                <li class="underline_link">
+                  <a id="navmenu_help" href="http://dish.allrecipes.com/customer-service/">
+                    <span class="icon apicon-help">
+                    </span>
+                    <span>
+                      Help
+                    </span>
+                  </a>
+                </li>
+                <li class="small-links">
+                  <a href="http://dish.allrecipes.com/allrecipes-jobs-2/">
+                    Jobs
+                  </a>
+                  <a href="http://press.allrecipes.com/">
+                    Newsroom
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="search-tab">
+            <div class="nav-search">
+              <form class="search-form recipe-search-form" role="search" method="get" action="https://www.allrecipes.com/search/results/">
+                <label>
+                  <input class="search-text" name="wt" type="text" placeholder="Find a recipe">
+                </label>
+                <span id="ingredientSearch" class="ingredient-searchtxt">
+                  Ingredient Search
+                </span>
+                <button class="search-button btn-basic--small apicon-search" type="submit">
+                </button>
+              </form>
+            </div>
+          </li>
+          <li class="nav-profile menutoggle">
+            <a id="navmenu_signin_signup" class="btn-basic--large btn-gold signin__btn" href="https://www.allrecipes.com/account/signin/?loginreferrerurl=http://dish.allrecipes.com/trusted-brand-pages/&loginreferrertype=dish">
+              Sign In 
+              <em>
+                or
+              </em>
+              Sign Up
+            </a>
+          </li>
+          <li class="nav-favorites">
+            <a href="https://www.allrecipes.com/cook/my/favorites/" target="_self">
+              <span class="apicon-heart">
+              </span>
+            </a>
+          </li>
+          <li class="search-tab small-screen hide">
+            <a href="#">
+              <span>
+                <img alt="search" height="23" src="https://images.media-allrecipes.com/ar-images/icons/NavSearchIcon.svg" width="23" scale="0">
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav-tab nav-tab__search">
+      <form role="search" method="get" class="search-form recipe-search-form-advanced" action="https://www.allrecipes.com/search/results/">
+        <span class="icon--close" title="Close Ingredient Search">
+        </span>
+        <div class="input-wrap--home">
+          <label>
+            <img class="search-icon" alt="Search" src="https://images.media-allrecipes.com/ar-images/icons/NavSearchIcon.svg" scale="0">
+            <input class="search-text" name="wt" type="text" placeholder="Keywords">
+          </label>
+        </div>
+        <div class="input-wrap--home ingredients">
+          <div class="ingredient-add-exclude">
+            <input id="includeIngText" type="text" name="ingIncl" placeholder="Include ingredients" value="" style="display: none;">
+          </div>
+          <a class="btn-basic--small include" href="#">
+            <span>
+              +
+            </span>
+          </a>
+        </div>
+        <div class="input-wrap--home ingredients">
+          <div class="ingredient-add-exclude">
+            <input id="excludeIngText" type="text" name="ingExcl" placeholder="Exclude ingredients" value="" style="display: none;">
+          </div>
+          <a class="btn-basic--small exclude" href="#">
+            <span>
+              —
+            </span>
+          </a>
+        </div>
+        <div class="nav-tab__buttons">
+          <button class="btn-basic--small btn-search">
+            Go
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+</header>
+
+<div class="content-container">
+    <a id="main-content" tabindex="-1"></a>
+  
+
+  
+        
+  <div class="content content--centered">
+    <div class="primary-content">
+        <div>
+    <div id="block-dish-page-title">
+  
+    
+  <header class="entry-header">
+  
+    
+</header>
+
+</div>
+<div id="block-karma-slot-2">
+  
+    
+  <div class="karma-slot karma-slot--lazy" id="karma-lazy-sponsorLogo" data-tier="1">
+  <div ></div>
+</div>
+
+</div>
+<article id="" class="post- post type-post status-publish format-standard has-post-thumbnail hentry category- " role="article">
+    <div class="entry-content">
+    
+            <div><div class="content divi-c">
+<div class="et_builder_outer_content" id="et_builder_outer_content">
+<div class="et_builder_inner_content et_pb_gutters3">
+<div class="et_pb_section  et_pb_section_0 et_pb_with_background et_section_regular">
+<div class="et_pb_row et_pb_row_0">
+<div class="et_pb_column et_pb_column_4_4  et_pb_column_0">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_center  et_pb_text_0">
+<h1><span style="font-size: 36pt;"><strong>Trusted Brands</strong></span></h1>
+</div>
+
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_1">
+<h4 style="line-height: 130%;">Brands have profiles on Allrecipes just like your favorite cooks. Visit their pages and follow them to see all of their newest recipes and most interesting collections.</h4>
+</div>
+
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_center  et_pb_text_2">
+<p style="text-align: center;"><strong><span style="color: #ff6600; font-size: 14pt;"><a href="#a">A</a> <a href="#b">B</a> <a href="#c">C</a> <a href="#d">D</a> <a href="#e">E </a><a href="#f">F </a><a href="#g">G</a> <a href="#h">H</a> <a href="#i">I</a> <a href="#j">J</a> <a href="#k">K</a> <a href="#l">L</a> <a href="#m">M</a> <a href="#n">N</a> <a href="#o">O</a> <a href="#p">P</a> <a href="#q">Q</a> <a href="#r">R</a> <a href="#s">S</a> <a href="#t">T</a> <a href="#u">U</a> <a href="#v">V</a> <a href="#w">W</a> <a href="#x">X </a><a href="#y">Y</a> <a href="#z">Z</a></span></strong></p>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_1 et_pb_row_4col">
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_1">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_3" id="a">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>A</strong></span></p>
+
+<p><a href="https://www.allrecipes.com/cook/7up/"><span style="font-size: 14pt;">7UP</span></a><br /><a href="https://www.allrecipes.com/cook/alfresco"><span style="font-size: 14pt;">al fresco</span></a><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/3672150/">Allrecipes</a><br /><a href="https://www.allrecipes.com/cook/16007298/">Allrecipes Magazine</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/almondbreeze/">Almond Breeze</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/argokaroandfleischmanns/">ARGO®, KARO®, and FLEISCHMANN’S®</a><br /><a href="https://www.allrecipes.com/cook/auntsuesrawhoney/">Aunt Sue’s Raw Honey</a></span></p>
+
+<p> </p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_2">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_4" id="b">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>B</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/ballparkbuns/">Ball Park® Buns</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/20307779/">Barilla</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/beefitswhatsfordinner/">Beef</a><a href="https://www.allrecipes.com/cook/beefitswhatsfordinner/">.</a><a href="https://www.allrecipes.com/cook/beefitswhatsfordinner/"> It’s What’s For Dinner</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/betterthanbouillon/">Better Than Bouillon</a><br /><a href="https://www.allrecipes.com/cook/belgioioso/">BelGioioso</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/boarshead">Boar's Head</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/20470231">Borden Cheese</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/16169550/">Brawny</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/20505191/">Bruce’s Yams</a><br /><a href="https://www.allrecipes.com/cook/bumblebee">Bumble Bee</a><br /><a href="http://www.allrecipes.com/cook/bushbeans">Bush’s Beans</a></span></p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_3">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_5" id="c">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>C</strong></span><br /><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/californiawalnuts/">California Walnuts</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/17095853/">Cans Get You Cooking</a><br /><a href="https://www.allrecipes.com/cook/carnation/recipes/">Carnation Breakfast Essentials</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/16491331/">Chef’d</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/clamato/">Clamato</a><br /><a href="https://www.allrecipes.com/cook/collegeinnbrothsandstocks/">College Inn® Broths and Stocks</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/coolwhip">Cool Whip</a></span><br />
+ </p>
+
+<p> </p>
+
+<p> </p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_4">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_6" id="d">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>D</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/delmonte/">Del Monte</a><br /><a href="https://www.allrecipes.com/cook/dietzandwatson/">Dietz &amp; Watson</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/20286271/">Dinner Spinner TV</a><br /><a href="https://www.allrecipes.com/cook/dixie/">Dixie</a></span><br />
+ </p>
+
+<p> </p>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_2 et_pb_row_4col">
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_5">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_7" id="e">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>E</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/eaglebrand/">Eagle Brand</a><br /><a href="https://www.allrecipes.com/cook/16216430/">Eating Well</a><br /><a href="https://www.allrecipes.com/cook/egglandsbest/">Eggland’s Best</a></span></p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_6">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_8" id="f">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>F</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/farmlandfoods/">Farmland Foods</a><br /><a href="https://www.allrecipes.com/cook/finlandiacheese/">Finlandia Cheese</a></span><br /><a href="https://www.allrecipes.com/cook/foodcity/">Food City</a><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/foxbroadcastingcompany">FOX Broadcasting Company</a></span></p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_7">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_9" id="g">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>G</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/galbanicheese">Galbani Cheese</a><br /><a href="https://www.allrecipes.com/cook/gevalia">Gevalia</a><br /><a href="https://www.allrecipes.com/cook/ghirardelli/">Ghirardelli</a><br /><a href="https://www.allrecipes.com/cook/gotmilk/">got milk?</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/19999585/">Goya</a><br /><a href="https://www.allrecipes.com/cook/greengiant/">Green Giant</a></span></p>
+
+<p> </p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_8">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_10" id="h">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>H</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/heinz/">Heinz</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/hellmanns">Hellmann’s</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/hersheyskitchens/followers/">HERSHEY’S Kitchens</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/hiddenvalleyranch/">Hidden Valley Ranch</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/17284818/">Hillshire Farm®</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/horizonorganic/">Horizon Organic</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/hormelchili/">HORMEL CHILI®</a><br /><a href="https://www.allrecipes.com/cook/hormelnaturalchoice/recipes/">HORMEL NATURAL CHOICE®</a><br /><a href="https://www.allrecipes.com/cook/marykitchenhash">HORMEL MARY KITCHEN®</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/spam/">HORMEL SPAM®</a><br /><a href="https://www.allrecipes.com/cook/hunts/">Hunt’s</a></span></p>
+
+<p> </p>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_3 et_pb_row_4col">
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_9">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_11" id="i">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>I</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/idahoan/">Idahoan® Foods</a></span></p>
+
+<p> </p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_10">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_12" id="j">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>J</strong></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/jennieo/">JennieO</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/jimmydean/">JimmyDean</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/17596417/">Johnsonville</a></span><br /><a href="https://www.allrecipes.com/cook/jonesdairyfarm"><span style="font-size: 14pt;">Jones Dairy Farm</span></a></p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_11">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_13" id="k">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>K</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/ricekrispies/">Kellogg’s® Rice Krispies®</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/kingarthurflour/">King Arthur Flour</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/kitchenbasics">Kitchen Basics</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/17029201/">Knorr</a></span><br />
+ </p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_12">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_14" id="l">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>L</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/lactaid/">Lactaid</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/landolakes/">Land O Lakes</a></span><br /><a href="https://www.allrecipes.com/cook/libbys/"><span style="font-size: 14pt;">Libby’s</span></a><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/luckyleaf/">Lucky Leaf</a></span></p>
+
+<p> </p>
+
+<p> </p>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_4 et_pb_row_4col">
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_13">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_15" id="m">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>M</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/17721105/">Marc’s</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/mccormickspice/">McCormick</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/minuterice/">Minute Rice</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/miraclewhip/">Miracle Whip</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/motts/">Mott’s</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/musselmansapplebutter/">Musselmans Apple Butter</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/16199026/">MyWedding</a></span></p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_14">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_16" id="n">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>N</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/17389353/">NASCAR</a><br /><a href="https://www.allrecipes.com/cook/naturesown/">Nature's Own</a><br /><a href="https://www.allrecipes.com/cook/nilla">Nilla</a><br /><a href="https://www.allrecipes.com/cook/nutella/">Nutella® hazelnut spread</a></span></p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_15">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_17" id="o">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>O</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/oceanspray/">Ocean Spray</a><br /><a href="https://www.allrecipes.com/cook/oreida/">Ore-Ida</a></span></p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_16">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_18" id="p">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>P</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/pamcookingspray/">Pam Cooking Spray</a><br /><a href="https://www.allrecipes.com/cook/panasonic">Panasonic</a></span><br /><a href="https://www.allrecipes.com/cook/potatogoodness/"><span style="font-size: 14pt;">Potato Goodness</span></a><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/publixaprons/">Publix Aprons</a><br /><a href="https://www.allrecipes.com/cook/pyure/">Pyure</a></span></p>
+
+<p> </p>
+
+<p> </p>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_5 et_pb_row_4col">
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_17">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_19" id="z">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>Q</strong></span></p>
+
+<p><a href="https://www.allrecipes.com/cook/quakeroats/"><span style="font-size: 14pt;">Quaker® Oats</span></a></p>
+
+<p> </p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_18">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_20" id="r">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>R</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/rachaelrayeveryday/">Rachael Ray Every Day</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/ragu/">Ragu</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/realbutter/">Real Butter</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/realemonrealime/">ReaLemon</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/18213991/">Reddi-wip</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/16366934/">Reynolds</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/riceselect/">Rice Select</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/ritzcrackers/">Ritz</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/16786061/">RO*TEL</a></span></p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_19">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_21" id="s">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>S</strong></span></p>
+
+<p>
+<span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/saputo/">Saputo</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/schar/">Schär</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/shamrockfarms/">Shamrock Farms</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/simplypotatoes/">Simply Potatoes</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/sodelicious/">So Delicious® Dairy Free</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/16636782">Smithfield</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/smuckers/">SMUCKERS</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/17720702/">Snack Factory Pretzel Crisps</a><br /><a href="https://www.allrecipes.com/cook/splenda/">SPLENDA® Sweeteners</a><br /><a href="https://www.allrecipes.com/cook/stellacheese/">Stella Cheese</a><br /><a href="https://www.allrecipes.com/cook/steviaintheraw/">Stevia In The Raw</a><br /><a href="https://www.allrecipes.com/cook/sunsweet/recipes/">Sunsweet</a></span><br /><a href="https://www.allrecipes.com/cook/sunbutter/recipes/"><span style="font-size: 14pt;">SunButter</span></a><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/11826759/">Swanson</a></span></p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_20">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_22" id="t">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>T</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/targettestkitchen/">Target</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/thesorghumcheckoff/">The Sorghum Checkoff</a><br /><a href="https://www.allrecipes.com/recipes/22515/trusted-brands-recipes-and-tips/thrive-market/">Thrive Market®</a><br /><a href="https://www.allrecipes.com/cook/titoshandmadevodka">Tito’s Handmade Vodka</a></span></p>
+
+<p> </p>
+
+<p> </p>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_6 et_pb_row_4col">
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_21">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_23" id="u">
+<p><span style="color: #ff6600;"><span style="font-size: 24px; line-height: 36px;"><b>U</b></span></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/unclebens/">Uncle Ben’s</a></span></p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_22">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_24" id="v">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>V</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/velveetacheese/">VELVEETA Cheese</a></span></p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_23">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_25" id="w">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>W</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/walmart">Walmart</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/18215548/">weARcommunity</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/whitelily/">White Lily</a><br /><a href="https://www.allrecipes.com/cook/wholefoods/">Whole Foods</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/wholesomesweet/">Whole</a><a href="https://www.allrecipes.com/cook/wholesomesweet/">some</a></span><br /><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/wishbone/">Wish-Bone</a></span></p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_24">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_26" id="y">
+<p><span style="color: #ff6600;"><span style="font-size: 24px; line-height: 36px;"><b>Y</b></span></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/18181739/">Yoplait</a></span></p>
+</div>
+</div>
+</div>
+
+<div class="et_pb_row et_pb_row_7 et_pb_row_4col">
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_25">
+<div class="et_pb_text et_pb_module et_pb_bg_layout_light et_pb_text_align_left  et_pb_text_27" id="z">
+<p><span style="font-size: 18pt; color: #ff6600;"><strong>Z</strong></span></p>
+
+<p><span style="font-size: 14pt;"><a href="https://www.allrecipes.com/cook/zatarains/">Zatarain’s</a></span></p>
+</div>
+</div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_26 et_pb_column_empty"> </div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_27 et_pb_column_empty"> </div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_28 et_pb_column_empty"> </div>
+</div>
+
+<div class="et_pb_row et_pb_row_8 et_pb_row_4col">
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_29 et_pb_column_empty"> </div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_30 et_pb_column_empty"> </div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_31 et_pb_column_empty"> </div>
+
+<div class="et_pb_column et_pb_column_1_4  et_pb_column_32 et_pb_column_empty"> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+      
+  </div>
+</article>
+
+  </div>
+
+      
+    </div>
+          </div>
+</div><footer id="pageFooter" class="page-footer-container">
+    <div>
+    <div id="block-karma-slot-7">
+  
+    
+  <div class="karma-slot karma-slot--footer-fixed karma-slot--mobile">
+  <div  id="div-gpt-mob-adhesive-banner-fixed" data-tier="1"></div>
+</div>
+
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    <div class="footer-columns-container">
+      <div class="footer-column">
+          <div>
+    <div id="block-footersociallinks">
+  
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul class="social-sharing__icons">
+    <li>
+      <a id="footer_facebook" href="https://www.facebook.com/allrecipes" title="Facebook" target="_blank" class="ui-link">
+        <img title="Facebook" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Facebook" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_pinterest" href="http://pinterest.com/allrecipes/" title="Pinterest" target="_blank" class="ui-link">
+        <img title="Pinterest" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Pinterest" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_twitter" href="https://twitter.com/Allrecipes" title="Twitter" target="_blank" class="ui-link">
+        <img id="ctl00_Image3" title="Twitter" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Twitter" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_instagram" href="http://instagram.com/allrecipes" title="Instagram" target="_blank" class="ui-link">
+        <img title="Instagram" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Instagram" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_tumblr" href="http://allrecipes.tumblr.com/" title="Tumblr" target="_blank" class="ui-link">
+        <img title="Tumblr" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Tumblr" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_googleplus" href="https://plus.google.com/+allrecipes/" title="Google Plus" target="_blank" class="ui-link">
+        <img title="Google Plus" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Google Plus" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_stumbleupon" href="http://www.stumbleupon.com/stumbler/Allrecipes" title="StumbleUpon" target="_blank" class="ui-link">
+        <img title="StumbleUpon" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="StumbleUpon" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_youtube" href="https://www.youtube.com/user/allrecipes" title="YouTube" target="_blank" class="ui-link">
+        <img title="YouTube" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="YouTube" scale="0">
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+<div id="block-moreallrecipeslinks">
+  
+      <h2 class="heading-2">More Allrecipes</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul>
+    <li>
+      <a id="footer_magazine" href="http://armagazine.com/mobile-footer" target="_self">
+        Allrecipes Magazine
+        <span style="color:#ff7e1a;">
+          <span>
+            –
+          </span>
+          Subscribe
+        </span>
+      </a>
+    </li>
+    <li>
+      <a id="footer_apps" href="http://dish.allrecipes.com/mobile-apps" target="_self">
+        Allrecipes Apps
+      </a>
+    </li>
+    <li>
+      <a id="footer_foodwishes" href="http://youtube.com/foodwishes" target="_self">
+        Food Wishes Videos
+      </a>
+    </li>
+    <li>
+      <a id="footer_freshbites" href="http://freshbitesblog.com/" target="_self">
+        Fresh Bites Blog
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+
+  </div>
+
+      </div>
+      <div class="footer-column">
+          <div>
+    <div id="block-aboutuslinks">
+  
+      <h2 class="heading-2">About Us</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul>
+    <li>
+      <a id="footer_newsroom" href="http://press.allrecipes.com/" target="_self">
+        Newsroom
+      </a>
+    </li>
+    <li>
+      <a id="footer_jobs" href="http://dish.allrecipes.com/allrecipes-jobs/" target="_self">
+        Jobs at Allrecipes
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+<div id="block-supportlinks">
+  
+      <h2 class="heading-2">Support</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul>
+    <li>
+      <a id="footer_sitemap" href="http://dish.allrecipes.com/faq-sitemap/" target="_self">
+        Site Map
+      </a>
+    </li>
+    <li>
+      <a id="footer_contactus" href="http://dish.allrecipes.com/customer-service/contact-us-2/" target="_self">
+        Contact Us
+      </a>
+    </li>
+    <li>
+      <a id="footer_customersupport" href="http://dish.allrecipes.com/customer-service/" target="_self">
+        Customer Support
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+
+  </div>
+
+      </div>
+      <div class="footer-column">
+          <div>
+    <div id="block-advertisinglinks">
+  
+      <h2 class="heading-2">Advertising</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix footer_advertising">
+  <ul>
+    <li>
+      <a id="footer_advertisewithus" class="" href="http://www.meredith.com/national-media/digital" target="_self">
+        Advertise with Us
+      </a>
+    </li>
+    <li>
+      <a id="footer_womensnetwork" class="" href="http://www.meredith.com/marketing_solutions/interactive_media.html" target="_self">
+        Meredith Women's Network
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+<div id="block-globalcommunitylinks">
+  
+      <h2 class="heading-2">Global Community</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul>
+    <li>
+      <select id="country-selector">
+        <option value="" label="Select location">
+        Select location
+        </option>
+        <option value="http://allrecipes.com.ar/" label="Argentina">
+        Argentina
+        </option>
+        <option value="http://allrecipes.com.au/" label="Australia &amp; New Zealand">
+        Australia &amp; New Zealand
+        </option>
+        <option value="http://allrecipes.com.br/" label="Brazil">
+        Brazil
+        </option>
+        <option value="http://allrecipes.com/?country=CA" label="Canada">
+        Canada
+        </option>
+        <option value="http://allrecipes.cn/" label="China">
+        China
+        </option>
+        <option value="http://allrecipes.fr/" label="France">
+        France
+        </option>
+        <option value="http://de.allrecipes.com/" label="Germany">
+        Germany
+        </option>
+        <option value="http://allrecipes.co.in/" label="India">
+        India
+        </option>
+        <option value="http://allrecipes.it/" label="Italy">
+        Italy
+        </option>
+        <option value="http://allrecipes.kr/" label="Korea">
+        Korea
+        </option>
+        <option value="http://allrecipes.com.mx/" label="Mexico">
+        Mexico
+        </option>
+        <option value="http://allrecipes.nl/" label="Netherlands">
+        Netherlands
+        </option>
+        <option value="http://allrecipes.pl/" label="Poland">
+        Poland
+        </option>
+        <option value="http://qc.allrecipes.ca/" label="Quebec">
+        Quebec
+        </option>
+        <option value="http://allrecipes.ru/" label="Russia">
+        Russia
+        </option>
+        <option value="http://allrecipes.asia/" label="SE Asia">
+        SE Asia
+        </option>
+        <option value="http://allrecipes.co.uk/" label="United Kingdom &amp; Ireland">
+        United Kingdom &amp; Ireland
+        </option>
+        <option value="https://www.allrecipes.com/" label="United States">
+        United States
+        </option>
+      </select>
+    </li>
+  </ul>
+</article>
+
+</div>
+<div id="block-legallinks">
+  
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <h2>
+    © 2017 Allrecipes.com 
+    <br>
+    All Rights Reserved
+  </h2>
+  <ul>
+    <li>
+      <a id="footer_privacypolicy" href="http://www.meredith.com/legal/privacy" target="_blank">
+        Privacy Policy Your California Rights
+      </a>
+    </li>
+    <li>
+      <a id="footer_eu_privacypolicy" href="http://www.meredith.com/legal/eu-privacy" target="_blank">
+        EU Privacy Policy
+      </a>
+    </li>
+    <li>
+      <script>if (window.mdp.gdpr.dsarFormLink) document.write('<a href="' + window.mdp.gdpr.dsarFormLink + '" target="_blank">EU Data Subject Requests</a>');</script>
+    </li>
+    <li>
+      <a id="footer_termconditions" href="http://www.meredith.com/legal/terms">
+        <span style="color:red;font-weight:bold">
+          New!&nbsp;
+        </span>
+        Terms of Service
+      </a>
+    </li>
+    <li>
+      <a id="footer_datapolicy" href="http://www.meredith.com/datapolicy.html" target="_blank">
+        Data Policy
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="http://info.evidon.com/pub_info/282?v=1" id="_bapw-link">
+        <span style="vertical-align:middle !important;padding-right:5px" id="footer_adchoices">
+          AdChoices
+        </span>
+        <img height="11" style="border:0 !important;display:inline !important;vertical-align:middle !important;padding-right:5px !important;" id="_bapw-icon" src="http://cdn.betrad.com/pub/icon1.png" scale="0">
+      </a>
+    </li>
+  </ul>
+  <a id="back-to-top-button" href="#">
+    Top
+  </a>
+</article>
+
+</div>
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script type="javascript/template" id="usermenuSubmenuTemplate">
+  <ul class="nav-tab__options">
+    <li>
+      <a href="https://allrecipes.com/" id="navmenu_myFeed" target="_self">
+        <span class="icon apicon-home2"></span>
+        <span class="itemText">
+          Feed
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/cook/my/" id="navmenu_myprofile" target="_self">
+        <span class="icon apicon-profile"></span>
+        <span class="itemText">
+          Profile
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/cook/my/favorites/" rel="nofollow" id="navmenu_recipebox" target="_self">
+        <span class="icon apicon-heart"></span>
+        <span class="itemText">
+          Favorites
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/cook/my/findfriends/" rel="nofollow" id="navmenu_findfriends" target="_self">
+        <span class="icon apicon-users"></span>
+        <span class="itemText">
+          Friends
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/my/shopping-lists/" rel="nofollow" id="navmenu_shoppinglist" target="_self">
+        <span class="icon apicon-bag"></span>
+        <span class="itemText">
+          Shopping List
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/cook/my/account-settings/" rel="nofollow" id="navmenu_settings" target="_self">
+        <span class="icon apicon-gear"></span>
+        <span class="itemText">
+          Settings
+        </span>
+      </a>
+    </li>
+  </ul>
+  <div class="signout">
+    <button onclick="location.href='https://allrecipes.com/account/signout'" class="btn-basic--large" id="offCanvasSignOutBtn">
+      Sign out
+    </button>
+  </div>
+</script>
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/8461","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","breakpoints":{"small":{"name":"small","media_query":"all and (min-width: 0em)","multipliers":["1x"]},"small-med":{"name":"small-med","media_query":"all and (min-width: 26em)","multipliers":["1x"]},"small-large":{"name":"small-large","media_query":"all and (min-width: 41em)","multipliers":["1x"]},"medium":{"name":"medium","media_query":"all and (min-width: 48em)","multipliers":["1x"]},"large":{"name":"large","media_query":"all and (min-width: 61.25em)","multipliers":["1x"]}},"meredithKarma":{"adService":{"mobileAds":false,"unitValues":{"channel":"dishblog","parent":"","child":""},"pageTargetingValues":{"id":"node_8461","type":"basic_page","search":""}}},"meredithGtm":{"variables":{"Page Name":"Trusted Brand Pages","Content Type":"basic_page","Content ID":"basic_page:8461","Content Creation Date":"04\/11\/2018","Channel":"Trusted Brand Pages"},"event":"pageview"},"user":{"uid":0,"permissionsHash":"af8f9ebc72924439ea270f4cf96e39bf48f25bba1aece53df7dec4064345a051"}}</script>
+<script src="/s3fs-js/js/js_trnZtgVL0yyf9VBsW5hkMa_fUVivVLp2nbxOoyA_BmU.js"></script>
+
+<!--[if lte IE 8]>
+<script src="/s3fs-js/js/js_5nllavJCRoAQPuHBn7iZjMZosGtZPxfTsjw8dXdmOIQ.js"></script>
+<![endif]-->
+<script src="/s3fs-js/js/js_Q2444-CgQaTvl3HXXKzfh4o7dX8uqBSkXgP0Z5o6fdg.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"55db0cb698","applicationID":"90588990","transactionName":"YwABYUUDXUIABRZbCVpKIlZDC1xfThYDVQNrBgJWXwc=","queueTime":0,"applicationTime":12,"atts":"T0cCFw0ZTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

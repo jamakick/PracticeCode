@@ -1,0 +1,441 @@
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* COLORS:
+brown - #7c2e29
+red- #d42a3a
+bright red - #ed344a
+teal - #3d957d
+light blue - #a3e5f0
+*/
+
+/* Photos from:
+https://unsplash.com/search/photos/coffee */
+
+/* General */
+body, html {
+  background-color: #e6cea7;
+  color: #7c2e29;
+  height: 100%;
+}
+
+.container {
+  max-width: 1050px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.0em 0.5em;
+}
+
+img {
+    width: 100%;
+}
+
+/* Utilities */
+
+/* browser upgrade prompt */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* hides an element, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* no break */
+.nobr {
+  white-space: nowrap;
+}
+
+/* Typography */
+/* https://fonts.google.com/
+Merriweather - light - headlines
+Montserrat - light, normal - body copy */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+}
+
+p, td, li, small, figcaption, address {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 0;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+h2 + p {
+    margin-top: 0.5em;
+}
+
+.tagline {
+    margin: 0.5em 0 2.0em;
+    font-size: 14px;
+}
+
+/* Links */
+a:link, a:visited {
+    color: #d42a3a;
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    color: #ed344a;
+}
+
+/* Buttons */
+.button {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+  height: 54px;
+  line-height: 54px;
+  text-decoration: none;
+  color: #fff !important;
+  background-color: #d42a3a;
+  text-align: center;
+  letter-spacing: .5px;
+  padding: 0 2rem;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  outline: 0;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.button:hover {
+  background-color: #ed344a;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+  outline: 0;
+}
+
+/* Utilities */
+.no-break {
+  white-space: nowrap;
+}
+
+/* Navigation */
+nav {
+  background: linear-gradient(to top right, rgba(218, 206, 190, 0.5), rgba(255, 255, 255, 0)), url('../images/vintage-concrete/vintage-concrete.png') center center;
+}
+
+.logo img {
+  width: 175px;
+}
+
+nav .container {
+    padding: 1.0em 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style-type: none;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: normal;
+  color: #d42a3a;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav ul li:first-child { padding-left: 0; }
+nav ul li:last-child { padding-right: 0; }
+
+/* Header */
+header {
+  background: url('../images/brown-county-coffee-header.jpg') no-repeat left center fixed;
+  background-size: cover;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+}
+
+.branding {
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  background: url('../images/wood_1/wood_1.png');
+  padding: 0.5em 0 1.5em;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.branding h1, .branding p {
+  text-shadow: 1px 1px 2px black;
+}
+
+/* Highlights */
+.highlights {
+    background-image: radial-gradient(circle at center, #a3e5f0 0%, #82b7c0 100%);
+}
+
+.highlights .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.highlights section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px 30px;
+  margin: 2.0em 15px 1.0em;
+  flex: 1 0 250px;
+  position: relative;
+}
+
+.highlights .icon {
+    position: absolute;
+    top: -25px;
+    left: 45%;
+    color: #3d957d;
+}
+
+/* Gallery */
+.gallery {
+  background: url('../images/wood_1/wood_1.png') center center;
+}
+
+.gallery h2, .gallery .subtitle {
+    color: #ffffff;
+}
+
+.gallery section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.gallery figure {
+  margin: 0 0.5em 1.0em;
+  padding: 0;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(255, 255, 255, 1));
+  flex: 1 0 250px;
+}
+
+.gallery img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.gallery img:hover {
+  opacity: 0.9;
+}
+
+figcaption {
+  margin: 0.5em;
+  text-align: left;
+  padding-left: 0.5em;
+  font-size: 14px;
+}
+
+/* Video */
+.video {
+    background-image: radial-gradient(circle at center, #3d957d 0%, #2a6857 100%);
+    color: #ffffff;
+}
+
+.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; }
+.embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+/* Form */
+.email-list {
+    background: url('../images/vintage-concrete/vintage-concrete.png') center center;
+}
+
+form { display: static; }
+
+form .input {
+    height: 50px;
+}
+
+form .button {
+    display: block;
+    margin: 1.0em auto 0;
+}
+
+.label {
+  margin-right: 0.5em;
+  line-height: 2.0em;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+input[type="text"] {
+    padding: 2px 2px 4px 4px;
+    border: 1px solid hsl(35,28%,70%);
+    border-radius: 2px;
+    box-shadow: inset 0 0 2px #fff;
+    background: hsl(35,28%,97%);
+    background: -webkit-linear-gradient(top, hsl(35,28%,90%), #fff);
+    background: -moz-linear-gradient(top, hsl(35,28%,90%), #fff);
+    display: inline;
+    width: 20em;
+    margin: 0 10px 0 0;
+}
+
+/* Footer */
+footer {
+    background: url('../images/brown-county-coffee-header.jpg') no-repeat left center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+/* Center blocks in XS */
+footer section {
+  margin: 0 auto;
+}
+
+footer address {
+  font-style: normal;
+  line-height: 1.3em;
+}
+
+footer i {
+  margin-right: 15px;
+}
+
+footer a {
+  display: inline-block;
+  margin: 0 10px 0.5em;
+}
+
+
+/* RWD Test */
+#rwd {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 20px;
+    background-color: red;
+}
+
+/* MEDIA QUERIES */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #rwd { background-color: orange; }
+    /* .branding {
+      width: 75%;
+    }
+    header .container {
+        display: flex;
+        justify-content: center;
+    }
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    form .button {
+        display: inline-block;
+        margin: 0;
+    }
+    form .input {
+        height: inherit;
+        flex: 1;
+    } */
+    /* form .label { line-height: 3.0em; } */
+    /* FOOTER */
+    /* footer section {
+      margin: 0;
+    }
+    footer .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    footer section:first-of-type {
+      text-align: left;
+    } */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #rwd { background-color: green; }
+    /* NAV */
+    /* .logo img { width: 225px; }
+    nav ul { max-width: 600px; margin: 0 auto; } */
+    /* HEADER */
+    /* header { background-position: center center; }
+    h1 {
+        font-size: 36px;
+    } */
+    /* GALLERY, VIDEO, ETC */
+    /* .gallery h2, .video h2 { font-size: 36px; }
+    .gallery h2 + p, .video h2 + p {
+        font-size: 24px;
+        padding-left: 4.0em;
+        padding-right: 4.0em;
+    } */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #rwd { background-color: blue; }
+    /* HEADER */
+    /* header .container { padding: 5.0em 0.5em; }
+    h1 { font-size: 42px; }
+    .tagline { margin: 0.5em 0 3.0em; font-size: 18px; } */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #rwd { background-color: purple; }
+    /* h1 {
+        font-size: 48px;
+    } */
+}

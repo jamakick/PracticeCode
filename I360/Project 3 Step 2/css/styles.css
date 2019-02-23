@@ -1,0 +1,273 @@
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* COLORS:
+brown - #7c2e29
+red- #d42a3a
+bright red - #ed344a
+teal - #3d957d
+light blue - #a3e5f0
+*/
+
+/* Photos from:
+https://unsplash.com/search/photos/coffee */
+
+/* General */
+body {
+  background-color: #e6cea7;
+  color: #7c2e29;
+}
+
+.container {
+  max-width: 1050px;
+  /*display: block;*/
+  margin: 0 auto;
+  text-align: center;
+  padding: 2.0em 0.5em;
+}
+
+/* Utilities */
+
+/* browser upgrade prompt */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* hides an element, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* no break */
+.nobr {
+  white-space: nowrap;
+}
+
+/* Typography */
+/* https://fonts.google.com/
+Merriweather - light - headlines
+Montserrat - light, normal - body copy */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+}
+
+p, td, li, small, figcaption, address {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+	font-size: 36px;
+	margin-bottom: 0;
+}
+
+.tagline {
+	font-size: 14px;
+	margin-top: 0.5em 0 2.0em;
+}
+
+.branding h1, branding p {
+	text-shadow: 1px 1px 2px black;
+}
+
+h2 {
+	font-size: 24px;
+	margin-bottom: 0;
+}
+
+h2+p {
+	margin-top: 0.5em;
+}
+
+/* Links */
+a:link, a:visited {
+    color: #d42a3a;
+    text-decoration: none;
+}
+
+a:active, a:hover {
+    color: #ed344a;
+}
+
+/* Buttons */
+.button {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  -webkit-transition: .3s ease-out;
+  transition: .3s ease-out;
+  height: 54px;
+  line-height: 54px;
+  text-decoration: none;
+  color: #fff !important;
+  background-color: #d42a3a;
+  text-align: center;
+  letter-spacing: .5px;
+  padding: 0 2rem;
+  border: none;
+  border-radius: 2px;
+  font-size: 1rem;
+  outline: 0;
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.button:hover {
+  background-color: #ed344a;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.14), 0 1px 7px 0 rgba(0,0,0,0.12), 0 3px 1px -1px rgba(0,0,0,0.2);
+  outline: 0;
+}
+
+/* Utilities */
+.no-break {
+  white-space: nowrap;
+}
+
+/* Navigation */
+
+
+
+/* Header */
+
+
+/* Highlights */
+
+
+/* Gallery */
+
+.logo img {
+	width:200px;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li {
+	list-style-type: none;
+	padding: 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+nav ul li:first-child {
+	padding-left: 0;
+}
+
+nav ul li:last-child {
+	padding-right: 0;
+}
+
+nav .container {
+	padding: 1.0em 0.5em;
+}
+
+header {
+	background-image: url("../images/brown-county-coffee-header.jpg");
+	background-position: left;
+
+}
+
+.branding {
+	background: url("../images/dark_wood/dark_wood.png");
+	color: white;
+	width: 100%;
+	padding: 0.5em 0 1.5em;
+	border-radius: 20px 0 20px 0;
+}
+
+.highlights {
+background-image: radial-gradient(circle at center,
+#a3e5f0 0%, #82b7c0 100%);
+}
+
+.highlights section {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 15px 30px;
+	margin: 2.0em 15px 1.0em;
+	flex: 1 0 250px;
+	position: relative;
+}
+
+.highlights .container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.highlights .icon {
+	position: absolute;
+	top: -25px;
+	/*left: 45%;*/
+	left: calc(50% - 22px);	
+	color: #3d957d;
+}
+
+
+/* Video */
+
+
+/* Form */
+
+
+input[type="text"] {
+    padding: 2px 2px 4px 4px;
+    border: 1px solid #a68659;
+    border-radius: 2px;
+    box-shadow: inset 0 0 2px #fff;
+    background: #f9f8f5;
+    width: 100%;
+    display: block;
+    line-height: 2.0em;
+}
+
+
+/* Footer */
+
+
+/* MEDIA QUERIES */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}

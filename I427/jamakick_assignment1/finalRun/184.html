@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:dc="http://purl.org/dc/terms/" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:product="http://ogp.me/ns/product#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#">
+  <head>
+    <script>
+    window.mdp = window.mdp || {};
+    window.mdp.gdpr = window.mdp.gdpr || {};
+    window.mdp.gdpr.siteLogoHtml = '<img src="https://secureimages.allrecipes.com/ar-images/ARlogo.svg" />';
+    window.mdp.gdpr.cookieDomain = '.allrecipes.com';
+    </script>
+    <script src="https://geoscripts.meredith.services/public/javascripts/mdp.javascript.gdpr.min.1.0.0.js"></script>
+    <script>
+    (function () {
+      function getCookie(name) {
+        var dc = document.cookie;
+        var prefix = name + "=";
+        var begin = dc.indexOf("; " + prefix);
+        if (begin === -1) {
+          begin = dc.indexOf(prefix);
+          if (begin !== 0) return null;
+        }
+        else {
+          begin += 2;
+          var end = document.cookie.indexOf(";", begin);
+          if (end === -1) {
+            end = dc.length;
+          }
+        }
+        return decodeURI(dc.substring(begin + prefix.length, end));
+      }      
+      window.mdp = window.mdp || {};
+      window.mdp.gdpr = window.mdp.gdpr || {};
+      var uid = getCookie('euConsentId') || getCookie('globalTI_SID') || '';
+      var dsarFormLink = 'https://app-de.onetrust.com/app/#/webform/0c410d51-8e85-4308-9bb9-37c24a461ccb?uid=' + uid;
+      window.mdp.gdpr.dsarFormLink = dsarFormLink;
+    })();
+    </script>
+    <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="title" content="Invite Chef John&#039;s Best Bites to Your Holiday Party | Allrecipes" />
+<meta property="og:site_name" content="Allrecipes" />
+<meta name="twitter:card" content="summary" />
+<meta property="fb:pages" content="71158748377" />
+<link rel="canonical" href="http://dish.allrecipes.com/your-holiday-party-needs-chef-johns-best-appetizers-and-snacks/" />
+<meta name="twitter:title" content="Invite Chef John&#039;s Best Bites to Your Holiday Party" />
+<meta property="fb:app_id" content="66102450266" />
+<meta name="description" content="This holiday, throw a Christmas party that features nothing but top-rated apps and snacks from Chef John, YouTube&#039;s most popular chef." />
+<meta name="twitter:site" content="@Allrecipes" />
+<meta property="og:url" content="http://dish.allrecipes.com/your-holiday-party-needs-chef-johns-best-appetizers-and-snacks/" />
+<meta property="og:title" content="Invite Chef John&#039;s Best Bites to Your Holiday Party" />
+<meta name="twitter:url" content="http://dish.allrecipes.com/your-holiday-party-needs-chef-johns-best-appetizers-and-snacks/" />
+<meta name="twitter:image:height" content="465" />
+<meta name="twitter:image:width" content="650" />
+<meta name="twitter:image" content="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/social_share/public/1034403_-Shrimp-and-Jalapeno-Nachos-Photo-by-Christina.jpg?itok=o57fZEvj" />
+<meta property="og:image" content="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/social_share/public/1034403_-Shrimp-and-Jalapeno-Nachos-Photo-by-Christina.jpg?itok=o57fZEvj" />
+<meta property="og:image:url" content="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/social_share/public/1034403_-Shrimp-and-Jalapeno-Nachos-Photo-by-Christina.jpg?itok=o57fZEvj" />
+<meta property="og:image:width" content="650" />
+<meta property="og:image:height" content="465" />
+<meta property="og:updated_time" content="Mon, 11/12/2018 - 16:52" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/themes/dish/images/favicon-96x96.png" type="image/png" />
+<link rel="revision" href="/your-holiday-party-needs-chef-johns-best-appetizers-and-snacks/" />
+<!-- Krux Controltag -->
+<script class="kxct" data-id="TK" data-version="async:1.7" type="text/javascript">
+  window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+  (function(){
+  var k=document.createElement('script');k.type='text/javascript';k.async=true;
+  var m,src=(m=location.href.match(/\bkxsrc=([^&]+)/))&&decodeURIComponent(m[1]);
+  k.src = /^https?:\/\/([^\/]+\.)?krxd\.net(:\d{1,5})?\//i.test(src) ? src : src === "disable" ? "" :
+  (location.protocol==="https:"?"https:":"http:")+"//cdn.krxd.net/controltag?confid=TK";
+  var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+  })();
+</script>
+<!-- End Krux Controltag -->
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "sameAs": [],
+    "name": "Allrecipes",
+    "url": "http://dish.allrecipes.com",
+    "logo": {
+        "@context": "http://schema.org",
+        "@type": "ImageObject",
+        "url": "http://dish.allrecipes.com/themes/dish/images/logo-dish.png",
+        "height": 60,
+        "width": 121
+    }
+}</script>
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "http://dish.allrecipes.com"
+}</script>
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@id": "http://dish.allrecipes.com/",
+                "name": "Home"
+            }
+        }
+    ]
+}</script>
+
+    <title>Invite Chef John&#039;s Best Bites to Your Holiday Party | Allrecipes</title>
+    <link rel="stylesheet" href="/s3fs-css/css/css_f_NG92oMdb2SAAwUfVFiXUg4zaVO2n-JdYkVzlzAUaE.css?pcbtcu" media="all" />
+<link rel="stylesheet" href="/s3fs-css/css/css_Hzisw7x54FzUpdDShh2mX5yfU8OaOiHabR0_POyUfQk.css?pcbtcu" media="all" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" media="all" />
+<link rel="stylesheet" href="/s3fs-css/css/css_TkDyfQMjsoVKWcSBXTVPwF1icCrb5bxHr4NLF_rCYnw.css?pcbtcu" media="all" />
+
+    
+<!--[if lte IE 8]>
+<script src="/s3fs-js/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="https://assets.adobedtm.com/1c2ad567a53f27e563c4dc2c278a904b84dc5fde/satelliteLib-9f46f93c6b7aa623feaba0956d41ba2358d7e3a4.js" async id="meredith_atm_external_script"></script>
+<script src="https://karma.mdpcdn.com/service/js-min/karma.header.js" async></script>
+
+  </head>
+  <body>
+        <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+      <!-- Google Tag Manager -->
+  <script>dataLayer = [{}];</script>
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N3NQL5"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N3NQL5');</script>
+  <!-- End Google Tag Manager -->
+
+    <div id="block-karma-slot">
+  
+    
+  <div class="karma-slot karma-slot--header">
+  <div  id="div-gpt-leaderboard-flex-1" data-tier="1"></div>
+</div>
+
+</div>
+
+<header class="header new-nav">
+  <section>
+    <div class="full-header clearfix">
+      <nav class="ar-nav">
+        <ul>
+          <li class="ar-logo-tab">
+            <a href="https://www.allrecipes.com/" class="ar-logo">
+              <img alt="Allrecipes" src="/themes/dish/images/ARlogo.svg" width="96" height="36" scale="0">
+            </a>
+          </li>
+          <li class="menutoggle browse-recipes">
+            <a href="#browse-recipesdrop" class="showdrop">
+              <span>
+                BROWSE
+              </span>
+              <span class="icon apicon-chevron-down">
+              </span>
+            </a>
+            <div id="browse-recipesdrop" class="nav-tab menudrop">
+              <div class="underline_hero_link nav-tab__options clearfix">
+                <div class="clearfix">
+                  <a title="Appetizer Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/76/appetizers-and-snacks/">
+                    <img class="hero-link__item__image" alt="Appetizer Recipes" src="https://images.media-allrecipes.com/images/60583.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Appetizer
+                    </span>
+                  </a>
+                  <a title="Breakfast &amp; Brunch Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/78/breakfast-and-brunch/">
+                    <img class="hero-link__item__image" alt="Breakfast &amp; Brunch Recipes" src="https://images.media-allrecipes.com/images/60586.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Breakfast &amp; Brunch
+                    </span>
+                  </a>
+                  <a title="Chicken Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/201/meat-and-poultry/chicken/">
+                    <img class="hero-link__item__image" alt="Chicken Recipes" src="https://images.media-allrecipes.com/images/60628.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Chicken
+                    </span>
+                  </a>
+                  <a title="Dessert Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/79/desserts/">
+                    <img class="hero-link__item__image" alt="Dessert Recipes" src="https://images.media-allrecipes.com/images/60587.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Dessert
+                    </span>
+                  </a>
+                  <a title="Healthy Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/84/healthy-recipes/">
+                    <img class="hero-link__item__image" alt="Healthy Recipes" src="https://images.media-allrecipes.com/images/60592.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Healthy
+                    </span>
+                  </a>
+                  <a title="Holidays and Events Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/85/holidays-and-events/">
+                    <img class="hero-link__item__image" alt="Holidays and Events Recipes" src="https://images.media-allrecipes.com/images/60593.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Holidays and Events
+                    </span>
+                  </a>
+                  <a title="Main Dish Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/80/main-dish/">
+                    <img class="hero-link__item__image" alt="Main Dish Recipes" src="https://images.media-allrecipes.com/images/60596.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Main Dish
+                    </span>
+                  </a>
+                  <a title="Quick &amp; Easy Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/1947/everyday-cooking/quick-and-easy/">
+                    <img class="hero-link__item__image" alt="Quick &amp; Easy Recipes" src="https://images.media-allrecipes.com/images/60629.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Quick &amp; Easy
+                    </span>
+                  </a>
+                  <a title="Salad Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/96/salad/">
+                    <img class="hero-link__item__image" alt="Salad Recipes" src="https://images.media-allrecipes.com/images/60599.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Salad
+                    </span>
+                  </a>
+                  <a title="Slow Cooker Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/253/everyday-cooking/slow-cooker/">
+                    <img class="hero-link__item__image" alt="Slow Cooker Recipes" src="https://images.media-allrecipes.com/images/60630.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Slow Cooker
+                    </span>
+                  </a>
+                  <a title="Trusted Brands Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/82/trusted-brands-recipes-and-tips/">
+                    <img class="hero-link__item__image" alt="Trusted Brands Recipes" src="https://images.media-allrecipes.com/images/60603.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Trusted Brands
+                    </span>
+                  </a>
+                  <a title="Vegetarian Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/87/everyday-cooking/vegetarian/">
+                    <img class="hero-link__item__image" alt="Vegetarian Recipes" src="https://images.media-allrecipes.com/images/60631.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Vegetarian
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <a href="https://www.allrecipes.com/recipes?grouping=all" class="recipe-hero-link__item__text">
+                All Categories
+              </a>
+            </div>
+          </li>
+          <li class="menutoggle hublink-togg pull-right">
+            <a href="#hublinks" class="showdrop">
+              <div>
+                <span class="browse-recipes-iconbar">
+                </span>
+                <span class="browse-recipes-iconbar">
+                </span>
+                <span class="browse-recipes-iconbar">
+                </span>
+              </div>
+            </a>
+            <div id="hublinks" class="nav-tab menudrop">
+              <ul class="nav-tab__options">
+                <li class="underline_link">
+                  <a id="navmenu_recipes" href="https://www.allrecipes.com/recipes/">
+                    <span class="icon apicon-spoons">
+                    </span>
+                    <span>
+                      Browse Recipes
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a id="navmenu_magazine" href="http://armagazine.com/mobile-site">
+                    <span class="icon apicon-magazine">
+                    </span>
+                    <span>
+                      Allrecipes Magazine
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a id="navmenu_shop" href="http://shop.allrecipes.com/shop">
+                    <span class="icon apicon-bag">
+                    </span>
+                    <span>
+                      Shop
+                    </span>
+                  </a>
+                </li>
+                <li class="underline_link">
+                  <a id="navmenu_cooking_school" href="http://cookingschool.allrecipes.com/">
+                    <span class="icon apicon-cap">
+                    </span>
+                    <span>
+                      Cooking School
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a id="navmenu_social_gallery" href="https://www.allrecipes.com/cook/my/account-settings/">
+                    <span class="icon apicon-tower">
+                    </span>
+                    <span>
+                      Newsletters
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a id="navmenu_dish" href="http://dish.allrecipes.com/ask-the-community/">
+                    <span class="icon apicon-q">
+                    </span>
+                    <span>
+                      Ask the Community
+                    </span>
+                  </a>
+                </li>
+                <li class="underline_link">
+                  <a id="navmenu_help" href="http://dish.allrecipes.com/customer-service/">
+                    <span class="icon apicon-help">
+                    </span>
+                    <span>
+                      Help
+                    </span>
+                  </a>
+                </li>
+                <li class="small-links">
+                  <a href="http://dish.allrecipes.com/allrecipes-jobs-2/">
+                    Jobs
+                  </a>
+                  <a href="http://press.allrecipes.com/">
+                    Newsroom
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="search-tab">
+            <div class="nav-search">
+              <form class="search-form recipe-search-form" role="search" method="get" action="https://www.allrecipes.com/search/results/">
+                <label>
+                  <input class="search-text" name="wt" type="text" placeholder="Find a recipe">
+                </label>
+                <span id="ingredientSearch" class="ingredient-searchtxt">
+                  Ingredient Search
+                </span>
+                <button class="search-button btn-basic--small apicon-search" type="submit">
+                </button>
+              </form>
+            </div>
+          </li>
+          <li class="nav-profile menutoggle">
+            <a id="navmenu_signin_signup" class="btn-basic--large btn-gold signin__btn" href="https://www.allrecipes.com/account/signin/?loginreferrerurl=http://dish.allrecipes.com/your-holiday-party-needs-chef-johns-best-appetizers-and-snacks/&loginreferrertype=dish">
+              Sign In 
+              <em>
+                or
+              </em>
+              Sign Up
+            </a>
+          </li>
+          <li class="nav-favorites">
+            <a href="https://www.allrecipes.com/cook/my/favorites/" target="_self">
+              <span class="apicon-heart">
+              </span>
+            </a>
+          </li>
+          <li class="search-tab small-screen hide">
+            <a href="#">
+              <span>
+                <img alt="search" height="23" src="https://images.media-allrecipes.com/ar-images/icons/NavSearchIcon.svg" width="23" scale="0">
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav-tab nav-tab__search">
+      <form role="search" method="get" class="search-form recipe-search-form-advanced" action="https://www.allrecipes.com/search/results/">
+        <span class="icon--close" title="Close Ingredient Search">
+        </span>
+        <div class="input-wrap--home">
+          <label>
+            <img class="search-icon" alt="Search" src="https://images.media-allrecipes.com/ar-images/icons/NavSearchIcon.svg" scale="0">
+            <input class="search-text" name="wt" type="text" placeholder="Keywords">
+          </label>
+        </div>
+        <div class="input-wrap--home ingredients">
+          <div class="ingredient-add-exclude">
+            <input id="includeIngText" type="text" name="ingIncl" placeholder="Include ingredients" value="" style="display: none;">
+          </div>
+          <a class="btn-basic--small include" href="#">
+            <span>
+              +
+            </span>
+          </a>
+        </div>
+        <div class="input-wrap--home ingredients">
+          <div class="ingredient-add-exclude">
+            <input id="excludeIngText" type="text" name="ingExcl" placeholder="Exclude ingredients" value="" style="display: none;">
+          </div>
+          <a class="btn-basic--small exclude" href="#">
+            <span>
+              —
+            </span>
+          </a>
+        </div>
+        <div class="nav-tab__buttons">
+          <button class="btn-basic--small btn-search">
+            Go
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+</header>
+
+<div class="content-container">
+    <a id="main-content" tabindex="-1"></a>
+  
+
+  
+  
+  <div class="content">
+    <div class="primary-content">
+        <div>
+    <div id="block-dish-page-title">
+  
+    
+  <header class="entry-header">
+  
+      <h1>
+      <span>Invite Chef John&#039;s Best Bites to Your Holiday Party</span>
+
+    </h1>
+    
+</header>
+
+</div>
+<div id="block-karma-slot-2">
+  
+    
+  <div class="karma-slot karma-slot--lazy" id="karma-lazy-sponsorLogo" data-tier="1">
+  <div ></div>
+</div>
+
+</div>
+<div id="block-dish-postbyline">
+  
+    
+  <div class="byline">
+      <div class="byline__image">
+      
+            <div>  <img src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/thumbnail/public/2017-12/carl_hanson.jpg?itok=Ey_ByreL" width="100" height="92" alt="Carl Hanson" />
+
+
+</div>
+      
+    </div>
+    <p class="byline__author">
+      By <em class="placeholder">Carl Hanson</em>
+    </p>
+</div>
+
+</div>
+<div id="block-dish-socialsharelinks">
+  
+    
+    
+      
+      <div class="social-links__wrapper">
+                <ul class="social-links social-links--share">
+              <li class="social-links__item social-links__item--facebook">
+            
+    <a href="/your-holiday-party-needs-chef-johns-best-appetizers-and-snacks/" class="social-icon social-icon--facebook">Facebook</a>
+
+        </li>
+              <li class="social-links__item social-links__item--twitter">
+            
+    <a href="/your-holiday-party-needs-chef-johns-best-appetizers-and-snacks/" class="social-icon social-icon--twitter">Twitter</a>
+
+        </li>
+              <li class="social-links__item social-links__item--google">
+            
+    <a href="/your-holiday-party-needs-chef-johns-best-appetizers-and-snacks/" class="social-icon social-icon--google">Google+</a>
+
+        </li>
+              <li class="social-links__item social-links__item--pinterest">
+            
+    <a href="/your-holiday-party-needs-chef-johns-best-appetizers-and-snacks/" class="social-icon social-icon--pinterest">Pinterest</a>
+
+        </li>
+              <li class="social-links__item social-links__item--stumbleupon">
+            
+    <a href="/your-holiday-party-needs-chef-johns-best-appetizers-and-snacks/" class="social-icon social-icon--stumbleupon">StumbleUpon</a>
+
+        </li>
+          </ul>
+  </div>
+
+</div>
+<article id="" class="post- post type-post status-publish format-standard has-post-thumbnail hentry category- " role="article">
+    <div class="entry-content">
+    
+            <div><p>This Christmas, throw a holiday party that features nothing but top-rated <a href="https://www.allrecipes.com/recipes/22451/everyday-cooking/special-collections/web-show-recipes/food-wishes/appetizers-and-snacks/">appetizers and snacks</a> from Chef John, YouTube's most popular chef -- it's the next best thing to having Chef John cater your big bash. One look at this amazing array, and <em>you'll want to make every single recipe</em>. But hold up. Save a little something for your New Year's party!</p>&#13;
+&#13;
+<h2>1. Classic Dips and Spreads</h2>&#13;
+&#13;
+<h3><a href="https://www.allrecipes.com/recipe/240702/pine-cone-cheese-ball/" target="_blank">Pine Cone Cheese Ball</a></h3>&#13;
+&#13;
+<div class="karma-slot--square-container karma-slot--mobile-only"><div id="div-gpt-mob-square-fixed-1" data-tier="1" class="karma-slot--square karma-slot--mobile-only"></div></div><p>"Any cheese ball is a welcome addition to a holiday party spread," says<a href="https://www.allrecipes.com/cook/foodwisheswithchefjohn/"> Chef John</a>. "But when it looks like a pine cone, you're talking about a real showstopper." See how it's done:</p>&#13;
+&#13;
+<div style="display: block; position: relative; max-width: 100%;">&#13;
+<div style="padding-top: 56.25%;"><iframe allowfullscreen="allowfullscreen" height="150" src="//players.brightcove.net/1033249144001/NJFOnQJoe_default/index.html?videoId=3942927868001" style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;" width="300"></iframe></div>&#13;
+</div>&#13;
+&#13;
+<h3><a href="https://www.allrecipes.com/recipe/256101/crispy-rosemary-sea-salt-flatbread-crackers/" target="_blank">Crispy Rosemary Sea Salt Flatbread Crackers</a></h3>&#13;
+&#13;
+<p>Here's the perfect companion for your cheese ball. "Making your own 'fancy' crackers at home is a fairly basic operation," says Chef John. "And not only will they be less expensive than store-bought, but you can customize them any way you want." One caveat: "Please pay attention to your baking time."</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/4118536_-Crispy-Rosemary-Sea-Salt-Flatbread-Crackers-Photo-by-Chef-John-1.jpg?itok=SYQz-lD- 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/4118536_-Crispy-Rosemary-Sea-Salt-Flatbread-Crackers-Photo-by-Chef-John-1.jpg?itok=bKAlG_5m 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/4118536_-Crispy-Rosemary-Sea-Salt-Flatbread-Crackers-Photo-by-Chef-John-1.jpg?itok=unjRdVdy 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/4118536_-Crispy-Rosemary-Sea-Salt-Flatbread-Crackers-Photo-by-Chef-John-1.jpg?itok=kcnsImnl" alt="Crispy Rosemary Sea Salt Flatbread Crackers" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Crispy Rosemary Sea Salt Flatbread Crackers | Photo by Chef John
+    </p>
+  </div>
+
+
+</div>
+<h3><a href="https://www.allrecipes.com/recipe/231170/baked-crab-and-artichoke-dip/" target="_blank">Baked Crab and Artichoke Dip</a></h3>&#13;
+&#13;
+<div id="div-sm-highImpact"></div><p>A great party snack! Cream cheese, sour cream, and mayonnaise form the delicious base, along with Cheddar, herbs, and seasonings. The best part of baking the dip in a bread bowl? You can eat the bowl! The second best part? No serving dish to clean! Serve it hot with crackers.</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/1866265_-Baked-Crab-and-Artichoke-Dip-Photo-by-stacy-1.jpg?itok=lsHvHwSl 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/1866265_-Baked-Crab-and-Artichoke-Dip-Photo-by-stacy-1.jpg?itok=isDA85a7 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/1866265_-Baked-Crab-and-Artichoke-Dip-Photo-by-stacy-1.jpg?itok=87tqUIN8 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/1866265_-Baked-Crab-and-Artichoke-Dip-Photo-by-stacy-1.jpg?itok=AzhsUkZC" alt="Baked Crab and Artichoke Dip" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Baked Crab and Artichoke Dip | Photo by stacy
+    </p>
+  </div>
+
+
+</div>
+<h3><a href="https://www.allrecipes.com/recipe/236862/chef-johns-green-hummus/" target="_blank">Chef John's Green Hummus</a></h3>&#13;
+&#13;
+<p>Simply toss a handful of ingredients into a blender and seconds later you’re done! "This simple, basil-spiked 'green' hummus is a great twist on everyone's favorite spread."</p>&#13;
+&#13;
+<div style="display: block; position: relative; max-width: 100%;">&#13;
+<div style="padding-top: 56.25%;"><iframe allowfullscreen="allowfullscreen" height="150" src="//players.brightcove.net/1033249144001/NJFOnQJoe_default/index.html?videoId=2676470355001" style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;" width="300"></iframe></div>&#13;
+</div>&#13;
+&#13;
+<h3><a href="https://www.allrecipes.com/recipe/234683/how-to-make-cheese-sticks/" target="_blank">Chef John's Cheese Sticks</a></h3>&#13;
+&#13;
+<p>"These super-simple breadsticks are easy, cheesy, and there's no dough to make because we're going to use frozen puff pastry for this," says Chef John. "They're very cool for entertaining."</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/2465789_-Cheese-Sticks-Photo-by-Allrecipes-1.jpg?itok=vYgltM26 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/2465789_-Cheese-Sticks-Photo-by-Allrecipes-1.jpg?itok=ms6WP-FZ 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/2465789_-Cheese-Sticks-Photo-by-Allrecipes-1.jpg?itok=Qbha2tsf 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/2465789_-Cheese-Sticks-Photo-by-Allrecipes-1.jpg?itok=FiX3t2Ut" alt="Cheese Sticks" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Cheese Sticks | Photo by Allrecipes
+    </p>
+  </div>
+
+
+</div>
+<h2>2. Crackers, Toasts, and Party Nuts</h2>&#13;
+&#13;
+<h3><a href="https://www.allrecipes.com/recipe/246030/chef-johns-shrimp-toast/" target="_blank">Chef John's Shrimp Toast</a></h3>&#13;
+&#13;
+<p>"While virtually unknown compared to most other popular fried party snacks, these shrimp toasts are easy to make and every bit as delicious, and addictive, as those Buffalo wings or jalapeño poppers."</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/3345838_-Shrimp-Toast-Photo-by-Chef-John-1.jpg?itok=57F7eQ9p 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/3345838_-Shrimp-Toast-Photo-by-Chef-John-1.jpg?itok=0v1cy6tE 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/3345838_-Shrimp-Toast-Photo-by-Chef-John-1.jpg?itok=WBx1Wwcq 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/3345838_-Shrimp-Toast-Photo-by-Chef-John-1.jpg?itok=b2EYtnvr" alt="Shrimp Toast" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Shrimp Toast | Photo by Chef John
+    </p>
+  </div>
+
+
+</div>
+<h3><a href="https://www.allrecipes.com/recipe/241000/mini-philly-cheesesteaks/" target="_blank">Mini Philly Cheesesteaks</a></h3>&#13;
+&#13;
+<p>These mini Philly cheesesteaks are made with all the classic cheese steak ingredients, only in open-face form -- chopped up, spooned onto slices of baguette, and baked until beautiful.</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/2805818_Mini-Philly-Cheesesteaks_241000_Photo-by-Chef-John-1.jpg?itok=U3wys28A 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/2805818_Mini-Philly-Cheesesteaks_241000_Photo-by-Chef-John-1.jpg?itok=ZEuP4T2R 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/2805818_Mini-Philly-Cheesesteaks_241000_Photo-by-Chef-John-1.jpg?itok=hfKLYXG4 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/2805818_Mini-Philly-Cheesesteaks_241000_Photo-by-Chef-John-1.jpg?itok=hOQmVoLh" alt="Mini Philly Cheesesteaks" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Mini Philly Cheesesteaks | Photo by Chef John
+    </p>
+  </div>
+
+
+</div>
+<h3><a href="https://www.allrecipes.com/recipe/230159/sweet-salty-spicy-party-nuts/" target="_blank">Sweet, Salty, Spicy Party Nuts</a></h3>&#13;
+&#13;
+<p>The world’s best party snack! And so simple to make. Chef John chooses walnuts, pecans, cashews, and almonds for his nut mix, spicing them up with cayenne pepper, cumin, salt, and freshly ground black pepper. "I find this technique much easier than the stovetop pan method," says Chef John. "You'll get beautiful, perfectly frosted nuts that are roasted evenly, with no bitter burned spots."</p>&#13;
+&#13;
+<div style="display: block; position: relative; max-width: 100%;">&#13;
+<div style="padding-top: 56.25%;"><iframe allowfullscreen="allowfullscreen" height="150" src="//players.brightcove.net/1033249144001/NJFOnQJoe_default/index.html?videoId=1920249445001" style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;" width="300"></iframe></div>&#13;
+</div>&#13;
+&#13;
+<p> </p>&#13;
+&#13;
+<h2>3. Poppers, Puffs, Cakes and Croquettes</h2>&#13;
+&#13;
+<h3><a href="https://www.allrecipes.com/recipe/246256/bacon-jalapeno-popper-puffs/" target="_blank">Bacon Jalapeno Popper Puffs</a></h3>&#13;
+&#13;
+<p>"You'll love these shockingly light puffs," says Chef John. "All the same familiar flavors are there, especially when served with the easy cream cheese dip, and the prep is much easier."</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/3345433_-Bacon-Jalapeno-Popper-Puffs-Photo-by-Chef-John-1.jpg?itok=uy6DyeDb 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/3345433_-Bacon-Jalapeno-Popper-Puffs-Photo-by-Chef-John-1.jpg?itok=R2rxQRDb 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/3345433_-Bacon-Jalapeno-Popper-Puffs-Photo-by-Chef-John-1.jpg?itok=eLqoLJce 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/3345433_-Bacon-Jalapeno-Popper-Puffs-Photo-by-Chef-John-1.jpg?itok=LF5rDO5j" alt="Bacon Jalapeno Popper Puffs" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Bacon Jalapeno Popper Puffs | Photo by Chef John
+    </p>
+  </div>
+
+
+</div>
+<h3><a href="https://www.allrecipes.com/recipe/234940/sausage-stuffed-cherry-pepper-poppers/" target="_blank">Sausage-Stuffed Cherry Pepper Poppers</a></h3>&#13;
+&#13;
+<p>An incredible party appetizer: Bite-size cherry peppers (use the jarred kind; they're already seeded and cleaned for you) are stuffed with spicy Italian sausage. Stuff the peppers, bake the peppers; yes, it is that simple. "These things are the best beer food ever," says Chef John. "They're almost too easy to make."</p>&#13;
+&#13;
+<div style="display: block; position: relative; max-width: 100%;">&#13;
+<div style="padding-top: 56.25%;"><iframe allowfullscreen="allowfullscreen" height="150" src="//players.brightcove.net/1033249144001/NJFOnQJoe_default/index.html?videoId=1561094499001" style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;" width="300"></iframe></div>&#13;
+</div>&#13;
+&#13;
+<h3><a href="https://www.allrecipes.com/recipe/221968/italian-rice-croquettes/" target="_blank">Italian Rice Croquettes</a></h3>&#13;
+&#13;
+<p>It’s Christmas comfort food, Italian-style. Turn rice into delicious Italian croquettes. Roll them in bread crumbs, and pan fry to a crispy, dark brown outside. Then serve them hot, on their own or dipped into tomato sauce or aioli. "It would be a great addition to any party menu," says Chef John.</p>&#13;
+&#13;
+<div style="display: block; position: relative; max-width: 100%;">&#13;
+<div style="padding-top: 56.25%;"><iframe allowfullscreen="allowfullscreen" height="150" src="//players.brightcove.net/1033249144001/NJFOnQJoe_default/index.html?videoId=1329851078001" style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;" width="300"></iframe></div>&#13;
+</div>&#13;
+&#13;
+<h3><a href="https://www.allrecipes.com/recipe/245271/chef-johns-crab-rangoon/" target="_blank">Chef John's Crab Rangoon</a></h3>&#13;
+&#13;
+<p>"These crispy crab and cream cheese wontons are one of the most addictive, delicious, and crowd-pleasing appetizers ever created," says Chef John. "That is, if the filling has enough crab in it. I'm using a 1 to 1 ratio of crab to cream cheese." Fry up a bunch, and serve with a quick ketchup-based sweet and sour sauce.</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/2712864_Chef-Johns-Crab-Rangoon_245271_Photo-by-Chef-John-1.jpg?itok=vTewSKZC 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/2712864_Chef-Johns-Crab-Rangoon_245271_Photo-by-Chef-John-1.jpg?itok=WgJJRUI8 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/2712864_Chef-Johns-Crab-Rangoon_245271_Photo-by-Chef-John-1.jpg?itok=7mh3NCPf 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/2712864_Chef-Johns-Crab-Rangoon_245271_Photo-by-Chef-John-1.jpg?itok=QYxDPET9" alt="Crab Rangoon" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Crab Rangoon | Photo by Chef John
+    </p>
+  </div>
+
+
+</div>
+<h3><a href="https://www.allrecipes.com/recipe/237641/chef-johns-party-cheese-puffs/" target="_blank">Chef John's Party Cheese Puffs</a></h3>&#13;
+&#13;
+<p>Make twice as many as you think you’ll need -- these beautiful cheesy puffs are totally addicting! "And they're as easy to make as they are delicious," says Chef John. "Usually Gruyere cheese is used, but I had some very sharp farmhouse Cheddar cheese in the fridge, so I decided to use that. As long as you are using a very sharp, full-flavored cheese I don't think you can go wrong."</p>&#13;
+&#13;
+<div style="display: block; position: relative; max-width: 100%;">&#13;
+<div style="padding-top: 56.25%;"><iframe allowfullscreen="allowfullscreen" height="150" src="//players.brightcove.net/1033249144001/NJFOnQJoe_default/index.html?videoId=2719872383001" style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;" width="300"></iframe></div>&#13;
+</div>&#13;
+&#13;
+<h3><a href="https://www.allrecipes.com/recipe/254277/chef-johns-spicy-shrimp-cakes/" target="_blank">Chef John's Spicy Shrimp Cakes</a></h3>&#13;
+&#13;
+<p>"If you want to enjoy shrimp cakes in their most pure form, give this recipe a try," says Chef John. "It takes just a few minutes if you use your food processor. These little fried cakes are delicious served with Thai chili sauce."</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/3699616_-Spicy-Shrimp-Cakes-Photo-by-Chef-John-1.jpg?itok=3KS9jvch 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/3699616_-Spicy-Shrimp-Cakes-Photo-by-Chef-John-1.jpg?itok=PPLnf7R3 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/3699616_-Spicy-Shrimp-Cakes-Photo-by-Chef-John-1.jpg?itok=XBRqExUg 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/3699616_-Spicy-Shrimp-Cakes-Photo-by-Chef-John-1.jpg?itok=uSDtcwq9" alt="Spicy Shrimp Cakes" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Spicy Shrimp Cakes | Photo by Chef John
+    </p>
+  </div>
+
+
+</div>
+<h3><a href="https://www.allrecipes.com/recipe/240805/boudin-balls/" target="_blank">Boudin Balls</a></h3>&#13;
+&#13;
+<p>"The textural contrast between the crispy outside and moist, savory inside is a wonder to behold," says Chef John. "The taste is just as impressive. Intensely flavorful and satisfying. Serve with remoulade sauce."</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/Boudin-Meatballs-Photo-by-Chef-John-1.jpg?itok=pnjlnkZU 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/Boudin-Meatballs-Photo-by-Chef-John-1.jpg?itok=hFCsLH9H 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/Boudin-Meatballs-Photo-by-Chef-John-1.jpg?itok=6XO4Rk6l 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/Boudin-Meatballs-Photo-by-Chef-John-1.jpg?itok=8h5znLcY" alt="Boudin Meatballs" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Boudin Meatballs | Photo by Chef John
+    </p>
+  </div>
+
+
+</div>
+<h3><a href="https://www.allrecipes.com/recipe/261153/perfect-pot-stickers/" target="_blank">Perfect Pot Stickers</a></h3>&#13;
+&#13;
+<p>"Homemade pot stickers are so versatile," says Chef John. "You can fill them with anything you want and as full as you want. And the play between the crispy, crusty bottom, and the tender parts, makes for a truly unique dumpling. These are filled with ground pork, green onions, ginger, and cabbage."</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/4578433_-Perfect-Pot-Stickers-Photo-by-Chef-John.jpg?itok=PxPZ2MYL 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/4578433_-Perfect-Pot-Stickers-Photo-by-Chef-John.jpg?itok=zLxdT1za 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/4578433_-Perfect-Pot-Stickers-Photo-by-Chef-John.jpg?itok=dd0MEu-D 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/4578433_-Perfect-Pot-Stickers-Photo-by-Chef-John.jpg?itok=tZ0kdsZt" alt="Perfect Pot Stickers" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Photo by Chef John
+    </p>
+  </div>
+
+
+</div>
+<h2>4. Cheese, Cheese, Cheese!</h2>&#13;
+&#13;
+<h3><a href="https://www.allrecipes.com/recipe/245731/baked-stuffed-brie-with-cranberries-walnuts/" target="_blank">Baked Stuffed Brie with Cranberries &amp; Walnuts</a></h3>&#13;
+&#13;
+<p>This may be the ultimate Christmas party appetizer. Watch the video to see Chef John split the wheel of brie cheese, stuff it with walnuts and cranberries, and wrap it in puff pastry. "One of the most common mistakes people make when serving cheese is not letting it come to room temperature first," says Chef John, "so that all the flavors can be fully realized. This beautiful baked stuffed brie takes that principle to the next level."</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/3081928_-Baked-Stuffed-Brie-with-Cranberries-Walnuts-Photo-by-Chef-John-1.jpg?itok=c9AJeyK5 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/3081928_-Baked-Stuffed-Brie-with-Cranberries-Walnuts-Photo-by-Chef-John-1.jpg?itok=E6GC1Yvq 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/3081928_-Baked-Stuffed-Brie-with-Cranberries-Walnuts-Photo-by-Chef-John-1.jpg?itok=HzEDIeMS 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/3081928_-Baked-Stuffed-Brie-with-Cranberries-Walnuts-Photo-by-Chef-John-1.jpg?itok=D8owvNrG" alt="Baked Stuffed Brie with Cranberries and Walnuts" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Baked Stuffed Brie with Cranberries and Walnuts | Photo by Chef John
+    </p>
+  </div>
+
+
+</div>
+<h3><a href="https://www.allrecipes.com/recipe/222339/butternut-mascarpone-gnocchi/" target="_blank">Butternut Mascarpone Gnocchi</a></h3>&#13;
+&#13;
+<p>Much easier and lighter than traditional, potato-dough style dumplings, this cheese-based version features butternut squash and mascarpone cheese. "Prepare your palate for some incredibly light, tender, and delicious gnocchi," says Chef John.</p>&#13;
+&#13;
+<div style="display: block; position: relative; max-width: 100%;">&#13;
+<div style="padding-top: 56.25%;"><iframe allowfullscreen="allowfullscreen" height="150" src="//players.brightcove.net/1033249144001/NJFOnQJoe_default/index.html?videoId=1565285516001" style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;" width="300"></iframe></div>&#13;
+</div>&#13;
+&#13;
+<h3><a href="https://www.allrecipes.com/recipe/233583/shrimp-and-jalapeno-nachos/" target="_blank">Shrimp and Jalapeno Nachos</a></h3>&#13;
+&#13;
+<p>"What better way to 'fiesta' than with this beautiful plate of alternative nachos?" asks Chef John. "This will make a very delicious change of pace to the traditional version. Each nacho is separate from the next so you don't end up with a plate containing one giant nacho that you have to pull apart."</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/2433071_-Shrimp-and-Jalapeno-Nachos-Photo-by-Allrecipes-1.jpg?itok=iB-3t4Bm 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/2433071_-Shrimp-and-Jalapeno-Nachos-Photo-by-Allrecipes-1.jpg?itok=LgpOi5zd 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/2433071_-Shrimp-and-Jalapeno-Nachos-Photo-by-Allrecipes-1.jpg?itok=v3r9Ah3g 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/2433071_-Shrimp-and-Jalapeno-Nachos-Photo-by-Allrecipes-1.jpg?itok=cJdZrick" alt="Shrimp and Jalapeno Nachos" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Shrimp and Jalapeno Nachos | Photo by Allrecipes
+    </p>
+  </div>
+
+
+</div>
+<h3><a href="https://www.allrecipes.com/recipe/222312/fig-brulee-with-burrata-cheese/" target="_blank">Fig Brulee with Burrata Cheese</a></h3>&#13;
+&#13;
+<div id="karma-lazy-seriesDetails"></div><p>"These were amazing with the fresh, creamy burrata," says Chef John. "But any style cheese plate would benefit mightily from the shiny, sexy fruit. If cheese isn't your thing, go grab a pint of vanilla ice cream, forget all about that sweet-savory thing, and just go full-dessert."</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/2518929_-Fig-Brulee-with-Burrata-Cheese-Photo-by-Oksana-Seaman-1.jpg?itok=LRs7ZrCH 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/2518929_-Fig-Brulee-with-Burrata-Cheese-Photo-by-Oksana-Seaman-1.jpg?itok=M--8YTkR 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/2518929_-Fig-Brulee-with-Burrata-Cheese-Photo-by-Oksana-Seaman-1.jpg?itok=3Vbegwjh 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/2518929_-Fig-Brulee-with-Burrata-Cheese-Photo-by-Oksana-Seaman-1.jpg?itok=Y1vYzGQk" alt="Fig Brulee with Burrata Cheese" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Fig Brulee with Burrata Cheese | Photo by Oksana Seaman
+    </p>
+  </div>
+
+
+</div>
+<hr /><h4>We've only just scratched the surface. Explore Chef John's complete collection of <a href="https://www.allrecipes.com/recipes/22451/everyday-cooking/special-collections/web-show-recipes/food-wishes/appetizers-and-snacks/" target="_blank">Appetizer and Snack Recipes</a>.</h4>&#13;
+&#13;
+<hr /><h3>Related:</h3>&#13;
+&#13;
+<ul><li><a href="http://dish.allrecipes.com/best-christmas-appetizers/">25 Best Christmas Appetizers: The Ultimate Round-Up</a></li>&#13;
+<li><a href="http://dish.allrecipes.com/quick-puff-pastry-party-snacks/">8 Quick Party Snacks from Frozen Puff Pastry</a></li>&#13;
+	<li><a href="http://dish.allrecipes.com/whos-hasselback-holiday-feast/" target="_blank">Who's Up For a Hasselback Holiday Feast?</a></li>&#13;
+	<li><a href="http://dish.allrecipes.com/6-bite-sized-desserts-that-wont-put-you-in-a-food-coma/" target="_blank">6 Bite-Sized Desserts That Go Over Big For Holiday Parties</a></li>&#13;
+	<li><a href="http://dish.allrecipes.com/so-much-christmas-cuteness/" target="_blank">Make the Cutest Christmas Sweet + Savory Snacks Ever</a></li>&#13;
+</ul><hr /></div>
+      
+  </div>
+</article>
+
+  </div>
+
+        <div>
+    <div id="block-authorinformation">
+  
+    
+  <div class="about_author">
+      <div class="about_author__image">
+      
+            <div>  <img src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/thumbnail/public/2017-12/carl_hanson.jpg?itok=Ey_ByreL" width="100" height="92" alt="Carl Hanson" />
+
+
+</div>
+      
+    </div>
+    <div class="about_author__info">
+    <p class="about_author__name">
+            About Carl Hanson
+        </p>
+    <p class="about_author__bio">
+              <p>Carl will eat that. Share with him <a href="https://twitter.com/CarlNo9">@CarlNo9</a> on Twitter.</p>
+
+          </p>
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+    </div>
+              <aside class="secondary-content">
+          <div>
+    <div class="karma-slot">
+  <div id="div-gpt-square-flex-1" data-tier="1" class="karma-slot--square-container karma-slot--desktop-only"></div>
+  <div id="div-gpt-mob-square-flex-1" data-tier="3" class="karma-slot--square-container karma-slot--mobile-only"></div>
+  <div id="div-sm-nativeRail"></div>
+  <div id="div-gpt-square-fixed-2" data-tier="2" class="karma-slot--square-container karma-slot--desktop-only"></div>
+</div>
+<div id="block-recentposts">
+  
+      <h2 id="recent-posts__title" class="heading-2">Recent Posts</h2>
+    
+  <aside id="recent-posts">
+  <ul aria-labelledby="recent-posts__title">
+          <li class="recent-posts__post">
+        <a href="/desserts-you-should-know-how-make-youre-30/" title="16 Essential Desserts You Should Know How to Make Before You&#039;re 30">
+                      <img class="recent-posts__post-thumbnail" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/recent_posts_thumbnail/public/708879-One-Bowl-Chocolate-Cake-III-Photo-by-Dianne-resized.jpg?LWBmZ_A0gpBNqPEjVylo3QgMSa5BuTic&amp;itok=XQoS8Haw" alt="One Bowl Chocolate Cake III" />
+
+                    <div class="recent-posts__post-title-byline">
+            <div class="recent-posts__post-title">
+              16 Essential Desserts You Should Know How to Make Before You&#039;re 30
+            </div>
+
+                          <div class="recent-posts__post-byline">
+                By <em class="placeholder">Vanessa Greaves</em>
+              </div>
+                      </div>
+        </a>
+      </li>
+          <li class="recent-posts__post">
+        <a href="/top-10-most-photographed-recipes-2018/" title="Top 10 Most Photographed Recipes of 2018">
+                      <img class="recent-posts__post-thumbnail" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/recent_posts_thumbnail/public/2018-12/4948036%20Good%20Old%20Fashioned%20Pancakes%20Photo%20by%20angela%20650x465.jpg?YmsT_012IU07hPyXNuDkyosePSiYkAao&amp;itok=19-Rzl0d" alt="Good Old Fashioned Pancakes" />
+
+                    <div class="recent-posts__post-title-byline">
+            <div class="recent-posts__post-title">
+              Top 10 Most Photographed Recipes of 2018
+            </div>
+
+                          <div class="recent-posts__post-byline">
+                By <em class="placeholder">Vanessa Greaves</em>
+              </div>
+                      </div>
+        </a>
+      </li>
+          <li class="recent-posts__post">
+        <a href="/most-talked-about-recipes-2018/" title="The Most Talked about Recipes of 2018">
+                      <img class="recent-posts__post-thumbnail" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/recent_posts_thumbnail/public/2018-12/5151529%20Easy%20Pineapple%20Chicken%20650x465.jpg?vMwHLvLPKG_zhxbXfUA0.GHIrPfDnszn&amp;itok=cV7UPimG" alt="Easy Pineapple Chicken" />
+
+                    <div class="recent-posts__post-title-byline">
+            <div class="recent-posts__post-title">
+              The Most Talked about Recipes of 2018
+            </div>
+
+                          <div class="recent-posts__post-byline">
+                By <em class="placeholder">Carl Hanson</em>
+              </div>
+                      </div>
+        </a>
+      </li>
+          <li class="recent-posts__post">
+        <a href="/top-10-new-recipes-2018/" title="Top 10 New Recipes of 2018">
+                      <img class="recent-posts__post-thumbnail" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/recent_posts_thumbnail/public/2018-09/5302785%20Instant%20Pot%20Pork%20Chops%20and%20Gravy%20Photo%20by%20lutzflcat%20650x465.jpg?KmkpFUIcjTFBoQOZgwzb3oUObeK1SnPp&amp;itok=iVx7gv5b" alt="Instant Pot Pork Chops and Gravy " />
+
+                    <div class="recent-posts__post-title-byline">
+            <div class="recent-posts__post-title">
+              Top 10 New Recipes of 2018
+            </div>
+
+                          <div class="recent-posts__post-byline">
+                By <em class="placeholder">Vanessa Greaves</em>
+              </div>
+                      </div>
+        </a>
+      </li>
+          <li class="recent-posts__post">
+        <a href="/top-10-new-dessert-recipes-2018/" title="Top 10 New Dessert Recipes of 2018">
+                      <img class="recent-posts__post-thumbnail" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/recent_posts_thumbnail/public/2018-12/5338008%20Zucchini%20Bars%20with%20Spice%20Frosting%20Photo%20by%20lutzflcat%20650x465.jpg?FjRuE58u3eQ0VSve3Uhz5cfd4jl7alaC&amp;itok=ibz1VrKh" alt="Zucchini Bars with Spice Frosting" />
+
+                    <div class="recent-posts__post-title-byline">
+            <div class="recent-posts__post-title">
+              Top 10 New Dessert Recipes of 2018
+            </div>
+
+                          <div class="recent-posts__post-byline">
+                By <em class="placeholder">Vanessa Greaves</em>
+              </div>
+                      </div>
+        </a>
+      </li>
+      </ul>
+</aside>
+
+</div>
+
+  </div>
+
+      </aside>
+      </div>
+</div><footer id="pageFooter" class="page-footer-container">
+    <div>
+    <div id="block-karma-slot-7">
+  
+    
+  <div class="karma-slot karma-slot--footer-fixed karma-slot--mobile">
+  <div  id="div-gpt-mob-adhesive-banner-fixed" data-tier="1"></div>
+</div>
+
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    <div class="footer-columns-container">
+      <div class="footer-column">
+          <div>
+    <div id="block-footersociallinks">
+  
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul class="social-sharing__icons">
+    <li>
+      <a id="footer_facebook" href="https://www.facebook.com/allrecipes" title="Facebook" target="_blank" class="ui-link">
+        <img title="Facebook" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Facebook" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_pinterest" href="http://pinterest.com/allrecipes/" title="Pinterest" target="_blank" class="ui-link">
+        <img title="Pinterest" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Pinterest" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_twitter" href="https://twitter.com/Allrecipes" title="Twitter" target="_blank" class="ui-link">
+        <img id="ctl00_Image3" title="Twitter" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Twitter" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_instagram" href="http://instagram.com/allrecipes" title="Instagram" target="_blank" class="ui-link">
+        <img title="Instagram" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Instagram" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_tumblr" href="http://allrecipes.tumblr.com/" title="Tumblr" target="_blank" class="ui-link">
+        <img title="Tumblr" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Tumblr" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_googleplus" href="https://plus.google.com/+allrecipes/" title="Google Plus" target="_blank" class="ui-link">
+        <img title="Google Plus" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Google Plus" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_stumbleupon" href="http://www.stumbleupon.com/stumbler/Allrecipes" title="StumbleUpon" target="_blank" class="ui-link">
+        <img title="StumbleUpon" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="StumbleUpon" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_youtube" href="https://www.youtube.com/user/allrecipes" title="YouTube" target="_blank" class="ui-link">
+        <img title="YouTube" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="YouTube" scale="0">
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+<div id="block-moreallrecipeslinks">
+  
+      <h2 class="heading-2">More Allrecipes</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul>
+    <li>
+      <a id="footer_magazine" href="http://armagazine.com/mobile-footer" target="_self">
+        Allrecipes Magazine
+        <span style="color:#ff7e1a;">
+          <span>
+            –
+          </span>
+          Subscribe
+        </span>
+      </a>
+    </li>
+    <li>
+      <a id="footer_apps" href="http://dish.allrecipes.com/mobile-apps" target="_self">
+        Allrecipes Apps
+      </a>
+    </li>
+    <li>
+      <a id="footer_foodwishes" href="http://youtube.com/foodwishes" target="_self">
+        Food Wishes Videos
+      </a>
+    </li>
+    <li>
+      <a id="footer_freshbites" href="http://freshbitesblog.com/" target="_self">
+        Fresh Bites Blog
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+
+  </div>
+
+      </div>
+      <div class="footer-column">
+          <div>
+    <div id="block-aboutuslinks">
+  
+      <h2 class="heading-2">About Us</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul>
+    <li>
+      <a id="footer_newsroom" href="http://press.allrecipes.com/" target="_self">
+        Newsroom
+      </a>
+    </li>
+    <li>
+      <a id="footer_jobs" href="http://dish.allrecipes.com/allrecipes-jobs/" target="_self">
+        Jobs at Allrecipes
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+<div id="block-supportlinks">
+  
+      <h2 class="heading-2">Support</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul>
+    <li>
+      <a id="footer_sitemap" href="http://dish.allrecipes.com/faq-sitemap/" target="_self">
+        Site Map
+      </a>
+    </li>
+    <li>
+      <a id="footer_contactus" href="http://dish.allrecipes.com/customer-service/contact-us-2/" target="_self">
+        Contact Us
+      </a>
+    </li>
+    <li>
+      <a id="footer_customersupport" href="http://dish.allrecipes.com/customer-service/" target="_self">
+        Customer Support
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+
+  </div>
+
+      </div>
+      <div class="footer-column">
+          <div>
+    <div id="block-advertisinglinks">
+  
+      <h2 class="heading-2">Advertising</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix footer_advertising">
+  <ul>
+    <li>
+      <a id="footer_advertisewithus" class="" href="http://www.meredith.com/national-media/digital" target="_self">
+        Advertise with Us
+      </a>
+    </li>
+    <li>
+      <a id="footer_womensnetwork" class="" href="http://www.meredith.com/marketing_solutions/interactive_media.html" target="_self">
+        Meredith Women's Network
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+<div id="block-globalcommunitylinks">
+  
+      <h2 class="heading-2">Global Community</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul>
+    <li>
+      <select id="country-selector">
+        <option value="" label="Select location">
+        Select location
+        </option>
+        <option value="http://allrecipes.com.ar/" label="Argentina">
+        Argentina
+        </option>
+        <option value="http://allrecipes.com.au/" label="Australia &amp; New Zealand">
+        Australia &amp; New Zealand
+        </option>
+        <option value="http://allrecipes.com.br/" label="Brazil">
+        Brazil
+        </option>
+        <option value="http://allrecipes.com/?country=CA" label="Canada">
+        Canada
+        </option>
+        <option value="http://allrecipes.cn/" label="China">
+        China
+        </option>
+        <option value="http://allrecipes.fr/" label="France">
+        France
+        </option>
+        <option value="http://de.allrecipes.com/" label="Germany">
+        Germany
+        </option>
+        <option value="http://allrecipes.co.in/" label="India">
+        India
+        </option>
+        <option value="http://allrecipes.it/" label="Italy">
+        Italy
+        </option>
+        <option value="http://allrecipes.kr/" label="Korea">
+        Korea
+        </option>
+        <option value="http://allrecipes.com.mx/" label="Mexico">
+        Mexico
+        </option>
+        <option value="http://allrecipes.nl/" label="Netherlands">
+        Netherlands
+        </option>
+        <option value="http://allrecipes.pl/" label="Poland">
+        Poland
+        </option>
+        <option value="http://qc.allrecipes.ca/" label="Quebec">
+        Quebec
+        </option>
+        <option value="http://allrecipes.ru/" label="Russia">
+        Russia
+        </option>
+        <option value="http://allrecipes.asia/" label="SE Asia">
+        SE Asia
+        </option>
+        <option value="http://allrecipes.co.uk/" label="United Kingdom &amp; Ireland">
+        United Kingdom &amp; Ireland
+        </option>
+        <option value="https://www.allrecipes.com/" label="United States">
+        United States
+        </option>
+      </select>
+    </li>
+  </ul>
+</article>
+
+</div>
+<div id="block-legallinks">
+  
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <h2>
+    © 2017 Allrecipes.com 
+    <br>
+    All Rights Reserved
+  </h2>
+  <ul>
+    <li>
+      <a id="footer_privacypolicy" href="http://www.meredith.com/legal/privacy" target="_blank">
+        Privacy Policy Your California Rights
+      </a>
+    </li>
+    <li>
+      <a id="footer_eu_privacypolicy" href="http://www.meredith.com/legal/eu-privacy" target="_blank">
+        EU Privacy Policy
+      </a>
+    </li>
+    <li>
+      <script>if (window.mdp.gdpr.dsarFormLink) document.write('<a href="' + window.mdp.gdpr.dsarFormLink + '" target="_blank">EU Data Subject Requests</a>');</script>
+    </li>
+    <li>
+      <a id="footer_termconditions" href="http://www.meredith.com/legal/terms">
+        <span style="color:red;font-weight:bold">
+          New!&nbsp;
+        </span>
+        Terms of Service
+      </a>
+    </li>
+    <li>
+      <a id="footer_datapolicy" href="http://www.meredith.com/datapolicy.html" target="_blank">
+        Data Policy
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="http://info.evidon.com/pub_info/282?v=1" id="_bapw-link">
+        <span style="vertical-align:middle !important;padding-right:5px" id="footer_adchoices">
+          AdChoices
+        </span>
+        <img height="11" style="border:0 !important;display:inline !important;vertical-align:middle !important;padding-right:5px !important;" id="_bapw-icon" src="http://cdn.betrad.com/pub/icon1.png" scale="0">
+      </a>
+    </li>
+  </ul>
+  <a id="back-to-top-button" href="#">
+    Top
+  </a>
+</article>
+
+</div>
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script type="javascript/template" id="usermenuSubmenuTemplate">
+  <ul class="nav-tab__options">
+    <li>
+      <a href="https://allrecipes.com/" id="navmenu_myFeed" target="_self">
+        <span class="icon apicon-home2"></span>
+        <span class="itemText">
+          Feed
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/cook/my/" id="navmenu_myprofile" target="_self">
+        <span class="icon apicon-profile"></span>
+        <span class="itemText">
+          Profile
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/cook/my/favorites/" rel="nofollow" id="navmenu_recipebox" target="_self">
+        <span class="icon apicon-heart"></span>
+        <span class="itemText">
+          Favorites
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/cook/my/findfriends/" rel="nofollow" id="navmenu_findfriends" target="_self">
+        <span class="icon apicon-users"></span>
+        <span class="itemText">
+          Friends
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/my/shopping-lists/" rel="nofollow" id="navmenu_shoppinglist" target="_self">
+        <span class="icon apicon-bag"></span>
+        <span class="itemText">
+          Shopping List
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/cook/my/account-settings/" rel="nofollow" id="navmenu_settings" target="_self">
+        <span class="icon apicon-gear"></span>
+        <span class="itemText">
+          Settings
+        </span>
+      </a>
+    </li>
+  </ul>
+  <div class="signout">
+    <button onclick="location.href='https://allrecipes.com/account/signout'" class="btn-basic--large" id="offCanvasSignOutBtn">
+      Sign out
+    </button>
+  </div>
+</script>
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/7463","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","breakpoints":{"small":{"name":"small","media_query":"all and (min-width: 0em)","multipliers":["1x"]},"small-med":{"name":"small-med","media_query":"all and (min-width: 26em)","multipliers":["1x"]},"small-large":{"name":"small-large","media_query":"all and (min-width: 41em)","multipliers":["1x"]},"medium":{"name":"medium","media_query":"all and (min-width: 48em)","multipliers":["1x"]},"large":{"name":"large","media_query":"all and (min-width: 61.25em)","multipliers":["1x"]}},"meredithKarma":{"adService":{"mobileAds":false,"unitValues":{"channel":"dishblog","parent":"","child":""},"pageTargetingValues":{"id":"node_7463","type":"post","search":""}}},"meredithGtm":{"variables":{"Page Name":"Invite Chef John\u0027s Best Bites to Your Holiday Party","Content Type":"post","Content ID":"post:7463","Content Creation Date":"12\/01\/2016","Channel":"Recipe Inspiration","Author":"Carl Hanson"},"event":"pageview"},"user":{"uid":0,"permissionsHash":"af8f9ebc72924439ea270f4cf96e39bf48f25bba1aece53df7dec4064345a051"}}</script>
+<script src="/s3fs-js/js/js_OxC6g7USxsvFrB1ljiB_0yO2ProRCrA6TPLRFqE3Ugw.js"></script>
+
+<!--[if lte IE 8]>
+<script src="/s3fs-js/js/js_5nllavJCRoAQPuHBn7iZjMZosGtZPxfTsjw8dXdmOIQ.js"></script>
+<![endif]-->
+<script src="/s3fs-js/js/js_IQ0FYLpQ6ouOL6hcOrPCeX0nC5MTGsEtMbkTS5yMJrs.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"55db0cb698","applicationID":"90588990","transactionName":"YwABYUUDXUIABRZbCVpKIlZDC1xfThYDVQNrBgJWXwc=","queueTime":0,"applicationTime":13,"atts":"T0cCFw0ZTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

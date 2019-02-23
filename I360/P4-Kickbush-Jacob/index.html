@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+	<!--
+		I360 Web Design: Project 4
+		https://fontawesome.com/get-started
+		https://fonts.google.com/
+		https://www.w3schools.com/howto/howto_js_off-canvas.asp
+		http://leafletjs.com/examples/quick-start/
+		https://www.latlong.net/
+		http://www.material-ui.com/#/customization/colors
+		https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient
+		Access Token:
+		pk.eyJ1IjoiaTM2MCIsImEiOiJjamZuYjYwaG4wbDRuMnFtZHNhYWhpbzc0In0.yMHIZKQj5MtG1fJBMAlXbA
+	-->
+
+	<head>
+		<meta charset="utf-8">
+		<title>I360 Project 4</title>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/normalize.css">
+
+		<!-- Google Font -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+
+		<!-- Font Awesome Icons -->
+		<script defer src="https://use.fontawesome.com/releases/v5.4.2/js/all.js" integrity="sha384-wp96dIgDl5BLlOXb4VMinXPNiB32VYBSoXOoiARzSTXY+tsK8yDTYfvdTyqzdGGN" crossorigin="anonymous"></script>
+
+
+		<!--  Leaflet CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
+  		integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+  		crossorigin=""/>
+
+
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!--[if lte IE 9]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+	</head>
+
+	<body>
+
+	<nav id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#">About</a>
+	  <a href="#">Services</a>
+	  <a href="#">Clients </a>
+	  <a href="#">Contact</a>
+	</nav>
+
+
+	<span class="menuButton">
+	<i class="fas fa-bars fa-3x" onclick="openNav()"></i>
+	menu
+	</span>
+
+	<div id="main">
+
+		<header>
+			<h1>My Map App</h1>
+		</header>
+
+		<!-- Map -->
+		<div id="mapid"></div>
+
+		<article>
+			<section>
+				<h2>School of Informatics, Computing and Engineering<br>
+				<span>Indiana University</span></h2>
+				<p>The School of Informatics and Computing includes the School of Informatics, Computing, and Engineering, Bloomington and the School of Informatics, IUPUI. The mission of the School is to excel and lead in education, research, and outreach spanning and integrating the full breadth of computing and information technology, including the scientific and technical core, a broad range of applications, and human and societal issues and implications.</p>
+				<h3>Departments</h3>
+				<ul>
+					<li>Computer Science</li>
+					<li>Informatics</li>
+					<li>Intelligent Systems Engineering</li>
+					<li>Library and Information Science</li>
+				</ul>
+				<h3>Website</h3>
+				<ul>
+					<li><a href="https://www.sice.indiana.edu/index.html">SICE</a></li>
+				</ul>
+			</section>
+		</article>
+
+		<!--  Leaflet JS -->
+		<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+  		integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+  		crossorigin=""></script>
+
+		<!-- Leaflet Activation JS -->
+		<script>
+		var mymap = L.map('mapid').setView([39.171671,-86.523174], 13);
+
+		L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		maxZoom: 18,
+		id: 'mapbox.streets',
+		accessToken: 'pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw'
+		}).addTo(mymap);
+
+		var marker = L.marker([39.172922,-86.523102]).addTo(mymap);
+		marker.bindPopup("<b>School of Informatics, Computing and Engineering</b></br>Indiana University");
+
+		</script>
+
+		<script>
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+		document.getElementById("main").style.marginLeft = "250px";
+	}
+
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("main").style.marginLeft = "0";
+	}
+		</script>
+
+	</div>
+	</body>
+</html>

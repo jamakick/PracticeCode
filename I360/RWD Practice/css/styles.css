@@ -1,0 +1,274 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* apply a natural box layout model to all elements */
+
+/*
+COLORS:
+orange		#F27935
+turquoise	#4ECDC4
+grey		#F2F1EF
+cream		#fef9ed
+*/
+
+/* Extra small devices (phones, less than 768px) */
+
+body {
+  margin: 0;
+}
+
+.nobr {
+	white-space: nowrap;
+}
+
+h1, h2, h3 {
+	font-family: 'Ovo', serif;
+	color: #F2F1EF;
+}
+
+p, li {
+	font-family: 'Ovo', serif;
+	font-size: 18px;
+	line-height: 1.3em;
+}
+
+header h1 {
+	font-size: 48px;
+	position: relative;
+	left: -4px;
+}
+
+.tagline {
+	font-weight: bold;
+	color: #F2F1EF;
+	font-size: 15px;
+	font-family: 'Muli', sans-serif;
+}
+
+.pronunciation {
+	color: black;
+	font-size: 28px;
+}
+
+#header-bkg {
+	background: url(../images/hopscotch-bar.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 545px;
+}
+
+#dots {
+  /* http://www.patternify.com/ */
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQYV2NkYGBIY4CAWVAaTDHik0BWCGeDdCADuLFES8B1AwBXcgQHq6hTZwAAAABJRU5ErkJggg==) repeat;
+}
+
+header {
+	width: 100%;
+	padding: 4.0em 2.0em 2.0em;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4ecdc4+0,f27935+100&0.85+0,0.85+100 */
+	background: -moz-linear-gradient(45deg,  rgba(78,205,196,0.85) 0%, rgba(242,121,53,0.85) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  rgba(78,205,196,0.85) 0%,rgba(242,121,53,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  rgba(78,205,196,0.85) 0%,rgba(242,121,53,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d94ecdc4', endColorstr='#d9f27935',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+nav {
+	background: #FEF9ED;
+	width: 100%;
+	padding: 2.0em;
+}
+
+nav:hover { background-color: #F2F1EF; }
+
+nav h2 {
+	margin: 0;
+	color: rgba(74,84,94,1.0);
+	font-weight: bold;
+	font-size: 18px;
+	font-family: 'Muli', sans-serif;
+}
+
+nav a:link, nav a:visited {
+	text-decoration: none;
+	color: #F27935;
+}
+
+nav a:active, nav a:hover {
+	color: rgba(74,84,94,1.0);
+}
+
+article {
+	background: #6C7A89;
+	padding: 4.0em 2.0em;
+	width: 100%;
+}
+
+article h2 {
+	margin: 0;
+	font-size: 32px;
+	padding-bottom: 0.5em;
+	line-height: 1.3em;
+}
+
+article li {
+	color: #F2F1EF;
+}
+
+/* tag */
+#tag {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 25px;
+	height: 25px;
+	background-color: #CC0000;
+}
+
+/* Add flexbox grid */
+
+article section {
+	display: flex;
+	flex-flow: row wrap;
+	margin-top: 4.0em;
+	max-width: 768px;
+}
+
+article figure {
+	max-width: 270px;
+	margin: 1.0em 20px;
+}
+
+article figure img {
+	width: 100%;
+}
+
+article figcaption {
+	color: #F2F1EF;
+	font-style: italic;
+	font-size: 0.9em;
+	padding-top: 0.3em;
+}
+
+/* Add social media icon */
+
+div.social-media {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 50px;
+	height: 50px;
+}
+
+.fa-facebook-square {
+	color: #F27935;
+	opacity: 0.85;
+}
+
+.fa-facebook-square:hover {
+	color: #F2F1EF;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+	#tag {
+		 background-color: #FF9900;
+	 }
+
+	header {
+		padding: 6.0em 4.0em 3.0em;
+	}
+
+	nav {
+		padding: 2.0em 4.0em;
+	}
+
+	article {
+		padding: 4.0em;
+	}
+
+	header h1 {
+		font-size: 54px;
+	}
+
+	article h2 {
+		font-size: 38px;
+	}
+
+	tagline {
+		font-size: 18px;
+	}
+
+	p, li {
+		font-family: 'Ovo', serif;
+		font-size: 20px;
+	}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+	#tag {
+		background-color: #00AA88;
+	}
+
+	header, nav, article {
+		max-width: 768px;
+	}
+
+	#header-bkg, #dots {
+		width: 100%;
+		height: 100%;
+	}
+
+	header {
+		padding: 8.0em 6.0em 4.0em;
+	}
+
+	nav {
+		padding: 2.0em 6.0em;
+	}
+
+	article {
+		padding: 4.0em 3.0em 4.0em;
+	}
+
+	p, li {
+		font-size: 22px;
+		line-height: 1.4em;
+	}
+
+	header h1 {
+		font-size: 60px;
+		position: relative;
+		left: -4px;
+	}
+
+	article h2 {
+		font-size: 48px;
+	}
+
+	.pronunciation {
+		font-size: 30px;
+	}
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+	#tag {
+		background-color: #674EA7;
+	 }
+
+	header {
+		padding: 10.0em 6.0em 4.0em;
+	}
+
+}

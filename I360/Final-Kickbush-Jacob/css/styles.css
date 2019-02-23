@@ -1,0 +1,336 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Browser Upgrade Prompt */
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+nav img {
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+
+/* clearfix - in case you decide to float elements */
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+body {
+	background-image: radial-gradient(ellipse at center, #fcfeff 0%, #eaf7fc 20%, #d9effa 40%, #c7e8f8 60%, #b6e1f6 80%);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Playfair Display', serif;
+}
+
+p, a, figcaption {
+	font-family: 'EB Garamond', serif;
+}
+
+.logoName {
+	font-size: 60px;
+	text-align: center;
+	letter-spacing: 5px;
+	margin-top: 250px;
+	width: 100%;
+	padding: 40px;
+}
+
+.logo {
+	padding: 0;
+}
+
+#header {
+	width: 100%;
+	height: 800px;
+	border: 1px solid rgba(255, 0, 0, 0);
+	margin: 0;
+	padding: 0;
+
+}
+
+#header2 {
+	width: 100%;
+	height: 400px;
+	border: 1px solid rgba(255, 0, 0, 0);
+	margin: 0;
+	padding: 0;
+
+}
+
+#footer {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	background: radial-gradient(ellipse at center, #e5e5e5 0%, #ffffff 60%);
+	/*border: 1px solid rgba(255, 0, 0, 0.0); */
+}
+
+footer {
+	position: relative;
+	margin-top: 150px;
+}
+
+.menuLinks ul {
+	display: flex;
+	justify-content: center;
+	list-style-type: none;
+}
+
+.menuLinks ul li {
+	padding: 5px;
+	text-decoration: none;
+	font-size: 24px;
+	margin: 3px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: normal;
+  color: #004080;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+a:hover {
+  color: #0066cd;
+}
+
+#centerpiece {
+	margin: 0 auto;
+	width: 100%;
+	min-height: 1000px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 200px;
+}
+
+.card {
+	background-color: white;
+	min-width: 600px;
+	min-height: 400px;
+	margin: 50px;
+	box-shadow: 1px 1px gainsboro;
+
+}
+
+/*Hover.css grow code */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.3);
+}
+
+.hvr-grow > p {
+	visibility: hidden;
+}
+
+.hvr-grow:hover > p {
+	visibility: visible;
+}
+
+#centerpiece a {
+	color: black;
+}
+
+.aboutArticle {
+	margin: 200px;
+	min-width: 80%;
+}
+
+.photo {
+	width: 350px;
+	height: 450px;
+	background-color: white;
+
+}
+
+article .container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+article .container div {
+	padding: 20px;
+	margin: 20px;
+}
+
+article .contentHead {
+	width: 60%;
+}
+
+article p {
+	font-size: 22px;
+}
+
+article h1,h2,h3 {
+	font-size: 30px;
+}
+
+.projArticle {
+	margin: 250px;
+}
+
+.slide-nav {
+	margin: 15px auto;
+	width: 80%;
+}
+
+.slide-nav div {
+	padding: 5px;
+}
+
+.embedResume embed {
+	width: 1000px;
+	height: 1000px;
+	margin: 20px auto;
+}
+
+#aboutPic {
+	width: 250px;
+	height: 350px;
+	position: absolute;
+	top: 25px;
+	right: 40px;
+}
+
+#resPic {
+	width: 350px;
+	height: 350px;
+	position: absolute;
+	top: 25px;
+	right: 40px;
+}
+
+#coldcase {
+	width: 80%;
+	height: 80%;
+	margin: 0 auto;
+}
+
+#coldnav {
+	margin: 0 auto;
+}
+
+#projPic {
+	width: 350px;
+	height: 350px;
+	position: absolute;
+	top: 25px;
+	right: 40px;
+}
+
+/* MEDIA QUERIES */
+/* X-Small devices (portait phones, less than 576px) */
+/* All styles up to this point in the stylesheet are for x-small */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    /* body { background-color: orange; } */
+
+	.embedResume embed {
+		width: 500px;
+		height: 600px;
+		margin: 0;
+	}
+
+	.embedResume {
+		margin: 0;
+	}
+
+	.aboutArticle {
+		margin: 0;
+		margin-bottom: 200px;
+	}
+
+	.projArticle {
+		margin: 40px;
+		margin-bottom: 200px;
+	}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* body { background-color: green; } */
+	.embedResume embed {
+		width: 600px;
+		height: 700px;
+		margin: 0;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* body { background-color: blue; } */
+	.aboutArticle {
+		margin: 50px;
+	}
+
+	.embedResume embed {
+		width: 700px;
+		height: 800px;
+		margin: 0;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* body { background-color: purple; } */
+}

@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" xmlns:dc="http://purl.org/dc/terms/" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:product="http://ogp.me/ns/product#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#">
+  <head>
+    <script>
+    window.mdp = window.mdp || {};
+    window.mdp.gdpr = window.mdp.gdpr || {};
+    window.mdp.gdpr.siteLogoHtml = '<img src="https://secureimages.allrecipes.com/ar-images/ARlogo.svg" />';
+    window.mdp.gdpr.cookieDomain = '.allrecipes.com';
+    </script>
+    <script src="https://geoscripts.meredith.services/public/javascripts/mdp.javascript.gdpr.min.1.0.0.js"></script>
+    <script>
+    (function () {
+      function getCookie(name) {
+        var dc = document.cookie;
+        var prefix = name + "=";
+        var begin = dc.indexOf("; " + prefix);
+        if (begin === -1) {
+          begin = dc.indexOf(prefix);
+          if (begin !== 0) return null;
+        }
+        else {
+          begin += 2;
+          var end = document.cookie.indexOf(";", begin);
+          if (end === -1) {
+            end = dc.length;
+          }
+        }
+        return decodeURI(dc.substring(begin + prefix.length, end));
+      }      
+      window.mdp = window.mdp || {};
+      window.mdp.gdpr = window.mdp.gdpr || {};
+      var uid = getCookie('euConsentId') || getCookie('globalTI_SID') || '';
+      var dsarFormLink = 'https://app-de.onetrust.com/app/#/webform/0c410d51-8e85-4308-9bb9-37c24a461ccb?uid=' + uid;
+      window.mdp.gdpr.dsarFormLink = dsarFormLink;
+    })();
+    </script>
+    <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1099.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<meta name="title" content="Our Top 20 Brunch Recipes of All Time | Allrecipes" />
+<meta property="og:site_name" content="Allrecipes" />
+<meta name="twitter:card" content="summary" />
+<meta property="fb:pages" content="71158748377" />
+<link rel="canonical" href="http://dish.allrecipes.com/top-20-brunch-recipes-time/" />
+<meta name="twitter:title" content="Our Top 20 Brunch Recipes of All Time" />
+<meta property="fb:app_id" content="66102450266" />
+<meta name="description" content="Let&#039;s have a (French) Toast to Allrecipes&#039; 20th birthday celebration!" />
+<meta name="twitter:site" content="@Allrecipes" />
+<meta property="og:url" content="http://dish.allrecipes.com/top-20-brunch-recipes-time/" />
+<meta property="og:title" content="Our Top 20 Brunch Recipes of All Time" />
+<meta name="twitter:url" content="http://dish.allrecipes.com/top-20-brunch-recipes-time/" />
+<meta property="og:updated_time" content="Thu, 11/08/2018 - 14:32" />
+<meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/themes/dish/images/favicon-96x96.png" type="image/png" />
+<link rel="revision" href="/top-20-brunch-recipes-time/" />
+<!-- Krux Controltag -->
+<script class="kxct" data-id="TK" data-version="async:1.7" type="text/javascript">
+  window.Krux||((Krux=function(){Krux.q.push(arguments)}).q=[]);
+  (function(){
+  var k=document.createElement('script');k.type='text/javascript';k.async=true;
+  var m,src=(m=location.href.match(/\bkxsrc=([^&]+)/))&&decodeURIComponent(m[1]);
+  k.src = /^https?:\/\/([^\/]+\.)?krxd\.net(:\d{1,5})?\//i.test(src) ? src : src === "disable" ? "" :
+  (location.protocol==="https:"?"https:":"http:")+"//cdn.krxd.net/controltag?confid=TK";
+  var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(k,s);
+  })();
+</script>
+<!-- End Krux Controltag -->
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "sameAs": [],
+    "name": "Allrecipes",
+    "url": "http://dish.allrecipes.com",
+    "logo": {
+        "@context": "http://schema.org",
+        "@type": "ImageObject",
+        "url": "http://dish.allrecipes.com/themes/dish/images/logo-dish.png",
+        "height": 60,
+        "width": 121
+    }
+}</script>
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "http://dish.allrecipes.com"
+}</script>
+<script type="application/ld+json">{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "@id": "http://dish.allrecipes.com/",
+                "name": "Home"
+            }
+        }
+    ]
+}</script>
+
+    <title>Our Top 20 Brunch Recipes of All Time | Allrecipes</title>
+    <link rel="stylesheet" href="/s3fs-css/css/css_f_NG92oMdb2SAAwUfVFiXUg4zaVO2n-JdYkVzlzAUaE.css?pcbtcu" media="all" />
+<link rel="stylesheet" href="/s3fs-css/css/css_Hzisw7x54FzUpdDShh2mX5yfU8OaOiHabR0_POyUfQk.css?pcbtcu" media="all" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" media="all" />
+<link rel="stylesheet" href="/s3fs-css/css/css_TkDyfQMjsoVKWcSBXTVPwF1icCrb5bxHr4NLF_rCYnw.css?pcbtcu" media="all" />
+
+    
+<!--[if lte IE 8]>
+<script src="/s3fs-js/js/js_VtafjXmRvoUgAzqzYTA3Wrjkx9wcWhjP0G4ZnnqRamA.js"></script>
+<![endif]-->
+<script src="https://assets.adobedtm.com/1c2ad567a53f27e563c4dc2c278a904b84dc5fde/satelliteLib-9f46f93c6b7aa623feaba0956d41ba2358d7e3a4.js" async id="meredith_atm_external_script"></script>
+<script src="https://karma.mdpcdn.com/service/js-min/karma.header.js" async></script>
+
+  </head>
+  <body>
+        <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+      <!-- Google Tag Manager -->
+  <script>dataLayer = [{}];</script>
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N3NQL5"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-N3NQL5');</script>
+  <!-- End Google Tag Manager -->
+
+    <div id="block-karma-slot">
+  
+    
+  <div class="karma-slot karma-slot--header">
+  <div  id="div-gpt-leaderboard-flex-1" data-tier="1"></div>
+</div>
+
+</div>
+
+<header class="header new-nav">
+  <section>
+    <div class="full-header clearfix">
+      <nav class="ar-nav">
+        <ul>
+          <li class="ar-logo-tab">
+            <a href="https://www.allrecipes.com/" class="ar-logo">
+              <img alt="Allrecipes" src="/themes/dish/images/ARlogo.svg" width="96" height="36" scale="0">
+            </a>
+          </li>
+          <li class="menutoggle browse-recipes">
+            <a href="#browse-recipesdrop" class="showdrop">
+              <span>
+                BROWSE
+              </span>
+              <span class="icon apicon-chevron-down">
+              </span>
+            </a>
+            <div id="browse-recipesdrop" class="nav-tab menudrop">
+              <div class="underline_hero_link nav-tab__options clearfix">
+                <div class="clearfix">
+                  <a title="Appetizer Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/76/appetizers-and-snacks/">
+                    <img class="hero-link__item__image" alt="Appetizer Recipes" src="https://images.media-allrecipes.com/images/60583.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Appetizer
+                    </span>
+                  </a>
+                  <a title="Breakfast &amp; Brunch Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/78/breakfast-and-brunch/">
+                    <img class="hero-link__item__image" alt="Breakfast &amp; Brunch Recipes" src="https://images.media-allrecipes.com/images/60586.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Breakfast &amp; Brunch
+                    </span>
+                  </a>
+                  <a title="Chicken Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/201/meat-and-poultry/chicken/">
+                    <img class="hero-link__item__image" alt="Chicken Recipes" src="https://images.media-allrecipes.com/images/60628.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Chicken
+                    </span>
+                  </a>
+                  <a title="Dessert Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/79/desserts/">
+                    <img class="hero-link__item__image" alt="Dessert Recipes" src="https://images.media-allrecipes.com/images/60587.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Dessert
+                    </span>
+                  </a>
+                  <a title="Healthy Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/84/healthy-recipes/">
+                    <img class="hero-link__item__image" alt="Healthy Recipes" src="https://images.media-allrecipes.com/images/60592.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Healthy
+                    </span>
+                  </a>
+                  <a title="Holidays and Events Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/85/holidays-and-events/">
+                    <img class="hero-link__item__image" alt="Holidays and Events Recipes" src="https://images.media-allrecipes.com/images/60593.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Holidays and Events
+                    </span>
+                  </a>
+                  <a title="Main Dish Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/80/main-dish/">
+                    <img class="hero-link__item__image" alt="Main Dish Recipes" src="https://images.media-allrecipes.com/images/60596.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Main Dish
+                    </span>
+                  </a>
+                  <a title="Quick &amp; Easy Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/1947/everyday-cooking/quick-and-easy/">
+                    <img class="hero-link__item__image" alt="Quick &amp; Easy Recipes" src="https://images.media-allrecipes.com/images/60629.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Quick &amp; Easy
+                    </span>
+                  </a>
+                  <a title="Salad Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/96/salad/">
+                    <img class="hero-link__item__image" alt="Salad Recipes" src="https://images.media-allrecipes.com/images/60599.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Salad
+                    </span>
+                  </a>
+                  <a title="Slow Cooker Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/253/everyday-cooking/slow-cooker/">
+                    <img class="hero-link__item__image" alt="Slow Cooker Recipes" src="https://images.media-allrecipes.com/images/60630.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Slow Cooker
+                    </span>
+                  </a>
+                  <a title="Trusted Brands Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/82/trusted-brands-recipes-and-tips/">
+                    <img class="hero-link__item__image" alt="Trusted Brands Recipes" src="https://images.media-allrecipes.com/images/60603.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Trusted Brands
+                    </span>
+                  </a>
+                  <a title="Vegetarian Recipes" class="hero-link__item hero-link-browse-recipe__item light" href="https://www.allrecipes.com/recipes/87/everyday-cooking/vegetarian/">
+                    <img class="hero-link__item__image" alt="Vegetarian Recipes" src="https://images.media-allrecipes.com/images/60631.png" scale="0">
+                    <span class="hero-link__item__text">
+                      Vegetarian
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <a href="https://www.allrecipes.com/recipes?grouping=all" class="recipe-hero-link__item__text">
+                All Categories
+              </a>
+            </div>
+          </li>
+          <li class="menutoggle hublink-togg pull-right">
+            <a href="#hublinks" class="showdrop">
+              <div>
+                <span class="browse-recipes-iconbar">
+                </span>
+                <span class="browse-recipes-iconbar">
+                </span>
+                <span class="browse-recipes-iconbar">
+                </span>
+              </div>
+            </a>
+            <div id="hublinks" class="nav-tab menudrop">
+              <ul class="nav-tab__options">
+                <li class="underline_link">
+                  <a id="navmenu_recipes" href="https://www.allrecipes.com/recipes/">
+                    <span class="icon apicon-spoons">
+                    </span>
+                    <span>
+                      Browse Recipes
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a id="navmenu_magazine" href="http://armagazine.com/mobile-site">
+                    <span class="icon apicon-magazine">
+                    </span>
+                    <span>
+                      Allrecipes Magazine
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a id="navmenu_shop" href="http://shop.allrecipes.com/shop">
+                    <span class="icon apicon-bag">
+                    </span>
+                    <span>
+                      Shop
+                    </span>
+                  </a>
+                </li>
+                <li class="underline_link">
+                  <a id="navmenu_cooking_school" href="http://cookingschool.allrecipes.com/">
+                    <span class="icon apicon-cap">
+                    </span>
+                    <span>
+                      Cooking School
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a id="navmenu_social_gallery" href="https://www.allrecipes.com/cook/my/account-settings/">
+                    <span class="icon apicon-tower">
+                    </span>
+                    <span>
+                      Newsletters
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a id="navmenu_dish" href="http://dish.allrecipes.com/ask-the-community/">
+                    <span class="icon apicon-q">
+                    </span>
+                    <span>
+                      Ask the Community
+                    </span>
+                  </a>
+                </li>
+                <li class="underline_link">
+                  <a id="navmenu_help" href="http://dish.allrecipes.com/customer-service/">
+                    <span class="icon apicon-help">
+                    </span>
+                    <span>
+                      Help
+                    </span>
+                  </a>
+                </li>
+                <li class="small-links">
+                  <a href="http://dish.allrecipes.com/allrecipes-jobs-2/">
+                    Jobs
+                  </a>
+                  <a href="http://press.allrecipes.com/">
+                    Newsroom
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="search-tab">
+            <div class="nav-search">
+              <form class="search-form recipe-search-form" role="search" method="get" action="https://www.allrecipes.com/search/results/">
+                <label>
+                  <input class="search-text" name="wt" type="text" placeholder="Find a recipe">
+                </label>
+                <span id="ingredientSearch" class="ingredient-searchtxt">
+                  Ingredient Search
+                </span>
+                <button class="search-button btn-basic--small apicon-search" type="submit">
+                </button>
+              </form>
+            </div>
+          </li>
+          <li class="nav-profile menutoggle">
+            <a id="navmenu_signin_signup" class="btn-basic--large btn-gold signin__btn" href="https://www.allrecipes.com/account/signin/?loginreferrerurl=http://dish.allrecipes.com/top-20-brunch-recipes-time/&loginreferrertype=dish">
+              Sign In 
+              <em>
+                or
+              </em>
+              Sign Up
+            </a>
+          </li>
+          <li class="nav-favorites">
+            <a href="https://www.allrecipes.com/cook/my/favorites/" target="_self">
+              <span class="apicon-heart">
+              </span>
+            </a>
+          </li>
+          <li class="search-tab small-screen hide">
+            <a href="#">
+              <span>
+                <img alt="search" height="23" src="https://images.media-allrecipes.com/ar-images/icons/NavSearchIcon.svg" width="23" scale="0">
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nav-tab nav-tab__search">
+      <form role="search" method="get" class="search-form recipe-search-form-advanced" action="https://www.allrecipes.com/search/results/">
+        <span class="icon--close" title="Close Ingredient Search">
+        </span>
+        <div class="input-wrap--home">
+          <label>
+            <img class="search-icon" alt="Search" src="https://images.media-allrecipes.com/ar-images/icons/NavSearchIcon.svg" scale="0">
+            <input class="search-text" name="wt" type="text" placeholder="Keywords">
+          </label>
+        </div>
+        <div class="input-wrap--home ingredients">
+          <div class="ingredient-add-exclude">
+            <input id="includeIngText" type="text" name="ingIncl" placeholder="Include ingredients" value="" style="display: none;">
+          </div>
+          <a class="btn-basic--small include" href="#">
+            <span>
+              +
+            </span>
+          </a>
+        </div>
+        <div class="input-wrap--home ingredients">
+          <div class="ingredient-add-exclude">
+            <input id="excludeIngText" type="text" name="ingExcl" placeholder="Exclude ingredients" value="" style="display: none;">
+          </div>
+          <a class="btn-basic--small exclude" href="#">
+            <span>
+              —
+            </span>
+          </a>
+        </div>
+        <div class="nav-tab__buttons">
+          <button class="btn-basic--small btn-search">
+            Go
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+</header>
+
+<div class="content-container">
+    <a id="main-content" tabindex="-1"></a>
+  
+
+  
+  
+  <div class="content">
+    <div class="primary-content">
+        <div>
+    <div id="block-dish-page-title">
+  
+    
+  <header class="entry-header">
+  
+      <h1>
+      <span>Our Top 20 Brunch Recipes of All Time</span>
+
+    </h1>
+    
+</header>
+
+</div>
+<div id="block-karma-slot-2">
+  
+    
+  <div class="karma-slot karma-slot--lazy" id="karma-lazy-sponsorLogo" data-tier="1">
+  <div ></div>
+</div>
+
+</div>
+<div id="block-dish-postbyline">
+  
+    
+  <div class="byline">
+      <div class="byline__image">
+      
+            <div>  <img src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/thumbnail/public/2017-11/filelkVTIw.jpg?itok=KorIjc1u" width="75" height="100" alt="" />
+
+
+</div>
+      
+    </div>
+    <p class="byline__author">
+      By <em class="placeholder">Leslie Kelly</em>
+    </p>
+</div>
+
+</div>
+<div id="block-dish-socialsharelinks">
+  
+    
+    
+      
+      <div class="social-links__wrapper">
+                <ul class="social-links social-links--share">
+              <li class="social-links__item social-links__item--facebook">
+            
+    <a href="/top-20-brunch-recipes-time/" class="social-icon social-icon--facebook">Facebook</a>
+
+        </li>
+              <li class="social-links__item social-links__item--twitter">
+            
+    <a href="/top-20-brunch-recipes-time/" class="social-icon social-icon--twitter">Twitter</a>
+
+        </li>
+              <li class="social-links__item social-links__item--google">
+            
+    <a href="/top-20-brunch-recipes-time/" class="social-icon social-icon--google">Google+</a>
+
+        </li>
+              <li class="social-links__item social-links__item--pinterest">
+            
+    <a href="/top-20-brunch-recipes-time/" class="social-icon social-icon--pinterest">Pinterest</a>
+
+        </li>
+              <li class="social-links__item social-links__item--stumbleupon">
+            
+    <a href="/top-20-brunch-recipes-time/" class="social-icon social-icon--stumbleupon">StumbleUpon</a>
+
+        </li>
+          </ul>
+  </div>
+
+</div>
+<article id="" class="post- post type-post status-publish format-standard has-post-thumbnail hentry category- " role="article">
+    <div class="entry-content">
+    
+            <div><style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+
+<!--/*--><![CDATA[/* ><!--*/
+
+<!--/*--><![CDATA[/* ><!--*/
+.entry-content img {
+
+width:100%;
+display:initial;
+max-width:650px;
+
+}
+
+p {
+
+display:inherit;
+
+}
+
+/*--><!]]]]]]><![CDATA[><![CDATA[>*/
+
+/*--><!]]]]><![CDATA[>*/
+
+/*--><!]]>*/
+</style><p>Because we LOVE all things <a href="https://www.allrecipes.com/recipes/78/breakfast-and-brunch/" target="_blank">Brunchworthy</a>, here are the recipes that get loads of attention from our the AR users who like, save, review and serve up tips on the very best dishes from our extensive lineup of brunch faves. Mix yourself up a <a href="http://dish.allrecipes.com/ultimate-bloody-mary-bar-checklist/" target="_blank">Bloody Mary</a> or a <a href="http://dish.allrecipes.com/super-cool-summer-smoothies/?lnkid=ed001" target="_blank">super chill smoothie</a> and enjoy this tasty greatest hits tour, complete with commentary from our community!</p>&#13;
+&#13;
+<h3>1. <a href="https://www.allrecipes.com/recipe/7040/jps-big-daddy-biscuits" target="_blank">JP's Big Daddy Biscuits</a></h3>&#13;
+&#13;
+<div class="karma-slot--square-container karma-slot--mobile-only"><div id="div-gpt-mob-square-fixed-1" data-tier="1" class="karma-slot--square karma-slot--mobile-only"></div></div><p>"This recipe will produce the biggest biscuits in the history of the world," says John Pickett. "Serve these gems with butter, preserves, honey, gravy -- or they can also be used as dinner rolls."</p>&#13;
+&#13;
+<p><img alt="JP's Big Daddy Biscuits" src="https://images.media-allrecipes.com/userphotos/650x465/4512167.jpg&#13;&#10;" style="max-width:650px;" /></p>&#13;
+&#13;
+<figcaption>Photo by Sarah</figcaption><h3>2. <a href="https://www.allrecipes.com/recipe/6865/to-die-for-blueberry-muffins/" target="_blank">To Die For Blueberry Muffins</a></h3>&#13;
+&#13;
+<div id="div-sm-highImpact"></div><p>"Wow! My search for perfect blueberry muffins ends here," says CINDERW. "They came out like you would expect from a gourmet bakery."</p>&#13;
+&#13;
+<p><img alt="" src="https://images.media-allrecipes.com/userphotos/650x465/662790.jpg&#13;&#10;" style="max-width:650px;" /></p>&#13;
+&#13;
+<figcaption>Photo by Dianne</figcaption><h3>3. <a href="https://www.allrecipes.com/recipe/68641/brunch-on-the-bayou/" target="_blank">Brunch on the Bayou</a></h3>&#13;
+&#13;
+<p>"If I could give this more than 5 stars, I would," says <a href="https://www.allrecipes.com/cook/802251/">Sheri Wilson</a>. "It was both easy and delicious. I made it for my husband's birthday brunch, and everyone raved."</p>&#13;
+&#13;
+<div style="position: relative; display: block; max-width: 100%;">&#13;
+<div style="padding-top: 56.25%;"><iframe allow="encrypted-media" allowfullscreen="" mozallowfullscreen="" src="//players.brightcove.net/1033249144001/NJFOnQJoe_default/index.html?videoId=5569398924001" style="position: absolute; top: 0px; right: 0px; bottom: 0px; left: 0px; width: 100%; height: 100%;" webkitallowfullscreen=""></iframe></div>&#13;
+</div>&#13;
+&#13;
+<h3>4. <a href="https://www.allrecipes.com/recipe/229150/cheesy-amish-breakfast-casserole/" target="_blank">Cheesy Amish Breakfast Casserole</a></h3>&#13;
+&#13;
+<p>"When I need to feed a crowd this is the recipe I use," says <a href="https://www.allrecipes.com/cook/271302/">SEWNUTS1980</a>. "It is delicious. There are never any leftovers - even if I make two pans. The guys in my office request it often. YUM!"</p>&#13;
+&#13;
+<p><img alt="Cheesy Amish Breakfast Casserole" src="https://images.media-allrecipes.com/userphotos/650x465/1334701.jpg&#13;&#10;" style="max-width:650px;" /></p>&#13;
+&#13;
+<figcaption>Photo by lovestohost</figcaption><h3>5. <a href="https://www.allrecipes.com/recipe/20096/cheesy-ham-and-hash-brown-casserole/" target="_blank">Cheesy Ham Hash Brown Casserole</a></h3>&#13;
+&#13;
+<p>"Love, love, love this casserole," says LoraM. "I only add some fried onions, but otherwise this is delicious! The smell as it is cooking is simply criminal!"</p>&#13;
+&#13;
+<p><img alt="" src="https://images.media-allrecipes.com/userphotos/650x465/5164158.jpg&#13;&#10;" style="max-width:650px;" /></p>&#13;
+&#13;
+<figcaption>Photo by Glofberg</figcaption><h3>6. <a href="https://www.allrecipes.com/recipe/51711/jays-hearty-breakfast-skillet/" target="_blank">Jay's Hearty Breakfast Skillet</a></h3>&#13;
+&#13;
+<p>"Our family calls this 'South Dakota Breakfast,"' says <a href="https://www.allrecipes.com/cook/1471373/">Margo</a>. "Everything but the kitchen sink goes in. It's especially good the last morning when camping, to use up all the leftovers. Love this breakfast!"</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/1046766_Jays-Hearty-Breakfast-Skillet_51711_Photo-by-DIZ.jpg?itok=_aXTuKTA 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/1046766_Jays-Hearty-Breakfast-Skillet_51711_Photo-by-DIZ.jpg?itok=cdfAxAeg 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/1046766_Jays-Hearty-Breakfast-Skillet_51711_Photo-by-DIZ.jpg?itok=yMdGywom 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/1046766_Jays-Hearty-Breakfast-Skillet_51711_Photo-by-DIZ.jpg?itok=wxW62PVt" alt="Jay's Hearty Breakfast Skillet" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Photo by DIZ
+    </p>
+  </div>
+
+
+</div>
+<h3>7. <a href="https://www.allrecipes.com/recipe/136514/party-mimosa/" target="_blank">Party Mimosa</a></h3>&#13;
+&#13;
+<p>"Holy YUM! It was hard to quit drinking this little treasure," raves <a href="https://www.allrecipes.com/cook/2412101/">3hungryboys</a>. "I served in champagne flutes with a raspberry in each glass."</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/102267095-Mimosa-Bar-Photo-by-Meredith-650x465.jpg?itok=IKOhyDoz 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/102267095-Mimosa-Bar-Photo-by-Meredith-650x465.jpg?itok=tVL0FLLc 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/102267095-Mimosa-Bar-Photo-by-Meredith-650x465.jpg?itok=2azet1X_ 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/102267095-Mimosa-Bar-Photo-by-Meredith-650x465.jpg?itok=GxL0X9cx" alt="Mimosa Bar" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Photo by Meredith 
+    </p>
+  </div>
+
+
+</div>
+<h3>8. <a href="https://www.allrecipes.com/recipe/15057/overnight-blueberry-french-toast/" target="_blank">Overnight French Toast</a></h3>&#13;
+&#13;
+<p>"Delicious and beautiful, and perfect just as written," says <a href="https://www.allrecipes.com/cook/naples34102/">naples34102</a>. "I used a good quality Italian bread, and chose to serve the blueberry sauce on the side. My out-of-town guests, both of whom are professional chefs, loved this so much they asked for the recipe."</p>&#13;
+&#13;
+<p><img alt="" src="https://images.media-allrecipes.com/userphotos/650x465/381517.jpg&#13;&#10;" style="max-width:650px;" /></p>&#13;
+&#13;
+<figcaption>Photo by Melissa Goff</figcaption><h3>9. <a href="https://www.allrecipes.com/recipe/76278/orange-pecan-french-toast/" target="_blank">Orange Pecan French Toast</a></h3>&#13;
+&#13;
+<p>"My family loved this, it was made for brunch, and this is a definite addition to our monthly menu," says <a href="https://www.allrecipes.com/cook/5178390/">PapaSmurf</a>. "Planned on making so I had all ingredients ready. Forget leftovers, it was eaten fast."</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/19427_Orange-Pecan-French-Toast_76278_Photo-by-Kimberly-Kahmann-Harvey-1.jpg?itok=vDokzVBi 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/19427_Orange-Pecan-French-Toast_76278_Photo-by-Kimberly-Kahmann-Harvey-1.jpg?itok=po3u_nxQ 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/19427_Orange-Pecan-French-Toast_76278_Photo-by-Kimberly-Kahmann-Harvey-1.jpg?itok=HE4IHu6O 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/19427_Orange-Pecan-French-Toast_76278_Photo-by-Kimberly-Kahmann-Harvey-1.jpg?itok=A0_AfPh5" alt="Orange Pecan French Toast" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Photo by Kimberly Kahmann Harvey
+    </p>
+  </div>
+
+
+</div>
+<h3>10. <a href="https://www.allrecipes.com/recipe/21014/good-old-fashioned-pancakes/" target="_blank">Good Old-Fashioned Pancakes</a></h3>&#13;
+&#13;
+<p>"Oh my, oh my, oh my!!! These are by far the best pancakes I've ever made at home and reminded me of IHOP pancakes," says Stephsue.</p>&#13;
+&#13;
+<p><img alt="" src="https://images.media-allrecipes.com/userphotos/650x465/4948036.jpg&#13;&#10;" style="max-width:650px;" /></p>&#13;
+&#13;
+<figcaption>Photo by angela</figcaption><h3>11. <a href="https://www.allrecipes.com/recipe/222615/scrambled-egg-brunch-bread" target="_blank">Scrambled Egg Brunch Bread</a></h3>&#13;
+&#13;
+<p>"I made this as part of the Recipe Group and this was so yummy," says <a href="https://www.allrecipes.com/cook/2810501/">mauigirl</a>. "I loved the creamy egg filling and the pretty presentation. I will definitely serve this to company in the future."</p>&#13;
+&#13;
+<div style="display: block; position: relative; max-width: 100%;">&#13;
+<div style="padding-top: 56.25%;"><iframe allowfullscreen="allowfullscreen" height="150" src="//players.brightcove.net/1033249144001/NJFOnQJoe_default/index.html?videoId=4586354246001" style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;" width="300"></iframe></div>&#13;
+</div>&#13;
+&#13;
+<h3>12. <a href="https://www.allrecipes.com/recipe/217778/dulce-de-leche-grilled-cheese-sandwiches/" target="_blank">Dulce de Leche Grilled Cheese Sandwiches</a></h3>&#13;
+&#13;
+<p>"Oh my, this is scrumptious... We probably would have been satisified with half a sandwich because it is so rich and decadent," says <a href="https://www.allrecipes.com/cook/lutzflcat/">lutzflcat</a>.</p>&#13;
+&#13;
+<h3>13. <a href="https://www.allrecipes.com/recipe/50523/clarks-quiche/" target="_blank">Clarke's Quiche</a></h3>&#13;
+&#13;
+<p>"The best quiche I've ever tasted," raves Shelley Jean John. "I'm new to cooking but was able to do it!"</p>&#13;
+&#13;
+<p><img alt="Clarke's Quiche" src="https://images.media-allrecipes.com/userphotos/650x465/2202511.jpg&#13;&#10;" style="max-width:650px;" /></p>&#13;
+&#13;
+<figcaption>Photo by Brittakay82</figcaption><h3>14. <a href="https://www.allrecipes.com/recipe/35255/creme-brulee-french-toast/" target="_blank">Creme Brulee French Toast</a></h3>&#13;
+&#13;
+<p>"I've been making this for my guests at my Bed &amp; Breakfast for about 4 years, it always comes out perfect," says Dee Dee.</p>&#13;
+&#13;
+<p><img alt="" src="https://images.media-allrecipes.com/userphotos/650x465/3410.jpg&#13;&#10;" style="max-width:650px;" /></p>&#13;
+&#13;
+<figcaption>Photo by LynnInHK</figcaption><h3>15. <a href="https://www.allrecipes.com/recipe/190857/leftover-pancake-breakfast-sandwich/" target="_blank">Leftover Pancake Breakfast Sandwich</a></h3>&#13;
+&#13;
+<p>"A great way to use up leftover pancakes," says <a href="https://www.allrecipes.com/cook/1757593/">tiffany13</a>. "It's more of a knife-and-fork breakfast, rather than a eat-with-your-hands sandwich. There's room for lots of variation! I use the Buttermilk Pancakes II recipe for the pancakes."</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/edited-634042-Leftover-Pancake-Breakfast-Sandwich-190857-Molly-e1427910431323-1024x678.jpg?itok=ygik11L6 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/edited-634042-Leftover-Pancake-Breakfast-Sandwich-190857-Molly-e1427910431323-1024x678.jpg?itok=yUETQmpZ 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/edited-634042-Leftover-Pancake-Breakfast-Sandwich-190857-Molly-e1427910431323-1024x678.jpg?itok=nQgoolFd 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/edited-634042-Leftover-Pancake-Breakfast-Sandwich-190857-Molly-e1427910431323-1024x678.jpg?itok=UKvBbqbV" alt="edited 634042-Leftover-Pancake-Breakfast-Sandwich-190857-Molly-e1427910431323-1024x678" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Pancake Breakfast Sandwich. Photo by Molly
+    </p>
+  </div>
+
+
+</div>
+<h3>16. <a href="https://www.allrecipes.com/recipe/232792/chef-johns-monte-cristo-benedict/" target="_blank">Chef John's Monte Cristo Benedict</a></h3>&#13;
+&#13;
+<p>"Imagine the best French toast you've ever had, combined with the best ham and cheese sandwich you've ever had, topped with perfectly poached eggs," says <a href="https://www.allrecipes.com/cook/foodwisheswithchefjohn/">Chef John</a>. "You don't need any Hollandaise because the poached egg yolks are the sauce."</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/650-x-465-1013227_original-chef-Johns-monte-cristo-benedict.jpg?itok=rWjUl7xU 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/650-x-465-1013227_original-chef-Johns-monte-cristo-benedict.jpg?itok=Nb-woYFV 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/650-x-465-1013227_original-chef-Johns-monte-cristo-benedict.jpg?itok=qW6vmrDs 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/650-x-465-1013227_original-chef-Johns-monte-cristo-benedict.jpg?itok=l71vmlKk" alt="650 x 465 1013227_original chef Johns monte cristo benedict" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      </p><p>Chef John's Monte Cristo Eggs Benedict. Photo by Baking Nana</p>
+
+    
+  </div>
+
+
+</div>
+<h3>17. <a href="https://www.allrecipes.com/recipe/256021/ultimate-tofu-breakfast-burrito-bowls/">Ultimate Tofu Breakfast Bowl</a></h3>&#13;
+&#13;
+<p>"Tofu scrambles up just like eggs, and with some clever spices, even non-vegans will barely notice the difference," says <a href="https://www.allrecipes.com/cook/postpunkkitchen/">isachandra</a>. "Try setting out toppings to let family or guests assemble their own burrito bowls."</p>&#13;
+&#13;
+<p><img alt="Ultimate Tofu Breakfast Bowl" src="https://images.media-allrecipes.com/userphotos/650x465/4306820.jpg&#13;&#10;" style="max-width:650px;" /></p>&#13;
+&#13;
+<figcaption>Photo by Allrecipes Magazine</figcaption><h3>18. <a href="https://www.allrecipes.com/recipe/84189/gloomy-day-smoothie/">Gloomy Day Smoothie</a></h3>&#13;
+&#13;
+<p>"So simple, so good. I added a teaspoon of coconut extract and it set it off nicely," says Christianna. "I used a frozen banana and the texture was so nice and... well, smooth."</p>&#13;
+&#13;
+<p><img alt="Ultimate Tofu Breakfast Bowl" src="https://images.media-allrecipes.com/userphotos/650x465/607006.jpg&#13;&#10;" style="max-width:650px;" /></p>&#13;
+&#13;
+<figcaption>Photo by CCLoves2Bake</figcaption><h3>19. <a href="https://www.allrecipes.com/recipe/25972/bright-blue-monday-cake/" target="_blank">Bright Blue Monday Cake</a></h3>&#13;
+&#13;
+<p>"Hi, my name is Alaina and I am a ten year old girl with high goals in baking," says Alaina. "I think this cake is truly wonderful."</p>&#13;
+&#13;
+<div class="embedded-entity">
+  
+            <div>    <img srcset="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_tiny/public/3222172-Blueberry-Coffee-Cake-I-Photo-by-footballgrl16-650x465.jpg?itok=JtNe5N2a 320w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_small/public/3222172-Blueberry-Coffee-Cake-I-Photo-by-footballgrl16-650x465.jpg?itok=GjRAL0XT 500w, https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_x_large/public/3222172-Blueberry-Coffee-Cake-I-Photo-by-footballgrl16-650x465.jpg?itok=V9gv5JZv 650w" sizes="100vw" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/content_image_medium/public/3222172-Blueberry-Coffee-Cake-I-Photo-by-footballgrl16-650x465.jpg?itok=LEY2giUA" alt="Blueberry Coffee Cake I" /></div>
+      
+<div class="embedded-entity__caption">
+      <p>
+      Photo by footballgrl16
+    </p>
+  </div>
+
+
+</div>
+<h3>20. <a href="https://www.allrecipes.com/recipe/87319/heart-attack-eggs/" target="_blank">Heart Attack Eggs</a></h3>&#13;
+&#13;
+<p>"This is a great breakfast, especially on the weekend," says <a href="https://www.allrecipes.com/cook/1445086/">KIRBERT70</a>. "You fry bacon on a skillet, then after the bacon is crispy, fry eggs in the bacon grease. Garnish your plate with toast or fruit."</p>&#13;
+&#13;
+<div id="karma-lazy-seriesDetails"></div><p><img alt="" src="https://images.media-allrecipes.com/userphotos/650x465/4517729.jpg&#13;&#10;" style="max-width:650px;" /></p>&#13;
+&#13;
+<figcaption>Photo by France C.</figcaption><hr /><h4>Check out our complete collection of <a href="https://www.allrecipes.com/recipes/78/breakfast-and-brunch/" target="_blank">Brunch and Breakfast Recipes</a>.</h4>&#13;
+<hr /><h3>Related</h3>&#13;
+<ul><li><a href="http://dish.allrecipes.com/hot-tips-for-hosting-the-perfect-brunch/">Hot Tips for Hosting the Perfect Brunch</a></li>&#13;
+	<li><a href="http://dish.allrecipes.com/how-to-make-the-best-breakfast-pizza/">Pizza is the New Breakfast of Champions</a></li>&#13;
+	<li><a href="http://dish.allrecipes.com/make-ahead-french-toast-casseroles-easy-brunchin/">11 Make-Ahead French Toast Casseroles and Pro Prep Tips</a></li>&#13;
+	<li><a href="http://dish.allrecipes.com/pasta-for-breakfast/">Pasta for Breakfast is So You, Here's Why</a></li>&#13;
+	<li><a href="http://dish.allrecipes.com/chocolate-fueled-breakfast-ideas/">Here's Why You Should Eat Chocolate for Breakfast</a></li>&#13;
+	&#13;
+</ul></div>
+      
+  </div>
+</article>
+
+  </div>
+
+        <div>
+    <div id="block-authorinformation">
+  
+    
+  <div class="about_author">
+      <div class="about_author__image">
+      
+            <div>  <img src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/thumbnail/public/2017-11/filelkVTIw.jpg?itok=KorIjc1u" width="75" height="100" alt="" />
+
+
+</div>
+      
+    </div>
+    <div class="about_author__info">
+    <p class="about_author__name">
+            About Leslie Kelly
+        </p>
+    <p class="about_author__bio">
+              <p>Always hungry to learn, never had my fill of oysters, Memphis dry rub ribs, wild salmon, chocolate chip cookies or a well-rolled lumpia. Washington state wine lover, bourbon fan. Totally obsessed with brunch!</p>
+
+          </p>
+  </div>
+</div>
+
+</div>
+
+  </div>
+
+    </div>
+              <aside class="secondary-content">
+          <div>
+    <div class="karma-slot">
+  <div id="div-gpt-square-flex-1" data-tier="1" class="karma-slot--square-container karma-slot--desktop-only"></div>
+  <div id="div-gpt-mob-square-flex-1" data-tier="3" class="karma-slot--square-container karma-slot--mobile-only"></div>
+  <div id="div-sm-nativeRail"></div>
+  <div id="div-gpt-square-fixed-2" data-tier="2" class="karma-slot--square-container karma-slot--desktop-only"></div>
+</div>
+<div id="block-recentposts">
+  
+      <h2 id="recent-posts__title" class="heading-2">Recent Posts</h2>
+    
+  <aside id="recent-posts">
+  <ul aria-labelledby="recent-posts__title">
+          <li class="recent-posts__post">
+        <a href="/desserts-you-should-know-how-make-youre-30/" title="16 Essential Desserts You Should Know How to Make Before You&#039;re 30">
+                      <img class="recent-posts__post-thumbnail" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/recent_posts_thumbnail/public/708879-One-Bowl-Chocolate-Cake-III-Photo-by-Dianne-resized.jpg?LWBmZ_A0gpBNqPEjVylo3QgMSa5BuTic&amp;itok=XQoS8Haw" alt="One Bowl Chocolate Cake III" />
+
+                    <div class="recent-posts__post-title-byline">
+            <div class="recent-posts__post-title">
+              16 Essential Desserts You Should Know How to Make Before You&#039;re 30
+            </div>
+
+                          <div class="recent-posts__post-byline">
+                By <em class="placeholder">Vanessa Greaves</em>
+              </div>
+                      </div>
+        </a>
+      </li>
+          <li class="recent-posts__post">
+        <a href="/top-10-most-photographed-recipes-2018/" title="Top 10 Most Photographed Recipes of 2018">
+                      <img class="recent-posts__post-thumbnail" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/recent_posts_thumbnail/public/2018-12/4948036%20Good%20Old%20Fashioned%20Pancakes%20Photo%20by%20angela%20650x465.jpg?YmsT_012IU07hPyXNuDkyosePSiYkAao&amp;itok=19-Rzl0d" alt="Good Old Fashioned Pancakes" />
+
+                    <div class="recent-posts__post-title-byline">
+            <div class="recent-posts__post-title">
+              Top 10 Most Photographed Recipes of 2018
+            </div>
+
+                          <div class="recent-posts__post-byline">
+                By <em class="placeholder">Vanessa Greaves</em>
+              </div>
+                      </div>
+        </a>
+      </li>
+          <li class="recent-posts__post">
+        <a href="/most-talked-about-recipes-2018/" title="The Most Talked about Recipes of 2018">
+                      <img class="recent-posts__post-thumbnail" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/recent_posts_thumbnail/public/2018-12/5151529%20Easy%20Pineapple%20Chicken%20650x465.jpg?vMwHLvLPKG_zhxbXfUA0.GHIrPfDnszn&amp;itok=cV7UPimG" alt="Easy Pineapple Chicken" />
+
+                    <div class="recent-posts__post-title-byline">
+            <div class="recent-posts__post-title">
+              The Most Talked about Recipes of 2018
+            </div>
+
+                          <div class="recent-posts__post-byline">
+                By <em class="placeholder">Carl Hanson</em>
+              </div>
+                      </div>
+        </a>
+      </li>
+          <li class="recent-posts__post">
+        <a href="/top-10-new-recipes-2018/" title="Top 10 New Recipes of 2018">
+                      <img class="recent-posts__post-thumbnail" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/recent_posts_thumbnail/public/2018-09/5302785%20Instant%20Pot%20Pork%20Chops%20and%20Gravy%20Photo%20by%20lutzflcat%20650x465.jpg?KmkpFUIcjTFBoQOZgwzb3oUObeK1SnPp&amp;itok=iVx7gv5b" alt="Instant Pot Pork Chops and Gravy " />
+
+                    <div class="recent-posts__post-title-byline">
+            <div class="recent-posts__post-title">
+              Top 10 New Recipes of 2018
+            </div>
+
+                          <div class="recent-posts__post-byline">
+                By <em class="placeholder">Vanessa Greaves</em>
+              </div>
+                      </div>
+        </a>
+      </li>
+          <li class="recent-posts__post">
+        <a href="/top-10-new-dessert-recipes-2018/" title="Top 10 New Dessert Recipes of 2018">
+                      <img class="recent-posts__post-thumbnail" src="https://dish-environment-prod-contentbucket-10u8bszryovz3.s3.amazonaws.com/assets/s3fs-public/styles/recent_posts_thumbnail/public/2018-12/5338008%20Zucchini%20Bars%20with%20Spice%20Frosting%20Photo%20by%20lutzflcat%20650x465.jpg?FjRuE58u3eQ0VSve3Uhz5cfd4jl7alaC&amp;itok=ibz1VrKh" alt="Zucchini Bars with Spice Frosting" />
+
+                    <div class="recent-posts__post-title-byline">
+            <div class="recent-posts__post-title">
+              Top 10 New Dessert Recipes of 2018
+            </div>
+
+                          <div class="recent-posts__post-byline">
+                By <em class="placeholder">Vanessa Greaves</em>
+              </div>
+                      </div>
+        </a>
+      </li>
+      </ul>
+</aside>
+
+</div>
+
+  </div>
+
+      </aside>
+      </div>
+</div><footer id="pageFooter" class="page-footer-container">
+    <div>
+    <div id="block-karma-slot-7">
+  
+    
+  <div class="karma-slot karma-slot--footer-fixed karma-slot--mobile">
+  <div  id="div-gpt-mob-adhesive-banner-fixed" data-tier="1"></div>
+</div>
+
+</div>
+
+  </div>
+
+  <div class="page-footer">
+    <div class="footer-columns-container">
+      <div class="footer-column">
+          <div>
+    <div id="block-footersociallinks">
+  
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul class="social-sharing__icons">
+    <li>
+      <a id="footer_facebook" href="https://www.facebook.com/allrecipes" title="Facebook" target="_blank" class="ui-link">
+        <img title="Facebook" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Facebook" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_pinterest" href="http://pinterest.com/allrecipes/" title="Pinterest" target="_blank" class="ui-link">
+        <img title="Pinterest" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Pinterest" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_twitter" href="https://twitter.com/Allrecipes" title="Twitter" target="_blank" class="ui-link">
+        <img id="ctl00_Image3" title="Twitter" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Twitter" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_instagram" href="http://instagram.com/allrecipes" title="Instagram" target="_blank" class="ui-link">
+        <img title="Instagram" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Instagram" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_tumblr" href="http://allrecipes.tumblr.com/" title="Tumblr" target="_blank" class="ui-link">
+        <img title="Tumblr" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Tumblr" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_googleplus" href="https://plus.google.com/+allrecipes/" title="Google Plus" target="_blank" class="ui-link">
+        <img title="Google Plus" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="Google Plus" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_stumbleupon" href="http://www.stumbleupon.com/stumbler/Allrecipes" title="StumbleUpon" target="_blank" class="ui-link">
+        <img title="StumbleUpon" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="StumbleUpon" scale="0">
+      </a>
+    </li>
+    <li>
+      <a id="footer_youtube" href="https://www.youtube.com/user/allrecipes" title="YouTube" target="_blank" class="ui-link">
+        <img title="YouTube" src="https://secureimages.allrecipes.com/ar-images/spacer.gif" alt="YouTube" scale="0">
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+<div id="block-moreallrecipeslinks">
+  
+      <h2 class="heading-2">More Allrecipes</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul>
+    <li>
+      <a id="footer_magazine" href="http://armagazine.com/mobile-footer" target="_self">
+        Allrecipes Magazine
+        <span style="color:#ff7e1a;">
+          <span>
+            –
+          </span>
+          Subscribe
+        </span>
+      </a>
+    </li>
+    <li>
+      <a id="footer_apps" href="http://dish.allrecipes.com/mobile-apps" target="_self">
+        Allrecipes Apps
+      </a>
+    </li>
+    <li>
+      <a id="footer_foodwishes" href="http://youtube.com/foodwishes" target="_self">
+        Food Wishes Videos
+      </a>
+    </li>
+    <li>
+      <a id="footer_freshbites" href="http://freshbitesblog.com/" target="_self">
+        Fresh Bites Blog
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+
+  </div>
+
+      </div>
+      <div class="footer-column">
+          <div>
+    <div id="block-aboutuslinks">
+  
+      <h2 class="heading-2">About Us</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul>
+    <li>
+      <a id="footer_newsroom" href="http://press.allrecipes.com/" target="_self">
+        Newsroom
+      </a>
+    </li>
+    <li>
+      <a id="footer_jobs" href="http://dish.allrecipes.com/allrecipes-jobs/" target="_self">
+        Jobs at Allrecipes
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+<div id="block-supportlinks">
+  
+      <h2 class="heading-2">Support</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul>
+    <li>
+      <a id="footer_sitemap" href="http://dish.allrecipes.com/faq-sitemap/" target="_self">
+        Site Map
+      </a>
+    </li>
+    <li>
+      <a id="footer_contactus" href="http://dish.allrecipes.com/customer-service/contact-us-2/" target="_self">
+        Contact Us
+      </a>
+    </li>
+    <li>
+      <a id="footer_customersupport" href="http://dish.allrecipes.com/customer-service/" target="_self">
+        Customer Support
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+
+  </div>
+
+      </div>
+      <div class="footer-column">
+          <div>
+    <div id="block-advertisinglinks">
+  
+      <h2 class="heading-2">Advertising</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix footer_advertising">
+  <ul>
+    <li>
+      <a id="footer_advertisewithus" class="" href="http://www.meredith.com/national-media/digital" target="_self">
+        Advertise with Us
+      </a>
+    </li>
+    <li>
+      <a id="footer_womensnetwork" class="" href="http://www.meredith.com/marketing_solutions/interactive_media.html" target="_self">
+        Meredith Women's Network
+      </a>
+    </li>
+  </ul>
+</article>
+
+</div>
+<div id="block-globalcommunitylinks">
+  
+      <h2 class="heading-2">Global Community</h2>
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <ul>
+    <li>
+      <select id="country-selector">
+        <option value="" label="Select location">
+        Select location
+        </option>
+        <option value="http://allrecipes.com.ar/" label="Argentina">
+        Argentina
+        </option>
+        <option value="http://allrecipes.com.au/" label="Australia &amp; New Zealand">
+        Australia &amp; New Zealand
+        </option>
+        <option value="http://allrecipes.com.br/" label="Brazil">
+        Brazil
+        </option>
+        <option value="http://allrecipes.com/?country=CA" label="Canada">
+        Canada
+        </option>
+        <option value="http://allrecipes.cn/" label="China">
+        China
+        </option>
+        <option value="http://allrecipes.fr/" label="France">
+        France
+        </option>
+        <option value="http://de.allrecipes.com/" label="Germany">
+        Germany
+        </option>
+        <option value="http://allrecipes.co.in/" label="India">
+        India
+        </option>
+        <option value="http://allrecipes.it/" label="Italy">
+        Italy
+        </option>
+        <option value="http://allrecipes.kr/" label="Korea">
+        Korea
+        </option>
+        <option value="http://allrecipes.com.mx/" label="Mexico">
+        Mexico
+        </option>
+        <option value="http://allrecipes.nl/" label="Netherlands">
+        Netherlands
+        </option>
+        <option value="http://allrecipes.pl/" label="Poland">
+        Poland
+        </option>
+        <option value="http://qc.allrecipes.ca/" label="Quebec">
+        Quebec
+        </option>
+        <option value="http://allrecipes.ru/" label="Russia">
+        Russia
+        </option>
+        <option value="http://allrecipes.asia/" label="SE Asia">
+        SE Asia
+        </option>
+        <option value="http://allrecipes.co.uk/" label="United Kingdom &amp; Ireland">
+        United Kingdom &amp; Ireland
+        </option>
+        <option value="https://www.allrecipes.com/" label="United States">
+        United States
+        </option>
+      </select>
+    </li>
+  </ul>
+</article>
+
+</div>
+<div id="block-legallinks">
+  
+    
+  <article class="grid-col grid-col--tiles clearfix">
+  <h2>
+    © 2017 Allrecipes.com 
+    <br>
+    All Rights Reserved
+  </h2>
+  <ul>
+    <li>
+      <a id="footer_privacypolicy" href="http://www.meredith.com/legal/privacy" target="_blank">
+        Privacy Policy Your California Rights
+      </a>
+    </li>
+    <li>
+      <a id="footer_eu_privacypolicy" href="http://www.meredith.com/legal/eu-privacy" target="_blank">
+        EU Privacy Policy
+      </a>
+    </li>
+    <li>
+      <script>if (window.mdp.gdpr.dsarFormLink) document.write('<a href="' + window.mdp.gdpr.dsarFormLink + '" target="_blank">EU Data Subject Requests</a>');</script>
+    </li>
+    <li>
+      <a id="footer_termconditions" href="http://www.meredith.com/legal/terms">
+        <span style="color:red;font-weight:bold">
+          New!&nbsp;
+        </span>
+        Terms of Service
+      </a>
+    </li>
+    <li>
+      <a id="footer_datapolicy" href="http://www.meredith.com/datapolicy.html" target="_blank">
+        Data Policy
+      </a>
+    </li>
+    <li>
+      <a target="_blank" href="http://info.evidon.com/pub_info/282?v=1" id="_bapw-link">
+        <span style="vertical-align:middle !important;padding-right:5px" id="footer_adchoices">
+          AdChoices
+        </span>
+        <img height="11" style="border:0 !important;display:inline !important;vertical-align:middle !important;padding-right:5px !important;" id="_bapw-icon" src="http://cdn.betrad.com/pub/icon1.png" scale="0">
+      </a>
+    </li>
+  </ul>
+  <a id="back-to-top-button" href="#">
+    Top
+  </a>
+</article>
+
+</div>
+
+  </div>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script type="javascript/template" id="usermenuSubmenuTemplate">
+  <ul class="nav-tab__options">
+    <li>
+      <a href="https://allrecipes.com/" id="navmenu_myFeed" target="_self">
+        <span class="icon apicon-home2"></span>
+        <span class="itemText">
+          Feed
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/cook/my/" id="navmenu_myprofile" target="_self">
+        <span class="icon apicon-profile"></span>
+        <span class="itemText">
+          Profile
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/cook/my/favorites/" rel="nofollow" id="navmenu_recipebox" target="_self">
+        <span class="icon apicon-heart"></span>
+        <span class="itemText">
+          Favorites
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/cook/my/findfriends/" rel="nofollow" id="navmenu_findfriends" target="_self">
+        <span class="icon apicon-users"></span>
+        <span class="itemText">
+          Friends
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/my/shopping-lists/" rel="nofollow" id="navmenu_shoppinglist" target="_self">
+        <span class="icon apicon-bag"></span>
+        <span class="itemText">
+          Shopping List
+        </span>
+      </a>
+    </li>
+    <li>
+      <a href="https://allrecipes.com/cook/my/account-settings/" rel="nofollow" id="navmenu_settings" target="_self">
+        <span class="icon apicon-gear"></span>
+        <span class="itemText">
+          Settings
+        </span>
+      </a>
+    </li>
+  </ul>
+  <div class="signout">
+    <button onclick="location.href='https://allrecipes.com/account/signout'" class="btn-basic--large" id="offCanvasSignOutBtn">
+      Sign out
+    </button>
+  </div>
+</script>
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"node\/8063","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","breakpoints":{"small":{"name":"small","media_query":"all and (min-width: 0em)","multipliers":["1x"]},"small-med":{"name":"small-med","media_query":"all and (min-width: 26em)","multipliers":["1x"]},"small-large":{"name":"small-large","media_query":"all and (min-width: 41em)","multipliers":["1x"]},"medium":{"name":"medium","media_query":"all and (min-width: 48em)","multipliers":["1x"]},"large":{"name":"large","media_query":"all and (min-width: 61.25em)","multipliers":["1x"]}},"meredithKarma":{"adService":{"mobileAds":false,"unitValues":{"channel":"dishblog","parent":"","child":""},"pageTargetingValues":{"id":"node_8063","type":"post","search":""}}},"meredithGtm":{"variables":{"Page Name":"Our Top 20 Brunch Recipes of All Time","Content Type":"post","Content ID":"post:8063","Content Creation Date":"07\/01\/2017","Channel":"Recipe Inspiration","Author":"Leslie Kelly"},"event":"pageview"},"user":{"uid":0,"permissionsHash":"af8f9ebc72924439ea270f4cf96e39bf48f25bba1aece53df7dec4064345a051"}}</script>
+<script src="/s3fs-js/js/js_OxC6g7USxsvFrB1ljiB_0yO2ProRCrA6TPLRFqE3Ugw.js"></script>
+
+<!--[if lte IE 8]>
+<script src="/s3fs-js/js/js_5nllavJCRoAQPuHBn7iZjMZosGtZPxfTsjw8dXdmOIQ.js"></script>
+<![endif]-->
+<script src="/s3fs-js/js/js_IQ0FYLpQ6ouOL6hcOrPCeX0nC5MTGsEtMbkTS5yMJrs.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"55db0cb698","applicationID":"90588990","transactionName":"YwABYUUDXUIABRZbCVpKIlZDC1xfThYDVQNrBgJWXwc=","queueTime":0,"applicationTime":18,"atts":"T0cCFw0ZTkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

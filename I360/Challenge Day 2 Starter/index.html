@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+	<!--
+		I360 Web Design
+		CHALLENGE DAY #2
+
+		Completed for you:
+		- first pass at HTML markup
+		- some of the CSS styling
+		FYI: all greys were based on shades of one color: http://www.color-hex.com/color/f1f1f1
+		Helpful: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+		Skills from Project 3:
+		+ add font awesome icons
+		+ embed a video - adjust it to be responsive
+		  (hint: use "watch" link not "embed" URL: http://embedresponsively.com/)
+		+ add a logo / make your H1 screen reader only
+		- add a gradient
+		+ add a transparent color (https://convertingcolors.com/)
+		+ add a text shadow, box shadow or border radius
+		- add multiple backgrounds or a seamless background
+		+ use :hover to make an element change on rollover
+		+ add HTML5 structural tags *
+		+ add flexbox rows and columns as needed *
+		+ adjust media queries *
+
+		Key:
+			- P3 skill
+			+ included in today's challenge
+			* required for Project 3
+	-->
+
+	<head>
+		<meta charset="utf-8">
+		<title>I360 Challenge Day #2</title>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link href="css/styles.css" rel="stylesheet" media="all">
+
+		<!-- Font Awesome and Google Fonts -->
+		<script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css?family=Oswald:600|Roboto" rel="stylesheet">
+
+		<!--[if lte IE 9]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<!-- #1 HEADER:
+			- Make this the <header> section
+			- Use flexbox to place BRANDING content ("menu" and "logo") on one side,
+			  and LOGIN content ("upload" and "sign-in") on the other
+			- Make the H1 visible only to a screenreader
+			- Style the menu, upload and sign-in icons using :hover (as if they were links), color #606060
+		-->
+		<header>
+			<div class="branding">
+				<div class="icon"><i class="fas fa-bars fa-sm"></i></div>
+				<div class="icon"><a href="https://www.youtube.com/"><i class="fab fa-youtube fa-2x"></i> <span class="branding-name">YouTube</span></a></div>
+				<h1 class="sr-only">YouTube</h1>
+			</div>
+
+			<div class="login">
+				<div class="icon"><i class="fas fa-upload fa-lg"></i></div>
+				<div class="icon"><i class="fas fa-sign-in-alt fa-lg"></i></div>
+			</div>
+
+		</header>
+
+		<!-- #2 MAIN:
+			- Make this the <main> section
+			- <main> contains an "article" and an "aside"
+			- Use http://embedresponsively.com/ to responsively embed the featured video in article
+			- Use share/embed code on YouTube to add each "up-next" video - width 168, height 94
+			- The "up next" videos should sit next to their descriptions (use flexbox)
+			- SELECTOR CHALLENGE! Only the first "up-next" section in <aside> should have a border underneath
+			- Add a 1px box-shadow to the bottom of each article section and to the bottom of aside, make the color rgba(0, 0, 0, 0.1)
+		-->
+		<main>
+			<article>
+				<section>
+					<!-- https://www.youtube.com/embed/9qlF_9PNhJs -->
+
+					<style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.youtube.com/embed/9qlF_9PNhJs' frameborder='0' allowfullscreen></iframe></div>
+				</section>
+				<section class="details">
+					<h2>The Tree (True Story!) - Simon's Cat | BLACK & WHITE</h2>
+					<p class="publish-date">Published on Mar 15, 2018</p>
+					<p>The Tree - Simon's Cat</p>
+					<p>Simon comes to his cat's rescue after discovering him up a tree - meowing for help! Want to see more? SUBSCRIBE and 'HIT THE BELL' for Notifications! - <a href="http://bit.ly/scytsubs">http://bit.ly/scytsubs</a></p>
+				</section>
+			</article>
+
+			<aside>
+				<h3>Up next</h3>
+				<section class="up-next">
+					<div class="up-next-video">
+						<iframe width="168" height="94" src="https://www.youtube.com/embed/9qlF_9PNhJs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					<div class="up-next-text">
+						<h4>Paws & Chores - Simon's Cat | STORYTIME</h4>
+						<p class="author">Simon's Cat</p>
+						<p class="views">745,202 views</p>
+					</div>
+				</section>
+				<section class="up-next">
+					<div class="up-next-video">
+						<iframe width="168" height="94" src="https://www.youtube.com/embed/sz-UQfw8Qeg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					<div class="up-next-text">
+						<h4>Scratch Post - Simon's Cat | BLACK & WHITE</h4>
+						<p class="author">Simon's Cat</p>
+						<p class="views">1,229,844 views</p>
+					</div>
+				</section>
+				<section class="up-next">
+					<div class="up-next-video">
+						<iframe width="168" height="94" src="https://www.youtube.com/embed/TUBK4qUGogw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+					<div class="up-next-text">
+						<h4>Hambush - Simon's Cat | STORYTIME (Stealing Food Collection)</h4>
+						<p class="author">Simon's Cat</p>
+						<p class="views">793,456 views</p>
+					</div>
+				</section>
+			</aside>
+		</main>
+
+
+		<!-- #3 FOOTER:
+			- Use flexbox to align the items in each footer menu
+			- Add a box-shadow to the top of the footer
+		-->
+		<footer>
+			<section class="footer-options">
+				<div class="icon"><a href="https://www.youtube.com/"><i class="fab fa-youtube fa-2x"></i> <span class="branding-name">YouTube</span></a></div>
+			</section>
+			<section class="footer-menu">
+				<div class="footer-menu-main">
+					<a href="#"><p>About</p></a>
+					<a href="#"><p>Press</p></a>
+					<a href="#"><p>Copyright</p></a>
+					<a href="#"><p>Creators</p></a>
+					<a href="#"><p>Advertise</p></a>
+					<a href="#"><p>Developers</p></a>
+					<a href="#"><p>+YouTube</p></a>
+				</div>
+				<div class="footer-menu-sub">
+					<a href="#"><p>Terms</p></a>
+					<a href="#"><p>Privacy</p></a>
+					<a href="#"><p>Policy & Safety</p></a>
+					<a href="#"><p>Send feedback</p></a>
+					<a href="#"><p>Test new features</p></a>
+				</div>
+			</section>
+		</footer>
+
+		<!-- #4 RWD:
+			- In a medium view, the main should be wider - make it a max-width of 1020px
+			- In a medium view, the article and aside should sit side-by-side - use flexbox
+			- The article and aside should have 0.75em margin between them (I would place it on the article)
+			- The article should have a minimum width of 640px, once it's a medium viewport width
+			- The aside should never be smaller than 300px and no wider than 416px - hint: set the min and max widths
+		-->
+
+	</body>
+</html>

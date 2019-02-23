@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+	<!--
+		I360 Web Design
+		Add Side Navigation or Fullscreen Navigation
+		https://www.w3schools.com/howto/howto_js_sidenav.asp
+		https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp
+	-->
+
+	<head>
+		<meta charset="utf-8">
+		<title>I360 Lab 11 RWD w/ Nav</title>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Normalize CSS -->
+		 <link rel="stylesheet" href="css/normalize.css">
+		<!-- Font Awesome JS -->
+		<script defer src="https://use.fontawesome.com/releases/v5.4.2/js/all.js" integrity="sha384-wp96dIgDl5BLlOXb4VMinXPNiB32VYBSoXOoiARzSTXY+tsK8yDTYfvdTyqzdGGN" crossorigin="anonymous"></script>
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Muli:400,700|Ovo" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!--[if lte IE 9]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<!-- <nav id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="#">About</a>
+		  <a href="#">Services</a>
+		  <a href="#">Clients </a>
+		  <a href="#">Contact</a>
+	  </nav>
+
+
+	<span class="menuButton">
+		<i class="fas fa-bars fa-3x" onclick="openNav()"></i>
+		<p>menu</p>
+	</span>
+
+		<div id="main"> -->
+
+		<!-- The overlay -->
+
+
+	<div id="myNav" class="overlay">
+
+	  <!-- Button to close the overlay navigation -->
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+	  <!-- Overlay content -->
+	  <div class="overlay-content">
+	    <a href="#">About</a>
+	    <a href="#">Services</a>
+	    <a href="#">Clients</a>
+	    <a href="#">Contact</a>
+	  </div>
+
+	</div>
+
+	<span class="menuButton">
+		<i class="fas fa-bars fa-3x" onclick="openNav()"></i>
+		<p>menu</p>
+	</span>
+
+		<div id="header-bkg">
+		<div id="dots">
+		<header>
+			<p class="tagline">IF YOU NEED ME, I'LL BE ON THE B-LINE AT:</p>
+
+			<h1>Hopscotch Coffee</h1>
+
+			<p class="pronunciation">cof·fee /ˈkôfē,ˈkäfē/</p>
+
+			<p>Coffee is a brewed drink prepared from roasted coffee beans, which are the seeds of berries from the Coffea plant. Who are we kidding. It's like a molten black exilir that solves most first world problems in an 8oz serving. Okay 16oz. Make that 24.</p>
+		</header>
+		<aside>
+			<h2><a href="#">DISCOVER OUR COFFEE &amp; OTHER DRINKS <span class="nobr">FOR YOURSELF</span></a></h2>
+		</aside>
+		<article>
+			<h2>How do I get to Hopscotch?</h2>
+			<ul>
+				<li>Walk south on the B-Line, look for our wide, inviting porch</li>
+				<li>Request a Lyft, ask the driver to take you to the best coffee</li>
+				<li>Drive your car, park in the free lot behind our shop</li>
+				<li>Bike down the B-Line, park &amp; walk up our ramp</li>
+			</ul>
+			<section>
+				<figure>
+					<img src="images/hopscotch-coffee.jpg" alt="coffee beans">
+					<figcaption>Small batch in-house roasts</figcaption>
+				</figure>
+				<figure>
+					<img src="images/hopscotch-muffin.jpg" alt="rainbow bakery muffin">
+					<figcaption>Local baked goods</figcaption>
+				</figure>
+				<figure>
+					<img src="images/hopscotch-porch.jpg" alt="porch">
+					<figcaption>B-Line Porch</figcaption>
+				</figure>
+				<figure>
+					<img src="images/hopscotch-heart.jpg" alt="coffee mug">
+					<figcaption>Cup of love</figcaption>
+				</figure>
+			</section>
+		</article>
+		</div> <!-- #header-bkg -->
+		</div> <!-- #dots -->
+
+		<div class="social-media"><a href="https://www.facebook.com/hopscoffee/"><i class="fab fa-facebook-square fa-3x"></i></a></div>
+	<!--Sidenav push main div -->
+	<!-- </div> -->
+
+	<!-- <script>
+	/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+}
+	</script> -->
+
+	<script>
+
+	/* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+	</script>
+
+	</body>
+</html>

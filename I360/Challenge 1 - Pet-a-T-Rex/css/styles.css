@@ -1,0 +1,196 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Browser Upgrade Prompt */
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+/*
+    STRUCTURE
+    For this section, I made TWO containers, one for the wider header info,
+    and one for the main content of the article. It's a bit of a hack, but
+    I was going with the idea that both would center the same way if they
+    were the same width -- and that I could control the content width in
+    the second container with padding. Feel free to try another way if you prefer.
+*/
+
+/* center both the header and container */
+#header {
+    width: 800px;
+	margin: 10px auto;
+	padding: 10px;
+}
+
+/* use padding to make this section narrower.. it should be able to fit
+   the 570px figures that go inside, but perhaps not be much or any wider
+   than that to recreate this design. */
+#container {
+    width: 800px;
+	margin: 10px auto;
+	padding: 40px;
+}
+
+
+/*
+    TYPOGRAPHY
+    sans-serif choice: Google Font 'Libre Franklin' (300, 400, 600 weights)
+    serif choice: Georgia
+    If the text is supposed to be grey: rgb(153, 153, 153);
+    For the grey box around the bio at the end: rgb(230, 230, 230);
+
+    You'll need to decide on the CSS tags for this section on your own.
+    Pay special attention to line height (leading), font size, color, typeface, etc...
+    Some text has been given a class in the HTML -- those elements likely need
+    a related style here in the css -- some elements are also down in the Page section,
+    so look through all of the CSS before proceeding.
+
+    Helpful properties:
+    text-transform - uppercase, lowercase, etc...
+    letter-spacing - takes a pixel amount
+*/
+
+h1,h2,p,figcaption {
+	font-family: 'Libre Franklin', Georgia, sans-serif;
+	font-weight: 400;
+}
+
+.subtitle {
+	font-family: Georgia, serif;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-size: 30px;
+}
+
+figcaption {
+	border-left: 1px solid black;
+	padding-left: 35px;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.credit {
+	font-weight: 300;
+	color: rgb(153, 153, 153);
+	letter-spacing: 1px;
+}
+
+/*
+    IMAGES
+*/
+
+/* Q: does the figure have any default margin or padding?
+   If so, you might want to remove. */
+figure {
+    width: 700px;
+	margin-left: 0;
+}
+
+/* This makes the images inside a figure act like blocks,
+   and also pay attention to the width of its container */
+figure img {
+    width: 100%;
+    display: block;
+}
+
+/* clearfix - in case you decide to float elements */
+/* part of our template, but not needed for this challenge */
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+    LINKS
+    Visit the original article to see what links should look like on hover
+    https://news.nationalgeographic.com/2017/06/tyrannosaurus-rex-skin-fossils-feathers-scales-science/
+*/
+a:link, a:visited {
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: gold;
+
+}
+
+a:active, a:hover {
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: gold;
+	background-color: gold;
+
+}
+
+/*
+    TABLES
+*/
+
+
+/*
+    PAGE
+*/
+.byline {
+	font-weight: 600;
+}
+
+.date {
+	font-weight: 300;
+	color: rgb(153, 153, 153);
+	letter-spacing: 1px;
+}
+
+.bio {
+	height: 100px;
+	position: relative;
+	border: 2px solid rgba(153, 153, 153, 0.1);
+}
+
+/* This image needs to sit to the left of its accompanying text */
+.bio-image {
+	position: absolute;
+	left: 20px;
+	top: 0;
+    width: 100px;
+    padding-right: 0.5em;
+}
+
+.bio p {
+	position: absolute;
+	left: 120px;
+	top: 0;
+
+}

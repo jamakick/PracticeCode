@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+	<!--
+		I360 Web Design
+		Basic HTML/CSS template
+	-->
+
+	<head>
+		<meta charset="utf-8">
+		<title>Projects</title>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,600" rel="stylesheet">
+
+
+		<link rel="stylesheet" type="text/css" href="plugins/slick/slick.css"/>
+		<!-- Add the new slick-theme.css if you want the default styling -->
+		<link rel="stylesheet" type="text/css" href="plugins/slick/slick-theme.css"/>
+
+
+		<!-- Swipebox Plugin CSS -->
+		<link rel="stylesheet" href="plugins/swipebox/css/swipebox.css">
+
+		<!--[if lte IE 9]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+	</head>
+
+	<body>
+
+<nav>
+	<div class="container" id="header2">
+		<div class="logo">
+			<h1 class="logoName">Projects</h1>
+		</div>
+	</div>
+</nav>
+
+<article class="projArticle">
+
+<div class="container">
+
+<div class="contentHead">
+<h2>Past Projects</h2>
+
+<p>This is an example of a project I have done in the past.
+A short explanation along with some pictures and any appropriate materials will be shown for each one.</p>
+
+</div>
+
+<div class="contentText">
+
+<p>A project I recently finished was creating a search engine
+for recipes from the website AllRecipes. It would ask the user to
+enter a name when they are searching, and it would use this search
+history to provide recommendations based on other user's histories.
+Below are a few screenshots of it, and here is the link to it.
+<a href="http://cgi.soic.indiana.edu/~jamakick/i427/final/index.html">
+Recipe Search</a></p>
+
+</div>
+
+</div>
+
+
+<div class="your-class">
+	<div><img src="images/rs1.png" alt="project image"></div>
+	<div><img src="images/rs2.png" alt="project image"></div>
+
+</div>
+
+<div class="slide-nav">
+	<div><img src="images/rs1.png" alt="project image"></div>
+	<div><img src="images/rs2.png" alt="project image"></div>
+	<div><img src="images/rs1.png" alt="project image"></div>
+	<div><img src="images/rs2.png" alt="project image"></div>
+</div>
+
+
+</article>
+
+
+<article class="projArticle">
+
+<div class="container">
+
+<div class="contentHead">
+<h2>Current/Future Projects</h2>
+
+</div>
+
+<div class="contentText">
+
+<p>I am currently working on a project in a team of three for my
+capstone university course, called Cold Case Connection. It is a web
+application that is built as an interactive map with a forum for talking about and looking up cold case/true crime information. It is currently in a prototype stage as indicated by the slideshow, and will be completed in the next six months.</p>
+
+</div>
+
+</div>
+
+<div class="your-class" id="coldcase">
+	<div><img src="images/ccc1.png" alt="project image"></div>
+	<div><img src="images/ccc2.png" alt="project image"></div>
+	<div><img src="images/ccc3.png" alt="project image"></div>
+	<div><img src="images/ccc4.png" alt="project image"></div>
+	<div><img src="images/ccc5.png" alt="project image"></div>
+
+</div>
+
+<div class="slide-nav" id="coldnav">
+	<div><img src="images/ccc1.png" alt="project image"></div>
+	<div><img src="images/ccc2.png" alt="project image"></div>
+	<div><img src="images/ccc3.png" alt="project image"></div>
+	<div><img src="images/ccc4.png" alt="project image"></div>
+	<div><img src="images/ccc5.png" alt="project image"></div>
+	<div><img src="images/ccc1.png" alt="project image"></div>
+	<div><img src="images/ccc2.png" alt="project image"></div>
+	<div><img src="images/ccc3.png" alt="project image"></div>
+	<div><img src="images/ccc4.png" alt="project image"></div>
+	<div><img src="images/ccc5.png" alt="project image"></div>
+
+</div>
+
+</article>
+
+
+<footer>
+
+	<div class="container" id="footer">
+
+	<div class="menuLinks">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="resume.html">Resume</a></li>
+		</ul>
+	</div>
+
+</div>
+
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+
+<script>
+$(document).ready(function(){
+$('.your-class').slick({
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: false,
+	fade: true,
+	asNavFor: '.slide-nav'
+	});
+
+$('.slide-nav').slick({
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	asNavFor: '.your-class',
+	dots: true,
+	centerMode: true,
+	focusOnSelect: true
+})
+});
+
+</script>
+
+	</body>
+
+
+
+</html>

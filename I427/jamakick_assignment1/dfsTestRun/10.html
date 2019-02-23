@@ -1,0 +1,1047 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="keywords" content="error, adobe_edge, lightroom_5, suite, osx, lightroom"><meta name="description" content=" "><meta name="google-site-verification" content="xj_4z2BDLDspgeCKK9Qhz8GNnC3dnHlj2TYahnYL8AA" /><title>Community: Downloading, Installing, Setting Up |&nbsp;Adobe Community</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UgAHU1RACQUGU1ZbAwI="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,s){try{p?p-=1:o(s||new UncaughtException(t,n,e),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t,n){var e=n?null:c.now();i("err",[t,e])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError",p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),d=!0)}s.on("fn-start",function(t,n,e){d&&(p+=1)}),s.on("fn-err",function(t,n,e){d&&!e[l]&&(f(e,l,function(){return!0}),this.thrown=!0,o(e))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],e),t}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script><link rel="stylesheet" href="/8.0.3.6eafe9c/styles/jive-base.css" type="text/css" media="all"/><link rel="stylesheet" href="/8.0.3.6eafe9c/styles/jive.css" type="text/css" media="all"/><link rel="stylesheet" href="/8.0.3.6eafe9c/styles/jive-visor.css" type="text/css" media="all"/><link rel="search" href="/opensearch.xml" title="Adobe Community" type="application/opensearchdescription+xml"/><link rel="shortcut icon" type="image/x-icon" href="/themes/adobe-global/images/favicon.ico"><!--[if lt IE 9]><script src="/8.0.3.6eafe9c/resources/scripts/vendor/html5shiv.min.js"></script><![endif]--><script src="/8.0.3.6eafe9c/resources/scripts/gen/a3875e0477cbaeb1be2465fb4646d401.js"></script>
+<link rel="stylesheet" href="/8.0.3.6eafe9c/styles/jive-customization-controls.css" type="text/css" media="all" /><link rel="stylesheet" href="/8.0.3.6eafe9c/styles/jive-places.css" type="text/css" media="all" /><!-- CORE WORKAROUND FOR JIVE-26093 --><style id="place-background-image" data-header-settings="{&quot;bgType&quot;:&quot;custom&quot;,&quot;bgCustomImageName&quot;:&quot;DISUBanner-2.jpg&quot;,&quot;staticResourcesEnabled&quot;:false,&quot;bgRepeat&quot;:&quot;no-repeat&quot;,&quot;bgCustomImageUrl&quot;:&quot;https://forums.adobe.com/resources/statics/1413788/DISUBanner-2.jpg?a=1530908796350&quot;,&quot;bgPresetImageUrl&quot;:&quot;/images/placeBackgrounds/bokeh1.png&quot;,&quot;bgPosition&quot;:&quot;left top&quot;}"></style><style class="headerStyle js-headerStyle">.j-body-place #jive-body .j-page-header {background-image : url("https://forums.adobe.com/resources/statics/1413788/DISUBanner-2.jpg?a=1530908796350");background-color:  transparent;background-repeat: no-repeat; background-size: auto;background-position: left top;}.j-placeHeaderInner, .j-placeTitle a.j-placeName {color: #fff;}</style><link rel="stylesheet" href="/8.0.3.6eafe9c/styles/jive-widgets.css" type="text/css" media="all" /><link rel="stylesheet" href="/8.0.3.6eafe9c/styles/jive-responsive.css" type="text/css" media="all" /><link rel="stylesheet" href="/8.0.3.6eafe9c/plugins/video_8.0.3.0/resources/styles/jive-videomodule.css" type="text/css" media="all"/><link class="j-custom-theme" rel="stylesheet" href="/resources/styles/palette-1016/1477993144508.css" type="text/css"  media="all"/><link rel="stylesheet" href="/8.0.3.6eafe9c/resources/styles/exobjects-icons/jive-exobjects-icons.css" type="text/css" media="all"/><script type="text/javascript" src="//adobeforums.worldsecuresystems.com/js/helper-20180601.js"></script><script src="//assets.adobedtm.com/659ec8ada5450db95675e43beaaae92399591a11/satelliteLib-46e65db5bb0c375f8f64619be31cc9b29acf4867.js"></script><script type="text/javascript" src="//use.typekit.com/fxk4olf.js"></script>
+<script type="text/javascript">
+	try{
+		Typekit.load();
+	} catch(e) {
+	}
+
+/**
+* Experience League theme
+*/
+
+/* ExL theme whitelist */
+xlpage=function(){var e=window.location.pathname;return/^\/community\/experience-cloud/i.test(e)&&!(/\/internal/i.test(e)||/\/groups/i.test(e))&&/((?:\/experience-cloud)|(?:\/experience-cloud\/community-feedback)|(?:\/experience-manager)|(?:\/experience-manager\/assets)|(?:\/experience-manager\/forms)|(?:\/experience-manager\/mobile)|(?:\/experience-manager\/mobile\/api)|(?:\/analytics)|(?:\/analysis-workspace)|(?:\/launch)|(?:\/audiences)|(?:\/dtm)|(?:\/audience-manager)|(?:\/campaign)|(?:\/advertising-cloud)|(?:\/target)|(?:\/marketing-cloud\/social)|(?:\/analytics-cloud)|(?:\/marketing-cloud)|(?:\/core-services)|(?:\/mobile-service)|(?:\/activation-service)|(?:\/auditor)|(?:\/launch\/sdk)){1}(?:(?:\/questions)|(?:\/ideas))?\/?(?:overview)?\/?$/i.test(e)}();
+
+
+function ecresizebottom(){if(xlpage){var e=document.getElementsByClassName("jive-body-layout-s1")[0],t=document.getElementsByClassName("jive-body-layout-s2")[0],s=document.getElementsByClassName("jive-body-layout-s3")[0],o=Math.max(e.offsetHeight,t.offsetHeight,s.offsetHeight);e.style.minHeight=o+"px",t.style.minHeight=o+"px",s.style.minHeight=o+"px"}}
+if(xlpage){var ecStyleEl=document.createElement("link");ecStyleEl.setAttribute("rel","stylesheet"),ecStyleEl.setAttribute("type","text/css"),ecStyleEl.setAttribute("href","https://adobeforums.worldsecuresystems.com/stylesheets/xl-style-base_201804160930.css");var ecHead=document.head||document.getElementsByTagName("head")[0];ecHead.appendChild(ecStyleEl)}
+window.addEventListener('load', (function(){if(_jive_current_user.anonymous)for(var a=0;a<document.links.length;a++)-1<document.links[a].href.indexOf("/create-idea")&&(document.links[a].href="https://adobeid-na1.services.adobe.com/renga-idprovider/pages/login?client_redirect=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fredirect%2FJiveProd%3Fclient_redirect%3Dhttps%3A%2F%2Fforums.adobe.com%2Fadobe_login&client_id=JiveProd&scope=AdobeID%2Copenid%2Cadditional_info.screen_name%2Cupdate_profile.screen_name&display=web_v2&denied_callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fdenied%2FJiveProd%3Fredirect_uri%3Dhttps%3A%2F%2Fforums.adobe.com%2Fadobe_login&flow_type=token&dc=false&callback=https%3A%2F%2Fims-na1.adobelogin.com%2Fims%2Fadobeid%2FJiveProd%2FAdobeID%2Ftoken%3Fredirect_uri%3D"+encodeURIComponent(document.links[a].href)+"&locale=en");var iDuh=document.getElementById("jive-link-create-community-idea");null!==iDuh&&iDuh.parentNode.insertBefore(iDuh,iDuh.parentNode.childNodes[1].nextSibling);ecresizebottom();}), false);
+
+/**
+* End Experience League theme
+*/
+
+</script>
+<link rel="stylesheet" href="/themes/adobe-global/styles/theme.css?v=20171201" type="text/css" media="all">
+    <style type="text/css">
+/* ------------ CORE BUG FIXES / BACKPORTS ------------ */
+.j-mini-modal-user .j-usercard-right {min-height: 225px;}
+.jive-widget-topmemberswidget .jive-sidebar-topmembers span.j-status-levels img {max-width:24px;max-height:24px;}
+
+
+/* ------------ Forums survey position code ------------ */
+#survey {
+			position:absolute;
+			left:20%;
+			top:20%;
+			background:#fff;
+			z-index:100;
+		}
+		#surveyContainer {
+			content: '';
+			position:fixed;
+			height:100%;
+			width:100%;
+			background:rgba(0,0,0,0.5);
+			left:0;
+			top:0;
+			z-index:99;
+		}
+		#close {
+			height:30px;
+			width:30px;
+			position:absolute;
+			right:0;
+			background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAeFBMVEUAAAC4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL+4vL8AAADrgKJ2AAAAJnRSTlMABlam3/nz11LbUwOLilUH49RB6uRcQCur6azg+PIs2eWWlFRb+tJm+u0AAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAp0lEQVQY022R6RKDIBCD49XWo1JFoWLv6r7/I5ZVUeuYH8vkGxhCAFieH4TR4Rj4HmadYpoUJxNKM1opSwf4x4jOzHLaKAfExa5FKdnKsrCzEqjZKWhLpYZiV+M6bNGW8mjYGbTkqB62W7W4kaOOUYT7Ah8zfO4dny9qpKNmP5KoOLwawysO/xKAv32mv1NINlb3XrNPOjWaLCV/l+q9zoR9H5pu/I4fIzUmzInbzwcAAAAASUVORK5CYII=');
+			background-repeat: none;
+			width:20px;
+			height:20px;
+			cursor:pointer;
+			margin:5px;
+		}
+ 
+    </style>
+    </head><body class="j-body-place j-header-mode-simple  j-simple-homepage" data-auth-token="no-user" data-browser-event-query="{&quot;providers&quot;:[&quot;activityStream.poll&quot;,&quot;appAlert.create&quot;,&quot;inboxCount.poll&quot;],&quot;since&quot;:1538446668835}" data-browser-events-polling-delay="30000" data-container-id="4671" data-container-type="14" data-current-user="{&quot;type&quot;:3,&quot;link&quot;:&quot;/people/ANONYMOUS&quot;,&quot;subject&quot;:&quot;ANONYMOUS&quot;,&quot;iconCss&quot;:&quot;jive-icon-profile&quot;,&quot;archetype&quot;:&quot;people&quot;,&quot;thumbnailTemplate&quot;:&quot;jive.browse.user.thumbnailUserItem&quot;,&quot;detailTemplate&quot;:&quot;jive.browse.user.detailUserItem&quot;,&quot;objectTypeName&quot;:null,&quot;objectTypeFeatureName&quot;:null,&quot;displayExternallyVisibleVisualCue&quot;:false,&quot;prop&quot;:{&quot;isVisibleToPartner&quot;:false,&quot;search&quot;:{&quot;defaultEnabled&quot;:true},&quot;avatarID&quot;:&quot;-1&quot;,&quot;statuslevel&quot;:{&quot;pointLevel&quot;:&quot;0&quot;,&quot;enabled&quot;:true,&quot;imagePath&quot;:&quot;/resources/images/status/level-1-badge.png&quot;,&quot;levelPercentComplete&quot;:&quot;0&quot;,&quot;name&quot;:&quot;Level 1&quot;,&quot;description&quot;:&quot;Level 1&quot;,&quot;ready&quot;:true},&quot;profile&quot;:{&quot;homeAddress&quot;:null,&quot;department&quot;:null,&quot;initialLoginDate&quot;:null,&quot;title&quot;:null,&quot;joinDate&quot;:null,&quot;strictJoinDate&quot;:null,&quot;company&quot;:null,&quot;alternatePhoneNumber&quot;:null,&quot;hireOrJoinDate&quot;:null,&quot;expertise&quot;:null,&quot;occupation&quot;:null,&quot;primaryURL&quot;:null,&quot;faxNumber&quot;:null,&quot;homePhoneNumber&quot;:null,&quot;pagerNumber&quot;:null,&quot;primaryEmailAddress&quot;:null,&quot;primaryEmailAddressVisible&quot;:false,&quot;alternateEmailAddress&quot;:null,&quot;mobilePhoneNumber&quot;:null,&quot;primaryPhoneNumber&quot;:null,&quot;lastLoggedInDate&quot;:null,&quot;biography&quot;:null,&quot;address&quot;:null,&quot;location&quot;:null,&quot;url&quot;:null,&quot;timeZone&quot;:null},&quot;adobeGuid&quot;:&quot;&quot;,&quot;profileImage&quot;:{&quot;url&quot;:&quot;/images/jive-profile-default-portrait.png&quot;,&quot;viewingSelf&quot;:false,&quot;default&quot;:true},&quot;presence&quot;:{&quot;userExternalID&quot;:null,&quot;online&quot;:false,&quot;jsObject&quot;:&quot;null&quot;}},&quot;username&quot;:&quot;ANONYMOUS&quot;,&quot;displayName&quot;:&quot;ANONYMOUS&quot;,&quot;initialLoginDate&quot;:null,&quot;anonymous&quot;:true,&quot;enabled&quot;:true,&quot;external&quot;:false,&quot;partner&quot;:false,&quot;email&quot;:null,&quot;entitled&quot;:true,&quot;visible&quot;:true,&quot;avatarID&quot;:&quot;-1&quot;,&quot;id&quot;:&quot;-1&quot;,&quot;objectType&quot;:3,&quot;modificationDate&quot;:null,&quot;modificationTime&quot;:null,&quot;unmodified&quot;:true,&quot;creationTime&quot;:null,&quot;creationDate&quot;:null}" data-instance-id="8220850f-6b36-48a8-8018-4216c2c60aef" data-locale="en_US" data-realtime-communications-enabled="false" data-realtime-push-enabled="false" data-realtime-stats-enabled="false" data-socket-events="{&quot;socketEvents&quot;:[&quot;activityStream.push&quot;,&quot;tiledata.push&quot;]}" data-timezone-offset="-7" data-translation-language="en" data-clean="true"data-base-url="/" data-absolute-base-url="https://forums.adobe.com" data-resource-url="/8.0.3.6eafe9c/" ><a id="top"></a><a href="#j-main" class="j-508-label">Skip navigation</a><div id="j-header-wrap" data-company-name="" data-no-user-bar="false" role="banner" ><header id="j-compact-header" class="clearfix"><!-- Navigational buttons/links --><nav id="j-globalNav-bg" role="navigation" aria-label="Jive" data-mode="simple"><div id="j-links"><ul class="j-globalNav"><li class="j-nav-create j-nav-user j-globalNav-li js-satellite-nav-container" aria-haspopup="true"><ul id="j-satNav"><li class="login"><a href="#" class="login" id="navLogin" title="Sign in">Sign in</a></li></ul><div id="j-satNav-menu" class="clearfix" style="display:none;"></div><span data-count="0" tabindex="-1" aria-label="Unread inbox items" class="j-js-update-indicator j-update-count zero  j-navbadge-count j-ui-elem"style="display:none;">0</span></li><li id="j-nav-search-li" class="j-nav-open-visor j-globalNav-li js-nav-open-visor-container j-nav-create" aria-haspopup="true"><label for="j-nav-search" class="j-508-label">Search forums only</label><a href="#" id="j-nav-search" class="j-globalNavLink j-ui-elem" role="menuitem" data-hideviews="bookmarks default history" data-hidetypes="" ><span class="nav-link j-ui-elem"><i class="icon-search"></i></span></a></li><li id="mobile-search" class="j-globalNav-li mobile-tool"><a class="j-globalNavLink" href="#"></a></li></ul><div id="j-spotlight-search" role="search" data-mode="simple"><span class="j-ui-elem j-search-left"><span id="searchpopupanchor" ></span></span><span><label for="autosearch" class="j-508-label">Search forums only</label><input data-spotlight-enabled="false" id="autosearch" class="j-ui-elem" data-component="autosearch" data-popup-anchor="searchpopupanchor" placeholder="Search forums only" type="text" role="combobox" aria-labelledby="autosearch" aria-expanded="false" data-hidetypes="bookmarks frequent recent " data-community-name="Adobe Community" data-filters="" data-origin="spotlight"aria-hidden="true" aria-busy="true" /><a href="#" id="mob-spotlight-cancel">Cancel</a></span><span class="j-ui-elem j-search-right"></span><span class="jive-icon-sml jive-glyph-delete" data-component="button" data-type="clear" data-field="autosearch"></span></div></div><a class="custom-logo j-globalNavLink" href="//www.adobe.com/" title="Adobe"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 24 20" focusable="false"><path fill="#FF0000" d="M15.1,0H24v20L15.1,0z M8.9,0H0v20L8.9,0z M12,7.4L17.6,20h-3.8l-1.6-4H8.1L12,7.4z"></path></svg><span class="nav-link" id="adobe-logo">Adobe</span></a><ul id="j-globalNav" role="menubar" class="j-globalNav"><li id="mobile-menu" class="mobile-tool"><a class="j-globalNavLink" href="#"></a></li><li id="jive-nav-link-support" class="j-globalNav-li j-ui-elem"><a href="https://helpx.adobe.com/support.html" class="j-globalNavLink j-ui-elem" role="menuitem"><span class="nav-link">Support Home</span></a></li><li id="jive-nav-link-home"class=" j-globalNav-li j-ui-elem"><a  href="/welcome"  class="j-globalNavLink j-ui-elem " role="menuitem"><span class="nav-link  ">Forums Home</span></a></li><li id="jive-navbar-link-news"class=" j-globalNav-li j-ui-elem"><a  href="/news"  class="j-globalNavLink j-ui-elem " role="menuitem"><span class="nav-link  ">News</span></a></li><li id="jive-nav-link-conx"class=" j-globalNav-li j-ui-elem"><a  href="/people"  class="j-globalNavLink j-ui-elem " role="menuitem"><span class="nav-link  ">People</span></a></li><li id="customLink0" aria-haspopup="true" class="j-globalNav-li j-custom-link j-ui-elem"><a href="#" class="j-globalNavLink j-ui-elem" role="menuitem"><span class="nav-link j-ui-elem">Product <span class="j-nav-more jive-icon-glyph icon-arrow-down2"></span></span></a><div id="customLink0-menu" class="j-pop-main j-menu j-quick-menu" style="display: none;"><span class="j-508-label a11y-boundary">Menu begins</span><ul><li><a href="/community/creative_cloud" class="j-ui-elem">Adobe Creative Cloud</a></li><li><a href="/community/download_install_setup" class="j-ui-elem">Downloading, Installing, Setting Up</a></li><li><a href="/community/experience-cloud" class="j-ui-elem">Adobe Experience Cloud</a></li><li><a href="/community/flashplayer" class="j-ui-elem">Adobe Flash Player</a></li><li><a href="/community/adobe_reader_forums" class="j-ui-elem">Acrobat Reader</a></li><li><a href="/community/acrobat" class="j-ui-elem">Adobe Acrobat</a></li><li><a href="/community/photoshop" class="j-ui-elem">Adobe Photoshop</a></li><li><a href="/community/lightroom" class="j-ui-elem">Adobe Photoshop Lightroom</a></li><li><a href="/community/photoshop_elements" class="j-ui-elem">Adobe Photoshop Elements</a></li><li><a href="/community/dreamweaver" class="j-ui-elem">Adobe Dreamweaver </a></li><li><a href="/community/muse" class="j-ui-elem">Adobe Muse</a></li><li><a href="/community/animate" class="j-ui-elem">Adobe Animate CC</a></li><li><a href="/community/premiere" class="j-ui-elem">Adobe Premiere Pro</a></li><li><a href="/community/aftereffects_general_discussion" class="j-ui-elem">Adobe After Effects</a></li><li><a href="/community/illustrator" class="j-ui-elem">Adobe Illustrator</a></li><li><a href="/community/indesign" class="j-ui-elem">Adobe InDesign</a></li><li><a href="/places" class="j-ui-elem">View all communities</a></li></ul></div></li><li id="customLink1" aria-haspopup="true" class="j-globalNav-li j-custom-link j-ui-elem"><a href="#" class="j-globalNavLink j-ui-elem" role="menuitem"><span class="nav-link j-ui-elem">Explore <span class="j-nav-more jive-icon-glyph icon-arrow-down2"></span></span></a><div id="customLink1-menu" class="j-pop-main j-menu j-quick-menu" style="display: none;"><span class="j-508-label a11y-boundary">Menu begins</span><ul><li><a href="https://www.adobe.com/go/forummeet" class="j-ui-elem">Meet the experts</a></li><li><a href="https://www.adobe.com/go/forumlearn" class="j-ui-elem">Learn our products</a></li><li><a href="https://www.adobe.com/go/forumconnect" class="j-ui-elem">Get inspired in the lounge</a></li><li><a href="https://forums.adobe.com/community/creativepipeline" class="j-ui-elem">Read the blog</a></li></ul></div></li></ul></nav></header><noscript><div style="color:red" align="center">Error: You don't have JavaScript enabled. This tool uses JavaScript and much of it will not work correctly without it enabled. Please turn JavaScript back on and reload this page.</div></noscript></div><div id="mobile-overlay"></div><div id="j-main-wrapper"><section id="j-main" class="clearfix"><div id="jive-body" class="clearfix"><div class="customize-message clearfix" id="customize-message" style="display: none"><h1>Edit Community Overview Page</h1><p class="welcome-message">Choose a layout and drag widgets onto your Overview Page to customize it.  Widgets placed on the page below can be configured by selecting the <span class="widget-menu-button"></span> symbol.</p><div class="customize-display clearfix"><a href="#" id="dismiss-link" class="j-btn-global">OK</a><label for="dont-display-message"><input type="checkbox" id="dont-display-message">Don't show me this again.</label></div></div><header class="j-page-header"><div class="j-placeHdImg"><div class="placeImg" style="background-image: url('/community/image/4671/2.png?a=803403');"></div><img src="/community/image/4671/2.png?a=803403" alt="" border="0" class="placeImg"></div><div class="j-placeHeaderWrap"><div class="j-placeHeaderInner noParent"><h1 class="j-placeTitle"><a href="/community/download_install_setup" class="font-color-white j-placeName">Downloading, Installing, Setting Up</a> <a href="#" id="js-place-parents-link" class="j-nav-more jive-icon-glyph icon-angle-down" title="Where is this community located?"></a><div id="js-place-parents-container" class="j-pop-main j-menu j-quick-menu j-breadcrumb-popover" style="display: none"><ul class="j-icon-list"><li><a href="/places" class="noIcon"><span class="lnk">All Communities</span></a><ul><li><a href="/community/download_install_setup" class="last-child"><span class="jive-icon-med jive-icon-space"></span><span class="lnk">Downloading, Installing, Setting Up</span></a></li></ul></li></ul></div><span id="js-place-link-breadcrumb" data-place-link-count="0"data-place="true"data-parents="true"></span></h1><div id="j-place-header-actions" class="j-placeHdActions" data-ann="[{&quot;objectType&quot;:22,&quot;subject&quot;:&quot;URGENT NOTIFICATION: Beware of fraudulent support requests.&quot;,&quot;body&quot;:&quot;\u003C!-- [DocumentBodyStart:2ec6ad81-e4e7-472b-a3ae-0e3f5b2724e6] --\u003E\u003Cdiv class=\&quot;jive-rendered-content\&quot;\u003E\u003Cp\u003EWe have received a number of reports where some members of this community are posing as Adobe Employees by offering to help troubleshoot issues personally using technologies such as Skype as a means to gain access to your computer and potentially your personal information. &amp;#160;All Adobe employees are required to have a red &amp;#8216;STAFF&amp;#8217; below their profile picture, as well as an Adobe logo after their username. You can also see both the &#39;STAFF&#39; badge and Adobe logo if you mouse-over their profile picture.\u003C/p\u003E\u003C/div\u003E\u003C!-- [DocumentBodyEnd:2ec6ad81-e4e7-472b-a3ae-0e3f5b2724e6] --\u003E&quot;,&quot;rteString&quot;:&quot;\u003Cbody\u003E\u003Cp\u003EWe have received a number of reports where some members of this community are posing as Adobe Employees by offering to help troubleshoot issues personally using technologies such as Skype as a means to gain access to your computer and potentially your personal information.  All Adobe employees are required to have a red ‘STAFF’ below their profile picture, as well as an Adobe logo after their username. You can also see both the &#39;STAFF&#39; badge and Adobe logo if you mouse-over their profile picture.\u003C/p\u003E\u003C/body\u003E&quot;,&quot;subjectURI&quot;:&quot;&quot;,&quot;image&quot;:null,&quot;user&quot;:{&quot;type&quot;:3,&quot;link&quot;:&quot;/people/Jeff+A+Wright&quot;,&quot;subject&quot;:&quot;Jeff A Wright&quot;,&quot;iconCss&quot;:&quot;jive-icon-profile&quot;,&quot;archetype&quot;:&quot;people&quot;,&quot;thumbnailTemplate&quot;:&quot;jive.browse.user.thumbnailUserItem&quot;,&quot;detailTemplate&quot;:&quot;jive.browse.user.detailUserItem&quot;,&quot;objectTypeName&quot;:null,&quot;objectTypeFeatureName&quot;:null,&quot;displayExternallyVisibleVisualCue&quot;:false,&quot;prop&quot;:{&quot;isVisibleToPartner&quot;:false,&quot;avatarID&quot;:&quot;32202&quot;,&quot;roleBadgeInfo&quot;:{&quot;groupBadgeUri&quot;:&quot;/resources/statics/rolebadges/roleBadge-4-1088-1460806922569.png?a=1460806922575&quot;,&quot;groupBadgeRoleName&quot;:&quot;Employee&quot;},&quot;presence&quot;:{&quot;userExternalID&quot;:null,&quot;online&quot;:false,&quot;jsObject&quot;:&quot;null&quot;}},&quot;username&quot;:&quot;Jeff A Wright&quot;,&quot;displayName&quot;:&quot;Jeff A Wright&quot;,&quot;initialLoginDate&quot;:1269959306769,&quot;anonymous&quot;:false,&quot;enabled&quot;:true,&quot;external&quot;:false,&quot;partner&quot;:false,&quot;email&quot;:null,&quot;entitled&quot;:true,&quot;visible&quot;:true,&quot;avatarID&quot;:&quot;32202&quot;,&quot;id&quot;:&quot;633531&quot;,&quot;objectType&quot;:3,&quot;modificationDate&quot;:&quot;1538434750693&quot;,&quot;modificationTime&quot;:&quot;3 hours ago&quot;,&quot;unmodified&quot;:false,&quot;creationTime&quot;:&quot;9 years ago&quot;,&quot;creationDate&quot;:&quot;1269959306769&quot;},&quot;publishDate&quot;:&quot;1425970800000&quot;,&quot;endDate&quot;:&quot;1616309999000&quot;,&quot;canEdit&quot;:false,&quot;expired&quot;:false,&quot;id&quot;:3362},{&quot;objectType&quot;:22,&quot;subject&quot;:&quot;Temporary Activation Expired error when opening CS3&quot;,&quot;body&quot;:&quot;\u003C!-- [DocumentBodyStart:36ff3b74-aa04-42af-9d2f-abe914d0e737] --\u003E\u003Cdiv class=\&quot;jive-rendered-content\&quot;\u003E\u003Cp\u003EAfter reinstalling Creative Suite 3 you may receive the error, &amp;ldquo;Temporary Activation Expired.&amp;#8221;&amp;#160; This is due to cached licensing data stored on the computer. &amp;#160;Complete details on how to resolve this error, and successfully install Creative Suite 3, can be found at&amp;#160;\u003Ca class=\&quot;\&quot; href=\&quot;https://forums.adobe.com/external-link.jspa?url=https%3A%2F%2Fhelpx.adobe.com%2Fx-productkb%2Fglobal%2Ftemporary-activation-expired.html\&quot;\u003Ehttps://helpx.adobe.com/x-productkb/global/temporary-activation-expired.html\u003C/a\u003E.\u003C/p\u003E\u003C/div\u003E\u003C!-- [DocumentBodyEnd:36ff3b74-aa04-42af-9d2f-abe914d0e737] --\u003E&quot;,&quot;rteString&quot;:&quot;\u003Cbody\u003E\u003Cp\u003EAfter reinstalling Creative Suite 3 you may receive the error, “Temporary Activation Expired.”  This is due to cached licensing data stored on the computer.  Complete details on how to resolve this error, and successfully install Creative Suite 3, can be found at \u003Ca _jive_internal=\&quot;true\&quot; data-mce-href=\&quot;external-link.jspa?url=https%3A%2F%2Fhelpx.adobe.com%2Fx-productkb%2Fglobal%2Ftemporary-activation-expired.html\&quot; href=\&quot;/external-link.jspa?url=https%3A%2F%2Fhelpx.adobe.com%2Fx-productkb%2Fglobal%2Ftemporary-activation-expired.html\&quot;\u003Ehttps://helpx.adobe.com/x-productkb/global/temporary-activation-expired.html\u003C/a\u003E.\u003C/p\u003E\u003C/body\u003E&quot;,&quot;subjectURI&quot;:&quot;https://helpx.adobe.com/x-productkb/global/temporary-activation-expired.html&quot;,&quot;image&quot;:&quot;https://forums.adobe.com/servlet/JiveServlet/downloadImage/22-4880-1289864/Temporary+Activation+Expired.png&quot;,&quot;user&quot;:{&quot;type&quot;:3,&quot;link&quot;:&quot;/people/Jeff+A+Wright&quot;,&quot;subject&quot;:&quot;Jeff A Wright&quot;,&quot;iconCss&quot;:&quot;jive-icon-profile&quot;,&quot;archetype&quot;:&quot;people&quot;,&quot;thumbnailTemplate&quot;:&quot;jive.browse.user.thumbnailUserItem&quot;,&quot;detailTemplate&quot;:&quot;jive.browse.user.detailUserItem&quot;,&quot;objectTypeName&quot;:null,&quot;objectTypeFeatureName&quot;:null,&quot;displayExternallyVisibleVisualCue&quot;:false,&quot;prop&quot;:{&quot;isVisibleToPartner&quot;:false,&quot;avatarID&quot;:&quot;32202&quot;,&quot;roleBadgeInfo&quot;:{&quot;groupBadgeUri&quot;:&quot;/resources/statics/rolebadges/roleBadge-4-1088-1460806922569.png?a=1460806922575&quot;,&quot;groupBadgeRoleName&quot;:&quot;Employee&quot;},&quot;presence&quot;:{&quot;userExternalID&quot;:null,&quot;online&quot;:false,&quot;jsObject&quot;:&quot;null&quot;}},&quot;username&quot;:&quot;Jeff A Wright&quot;,&quot;displayName&quot;:&quot;Jeff A Wright&quot;,&quot;initialLoginDate&quot;:1269959306769,&quot;anonymous&quot;:false,&quot;enabled&quot;:true,&quot;external&quot;:false,&quot;partner&quot;:false,&quot;email&quot;:null,&quot;entitled&quot;:true,&quot;visible&quot;:true,&quot;avatarID&quot;:&quot;32202&quot;,&quot;id&quot;:&quot;633531&quot;,&quot;objectType&quot;:3,&quot;modificationDate&quot;:&quot;1538434750693&quot;,&quot;modificationTime&quot;:&quot;3 hours ago&quot;,&quot;unmodified&quot;:false,&quot;creationTime&quot;:&quot;9 years ago&quot;,&quot;creationDate&quot;:&quot;1269959306769&quot;},&quot;publishDate&quot;:&quot;1504162800000&quot;,&quot;endDate&quot;:&quot;1567925999000&quot;,&quot;canEdit&quot;:false,&quot;expired&quot;:false,&quot;id&quot;:4880},{&quot;objectType&quot;:22,&quot;subject&quot;:&quot;Adobe Creative Cloud apps and macOS 10.14 Mojave compatibility issues&quot;,&quot;body&quot;:&quot;\u003C!-- [DocumentBodyStart:300bea1f-0a82-4269-8d3a-fcb2bcdf0a0d] --\u003E\u003Cdiv class=\&quot;jive-rendered-content\&quot;\u003E\u003Cp\u003EFor details regarding Adobe Creative Cloud applications compatibility with macOS 10.14 Mojave please bookmark -&amp;#160;\u003Ca class=\&quot;\&quot; href=\&quot;https://forums.adobe.com/external-link.jspa?url=https%3A%2F%2Fhelpx.adobe.com%2Fx-productkb%2Fglobal%2Fmacos-mojave-compatibility.html\&quot;\u003Ehttps://helpx.adobe.com/x-productkb/global/macos-mojave-compatibility.html\u003C/a\u003E.\u003C/p\u003E\u003C/div\u003E\u003C!-- [DocumentBodyEnd:300bea1f-0a82-4269-8d3a-fcb2bcdf0a0d] --\u003E&quot;,&quot;rteString&quot;:&quot;\u003Cbody\u003E\u003Cp\u003EFor details regarding Adobe Creative Cloud applications compatibility with macOS 10.14 Mojave please bookmark - \u003Ca _jive_internal=\&quot;true\&quot; data-mce-href=\&quot;external-link.jspa?url=https%3A%2F%2Fhelpx.adobe.com%2Fx-productkb%2Fglobal%2Fmacos-mojave-compatibility.html\&quot; href=\&quot;/external-link.jspa?url=https%3A%2F%2Fhelpx.adobe.com%2Fx-productkb%2Fglobal%2Fmacos-mojave-compatibility.html\&quot;\u003Ehttps://helpx.adobe.com/x-productkb/global/macos-mojave-compatibility.html\u003C/a\u003E.\u003C/p\u003E\u003C/body\u003E&quot;,&quot;subjectURI&quot;:&quot;https://helpx.adobe.com/x-productkb/global/macos-mojave-compatibility.html&quot;,&quot;image&quot;:null,&quot;user&quot;:{&quot;type&quot;:3,&quot;link&quot;:&quot;/people/Jeff+A+Wright&quot;,&quot;subject&quot;:&quot;Jeff A Wright&quot;,&quot;iconCss&quot;:&quot;jive-icon-profile&quot;,&quot;archetype&quot;:&quot;people&quot;,&quot;thumbnailTemplate&quot;:&quot;jive.browse.user.thumbnailUserItem&quot;,&quot;detailTemplate&quot;:&quot;jive.browse.user.detailUserItem&quot;,&quot;objectTypeName&quot;:null,&quot;objectTypeFeatureName&quot;:null,&quot;displayExternallyVisibleVisualCue&quot;:false,&quot;prop&quot;:{&quot;isVisibleToPartner&quot;:false,&quot;avatarID&quot;:&quot;32202&quot;,&quot;roleBadgeInfo&quot;:{&quot;groupBadgeUri&quot;:&quot;/resources/statics/rolebadges/roleBadge-4-1088-1460806922569.png?a=1460806922575&quot;,&quot;groupBadgeRoleName&quot;:&quot;Employee&quot;},&quot;presence&quot;:{&quot;userExternalID&quot;:null,&quot;online&quot;:false,&quot;jsObject&quot;:&quot;null&quot;}},&quot;username&quot;:&quot;Jeff A Wright&quot;,&quot;displayName&quot;:&quot;Jeff A Wright&quot;,&quot;initialLoginDate&quot;:1269959306769,&quot;anonymous&quot;:false,&quot;enabled&quot;:true,&quot;external&quot;:false,&quot;partner&quot;:false,&quot;email&quot;:null,&quot;entitled&quot;:true,&quot;visible&quot;:true,&quot;avatarID&quot;:&quot;32202&quot;,&quot;id&quot;:&quot;633531&quot;,&quot;objectType&quot;:3,&quot;modificationDate&quot;:&quot;1538434750693&quot;,&quot;modificationTime&quot;:&quot;3 hours ago&quot;,&quot;unmodified&quot;:false,&quot;creationTime&quot;:&quot;9 years ago&quot;,&quot;creationDate&quot;:&quot;1269959306769&quot;},&quot;publishDate&quot;:&quot;1537858800000&quot;,&quot;endDate&quot;:&quot;1548057599000&quot;,&quot;canEdit&quot;:false,&quot;expired&quot;:false,&quot;id&quot;:5539}]"></div></div></div><div class="j-placeNavWrap"><!-- BEGIN browse place tabs --><nav id="j-placeNav" class="j-placeNav clearfix" role="navigation" aria-label="Community"><div class="j-placeNavBg"></div><a id="mobile-place-menu" href="#"><span>More</span></a><ul id="j-placeMainNav" class="j-placeMainNav j-placeLinks"><li id="jive-place-link-overview-tab" data-id="jive-place-link-overview" class="j-tab-selected active j-ui-elem"><a id="jive-place-link-overview" href="/community/download_install_setup/overview" class=" j-ui-elem"><span class="lnk">Overview</span></a></li><li id="jive-place-link-content-tab" data-id="jive-place-link-content"><a id="jive-place-link-content" href="/community/download_install_setup/content" class=""><span class="lnk">Content</span></a></li><li id="jive-place-link-people-tab" data-id="jive-place-link-people"><a id="jive-place-link-people" href="/community/download_install_setup/people" class=""><span class="lnk">People</span></a></li><li id="jive-place-link-places-tab" data-id="jive-place-link-places"><a id="jive-place-link-places" href="/community/download_install_setup/places" class=""><span class="lnk">Subspaces</span></a></li><li href="#" id="place-main-nav-more" class="j-place-main-nav-more"><a href="#"><span class="lnk">More</span><span class="j-nav-more jive-icon-glyph icon-arrow-down2"></span></a></li></ul><ul id="j-placeActions" class="j-placeActions j-placeLinks"><li id="jive-place-link-actions-tab"><a id="jive-place-link-actions" href="/community/download_install_setup#">Actions<span class="j-nav-more jive-icon-glyph icon-arrow-down2"></span></a></li><li><a id="jive-place-link-about" class="j-placeAboutLink" role="navigation" href="about-place.jspa?containerID=4671&containerType=14">About</a></li></ul></nav><div id="j-pp-main-nav-menu-pop" class="j-quick-menu j-menu" style="display:none;"></div><script>(function() {var $upMenu = $j('#j-placeMainNav'), $menuItems = $upMenu.find('li'), $moreBtn = $j('#place-main-nav-more'), upMenuWidth = $upMenu.outerWidth(true), createMenuItemsTotalWidth = 0; $menuItems.each(function() {createMenuItemsTotalWidth += $j(this).outerWidth(true); $j(this).data("width", createMenuItemsTotalWidth);}); var moreWidth = $moreBtn.outerWidth(); $menuItems.not($moreBtn).each(function() {var width = $j(this).data("width"); if (width > upMenuWidth - moreWidth) {$j(this).hide(); $moreBtn.show();} else {$j(this).show(); $moreBtn.hide();}});})();</script></div></header><div id="jive-alert" role="marquee" class="clearfix j-multi-announcements"><span id="j-announcement-1" class="j-508-label">Announcement 1 URGENT NOTIFICATION: Beware of fraudulent support requests.</span><div class="jive-alert-type jive-alert-announcement" id="jive-alert-1" aria-labelledby="j-announcement-1" tabindex="0"><div class="jive-alert-header"><h5 class="jive-alert-title"><span class="jive-alert-label jive-alert-announcement-label"><span class="jive-icon-med jive-icon-announcement"></span>Announcement:</span><span class="jive-alert-title-text">URGENT NOTIFICATION: Beware of fraudulent support requests.</span></h5><ul><li class="jive-alert-details-show" id="jive-alert-details-show-1"><a href="#" onclick="showAlertContent(); return false;" class="font-color-meta-light">Show Details</a></li><li class="jive-alert-details-hide" id="jive-alert-details-hide-1" style="display: none;"><a href="#" onclick="hideAlertContent(); return false;" class="font-color-meta-light">Hide Details</a></li></ul></div><div class="jive-alert-content" id="jive-alert-content-1" style="display: none;"><div id="jive-announcements-links-3362" class="jive-alert-details font-color-meta">by Jeff A Wright (March 10, 2015)<span></span></div><!-- [DocumentBodyStart:2ec6ad81-e4e7-472b-a3ae-0e3f5b2724e6] --><div class="jive-rendered-content"><p>We have received a number of reports where some members of this community are posing as Adobe Employees by offering to help troubleshoot issues personally using technologies such as Skype as a means to gain access to your computer and potentially your personal information. &#160;All Adobe employees are required to have a red &#8216;STAFF&#8217; below their profile picture, as well as an Adobe logo after their username. You can also see both the 'STAFF' badge and Adobe logo if you mouse-over their profile picture.</p></div><!-- [DocumentBodyEnd:2ec6ad81-e4e7-472b-a3ae-0e3f5b2724e6] --><div class="jive-body-announcements-confirm" id="jive-body-announcements-expire-3362" style="display: none;"><p>Expiring the announcement will not delete it but will remove it from the public announcement list. Are you sure you want to expire this announcement?</p><form><input type="button" name="delete" value="Expire Announcement" class="announcement-expire" data-object-id="3362"/><input type="button" name="cancel" value="Cancel" onclick="$j('#jive-body-announcements-expire-3362').hide();return false;"/></form></div><div class="jive-body-announcements-confirm" id="jive-body-announcements-delete-3362" style="display: none;"><p>Are you sure you want to delete this announcement?</p><form><input type="button" name="delete" value="Delete Announcement" class="announcement-remove" data-object-id="3362"/><input type="button" name="cancel" value="Cancel" onclick="$j('#jive-body-announcements-delete-3362').hide();return false;"/></form></div></div></div><span id="j-announcement-2" class="j-508-label">Announcement 2 Temporary Activation Expired error when opening CS3</span><div class="jive-alert-type jive-alert-announcement" id="jive-alert-2" aria-labelledby="j-announcement-2" tabindex="0"style="display: none;"><div class="jive-alert-header"><h5 class="jive-alert-title"><span class="jive-alert-label jive-alert-announcement-label"><span class="jive-icon-med jive-icon-announcement"></span>Announcement:</span><span class="jive-alert-title-text"><a href="https://helpx.adobe.com/x-productkb/global/temporary-activation-expired.html">Temporary Activation Expired error when opening CS3</a></span></h5><ul><li class="jive-alert-details-show" id="jive-alert-details-show-2"><a href="#" onclick="showAlertContent(); return false;" class="font-color-meta-light">Show Details</a></li><li class="jive-alert-details-hide" id="jive-alert-details-hide-2" style="display: none;"><a href="#" onclick="hideAlertContent(); return false;" class="font-color-meta-light">Hide Details</a></li></ul></div><div class="jive-alert-content" id="jive-alert-content-2" style="display: none;"><div id="jive-announcements-links-4880" class="jive-alert-details font-color-meta">by Jeff A Wright (August 31, 2017)<span></span></div><img src="https://forums.adobe.com/servlet/JiveServlet/downloadImage/22-4880-1289864/Temporary+Activation+Expired.png?width=150&height=90" class="j-announcement-overview-image" title="Announcement overview image" alt="Announcement overview image" /><!-- [DocumentBodyStart:36ff3b74-aa04-42af-9d2f-abe914d0e737] --><div class="jive-rendered-content"><p>After reinstalling Creative Suite 3 you may receive the error, &ldquo;Temporary Activation Expired.&#8221;&#160; This is due to cached licensing data stored on the computer. &#160;Complete details on how to resolve this error, and successfully install Creative Suite 3, can be found at&#160;<a class="" href="https://forums.adobe.com/external-link.jspa?url=https%3A%2F%2Fhelpx.adobe.com%2Fx-productkb%2Fglobal%2Ftemporary-activation-expired.html">https://helpx.adobe.com/x-productkb/global/temporary-activation-expired.html</a>.</p></div><!-- [DocumentBodyEnd:36ff3b74-aa04-42af-9d2f-abe914d0e737] --><div class="jive-body-announcements-confirm" id="jive-body-announcements-expire-4880" style="display: none;"><p>Expiring the announcement will not delete it but will remove it from the public announcement list. Are you sure you want to expire this announcement?</p><form><input type="button" name="delete" value="Expire Announcement" class="announcement-expire" data-object-id="4880"/><input type="button" name="cancel" value="Cancel" onclick="$j('#jive-body-announcements-expire-4880').hide();return false;"/></form></div><div class="jive-body-announcements-confirm" id="jive-body-announcements-delete-4880" style="display: none;"><p>Are you sure you want to delete this announcement?</p><form><input type="button" name="delete" value="Delete Announcement" class="announcement-remove" data-object-id="4880"/><input type="button" name="cancel" value="Cancel" onclick="$j('#jive-body-announcements-delete-4880').hide();return false;"/></form></div></div></div><span id="j-announcement-3" class="j-508-label">Announcement 3 Adobe Creative Cloud apps and macOS 10.14 Mojave compatibility issues</span><div class="jive-alert-type jive-alert-announcement" id="jive-alert-3" aria-labelledby="j-announcement-3" tabindex="0"style="display: none;"><div class="jive-alert-header"><h5 class="jive-alert-title"><span class="jive-alert-label jive-alert-announcement-label"><span class="jive-icon-med jive-icon-announcement"></span>Announcement:</span><span class="jive-alert-title-text"><a href="https://helpx.adobe.com/x-productkb/global/macos-mojave-compatibility.html">Adobe Creative Cloud apps and macOS 10.14 Mojave compatibility issues</a></span></h5><ul><li class="jive-alert-details-show" id="jive-alert-details-show-3"><a href="#" onclick="showAlertContent(); return false;" class="font-color-meta-light">Show Details</a></li><li class="jive-alert-details-hide" id="jive-alert-details-hide-3" style="display: none;"><a href="#" onclick="hideAlertContent(); return false;" class="font-color-meta-light">Hide Details</a></li></ul></div><div class="jive-alert-content" id="jive-alert-content-3" style="display: none;"><div id="jive-announcements-links-5539" class="jive-alert-details font-color-meta">by Jeff A Wright (September 25, 2018)<span></span></div><!-- [DocumentBodyStart:300bea1f-0a82-4269-8d3a-fcb2bcdf0a0d] --><div class="jive-rendered-content"><p>For details regarding Adobe Creative Cloud applications compatibility with macOS 10.14 Mojave please bookmark -&#160;<a class="" href="https://forums.adobe.com/external-link.jspa?url=https%3A%2F%2Fhelpx.adobe.com%2Fx-productkb%2Fglobal%2Fmacos-mojave-compatibility.html">https://helpx.adobe.com/x-productkb/global/macos-mojave-compatibility.html</a>.</p></div><!-- [DocumentBodyEnd:300bea1f-0a82-4269-8d3a-fcb2bcdf0a0d] --><div class="jive-body-announcements-confirm" id="jive-body-announcements-expire-5539" style="display: none;"><p>Expiring the announcement will not delete it but will remove it from the public announcement list. Are you sure you want to expire this announcement?</p><form><input type="button" name="delete" value="Expire Announcement" class="announcement-expire" data-object-id="5539"/><input type="button" name="cancel" value="Cancel" onclick="$j('#jive-body-announcements-expire-5539').hide();return false;"/></form></div><div class="jive-body-announcements-confirm" id="jive-body-announcements-delete-5539" style="display: none;"><p>Are you sure you want to delete this announcement?</p><form><input type="button" name="delete" value="Delete Announcement" class="announcement-remove" data-object-id="5539"/><input type="button" name="cancel" value="Cancel" onclick="$j('#jive-body-announcements-delete-5539').hide();return false;"/></form></div></div></div><span id="jive-alert-counter"><span id="j-anncmt-previous-label" class="j-508-label" aria-hidden="true">Previous announcement</span><a href="#" id="j-anncmt-previous" class="j-anncmt-control font-color-normal" title="Previous announcement" aria-labelledby="j-anncmt-previous-label"><span class="jive-icon-glyph icon-arrow-left2"></span></a><span class="j-508-label">Announcement count</span><span id="jive-alert-counter-display" class="font-color-meta-light"></span><span id="j-anncmt-next-label" class="j-508-label" aria-hidden="true">Next announcement</span><a href="#" id="j-anncmt-next" class="j-anncmt-control font-color-normal" title="Next announcement" aria-labelledby="j-anncmt-next-label"><span class="jive-icon-glyph icon-arrow-right2"></span></a></span></div><!-- Display guest tip if unauthenticated --><div class="j-guest-tip jive-info-box j-rc5"><a id="jive-guest-link-auth" href="/login.jspa">Sign in</a> to follow, share, and participate in this community.</div><!-- END browse place tabs --><div id="j-place-actions-container" class="j-quick-menu j-choose-type j-small-view j-menu" style="display: none"><strong class="j-menu-quick-sectionlabel font-color-meta-light">More</strong><ul class="j-place-actions-links j-icon-list"><li><a id="jive-place-link-actions-rss" href="/community/feeds?community=4671" class=""><span class="jive-icon-glyph icon-feed jive-icon-med"></span><span class="lnk">Feeds</span></a></li></ul></div><div id="j-place-manage-container" class="j-menu" style="display: none"><ul class="j-place-manage-links"></ul></div><div class="j-layout j-contained j-rc4 clearfix"><div id="jive-widgets-panel-loading" style="display: none"><p class="font-color-meta-light"><img src="/images/jive-image-loading.gif" alt=""/>Loading...</p></div><div id="jive-widget-container"><div id="jive-widget-content" class="clearfix"><div id="jive-body-layout-ls">
+    <div class="jive-body-layout-l">
+        <div id="jive-widget-container_1" class="jive-widget-container jive-widget-container-large">
+         <div id="jive-widgetframe_410610"
+     data-widget-id="410610"
+     class="jive-widget jive-box j-rc5 jive-widget-formattedtextwidget jive-widget-formattedtext jive-widget-borderless "
+     role="complementary" aria-labelledby="jive-widgetframe-title_410610">
+    <div id="jive-widgetsize_410610" class="jive-widgetsize-large">
+        <div id="jive-widgetframe-header_410610"
+            class="jive-widget-header j-rc4 j-rc-none-bottom jive-box-header  "
+            
+            >
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_410610">
+                        Formatted Text
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_410610" class="jive-widget-body jive-widget-loading jive-box-body j-rc4 j-rc-none-top"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_410610" class="jive-widget-body jive-box-body j-rc4 j-rc-none-top" style="overflow: visible;">
+
+<div class="content-large"><div class="jive-widget-formatted-body"><!-- [DocumentBodyStart:8c0abdb3-4efa-4961-9a8a-a3e34f48aa44] --><div class="jive-rendered-content"><div class="adobe-product-faqs adobe-product clearfix"><h1>Looking for answers? Start with the FAQs</h1><p>Read some frequently asked questions in our documentation for the quickest answers to your questions</p><hr/><div class="col"><ul><li><a class="jive-link-message-small" data-containerId="4671" data-containerType="14" data-objectId="8163721" data-objectType="2" href="https://forums.adobe.com/message/8163721#8163721">How to download, install, and activate Adobe applications</a></li><li><a class="jive-link-thread-small" data-containerId="4786" data-containerType="14" data-objectId="2153181" data-objectType="1" href="https://forums.adobe.com/thread/2153181">How to review Installation Log files?</a></li><li><a class="jive-link-thread-small" data-containerId="4671" data-containerType="14" data-objectId="2158414" data-objectType="1" href="https://forums.adobe.com/thread/2158414">FAQ&#8217;s for Creative Suite - Installation Failed and Launch errors:</a></li><li><a class="jive-link-message-small" data-containerId="4671" data-containerType="14" data-objectId="9447952" data-objectType="2" href="https://forums.adobe.com/message/9447952#9447952">Installing Creative Suite on a new Mac or macOS 10.12 (Sierra) or later</a></li><li><a class="jive-link-thread-small" data-containerId="4671" data-containerType="14" data-objectId="2428864" data-objectType="1" href="https://forums.adobe.com/thread/2428864">How to activate your Adobe software</a></li></ul></div><div class="col"><ul><li><a class="jive-link-thread-small" data-containerId="4786" data-containerType="14" data-objectId="1478949" data-objectType="1" href="https://forums.adobe.com/thread/1478949?prevContainerType=14&amp;prevContainerID=4671">Applications missing from Creative Cloud Desktop application</a></li><li><a class="jive-link-thread-small" data-containerId="4786" data-containerType="14" data-objectId="1234635" data-objectType="1" href="https://forums.adobe.com/thread/1234635">When I open my Creative Cloud application it asks me for my serial number?</a></li><li><a class="jive-link-message-small" data-containerId="4671" data-containerType="14" data-objectId="3987968" data-objectType="2" href="https://forums.adobe.com/message/3987968#3987968">Where can I find the serial number on my Adobe product box?</a></li><li><a class="jive-link-thread-small" data-containerId="4671" data-containerType="14" data-objectId="2428868" data-objectType="1" href="https://forums.adobe.com/thread/2428868">Configuration error or Licensing has stopped working</a> </li><li><a class="jive-link-external-small" href="https://forums.adobe.com/external-link.jspa?url=https%3A%2F%2Fhelpx.adobe.com%2Fdownload-install.html" rel="nofollow" target="_blank">Download &amp; Install Hub</a></li></ul></div><div class="col"><ul><li><a class="jive-link-external-small" href="https://forums.adobe.com/external-link.jspa?url=https%3A%2F%2Fhelpx.adobe.com%2Fcreative-suite%2Fkb%2Ffind-download-link.html" rel="nofollow" target="_blank">Downloading your product</a></li><li><a class="jive-link-message-small" data-containerId="4671" data-containerType="14" data-objectId="4409509" data-objectType="2" href="https://forums.adobe.com/message/4409509#4409509">Installing &amp; Activating CS6 behind an Authentication Proxy server</a></li><li><a class="jive-link-thread-small" data-containerId="4671" data-containerType="14" data-objectId="1195856" data-objectType="1" href="https://forums.adobe.com/thread/1195856">Activation server shut down for CS2, Acrobat 7</a></li><li><a class="jive-link-thread-small" data-containerId="4671" data-containerType="14" data-objectId="2428866" data-objectType="1" href="https://forums.adobe.com/thread/2428866">Error MSVCR110.dll when opening Adobe applications</a> </li><li><a class="jive-link-external-small" href="https://forums.adobe.com/external-link.jspa?url=https%3A%2F%2Fhelpx.adobe.com%2Fcreative-cloud%2Fhelp%2Fdownload-install-new-computer.html" rel="nofollow" target="_blank">How do I install and use Creative Cloud apps on a new computer?</a></li></ul></div></div><div class="grammarly-disable-indicator"> </div><div class="grammarly-disable-indicator"> </div></div><!-- [DocumentBodyEnd:8c0abdb3-4efa-4961-9a8a-a3e34f48aa44] --></div></div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_410611"
+     data-widget-id="410611"
+     class="jive-widget jive-box j-rc5 jive-widget-searchwidget  "
+     role="complementary" aria-labelledby="jive-widgetframe-title_410611">
+    <div id="jive-widgetsize_410611" class="jive-widgetsize-large">
+        <div id="jive-widgetframe-header_410611"
+            class="jive-widget-header j-rc4 j-rc-none-bottom jive-box-header  "
+            
+            >
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_410611">
+                        Find Answers
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_410611" class="jive-widget-body jive-widget-loading jive-box-body j-rc4 j-rc-none-top"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_410611" class="jive-widget-body jive-box-body j-rc4 j-rc-none-top" style="overflow: visible;">
+
+<div class="content-large"><div id="j-search-widget" class="clearfix"><div id="searchpopupanchorwidget1860808541" class="j-spotlight-search"><span class="j-ui-elem j-search-left"><span ></span></span><span><label for="autosearchwidget1860808541" class="j-508-label">Search forums only</label><input data-spotlight-enabled="true" id="autosearchwidget1860808541" class="j-ui-elem" data-component="autosearch" data-popup-anchor="searchpopupanchorwidget1860808541" placeholder="Search forums only" type="text" role="combobox" aria-labelledby="autosearchwidget1860808541" aria-expanded="false" data-hidetypes="bookmarks frequent recent all" data-community-name="Adobe Community" data-filters="" data-origin="searchwidget"data-container="14:4671" data-container-name="Downloading, Installing, Setting Up" data-container-browseid="1413788"aria-hidden="false" aria-busy="false" /><a href="#" id="mob-spotlight-cancel">Cancel</a></span><span class="j-ui-elem j-search-right"></span><span class="jive-icon-sml jive-glyph-delete" data-component="button" data-type="clear" data-field="autosearchwidget1860808541"></span><button data-component="button" data-type="search" data-field="autosearchwidget1860808541">Search forums only</button></div></div></div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_410612"
+     data-widget-id="410612"
+     class="jive-widget jive-box j-rc5 jive-widget-recentcontentwidget  "
+     role="complementary" aria-labelledby="jive-widgetframe-title_410612">
+    <div id="jive-widgetsize_410612" class="jive-widgetsize-large">
+        <div id="jive-widgetframe-header_410612"
+            class="jive-widget-header j-rc4 j-rc-none-bottom jive-box-header jive-widget-header-refresh "
+            
+            >
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_410612">
+                        Recent Discussions
+                </span>
+            </h4>
+                <span class="jive-widget-refresh" id="jive-widgetframe-refresh_410612"
+                      >
+                    <a href="javascript:void(0)" id="jive-widgetframe-refresh-link_410612"
+                       title="Refresh this widget" class="font-color-meta-light"><span class="jive-icon-glyph icon-spinner"></span></a>
+                </span>
+        </div>
+        <div id="jive-widgetframe-loading_410612" class="jive-widget-body jive-widget-loading jive-box-body j-rc4 j-rc-none-top"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_410612" class="jive-widget-body jive-box-body j-rc4 j-rc-none-top" style="overflow: visible;">
+
+<div class="content-large">
+
+
+<div class="widget-container" id="widget-410612">
+
+<!-- Parameters that have to be defined before including this ftl-->
+<!-- tagSets is a collection of TagSet-->
+<!-- Specialize ContentFilterHandler if there is a frameID since there could be multiple instances in a single document.-->
+
+
+
+<form class="status-morecontent-form" action="/community/recent-updates!moreContentResults.jspa">
+    <input type="hidden" name="containerID" value="4671"/>
+    <input type="hidden" name="containerType" value="14"/>
+    <input type="hidden" name="recursive" value="false"/>
+    <input type="hidden" name="visibleTypes" value="1|18|38"/>
+    <input type="hidden" name="filterEnabled" value="true"/>
+    <input type="hidden" name="start"  value="6"/>
+    <input type="hidden" name="numResults" value="6"/>
+    <input type="hidden" name="containerSize" value="LARGE"/>
+    <input type="hidden" name="root" value="false"/>
+    <input type="hidden" name="zeroItem" value="2541381-1"/>
+    <input type="hidden" name="showProjectContent" value="false"/>
+</form>
+<div class="jive-table jive-table-widget jive-table-recentcontent">
+    <table cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+    <tr class="jive-table-row-odd">
+        <td class="jive-table-cell-type">
+            <a href="/thread/2541381">
+            <span             class="jive-icon-med jive-icon-discussion-question"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="/thread/2541381">
+                Re: Can&quot;t install Photoshop CS5 mac
+            </a>
+                        <span>
+                        <strong>
+                            3 hours ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="/people/lorii48198366"
+data-externalId=""
+data-username="lorii48198366"
+data-avatarId="1003"
+id="jive-44068722118533050486563"
+data-userId="4406872"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>lorii48198366</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="/people/lorii48198366"
+   data-externalId=""
+   data-username="lorii48198366"
+   data-avatarId="1003"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="4406872"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="/people/lorii48198366/avatar/22.png?a=1003"
+                data-avatarId="1003"
+            data-username="lorii48198366"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="lorii48198366"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-even">
+        <td class="jive-table-cell-type">
+            <a href="/thread/2540688">
+            <span             class="jive-icon-med jive-icon-discussion-question"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="/thread/2540688">
+                Fake apps
+            </a>
+                        <span>
+                        <strong>
+                            9 hours ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="/people/zizoo9898"
+data-externalId=""
+data-username="zizoo9898"
+data-avatarId="1001"
+id="jive-122555492118533054641738"
+data-userId="12255549"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>zizoo9898</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="/people/zizoo9898"
+   data-externalId=""
+   data-username="zizoo9898"
+   data-avatarId="1001"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="12255549"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="/people/zizoo9898/avatar/22.png?a=1001"
+                data-avatarId="1001"
+            data-username="zizoo9898"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="zizoo9898"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-odd">
+        <td class="jive-table-cell-type">
+            <a href="/thread/2541253">
+            <span             class="jive-icon-med jive-icon-discussion-question"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="/thread/2541253">
+                Authentic Software [Is my copy of CS6, recently purchased from eBay, legal?]
+            </a>
+                        <span>
+                        <strong>
+                            10 hours ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="/people/jimmyg44077797"
+data-externalId=""
+data-username="jimmyg44077797"
+data-avatarId="1011"
+id="jive-150638262118533059033163"
+data-userId="15063826"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>jimmyg44077797</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="/people/jimmyg44077797"
+   data-externalId=""
+   data-username="jimmyg44077797"
+   data-avatarId="1011"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="15063826"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="/people/jimmyg44077797/avatar/22.png?a=1011"
+                data-avatarId="1011"
+            data-username="jimmyg44077797"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="jimmyg44077797"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-even">
+        <td class="jive-table-cell-type">
+            <a href="/thread/2541483">
+            <span             class="jive-icon-med jive-icon-discussion-question"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="/thread/2541483">
+                Premier Elements &amp; Photoshop Elements download issue
+            </a>
+                        <span>
+                        <strong>
+                            10 hours ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="/people/richardt79501379"
+data-externalId=""
+data-username="richardt79501379"
+data-avatarId="1003"
+id="jive-150660742118533062801729"
+data-userId="15066074"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>richardt79501379</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="/people/richardt79501379"
+   data-externalId=""
+   data-username="richardt79501379"
+   data-avatarId="1003"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="15066074"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="/people/richardt79501379/avatar/22.png?a=1003"
+                data-avatarId="1003"
+            data-username="richardt79501379"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="richardt79501379"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-odd">
+        <td class="jive-table-cell-type">
+            <a href="/thread/2541168">
+            <span             class="jive-icon-med jive-icon-discussion-correct"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="/thread/2541168">
+                Unable to extract Premiere Pro CS6 installation files in Microsoft Edge
+            </a>
+                        <span>
+                        <strong>
+                            12 hours ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="/people/katherinef29591841"
+data-externalId=""
+data-username="katherinef29591841"
+data-avatarId="-1"
+id="jive-150625622118533066619501"
+data-userId="15062562"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>katherinef29591841</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="/people/katherinef29591841"
+   data-externalId=""
+   data-username="katherinef29591841"
+   data-avatarId="-1"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="15062562"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="/people/katherinef29591841/avatar/22.png?a=-1"
+                data-avatarId="-1"
+            data-username="katherinef29591841"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="katherinef29591841"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+    <tr class="jive-table-row-even">
+        <td class="jive-table-cell-type">
+            <a href="/thread/2540554">
+            <span             class="jive-icon-med jive-icon-discussion-correct"
+             title=""
+ ></span>
+            </a>
+        </td>
+        <td class="jive-table-cell-title">
+            <a href="/thread/2540554">
+                Need an older version of InDesign that is supported by Mac OS X Yosemite 10.10.5
+            </a>
+                        <span>
+                        <strong>
+                            15 hours ago
+                        </strong>
+
+                        </span>
+        </td>
+        <td class="jive-table-cell-author">
+
+                <span>
+by <a href="/people/elena.bubeeva"
+data-externalId=""
+data-username="elena.bubeeva"
+data-avatarId="1013"
+id="jive-150545202118533070093099"
+data-userId="15054520"
+data-presence="null"
+class="jiveTT-hover-user jive-username-link"
+>elena.bubeeva</a>                </span>
+        </td>
+        <td class="jive-table-cell-avatar">
+                <span>
+
+<a href="/people/elena.bubeeva"
+   data-externalId=""
+   data-username="elena.bubeeva"
+   data-avatarId="1013"
+   class="j-avatar jiveTT-hover-user "
+       data-userId="15054520"
+       data-presence="null"
+>
+    <img
+            class="jive-avatar"
+
+                src="/people/elena.bubeeva/avatar/22.png?a=1013"
+                data-avatarId="1013"
+            data-username="elena.bubeeva"
+
+        border="0" height="22" data-height="22" width="22"
+        alt="elena.bubeeva"
+        />
+    </a>
+</span>
+        </td>
+    </tr>
+        </tbody>
+    </table>
+</div>
+
+    <div class="more-status-content">
+        <span class="jive-whats-new-more">
+            <a href="#" class="jive-icon-link-forward-content jive-more-content">More</a>   
+        </span>
+    </div>
+     <div class="jive-box-footer">
+                <a href="/community/feeds/allcontent?community=4671&amp;showProjectContent=false&amp;recursive=false" class="statusrss font-color-meta-light" title="Get a feed of this content">
+                    <span class="jive-icon-glyph icon-feed"></span>
+Get a feed of this content                </a>
+     </div>
+</div>
+</div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_410613"
+     data-widget-id="410613"
+     class="jive-widget jive-box j-rc5 jive-widget-htmltextwidget jive-widget-htmltext jive-widget-borderless "
+     role="complementary" aria-labelledby="jive-widgetframe-title_410613">
+    <div id="jive-widgetsize_410613" class="jive-widgetsize-large">
+        <div id="jive-widgetframe-header_410613"
+            class="jive-widget-header j-rc4 j-rc-none-bottom jive-box-header  "
+            
+            >
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_410613">
+                        HTML
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_410613" class="jive-widget-body jive-widget-loading jive-box-body j-rc4 j-rc-none-top"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_410613" class="jive-widget-body jive-box-body j-rc4 j-rc-none-top" style="overflow: visible;">
+
+<div class="content-large"><div class="jive-html-text-widget"><div class="adobe-product clearfix" id="adobe-product-qa"><section class="answer"><h1>You could be the answer!</h1><p>Share what you know and help fellow community members by answering questions!</p><p><a href="content?filterID=contentstatus%5Bpublished%5D~objecttype~objecttype%5Bthread%5D~thread%5Bopen%5D">View all unanswered questions</a></p></section><section class="question"><h1>Still have questions?</h1><p>If you can’t find your answer by searching our existing discussions, try asking the community about your specific issue.</p><p><a href="">Start a new discussion</a></p></section></div></div></div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <div class="jive-body-layout-s">
+         <div id="jive-widget-container_2" class="jive-widget-container jive-widget-container-small">
+<div id="jive-widgetframe_410614"
+     data-widget-id="410614"
+     class="jive-widget jive-box j-rc5 jive-widget-formattedtextwidget jive-widget-formattedtext jive-widget-borderless "
+     role="complementary" aria-labelledby="jive-widgetframe-title_410614">
+    <div id="jive-widgetsize_410614" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_410614"
+            class="jive-widget-header j-rc4 j-rc-none-bottom jive-box-header  "
+            
+            >
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_410614">
+                        Formatted Text
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_410614" class="jive-widget-body jive-widget-loading jive-box-body j-rc4 j-rc-none-top"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_410614" class="jive-widget-body jive-box-body j-rc4 j-rc-none-top" style="overflow: visible;">
+
+<div class="content-small"><div class="jive-widget-formatted-body"><!-- [DocumentBodyStart:3d95a03a-281c-4266-b679-1154e4ef6a98] --><div class="jive-rendered-content"><div class="adobe-product-side adobe-product"><h2>Learn</h2><ul><li><a class="jive-link-thread-small" data-containerId="4786" data-containerType="14" data-objectId="1234831" data-objectType="1" href="https://forums.adobe.com/thread/1234831">Getting Started with the Creative Cloud</a></li><li><a class="jive-link-thread-small" data-containerId="4786" data-containerType="14" data-objectId="1146459" data-objectType="1" href="https://forums.adobe.com/thread/1146459">Have questions about your Subscription?</a></li><li><a class="jive-link-external-small" href="https://forums.adobe.com/external-link.jspa?url=https%3A%2F%2Fhelpx.adobe.com%2Fx-productkb%2Fpolicy-pricing%2FADA_discontinued.html" rel="nofollow" target="_blank">Adobe Download Assistant Discontinued</a></li></ul></div></div><!-- [DocumentBodyEnd:3d95a03a-281c-4266-b679-1154e4ef6a98] --></div></div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_410615"
+     data-widget-id="410615"
+     class="jive-widget jive-box j-rc5 jive-widget-formattedtextwidget jive-widget-formattedtext jive-widget-borderless "
+     role="complementary" aria-labelledby="jive-widgetframe-title_410615">
+    <div id="jive-widgetsize_410615" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_410615"
+            class="jive-widget-header j-rc4 j-rc-none-bottom jive-box-header  "
+            
+            >
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_410615">
+                        Formatted Text
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_410615" class="jive-widget-body jive-widget-loading jive-box-body j-rc4 j-rc-none-top"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_410615" class="jive-widget-body jive-box-body j-rc4 j-rc-none-top" style="overflow: visible;">
+
+<div class="content-small"><div class="jive-widget-formatted-body"><!-- [DocumentBodyStart:36b3cd29-eefb-47bd-8f92-707aab9fde09] --><div class="jive-rendered-content"><div class="adobe-product-side adobe-product"><h2>More Resources</h2><ul><li><a class="jive-link-thread-small" data-containerId="4671" data-containerType="14" data-objectId="1036261" data-objectType="1" href="https://forums.adobe.com/thread/1036261?tstart=0&amp;promoid=KBHJX">Flash Player problems?</a></li><li><a class="jive-link-external-small" href="https://forums.adobe.com/external-link.jspa?url=http%3A%2F%2Fwww.adobe.com%2Fcommunities%2Fuser-groups.html" rel="nofollow" target="_blank">Find a User Group</a></li><li><a class="jive-link-external-small" href="https://forums.adobe.com/external-link.jspa?url=http%3A%2F%2Ftraining.adobe.com%2Ftraining%2Fpartner-finder.html%23p%3D1" rel="nofollow" target="_blank">Find a Training Partner</a></li></ul><div class="adobe-product-twitter"><p><a class="jive-link-external-small" href="https://forums.adobe.com/external-link.jspa?url=https%3A%2F%2Ftwitter.com%2FAdobeCare" rel="nofollow" target="_blank">Follow AdobeCare</a></p></div></div></div><!-- [DocumentBodyEnd:36b3cd29-eefb-47bd-8f92-707aab9fde09] --></div></div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_410616"
+     data-widget-id="410616"
+     class="jive-widget jive-box j-rc5 jive-widget-formattedtextwidget jive-widget-formattedtext jive-widget-borderless "
+     role="complementary" aria-labelledby="jive-widgetframe-title_410616">
+    <div id="jive-widgetsize_410616" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_410616"
+            class="jive-widget-header j-rc4 j-rc-none-bottom jive-box-header  "
+            
+            >
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_410616">
+                        Formatted Text
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_410616" class="jive-widget-body jive-widget-loading jive-box-body j-rc4 j-rc-none-top"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_410616" class="jive-widget-body jive-box-body j-rc4 j-rc-none-top" style="overflow: visible;">
+
+<div class="content-small"><div class="jive-widget-formatted-body"><!-- [DocumentBodyStart:67db6ea0-c06d-46f4-8b6b-8f9746e0c5da] --><div class="jive-rendered-content"><div class="adobe-product-side adobe-product"><h2>Related Communities</h2><ul><li><a class="jivecontainerTT-hover-container jive-link-community-small" data-containerId="4671" data-containerType="14" data-objectId="4786" data-objectType="14" href="https://forums.adobe.com/community/download_install_setup/creative_cloud_faq">Downloading and installing from Creative Cloud</a></li><li><a class="jivecontainerTT-hover-container jive-link-community-small" data-containerId="4671" data-containerType="14" data-objectId="4366" data-objectType="14" href="https://forums.adobe.com/community/download_install_setup/purchases">Purchased Downloads</a></li><li><a class="jive-link-community-small" href="https://forums.adobe.com/community/creative_cloud">Creative Cloud</a></li><li><a class="jivecontainerTT-hover-container jive-link-community-small" data-containerId="4671" data-containerType="14" data-objectId="4789" data-objectType="14" href="https://forums.adobe.com/community/download_install_setup/creative_suite_enterprise_deployment">Enterprise Deployment for Creative Cloud, Creative Suite</a></li><li><a class="jivecontainerTT-hover-container jive-link-community-small" data-containerId="4671" data-containerType="14" data-objectId="4820" data-objectType="14" href="https://forums.adobe.com/community/download_install_setup/student_and_teacher_edition_information_">Student and Teacher Edition Information</a></li><li><a class="jivecontainerTT-hover-container jive-link-community-small" data-containerId="3244" data-containerType="14" data-objectId="4714" data-objectType="14" href="https://forums.adobe.com/community/acrobat/installation_and_update_installation">Acrobat Installation &amp; Update Installation</a></li></ul></div></div><!-- [DocumentBodyEnd:67db6ea0-c06d-46f4-8b6b-8f9746e0c5da] --></div></div>
+        </div>
+    </div>
+</div>
+<div id="jive-widgetframe_410617"
+     data-widget-id="410617"
+     class="jive-widget jive-box j-rc5 jive-widget-htmltextwidget jive-widget-htmltext jive-widget-borderless "
+     role="complementary" aria-labelledby="jive-widgetframe-title_410617">
+    <div id="jive-widgetsize_410617" class="jive-widgetsize-small">
+        <div id="jive-widgetframe-header_410617"
+            class="jive-widget-header j-rc4 j-rc-none-bottom jive-box-header  "
+            
+            >
+            <h4 class="jive-widget-handle">
+                <span id="jive-widgetframe-title_410617">
+                        HTML
+                </span>
+            </h4>
+        </div>
+        <div id="jive-widgetframe-loading_410617" class="jive-widget-body jive-widget-loading jive-box-body j-rc4 j-rc-none-top"
+             style="display: none">
+            <div>
+                <strong>Loading...</strong>
+            </div>
+        </div>
+        <div id="jive-widgetframe-body_410617" class="jive-widget-body jive-box-body j-rc4 j-rc-none-top" style="overflow: visible;">
+
+<div class="content-small"><div class="jive-html-text-widget"><div class="adobe-product adobe-product-translate"><h2>Translate</h2><p>It’s easy to translate discussions from English into Deutsch, Español, Français, Italiano, Nederlands, Português, Polski, ελληνικά, русский, Svenska, Čeština and Türkçe. Look for the translate link under every discussion.</p><p><a href="/docs/DOC-4101">Learn more</a></p></div></div></div>
+        </div>
+    </div>
+</div>
+         </div>
+    </div>
+</div>
+</div></div></div></div></section><div id="j-footer-wrap" class="j-js-footer-wrap"><footer id="j-footer" role="contentinfo" ><div id="j-footer-poweredBy">© 2018 Adobe Systems Incorporated. All Rights Reserved.</div><div class="j-footer-nav font-color-meta"><a class="font-color-meta" href="https://helpx.adobe.com/support.html">Help</a><span class="j-pipe"> | </span><a class="font-color-meta" href="https://www.adobe.com/go/terms">Terms of Use</a><span class="j-pipe"> | </span><a class="font-color-meta" href="https://www.adobe.com/go/privacy">Privacy Policy and Cookies</a><span class="j-pipe"> | </span><a class="font-color-meta" href="/community/forumhelp">Forum Help</a><span class="j-pipe"> | </span><a class="font-color-meta" href="https://adobe.com/go/forumask">Tips for Asking</a><!-- <span class="j-pipe"> | </span><a class="" href="http://docs.jivesoftware.com/8.0_on_prem_int/end_user/jive.help.core">Help</a> --></div><div class="j-footer-jiveVersion font-color-meta">Jive Software Version: 8.0.3.0 , revision: 20160218075410.6eafe9c.release_8.0.3.x</div><span id='speakSpan' class='j-508-label' role='marquee' aria-live='assertive' aria-relevant='all'></span><script language="JavaScript" type="text/javascript">//<![CDATA[
+function whitespaceTrim(str){return str.replace(/^\s\s*/, '').replace(/\s\s*$/, '');}
+//]]></script>
+
+<script type="text/javascript" src="//adobeforums.worldsecuresystems.com/js/clientExtensibility_modal.js"></script>
+<script type="text/javascript" src="//adobeforums.worldsecuresystems.com/js/mcxSiteIntercept.js"></script>
+<script type="text/javascript">_satellite.pageBottom();</script>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    <script>$j(document).ready(function() {require(['ui-modules/spotlight/scripts/main'], function(main){main.init();});});</script></footer></div></div><div id="jiveTT-note" class="jive-tooltip2 notedefault snp-mouseoffset" role="tooltip"><div class="jive-tooltip2-mid j-mini-modal j-mini-modal-place"><div class="jive-tooltip2-mid-padding j-modal-content clearfix j-js-note-body" id="jive-note-body"></div></div></div><div id="jiveTT-note-additems" class="jive-tooltip2 notedefault snp-mouseoffset"  ><div class="jive-tooltip2-mid j-mini-modal"><div class="jive-tooltip2-mid-padding j-modal-content clearfix" id="jive-note-additems-body"></div></div></div><div id="jiveTT-note-checkpoint" class="jive-tooltip2 notedefault snp-mouseoffset"  ><div class="jive-tooltip2-mid j-mini-modal"><div class="jive-tooltip2-mid-padding j-modal-content" id="jive-note-checkpoint-body"></div></div></div><div id="jiveTT-note-tasks" class="jive-tooltip2 notedefault snp-mouseoffset"  ><div class="jive-tooltip2-mid j-mini-modal"><div class="jive-tooltip2-mid-padding j-modal-content" id="jive-note-tasks-body"></div></div></div><div class="j-alert-container" role="alert" aria-live="polite" aria-atomic="true"></div><span id="j-speak-accessibility" class="j-508-label" role="status" aria-live="polite" aria-relevant="all" aria-atomic="true"></span><script>(function() {var prepareUrl = function(url) {if (url.indexOf(";") > 0) {url = url.substring(0, url.indexOf(";"));}if (url.charAt(url.length - 1) == '/') {url = url.substring(0, url.length - 1);}return url}; if (typeof(window._jive_base_url) == "undefined") {window._jive_base_url = prepareUrl("\/")}if (typeof(window._jive_base_absolute_url) == "undefined") {window._jive_base_absolute_url = prepareUrl("https:\/\/forums.adobe.com")}if (typeof(window._jive_resource_url) == "undefined") {window._jive_resource_url = prepareUrl("\/8.0.3.6eafe9c\/")}if (typeof(window._jive_theme_url) == "undefined") {window._jive_theme_url = prepareUrl("\/themes\/adobe-global\/")}if (typeof(window._jive_current_user) == "undefined") {window._jive_current_user = {anonymous: true, partner: false, visible: true, username: 'ANONYMOUS', ID: '-1', enabled: true, avatarID: '-1', adobeGuid: '', displayName: 'ANONYMOUS'};}})(); var _jive_effective_user_id = "-1"; var _jive_auth_token ="no-user"; var _jive_locale = "en_US"; var _jive_translation_language = "en"; var _jive_browser_event = {"providers":["activityStream.poll","appAlert.create","inboxCount.poll"],"since":1538446668835}; var _jive_browser_event_polling_delay =  30000.0 ; var _jive_socket_events = {"socketEvents":["activityStream.push","tiledata.push"]}; var _jive_realtime_push_enabled =  false ; var _jive_allstream_counts_enabled =  false ;var _jive_timezoneoffset =  -7.0 ; var _jive_server_timezoneoffset =  -7.0 ; var _jive_enable_browserdb =  false ; var _jive_i18n_should_minify =  true ; var jive = jive || {}; jive.global = jive.global || {}; jive.global.instanceID = '8220850f-6b36-48a8-8018-4216c2c60aef'; jive.global.containerType = '14'; jive.global.containerID = '4671';jive.global.containerBrowseId = '1413788';window.SPELL_LANGS = "English (Canada)\x3den_ca,English (United Kingdom)\x3den_gb,+English (United States)\x3den_us,French\x3dfr,French (Canada)\x3dfr_ca,German\x3dde,Italian\x3dit,Spanish\x3des"; window.CS_BASE_URL = ""; window.CS_RESOURCE_BASE_URL = "\/8.0.3.6eafe9c"; window.tinyMCEPreInit = {suffix : "_src", base : CS_BASE_URL + "/resources/scripts/tiny_mce3"}; if (typeof(_jive_project_i18n) == "undefined") {var _jive_project_i18n = new Array(); _jive_project_i18n['project.calendar.task'] = "Task"; _jive_project_i18n['project.calendar.tasks'] = "Tasks"; _jive_project_i18n['project.calendar.checkpoint'] = "Checkpoint"; _jive_project_i18n['project.calendar.checkpoints'] = "Checkpoints"; _jive_project_i18n['global.edit'] = "Edit"; _jive_project_i18n['global.delete'] = "Delete"; _jive_project_i18n['project.task.mark.complete'] = "Mark complete"; _jive_project_i18n['project.task.assign.to.me'] = "Assign to me"; _jive_project_i18n['task.incomplete.link'] = "Incomplete"; _jive_project_i18n['project.checkPoint.create.link'] = "Create a checkpoint"; _jive_project_i18n['project.task.create.link'] = "Create a task";}</script><script>$j(function() {require(['jive/responsive'], function(responsive) { responsive.init(); });});</script><script>var containerShortUrl = "\/container-short.jspa"; var videoShortUrl = "\/view-video-short.jspa"; var profileShortUrl = "\/profile-short.jspa"; var profileLoadingTooltip = "Loading user profile"; var profileErrorTooltip = "There was an error loading that profile information."; var followErrorMessage = "An internal error occurred while following the object."; var ajaxErrorMessage = "An unexpected error has occurred. Please make sure that your session did not expire while viewing this page."; var ajaxNotFoundMessage = "The specified item was not found.";; var ajaxUnauthorizedMessage = "You are not authorized to perform this operation. If you are not logged in please log in and try again.";
+        (function() {
+            var originalWrite = document.write;
+            document.write = function() {
+                if(typeof $j != 'undefined' && $j.isReady) {
+                    console.warn("document.write called after document was loaded: ", arguments);
+                }
+                else {
+                    // In IE before version 8 `document.write()` does not
+                    // implement Function methods, like `apply()`.
+                    return Function.prototype.apply.call(originalWrite, document, arguments);
+                }
+            }
+        })();
+        </script><script>
+reg(["osapi","shindig","gadgets"], ["/8.0.3.6eafe9c/resources/scripts/gen/2e0b59cda745584289f52e8abab3c36e.js"],function() {
+define('gadgets', gadgets); define('shindig', shindig); define('osapi', osapi);
+
+
+});
+</script><script type="text/javascript">window.appsMarketEnabled =  false ; window.anyAppsEnabled =  true ; window.appUUIDs = ""; $j(document).ready(function() {require(['appContainer'], function(appContainer) {});});</script><script>
+reg(["JAF","appContainer","syntheticAppContainer"], ["/8.0.3.6eafe9c/resources/scripts/gen/302de2f7f6e35ebc7aa00300e2d07c68.js"],function() {
+define('JAF', ['osapi'], function(osapi) {return {};});
+
+$j(document).ready(function() {define('appContainer', ['jive/app/core_container/'+'main', 'jive/app/core_container/'+'common_container'], function(C) {var c = new C(); c.initActionLinkContext({coreAPIType: 'osapi.jive.core.Space', id: 4671  }); return c;}); define('syntheticAppContainer', ['appContainer'], function(c) {return c;});});
+
+
+});
+</script><script type="text/javascript">if (window.jQuery) window.jQuery.migrateMute = true;</script><script src="/8.0.3.6eafe9c/resources/scripts/gen/5fed05cf1b8b340ad48f52d629f0930a.js"></script>
+<script>
+jive.rte.defaultStyles = ["\/8.0.3.6eafe9c\/plugins\/video_8.0.3.0\/resources\/styles\/jive-videomodule.css"];
+
+jive.observable = jive.conc.observable; jive.rte.mobileUI = false;
+
+jive.global.typeToNumeric = {"embedded_video":1100,"webhook":1224013431,"placeTemplateEntity":1567134318,"dm":109016030,"project":600,"discussion":1,"poll":18,"profileImage":501,"blog":37,"space":14,"post":38,"announcement":22,"group":700,"2901":2901,"image":111,"placeTemplateCategory":955999628,"static":1140061448,"securityGroup":4,"externalStreamInstance":1094237539,"task":602,"system":-2,"slide":1606291040,"person":3,"extprop":-1840153649,"extStreamActivity":-960826044,"page":-2106121635,"contentVersion":120,"favorite":800,"streamEntry":1501,"idea":3227383,"document":102,"update":1464927464,"video":1100,"carousel":1527402675,"mention":550,"file":102,"attachment":13,"stream":-891990144,"share":109400031,"tileInstance":1094237539,"profileField":500,"outcome":2700,"tileDefinition":1803367074,"message":2,"url":801,"collaboration":2800,"privateprop":987082157,"interaction":2801,"comment":105,"invite":350,"user":2020,"extStreamDefinition":1803367074}; jive.global.typeToMacroName = {"embedded_video":"videolink","idea":"idea","document":"document","project":"project","update":"microblog","discussion":"thread","poll":"polls","video":"videolink","blog":"blog","message":"message","space":"community","url":"external-site","task":"task","file":"document","post":"blogpost","person":"user","extStreamActivity":"tilestream","group":"group"};
+
+$j.ajaxSettings.traditional = true;
+
+$j(function(){define('documentReady',document);});
+
+require(['tAMD/hooks'], function(h) {h.on('define', 'Zapatec.Calendar', function(id, deps, factory, next) {reg(['Zapatec.Calendar.translations'], ['\/8.0.3.6eafe9c\/resources\/scripts\/zapatec\/zpcal\/lang\/calendar-en.js'], function() {define('Zapatec.Calendar.translations', {});}); require(['Zapatec.Calendar.translations'], $j.noop); next(id, deps.concat('Zapatec.Calendar.translations'), factory);}); h.on('publish', 'Zapatec.Calendar', function(id, Calendar, next) {Calendar._TT["DEF_DATE_FORMAT"] = "%m\/%d\/%Y"; next(id, Calendar);});});
+
+$j(document).ready(function() {var followView = new jive.FollowUserApp.ProfileFollowView({i18n: {startFollowingMessage: '<p>You are now following {0}.</p>', stopFollowingMessage:  '<p>You have stopped following {0}.</p>', pendingConnectionMessage: '<p>Note: {0} will need to approve your request</p>'}, bidirectional: false}); var jiveUserFollow = new jive.FollowUserApp.Main({followView: followView}); $j("input[placeholder]").placeHeld();});
+
+</script>
+<script>var containerType = '14'; var containerID = '4671';var spotlightSearchURL = "spotlight-search";</script><script>window._jive_images_enabled = false;</script><script>
+reg(["jive.rte"], ["/8.0.3.6eafe9c/resources/scripts/gen/b6359a17f4529cd832fea21642dde1eb.js"],function() {
+window.errorHandlerMessage = "An error occurred:";
+            window.editorErrorHandler = function(message, exception) {
+              // if the message is something other than a timeout, show the message plus the error code
+              if (message.indexOf('Timeout') == -1) {
+                  $j('#dwr-error-text').text(errorHandlerMessage + ' Error Code: ' + message);
+                  $j('#dwr-error-table').fadeIn();
+                  setTimeout(function() {
+                      $j('#dwr-error-table').fadeOut();
+                  }, 10000);
+              }
+            };
+            if(typeof(tinyMCE) != "undefined"){tinyMCE.addI18n('en.jivemacros',{"unused.jive.key" : "nothing."});}
+          window.RawHTMLSaveFunction = function(element_id, html, body){
+              var text = $j('#'+element_id);
+              if (text.is(':not(:visible)')) {
+                  return html;
+              }else{
+                  return text.val();
+              }
+          }
+          jive.rte.multiRTE = new Array();
+  
+          //Not used by RTEWrap, but we need this for backward compatibility; see CS-23883
+          window.refreshLinks = function() {
+              jive.rte.multiRTE.forEach(function(rteID) {
+                  if ($j('#' + rteID + '_parent').length < 1) {
+                      // safari 2, text only
+                      $j('#' + rteID + '_toggle_html').hide();
+                      $j('#jivePreferredEditorModeLinkHREF').hide();
+                      return;
+                  }
+  
+                  if(currentMode == 'rawhtml') {
+                      $j('#' + rteID + '_toggle_html').css('display', 'block');
+                  }else{
+                      $j('#' + rteID + '_toggle_html').hide();
+                  }
+  
+                  if (preferredMode == currentMode) {
+                      $j('#jivePreferredEditorModeLinkHREF').hide();
+                  } else {
+                      $j('#jivePreferredEditorModeLinkHREF').css('display', 'block');
+                  }
+              });
+          }
+  
+          window.editor = new jive.ext.y.HashTable();
+          
+
+
+jive.rte.macros.push(new jive.rte.Macro("color","","TEXT", true, false, [], [{name: "0",value: ""},{name: "__default_attr",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("size","","TEXT", true, false, [], [{name: "0",value: ""},{name: "__default_attr",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("font","","TEXT", true, false, [], [{name: "0",value: ""},{name: "__default_attr",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("toc","","IMAGE", true, true, [], [], true,false));
+jive.rte.macros.push(new jive.rte.Macro("code","","TEXT", false, true, [{ name: "java", deleteAll: true, params: [{ name: "__default_attr", value :"java"} ]},{ name: "plain", deleteAll: true, params: [{ name: "__default_attr", value :"plain"} ]},{ name: "xml", deleteAll: true, params: [{ name: "__default_attr", value :"xml"} ]},{ name: "html", deleteAll: true, params: [{ name: "__default_attr", value :"html"} ]},{ name: "sql", deleteAll: true, params: [{ name: "__default_attr", value :"sql"} ]}], [{name: "__default_attr",value: ["java","plain","xml","html","sql"]}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("noformat","","TEXT", true, false, [], [], true,false));
+jive.rte.macros.push(new jive.rte.Macro("thread","thread/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("message","message/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("external-site","bookmarks/","INLINE", false, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("document","docs/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("tag","tags/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""},{name: "tag",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("microblog","status/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("polls","polls/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("blogpost","blogs/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("blog","blogs/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""},{name: "name",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("community","community/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("space","community/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("user","people/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""},{name: "username",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("project","project/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("task","view-task.jspa?task=","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("group","groups/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("quote","","TEXT", false, true, [], [{name: "title",value: ""},{name: "__default_attr",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("alert","","TEXT", false, true, [{ name: "success", deleteAll: true, params: [{ name: "__default_attr", value :"success"} ,{ name: "alert", value :"success"} ]},{ name: "info", deleteAll: true, params: [{ name: "__default_attr", value :"info"} ,{ name: "alert", value :"info"} ]},{ name: "warning", deleteAll: true, params: [{ name: "__default_attr", value :"warning"} ,{ name: "alert", value :"warning"} ]},{ name: "danger", deleteAll: true, params: [{ name: "__default_attr", value :"danger"} ,{ name: "alert", value :"danger"} ]}], [{name: "__default_attr",value: ""},{name: "alert",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("flag","","INLINE", false, true, [{ name: "new", deleteAll: true, params: [{ name: "flag", value :"new"} ]},{ name: "updated", deleteAll: true, params: [{ name: "flag", value :"updated"} ]}], [], true,false));
+jive.rte.macros.push(new jive.rte.Macro("vimeo","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("veoh","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("dailymotion","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("youtube","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("kaltura","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""},{name: "playerKey",value: ""},{name: "playerID",value: ""},{name: "partnerID",value: ""},{name: "playerColor",value: "#FFFFFF"},{name: "sourcedomain",value: ""}], false,false));
+jive.rte.macros.push(new jive.rte.Macro("brightcove","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""},{name: "playerKey",value: ""},{name: "playerID",value: ""}], false,false));
+jive.rte.macros.push(new jive.rte.Macro("showandshare","","IMAGE", false, false, [], [{name: "__default_attr",value: ""},{name: "width",value: ""},{name: "height",value: ""},{name: "playerColor",value: "#000000"},{name: "sourcedomain",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("application","","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "__title",value: ""},{name: "__view",value: ""},{name: "__params",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("appEmbeddedView","","INLINE", true, false, [], [{name: "_default_attr",value: ""},{name: "_appuuid",value: ""},{name: "_title",value: ""},{name: "_view",value: ""},{name: "_context",value: ""},{name: "_url",value: ""},{name: "_previewimage",value: ""},{name: "_icon",value: ""},{name: "_action_id",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("tilestream","external/","INLINE", true, false, [], [{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "title",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("idea","","INLINE", true, false, [{ name: "default", deleteAll: true, params: [{ name: "id", value :""} ,{ name: "__default_attr", value :""} ,{ name: "title", value :""} ]}], [{name: "id",value: ""},{name: "title",value: ""},{name: "__default_attr",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("videomacro","","IMAGE", true, false, [{ name: "default", deleteAll: true, params: [{ name: "id", value :""} ,{ name: "videoid", value :""} ,{ name: "__default_attr", value :""} ,{ name: "jivemacro_uid", value :""} ,{ name: "width", value :""} ,{ name: "height", value :""} ,{ name: "imageURL", value :""} ]}], [{name: "imageURL",value: ""},{name: "width",value: ""},{name: "videoid",value: ""},{name: "id",value: ""},{name: "__default_attr",value: ""},{name: "jivemacro_uid",value: ""},{name: "height",value: ""}], true,false));
+jive.rte.macros.push(new jive.rte.Macro("videolink","","INLINE", true, false, [{ name: "default", deleteAll: true, params: [{ name: "id", value :""} ,{ name: "__default_attr", value :""} ,{ name: "jivemacro_uid", value :""} ,{ name: "title", value :""} ,{ name: "zero", value :""} ]}], [{name: "zero",value: ""},{name: "id",value: ""},{name: "title",value: ""},{name: "__default_attr",value: ""},{name: "jivemacro_uid",value: ""}], true,false));
+define('jive.rte', jive.rte);
+
+
+});
+</script><script src="/8.0.3.6eafe9c/resources/scripts/i18n/keys/en/bundle_en.js?h=74c8ee79b6ea780d115e4d8483d60adb"></script><script src="/8.0.3.6eafe9c/resources/scripts/gen/ef19e4c9d92ed6823bc0c3c8709bba63.js"></script>
+<script>
+jive.i18n.addMsgs({'k2a8e':'Content','k2a88':'Activity','k213e':'Reports','k2b1c':'People','k310a':'Tasks','k2b18':'Overview','place.places.link.space.subspaces':'Subspaces','k1648':'Reports'});
+
+reg(["apps/userpicker/views/select_skill_view"],["/8.0.3.6eafe9c/resources/scripts/gen/d35a6eee9b8a4a7c3362df97d2174bf0.js"]);
+
+reg(["apps/shared/views/date_picker_view"],["/8.0.3.6eafe9c/resources/scripts/gen/02b10eb084b490f625742f32668467c4.js"]);
+
+reg(["soy!jive.integration.tiles.view.embeddedExperience"],[]);
+
+reg(["jquery/jquery.media"],[]);
+
+reg(["apps/tile/embedded_view"],["/8.0.3.6eafe9c/resources/scripts/gen/be49bd375e11b94f6b11cc60cb6e8d27.js"]);
+
+reg(["apps/shared/models/lazy_corev3"],["/8.0.3.6eafe9c/resources/scripts/gen/da82cfa8b9ebbaa99b3afad071e5e328.js"]);
+
+reg(["apps/share/main"],["/8.0.3.6eafe9c/resources/scripts/gen/6434d160d6ae0be0be14fb1e4624732f.js"]);
+
+reg(["soy!jive.UserPicker.soy.renderModalSkillSearchButton"],[]);
+
+reg(["apps/direct_messaging/factory"],["/8.0.3.6eafe9c/resources/scripts/gen/e70fd0cc633737cc527ad2210fea9b4a.js"]);
+
+reg(["soy!jive.extended_invitation.warn_bar"],["/8.0.3.6eafe9c/resources/scripts/gen/83004c7af41e7f425b289b074d5c075c.js"]);
+
+reg(["soy!jive.nav.menu.home.inbox"],[]);
+
+reg(["apps/tile/integrations/carousel"],["/8.0.3.6eafe9c/resources/scripts/gen/a19d33e4973069aa0d3a50ccdfb81830.js"]);
+
+reg(["apps/tile/responsive_tile"],[]);
+
+                        require(['widgetContainer'], function(widgetContainer) {
+                            widgetContainer.refreshLink(410612);
+                        });
+
+
+    (function() {
+        var containerSelector = "#widget-410612";
+        var i18n = {
+            loading: "Loading..."
+        };
+        var recentContent = new jive.RecentContentApp(containerSelector, i18n);
+    })();
+
+
+            $j(document).ready(function() {
+                var pager = new jive.Pager.Main($j('#widget-410612'),
+                                                "/community/render-widget!execute.jspa #widget-410612 > *",
+                                                {
+                                                    frameID: 410612,
+                                                    widgetType: 3,
+                                                    widgetID: 2036,
+                                                    container: 4671,
+                                                    containerType: 14,
+                                                    per_page: 6,
+                                                    idPrefix: '410612',
+                                                    size: 2
+                                                },
+
+                                                {
+                                                    updateLocation: false
+                                                });
+                if (typeof(ContentFilterHandler_410612) != 'undefined') {
+                    ContentFilterHandler_410612.contentLoader = pager;
+                }
+            });
+
+
+reg(["apps/onboarding/views/fill_out_profile"],["/8.0.3.6eafe9c/resources/scripts/gen/d5403ad9739300bcfebedf2732789f25.js"]);
+
+reg(["apps/onboarding/views/like_content"],["/8.0.3.6eafe9c/resources/scripts/gen/35337c1d65b6dff8222b43ab4d7e69ee.js"]);
+
+reg(["apps/places/actions/main"],["/8.0.3.6eafe9c/resources/scripts/gen/239f7c88e41f2c6273d60ef21b89e614.js"]);
+
+reg(["apps/onboarding/views/about_you"],["/8.0.3.6eafe9c/resources/scripts/gen/fa062c515e23de09a096dae448b342f9.js"]);
+
+reg(["apps/onboarding/views/learn_system"],["/8.0.3.6eafe9c/resources/scripts/gen/1452dcad0f11b97f547160eab3e4582d.js"]);
+
+reg(["apps/metric/models/metric_source"],["/8.0.3.6eafe9c/resources/scripts/gen/38ca0e766f429e2d3cbb297ffaeb4f4b.js"]);
+
+reg(["apps/onboarding/views/create_blogpost"],["/8.0.3.6eafe9c/resources/scripts/gen/be87bceb1ad8e8a4149f69de4243c5e4.js"]);
+
+reg(["apps/onboarding/views/jive_for_outlook"],["/8.0.3.6eafe9c/resources/scripts/gen/83774faf3f643d9af1d79b4d00f27b01.js"]);
+
+reg(["apps/trial/views/trial_tip_helper"],["/8.0.3.6eafe9c/resources/scripts/gen/5e5a218f387334ecf29acd2ceb79601e.js"]);
+
+reg(["apps/onboarding/views/create_or_set_shared_group"],["/8.0.3.6eafe9c/resources/scripts/gen/7c1c3ad80792b9bd23d689055a7d5458.js"]);
+
+reg(["apps/movecontent/main"],["/8.0.3.6eafe9c/resources/scripts/gen/16db14437ea8949bef9ad8d13044bdf0.js"]);
+
+reg(["apps/shared/controllers/browser_events"],["/8.0.3.6eafe9c/resources/scripts/gen/596ed02296542b119e2bb4d6d16d31b0.js"]);
+
+reg(["apps/onboarding/views/create_or_join_group"],["/8.0.3.6eafe9c/resources/scripts/gen/a3d571503adaedf23951dfe32928f569.js"]);
+
+reg(["ui-modules/spotlight/scripts/main"],[]);
+
+reg(["apps/social_sharing/main"],["/8.0.3.6eafe9c/resources/scripts/gen/a33d0ddd74d74f251bc3f4fe96eeb655.js"]);
+
+reg(["apps/onboarding/views/create_project"],["/8.0.3.6eafe9c/resources/scripts/gen/166e18d5f89da3eb62039c9507beda24.js"]);
+
+reg(["apps/onboarding/views/invite_to_group"],["/8.0.3.6eafe9c/resources/scripts/gen/3384a07205b186f1fec587490b4f4398.js"]);
+
+reg(["apps/filters/view/item_grid_view"],["/8.0.3.6eafe9c/resources/scripts/gen/fdf8a2a5b43cf08e8d92bd033df0deff.js"]);
+
+reg(["apps/static_files/static_file_modal"],["/8.0.3.6eafe9c/resources/scripts/gen/b24dbe34132ac2bb473a37ef3e54b95d.js"]);
+
+reg(["apps/onboarding/views/mobile_login"],["/8.0.3.6eafe9c/resources/scripts/gen/293f6444f955763e28abf64677d99067.js"]);
+
+reg(["apps/onboarding/views/create_thread"],["/8.0.3.6eafe9c/resources/scripts/gen/479c96fdca4e82c0d520c91b9be0d40d.js"]);
+
+reg(["apps/invitation/main"],["/8.0.3.6eafe9c/resources/scripts/gen/40f478d0212615b3ebbad7858268f288.js"]);
+
+reg(["apps/autosearch/lightbox"],["/8.0.3.6eafe9c/resources/scripts/gen/436fe7cd6bcfbeebdc56f46b426fbbb8.js"]);
+
+reg(["apps/onboarding/views/create_document"],["/8.0.3.6eafe9c/resources/scripts/gen/2c8f57d6cbce038a5c8801fcebac734d.js"]);
+
+reg(["jive/app/core_container/common_container"],["/8.0.3.6eafe9c/resources/scripts/gen/79dd72a5f15311012b195f0f05781738.js"]);
+
+reg(["Zapatec.Calendar"],["/8.0.3.6eafe9c/resources/scripts/gen/27006488ce8393720e84a7a0f63116f9.js"]);
+
+reg(["apps/onboarding/views/upload_or_move_file"],["/8.0.3.6eafe9c/resources/scripts/gen/f25cc6d03da5ad17ac7b1f55f010e5bd.js"]);
+
+reg(["apps/trial/views/trial_view"],["/8.0.3.6eafe9c/resources/scripts/gen/83d555319f6cf266945de669def8072c.js"]);
+
+reg(["apps/onboarding/views/add_document_collaborator"],["/8.0.3.6eafe9c/resources/scripts/gen/e904d53637a3deb7938c3c3b1e546cc3.js"]);
+
+reg(["apps/navbar/menu/satellite/main"],["/8.0.3.6eafe9c/resources/scripts/gen/fce685da7b659384d8b2e989d0b0c9f0.js"]);
+
+reg(["apps/places/manage/views/archive_controls"],["/8.0.3.6eafe9c/resources/scripts/gen/162caab2528dd88bd2bda7388cbf5586.js"]);
+
+reg(["jive/rte/syntax/SyntaxHighlighter"],["/8.0.3.6eafe9c/resources/scripts/gen/0e548def9d0af570f8a36ff2eb958c17.js"]);
+
+reg(["jive/app/core_container/views/rtc_view"],["/8.0.3.6eafe9c/resources/scripts/gen/ce2e89557e8f9af01ef2eb347b3a1d09.js"]);
+
+reg(["jive/app/core_container/mock"],["/8.0.3.6eafe9c/resources/scripts/gen/04ae3622bc5181782a39b37f79d29731.js"]);
+
+reg(["apps/shared/controllers/socket_holder"],["/8.0.3.6eafe9c/resources/scripts/gen/37f5cb04aaa5c42384fcf10459014267.js"]);
+
+reg(["apps/onboarding/views/create_wall_entry"],["/8.0.3.6eafe9c/resources/scripts/gen/bacd2214bc18f4ba708d9ad0752516a5.js"]);
+
+reg(["apps/onboarding/views/create_comment_or_message"],["/8.0.3.6eafe9c/resources/scripts/gen/4776b1b6fdc908ef2ca6c7594116cf3d.js"]);
+
+reg(["apps/onboarding/views/jive_anywhere"],["/8.0.3.6eafe9c/resources/scripts/gen/cc6952fb19e73089479dfd4467d4dd7e.js"]);
+
+reg(["apps/onboarding/views/create_private_group"],["/8.0.3.6eafe9c/resources/scripts/gen/6a65e107719829130dd0bd1ceb21f4ed.js"]);
+
+reg(["apps/onboarding/views/jive_for_office"],["/8.0.3.6eafe9c/resources/scripts/gen/07b1ab80313675a3908ff5ca362d4138.js"]);
+
+reg(["apps/onboarding/views/connect_colleagues"],["/8.0.3.6eafe9c/resources/scripts/gen/39a3a1dd9c1698a896b75d85753eacb7.js"]);
+
+reg(["apps/contentplace_relationship/main"],["/8.0.3.6eafe9c/resources/scripts/gen/0d6aa58ff27a9f7f239178a9f450e94a.js"]);
+
+reg(["jive/app/core_container/main"],["/8.0.3.6eafe9c/resources/scripts/gen/97a549d692ce0d0bfe1ef90c11621430.js"]);
+
+reg(["apps/trial/models/trial_panel_source"],["/8.0.3.6eafe9c/resources/scripts/gen/db0f70217f72a9199b32bee6e618f599.js"]);
+
+reg(["apps/places/manage/views/author_by_email_controls"],["/8.0.3.6eafe9c/resources/scripts/gen/5431c3b402a6112d491b6839ca033d7f.js"]);
+
+reg(["apps/places/manage/views/category_controls"],["/8.0.3.6eafe9c/resources/scripts/gen/a1ba098fee51f2ef55c2fcc787c1d992.js"]);
+
+reg(["apps/onboarding/views/invite_users"],["/8.0.3.6eafe9c/resources/scripts/gen/119898c11c41500c1cd9b6d597f3caad.js"]);
+
+reg(["apps/onboarding/views/invite_external_users"],["/8.0.3.6eafe9c/resources/scripts/gen/414411d44da0f21e09c42e1f2f988d24.js"]);
+
+reg(["apps/onboarding/views/follow_user"],["/8.0.3.6eafe9c/resources/scripts/gen/792a0b0de4f89ce91ab99c8e3fcbab15.js"]);
+
+reg(["apps/onboarding/views/tour_ui"],["/8.0.3.6eafe9c/resources/scripts/gen/dc1cbe65e4fdf2e94c6871ed60bcd2f8.js"]);
+
+require(['apps/places/actions/main', 'apps/places/manage/main', 'apps/modalizer/main'], function(Actions, Manage, Modalizer) {var manage = new Manage({"objectType":14,"browseID":1413788,"displayParent":false,"parentID":0,"parentType":0,"parentName":null,"parentUrl":null,"name":"Downloading, Installing, Setting Up","description":" ","parent":false,"type":{"typeID":5,"name":"COMMUNITY","jiveObjectTypeID":14,"followedPlace":false},"objectURL":"/community/download_install_setup","iconCssClass":"jive-icon-space","onClickJs":null,"disabledPlace":false,"viewableByUser":false,"placeTypeName":"Community","placeI18nKeyPrefix":"community","canCreateByEmail":false,"followed":false,"streamsAssociatedCount":0,"trackable":false,"tracked":false,"membershipSupported":false,"canJoinPlace":false,"canLeavePlace":false,"archived":false,"canArchive":false,"feedsEnabled":true,"blogName":null,"blogUrl":null,"feedUrl":"/community/feeds?community=4671","tab":"jive-place-link-overview","watched":false,"watchingEnabled":true,"visibleToPartner":false,"extendedAuthorsEnabled":false,"contentPlaceRelationshipsExist":false,"startDate":null,"dueDate":null,"ownerBean":null,"coreObjectTypeName":null,"parentBrowseID":null,"draft":false,"partner":false,"guest":true,"id":4671}, {canManageAnnouncements: false, canCreateByEmail: false, canManageCategories: false, canMoveContainer: false, canManageContainer: false, i18n: {"stopFollowing":null,"startFollowing":null,"followError":null}, staticResourcesEnabled : false, availableDefaultBannerImages: null}); new Actions({"objectType":14,"browseID":1413788,"displayParent":false,"parentID":0,"parentType":0,"parentName":null,"parentUrl":null,"name":"Downloading, Installing, Setting Up","description":" ","parent":false,"type":{"typeID":5,"name":"COMMUNITY","jiveObjectTypeID":14,"followedPlace":false},"objectURL":"/community/download_install_setup","iconCssClass":"jive-icon-space","onClickJs":null,"disabledPlace":false,"viewableByUser":false,"placeTypeName":"Community","placeI18nKeyPrefix":"community","canCreateByEmail":false,"followed":false,"streamsAssociatedCount":0,"trackable":false,"tracked":false,"membershipSupported":false,"canJoinPlace":false,"canLeavePlace":false,"archived":false,"canArchive":false,"feedsEnabled":true,"blogName":null,"blogUrl":null,"feedUrl":"/community/feeds?community=4671","tab":"jive-place-link-overview","watched":false,"watchingEnabled":true,"visibleToPartner":false,"extendedAuthorsEnabled":false,"contentPlaceRelationshipsExist":false,"startDate":null,"dueDate":null,"ownerBean":null,"coreObjectTypeName":null,"parentBrowseID":null,"draft":false,"partner":false,"guest":true,"id":4671}); new Modalizer({liveTriggers:['#jive-place-link-about'], width: 'wide'});});
+
+if (!window['inviteApp']) {$j('#jive-place-link-actions-invite').on('click.inviteApp', function() {require(['apps/invitation/main'], function(InviteMain) {window['inviteApp'] = new InviteMain(4671, "14", true, '#jive-place-link-actions-invite', '' );}); $j('#jive-place-link-actions-invite').off('.inviteApp');}); if (false) {$j('#jive-place-link-actions-invite').click();}}
+
+function toggleWidgetPanel() {$j(document.body).addClass('jive-widget-progresscursor').addClass('jive-body-widget-customizing'); $j("#j-place-manage-container").trigger("close"); $j('.j-page-header').hide(); $j('.j-tab-nav').hide(); $j('.j-page-customizable-message').hide(); $j("#jive-widgets-panel-loading").show(); $j("#jive-widget-container").safelyLoad('customize-container.jspa?containerType=14&containerID=4671', { cache: false }, function() {$j("#jive-widgets-panel-loading").hide(); $j("#jive-widgets-panel").fadeIn(500); $j("#jive-widgets-warning").fadeIn(500); $j(document.body).removeClass('jive-widget-progresscursor');$j('#customize-message').slideDown();});}var bridgeIDs = new Array(); var widgetBridges = new WidgetBridges({bridgeAction : "bridge-widgets.jspa", bridgeLoginAction : "bridge-widgets!login.jspa", bridgeLogoutAction : "bridge-widgets!logout.jspa", bridgeIDs: bridgeIDs}); function dismissCustomizeMessage() {$j('#customize-message').slideUp(); if ($j('#customize-message').find('#dont-display-message').prop('checked')) {var userSource = new jive.Browse.User.ItemSource(); userSource.setUserProperty({ userID: 'current', propName: 'jive.customizeWidgetMsg.closed', propValue: 'true' });}return false;}function dismissPlaceOverviewMessage() {$j('a.j-box-dismiss').closest('div.j-page-customizable-message').slideUp(); var userSource = new jive.Browse.User.ItemSource(); var placeOverviewProp =  'jive.placeOverviewMsg.closed.' + 14 + '.' + 4671; userSource.setUserProperty({ userID: 'current', propName: placeOverviewProp, propValue: 'true' }); return false;}function removeWidgetFrame(button) {var frameID = widgets.getWidgetFrameID(button); if (frameID) {widgets.removeWidgetFrame(frameID);}}function editWidgetFrame(button) {var frameID = widgets.getWidgetFrameID(button); if (frameID) {widgets.editWidgetFrame(frameID);}}function dismissWidgetMessage(e) {$j(this).closest('.widget-message').slideUp(); var prop = $j(link).attr('data-property'); if (prop) {var userSource = new jive.Browse.User.ItemSource(); userSource.setUserProperty({ userID: 'current', propName: prop, propValue: 'true' });}e.preventDefault();}function dismissWidgetMessage(link) {$j(link).closest('.widget-message').slideUp();}if (!window.widgetContainer) {require(['jive/widget/widget-container'], function(WidgetContainer) {window.widgetContainer = new WidgetContainer({'widgetType': '3', 'renderWidgetAction': '/render-widget.jspa', 'containerID': '4671', 'containerType': '14'}); define('widgetContainer', window.widgetContainer);});}$j(document).ready(function() {window.widgetContainer.renderAll(); $j('#customize-message #dismiss-link').click(dismissCustomizeMessage); var $widgetContent = $j('#jive-widget-content'); $widgetContent.on('click','.widget-remove-link', function(e) { removeWidgetFrame(this); e.preventDefault(); }); $widgetContent.on('click','.widget-edit-link', function(e) { editWidgetFrame(this); e.preventDefault(); }); $widgetContent.on('click','.widget-dismiss-link', function(e) { dismissWidgetMessage(this); e.preventDefault(); }); $j('#jive-place-link-manage-overview').click(function(e) {toggleWidgetPanel(); e.preventDefault();}); $j('a.j-box-dismiss').click(dismissPlaceOverviewMessage);});
+
+$j(function() {require(['apps/places/nav/main'], function(PlacesNavMain) {var placeNav = new PlacesNavMain({menuData: [{"iconCss":null,"icon":null,"linkCss":null,"itemCss":null,"nameKey":"k2b18","url":"/community/download_install_setup/overview","titleKey":null,"urlParams":null,"label":null,"visible":true,"appActionLink":false,"id":"jive-place-link-overview"},{"iconCss":null,"icon":null,"linkCss":null,"itemCss":null,"nameKey":"k2a88","url":"/community/download_install_setup/activity","titleKey":null,"urlParams":null,"label":null,"visible":false,"appActionLink":false,"id":"jive-place-link-activity"},{"iconCss":"jive-icon-task","icon":null,"linkCss":null,"itemCss":null,"nameKey":"k310a","url":"/community/download_install_setup/tasks","titleKey":null,"urlParams":null,"label":null,"visible":false,"appActionLink":false,"id":"jive-place-link-tasks"},{"iconCss":null,"icon":null,"linkCss":null,"itemCss":null,"nameKey":"k2a8e","url":"/community/download_install_setup/content","titleKey":null,"urlParams":null,"label":null,"visible":true,"appActionLink":false,"id":"jive-place-link-content"},{"iconCss":null,"icon":null,"linkCss":null,"itemCss":null,"nameKey":"k2b1c","url":"/community/download_install_setup/people","titleKey":null,"urlParams":null,"label":null,"visible":true,"appActionLink":false,"id":"jive-place-link-people"},{"iconCss":null,"icon":null,"linkCss":null,"itemCss":null,"nameKey":"place.places.link.space.subspaces","url":"/community/download_install_setup/places","titleKey":null,"urlParams":null,"label":null,"visible":true,"appActionLink":false,"id":"jive-place-link-places"},{"iconCss":null,"icon":null,"linkCss":null,"itemCss":null,"nameKey":"k213e","url":"/community/download_install_setup/group-reports.jspa?containerID=4671&containerType=14","titleKey":"k213d","urlParams":null,"label":null,"visible":false,"appActionLink":false,"id":"group-analytics"},{"iconCss":null,"icon":null,"linkCss":null,"itemCss":null,"nameKey":"k1648","url":"/community/download_install_setup/community-reports.jspa?containerID=4671&containerType=14","titleKey":"k1647","urlParams":null,"label":null,"visible":false,"appActionLink":false,"id":"community-analytics"}], placeTab: 'jive-place-link-overview'}); placeNav.postRender();});});
+
+$j(document).ready( function() {var jiveAnnouncementsAction = new jive.AnnouncementsAction.Main();});
+
+if(alertCycle) {window.clearInterval(alertCycle);}var alertCycle = window.setInterval(cycleAlerts, 15000); var pauseCycle = false; var currentAlert = 1; var alertCount = 3; function shiftAlert(increment) {var newIndex = currentAlert+increment; if (newIndex>alertCount) {newIndex = 1;}else if (newIndex < 1) {newIndex = alertCount;}showAlert(newIndex); $j('#jive-alert-' + newIndex).focus();}function cycleAlerts() {if (!pauseCycle) {currentAlert++; if (currentAlert > alertCount) {currentAlert = 1;}showAlert(currentAlert);}}function showAlert(index) {$j('.jive-alert-type').hide(); $j('#jive-alert-' + index).show(); $j('.jive-alert-count').removeClass('jive-alert-count-active'); $j('#jive-alert-count-' + index).addClass('jive-alert-count-active'); currentAlert = index; $j("#jive-alert-counter-display").text(currentAlert+"/"+alertCount);}function chooseAlert(index) {clearInterval(alertCycle); showAlert(index);}function showAlertContent() {clearInterval(alertCycle); $j('.jive-alert-details-show').hide(); $j('.jive-alert-details-hide').show(); $j('.jive-alert-details-hide a').focus(); $j('.jive-alert-content').show();}function hideAlertContent() {clearInterval(alertCycle); $j('.jive-alert-details-hide').hide(); $j('.jive-alert-details-show').show(); $j('.jive-alert-details-show a').focus(); $j('.jive-alert-content').hide();}$j(function() {$j('#jive-alert').off(); $j('#jive-alert').on('mouseover', function(e) { pauseCycle = true; }); $j('#jive-alert').on('mouseout', function(e) { pauseCycle = false; }); $j('#j-anncmt-previous').off(); $j('#j-anncmt-previous').on('click', function(e) { shiftAlert(-1); } ); $j('#j-anncmt-previous').on('keyup', function(e) { if (e.keyCode == 13) shiftAlert(-1); } ); $j('#j-anncmt-next').off(); $j('#j-anncmt-next').on('click', function(e) { shiftAlert(1); } ); $j('#j-anncmt-next').on('keyup', function(e) { if (e.keyCode == 13) shiftAlert(1); } ); showAlert(1);});
+
+$j(function(){require(['jive.adobe.sso.Main'], function(Main) {new Main({ imsServer : 'https://adobeid-na1.services.adobe.com'});});});
+
+$j(function() {require(['apps/tips/main'], function(Tips) {var tipsApp = new Tips({tipGroups:[], skippedTipGroupIDs: []});});});
+
+
+                        require(['jquery'], function($) {
+                            $('#navLogin').on('click', function(e) {
+                                var fragment = '';
+                                if (window.location.hash.length > 1){
+                                    fragment = "?fragment=" + window.location.hash.substring(1);
+                                }
+                                $('#navLogin').attr("href", jive.app.url({ path: '/login.jspa' }) + fragment);
+                           });
+                        });
+                        
+
+require([ 'apps/activity_stream/activity_notifier', 'apps/activity_stream/models/activity_stream_source', 'jive/responsive' ], function(ActivityNotifier, ActivityStreamSource) {}); $j(window).load(function(){jive.onLoadEventComplete = true;});
+
+var authSource = new jive.Authentication.Source({forceSecure: false});
+
+require(['apps/social_sharing/main'], function(SocialSharing) {var SocialSharing = new SocialSharing();});
+
+reg(["apps/microblogging/status_input_drop_down"],[]);
+
+reg(["apps/microblogging/link_builder"],[]);
+
+reg(["jive/fresh_action_queue"],[]);
+
+reg(["jive/app/rte/artifacts"],[]);
+
+window.tinyMCE_GZ = { loaded: true };
+
+</script>
+<!-- plugin javascript --><!-- end plugin javascript --><script src="/8.0.3.6eafe9c/resources/scripts/gen/eeb00e6b2f736cf36cd3699ecf0ce050.js"></script>
+<script src="/themes/adobe-global/js/theme.js?v=20171201"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"errorBeacon":"bam.nr-data.net","licenseKey":"e1336a1f47","agent":"","beacon":"bam.nr-data.net","applicationTime":56,"applicationID":"16677943","transactionName":"b1xUN0YHXEVRWxIMWFYWYxFdSVFZXVUTC15MQBlJ","queueTime":0}</script></body></html>

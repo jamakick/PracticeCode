@@ -1,0 +1,182 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Browser Upgrade Prompt */
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+/*
+    STRUCTURE
+*/
+
+.container {
+	width: 700px;
+	margin: 80px auto 0;
+	padding: 3.0em 2.0em 2.0em;
+	/*background: rgba(0,0,0,0.6);*/
+	position: relative;
+}
+
+
+/*
+	BACKGROUNDS
+*/
+
+
+body {
+	background: #000000 url('../images/Omega_Nebula.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+/*
+    TYPOGRAPHY
+*/
+
+q, p {
+	color: azure;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 30px;
+	position: relative;
+
+}
+
+.starboy {
+	font-weight: 400;
+	color: cyan;
+	font-size: 40px;
+}
+
+.skyboy {
+	font-weight: 400;
+	color: gold;
+	font-size: 40px;
+}
+
+q::before {
+content: "\201C";
+position: absolute;  /* one positioning method */
+top: 0;
+left: 0;
+}
+
+/*
+    IMAGES
+*/
+img {
+    width: 100%;
+    display: block;
+}
+
+/* clearfix - in case you decide to float elements */
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.astro {
+	/*challenge 1 */
+	/*width: 30%;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	*/
+
+	/*challenge 2 */
+	/*width: 30%;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	*/
+
+	/* challenge 3 */
+	width: 30%;
+	position: absolute;
+	right: 10px;
+	top: -10px;
+}
+
+/*
+    LINKS
+*/
+
+
+/*
+    TABLES
+*/
+
+
+/*
+    PAGE
+*/
+
+.quote {
+
+}
+
+.author {
+	font-size: 24px;
+	text-align: right;
+}
+
+/*
+    ANOTHER PAGE
+*/
+
+/* MEDIA QUERIES */
+/* X-Small devices (portait phones, less than 576px) */
+/* All styles up to this point in the stylesheet are for X-Small */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    /* body { background-color: orange; } */
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* body { background-color: green; } */
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* body { background-color: blue; } */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* body { background-color: purple; } */
+}

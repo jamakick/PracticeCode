@@ -1,0 +1,393 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Browser Upgrade Prompt */
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+/*
+    STRUCTURE
+*/
+
+/* RWD Test, using the same one we use in the demo for testing */
+#rwd {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 20px;
+    background-color: red;
+}
+
+.container {
+	max-width: 1600px;
+	margin: 6.0em 0.2em;
+	display: block;
+    padding: 0.4em 0.2em;
+	padding-bottom: 1.5em;
+    background: url('../images/greyWood.jpg')left center;
+    display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+}
+
+main .container {
+	width: 70%;
+}
+
+nav .container {
+  display: block;
+  margin-top: 0;
+  padding: 1.0em 0.2em;
+  background: url('../images/graySwirly.png') no-repeat left center fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoName {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.logoName:first-child {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+header .container img {
+	width: 175px;
+}
+
+header .container {
+	width: 90%;
+	margin: 6.0em auto;
+	display: block;
+    padding: 0.4em 0.2em;
+    background: url('../images/slateBackground.jpg') no-repeat left center;
+	background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+	border-radius: 20px;
+}
+
+header h2 {
+	margin-top: 0;
+}
+
+header p {
+	text-align: center;
+	font-size: 24px;
+}
+
+header .quote {
+	font-size: 28px;
+	margin-top: 1.0em;
+	font-family: 'Amatic SC', cursive;
+}
+
+.container .image figure img {
+	width: 500px;
+}
+
+#jackImg img {
+	height: 750px;
+}
+
+.row {
+	display: flex;
+	margin: 2.0em;
+	padding: 1.0em;
+	border-bottom: 1px solid black;
+}
+
+aside img {
+	width: 500px;
+	margin: 0 auto;
+}
+
+#zero {
+	width: 300px;
+	margin: 0 auto;
+}
+
+aside .container {
+	width: 1250px;
+	margin: 6.0em auto;
+	display: block;
+    padding: 0.4em 0.2em;
+	padding-bottom: 1.5em;
+    background: url('../images/greyWood.jpg')left center;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border-radius: 5px;
+}
+
+
+aside h2 {
+	text-align: center;
+}
+
+footer img {
+	width: 100px;
+}
+
+footer .container {
+	width: 100%;
+	margin: 0;
+	display: block;
+    background: url('../images/graySwirly.png')no-repeat left center fixed;
+}
+
+footer .container ul {
+	margin: 0 auto;
+	width: 750px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+footer .container li {
+	margin: auto;
+}
+
+footer .container a {
+	font-size: 30px;
+}
+
+/*
+    TYPOGRAPHY
+
+	font-family: 'Amatic SC', cursive;
+
+	font-family: 'Cormorant Garamond', serif;
+
+*/
+
+h1, h2, h3, h4 {
+	font-family: 'Amatic SC', cursive;
+}
+
+p, li, figcaption {
+	font-family: 'Cormorant Garamond', serif;
+	color: ivory;
+}
+
+.logoName, header h2{
+	font-family: 'Amatic SC', cursive;
+	font-size: 48px;
+	text-align: center;
+}
+
+.container .text {
+	margin-left: 1.0em;
+}
+
+.container .text h2 {
+	font-size: 48px;
+	margin-bottom: 0.2em;
+}
+
+.container .text p {
+	font-size: 24px;
+}
+
+.container .image figcaption {
+	font-size: 16px;
+	text-align: right;
+}
+
+.jack p {
+	line-height: 2.0em;
+	font-size: 36px;
+}
+
+/*
+    IMAGES
+*/
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+	background: url('../images/nbcBackground.jpg') no-repeat left center fixed;
+	background-size: cover;
+	color: #ffffff;
+}
+
+.logo img {
+	width: 150px;
+	margin: 0 auto;
+}
+
+/* clearfix - in case you decide to float elements */
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/*
+    LINKS
+*/
+
+a {
+  text-decoration: none;
+  font-weight: normal;
+  color: red;
+}
+
+a:hover {
+  color: ivory;
+}
+
+
+/*
+    TABLES
+*/
+
+
+.menuLinks ul {
+	margin: 0;
+    padding: 0;
+	display: flex;
+	width: 500px;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+
+/*
+    HOME
+*/
+
+
+/*
+    ANOTHER PAGE
+*/
+
+main .container .prospects p {
+	font-size: 48px;
+}
+
+/* MEDIA QUERIES */
+/* X-Small devices (portait phones, less than 576px) */
+/* All styles up to this point in the stylesheet are for X-Small */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    #rwd { background-color: orange; }
+
+	main .container .row {
+		margin-left: 0;
+		flex-wrap: wrap;
+	}
+
+	aside .container {
+		flex-wrap: wrap;
+		max-width: 600px;
+	}
+
+	main .container .image {
+		width: 400px;
+	}
+
+	main .container .image img {
+		width: 400px;
+	}
+
+	main .container {
+		width: 100%;
+	}
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #rwd { background-color: green; }
+
+	main .container .row {
+		flex-wrap: wrap;
+	}
+
+	aside .container {
+		flex-wrap: wrap;
+		max-width: 700px;
+	}
+
+	main .container {
+		width: 90%;
+	}
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #rwd { background-color: blue; }
+
+	#halloweenImg {
+		padding-top: 5.0em;
+	}
+
+	main .container .row {
+		flex-wrap: wrap;
+	}
+
+	aside .container {
+		flex-wrap: wrap;
+		max-width: 900px;
+	}
+
+	main .container {
+		width: 80%;
+	}
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #rwd { background-color: purple; }
+
+	main .container .row {
+		flex-wrap: nowrap;
+	}
+
+	aside .container {
+		flex-wrap: nowrap;
+		max-width: 1600px;
+	}
+}

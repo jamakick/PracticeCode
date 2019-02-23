@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+	<!--
+		I360 Web Design
+		Project 3 Demo
+
+		Step 5:
+			CONCEPT: Responsive Web Design
+			Adjust design within each media query
+			Adjust video to be responsive - use "watch" link not "embed":
+			https://www.youtube.com/watch?v=N8meCjVsJWI
+			http://embedresponsively.com/
+	-->
+
+	<head>
+		<meta charset="utf-8">
+		<title>I360 Project 3 Demo</title>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/styles.css">
+
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Montserrat:300,500" rel="stylesheet">
+
+		<!-- Font Awesome - For use in I360 -->
+		<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+
+		<!--[if lte IE 9]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+		<![endif]-->
+	</head>
+
+<body>
+	<!-- For use in demo to see when media queries are breaking -->
+	<div id="rwd"></div>
+
+	<!-- Navigation -->
+	<nav role="navigation">
+		<div class="container">
+			<div class="logo">
+				<img src="images/brown-county-coffee.png" alt="Brown County Coffee">
+				<h1 class="sr-only">Brown County Coffee Roasters</h1>
+			</div>
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Process</a></li>
+				<li class="flex-adjust"><a href="#">Order</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Header -->
+	<header role="banner">
+		<div class="container">
+			<div class="branding">
+				<h1>Brown County <span class="no-break">Coffee Roasters</span></h1>
+				<p class="tagline">Founded in 2006 in Nashville, Indiana.</p>
+				<a href="#" class="button">Find the Nearest Location</a>
+			</div>
+		</div>
+	</header>
+
+	<!-- Highlights -->
+	<article class="highlights">
+		<div class="container">
+			<section>
+				<div class="icon"><i class="fab fa-pagelines fa-3x"></i></div>
+				<h2>Coffee Roasting</h2>
+				<p>All of our bags have a roasted-on date clearly displayed on them so that customers can ensure a remarkable freshness level, conveniently offered where they shop or dine.</p>
+			</section>
+			<section>
+				<div class="icon"><i class="fab fa-envira fa-3x"></i></div>
+				<h2>Farmers Market</h2>
+				<p>Come see us every Saturday morning at the Bloomington Farmer's Market and Bloomington Winter Farmer's Market for freshly roasted coffee beans by the pound.</p>
+			</section>
+			<section>
+				<div class="icon"><i class="fas fa-coffee fa-3x"></i></div>
+				<h2>Equipment Consultation</h2>
+				<p>Call us at (812)340-2505 to schedule an equipment consultation for your business.  We offer new and refurbished espresso and coffee brewing equipment, as well as continued maintenance support.</p>
+			</section>
+		</div>
+	</article>
+
+	<!-- Gallery -->
+	<article class="gallery">
+		<div class="container">
+			<h2>Our Roasts</h2>
+			<p class="subtitle">We source the world's finest selections of specialty grade coffee and roast, package, and deliver to our customers on a weekly basis.</p>
+			<section>
+				<figure>
+					<img src="images/katya-austin-130044.png" alt="Coffee tree">
+					<figcaption>Beans on a coffee tree.</figcaption>
+				</figure>
+				<figure>
+					<img src="images/mark-daynes-35088.png" alt="Roasted beans">
+					<figcaption>Lightly roasted coffee.</figcaption>
+				</figure>
+				<figure>
+					<img src="images/jakub-kapusnak-319767.png" alt="Handful of coffe beans">
+					<figcaption>Our darkest roast.</figcaption>
+				</figure>
+				<figure>
+					<img src="images/asoggetti-318284.png" alt="Hot cup of coffee">
+					<figcaption>Rich, aromatic brew.</figcaption>
+				</figure>
+				<figure>
+					<img src="images/rick-forgo-339643.png" alt="Ground coffee">
+					<figcaption>Ground beans.</figcaption>
+				</figure>
+				<figure>
+					<img src="images/taylor-franz-91172.png" alt="Pouring milk into coffee drink">
+					<figcaption>Delicious from start to finish.</figcaption>
+				</figure>
+			</section>
+		</div>
+	</article>
+
+	<!-- Video -->
+	<article class="video">
+		<div class="container">
+			<h2>How to Roast Coffee</h2>
+			<p class="subtitle">Or, Everything Else You Wanted to Know</p>
+			<!-- http://embedresponsively.com/ -->
+			<!-- Tip: If you want the linter (debugger) to stop yelling at you,
+			change out the single quotes to double in the code you get
+			back from embedresponsively. -->
+			<div class="embed-container"><iframe src="https://www.youtube.com/embed//N8meCjVsJWI" frameborder="0" allowfullscreen></iframe></div>
+		</div>
+	</article>
+
+	<!-- Form -->
+	<article class="email-list">
+		<div class="container">
+			<form name="newsletter-form" method="post" action>
+				<label class="label" for="newsletter">Newsletter:</label>
+				<input class="input" type="text" name="email-list" id="email-list" placeholder="Add your email address">
+				<a class="button" type="submit" name="signup" id="signup">Sign Up</a>
+			</form>
+		</div>
+	</article>
+
+	<!-- Footer -->
+	<footer>
+		<div class="container">
+			<section>
+				<address>
+					<strong>Brown County Coffee</strong><br>
+					Nashville, Indiana 47448
+				</address>
+				<p>(812) 340-2505</p>
+				<p><a href="mailto:browncountycoffee@sbcglobal.net">browncountycoffee@sbcglobal.net</a></p>
+			</section>
+			<section>
+				<a href="https://www.facebook.com/Brown-County-Coffee-and-Bloomington-Coffee-Roasters-197546106943148/"><i class="fab fa-facebook fa-2x"></i></a>
+				<a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+				<a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+			</section>
+		</div>
+	</footer>
+</body>
+
+</html>

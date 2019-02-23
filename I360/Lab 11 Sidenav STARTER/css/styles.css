@@ -1,0 +1,375 @@
+/*
+COLORS
+    orange		#F27935
+    turquoise	#4ECDC4
+    grey		#F2F1EF
+    cream		#fef9ed
+
+RESOURCE - USED TO MAKE DOT PATTERN
+    http://www.patternify.com/
+*/
+
+/* apply a natural box layout model to all elements */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Extra small devices (phones, less than 768px) */
+
+.nobr {
+	white-space: nowrap;
+}
+
+h1, h2, h3 {
+	font-family: 'Ovo', serif;
+	color: #F2F1EF;
+}
+
+p, li {
+	font-family: 'Ovo', serif;
+	font-size: 18px;
+	line-height: 1.3em;
+}
+
+header h1 {
+	font-size: 48px;
+	position: relative;
+	left: -4px;
+}
+
+.tagline {
+	font-weight: bold;
+	color: #F2F1EF;
+	font-size: 15px;
+	font-family: 'Muli', sans-serif;
+}
+
+.pronunciation {
+	color: black;
+	font-size: 28px;
+}
+
+#header-bkg {
+	background: url(../images/hopscotch-bar.jpg) no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 545px;
+}
+
+#dots {
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQYV2NkYGBIY4CAWVAaTDHik0BWCGeDdCADuLFES8B1AwBXcgQHq6hTZwAAAABJRU5ErkJggg==) repeat;
+}
+
+header {
+	width: 100%;
+	padding: 4.0em 3.0em 2.0em;
+	/* http://www.patternify.com/ */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4ecdc4+0,f27935+100&0.85+0,0.85+100 */
+	background: -moz-linear-gradient(45deg,  rgba(78,205,196,0.85) 0%, rgba(242,121,53,0.85) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg,  rgba(78,205,196,0.85) 0%,rgba(242,121,53,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg,  rgba(78,205,196,0.85) 0%,rgba(242,121,53,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d94ecdc4', endColorstr='#d9f27935',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+aside {
+	background: #FEF9ED;
+	width: 100%;
+	padding: 2.0em;
+}
+
+aside h2 {
+	margin: 0;
+	color: rgba(74,84,94,1.0);
+	font-weight: bold;
+	font-size: 18px;
+	font-family: 'Muli', sans-serif;
+}
+
+aside a:link, aside a:visited {
+	text-decoration: none;
+	color: #F27935;
+}
+
+aside a:active, aside a:hover {
+	color: rgba(74,84,94,1.0);
+}
+
+article {
+	background: #6C7A89;
+	padding: 4.0em 2.0em;
+	width: 100%;
+}
+
+article h2 {
+	margin: 0;
+	font-size: 32px;
+	padding-bottom: 0.5em;
+	line-height: 1.3em;
+}
+
+article li {
+	color: #F2F1EF;
+}
+
+article img {
+	width: 100%;
+	height: auto;
+}
+
+article section {
+	margin-top: 4.0em;
+	max-width: 768px;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+article figure {
+	margin: 1.0em 20px;
+	max-width: 270px;
+}
+
+
+article figcaption {
+	color: #F2F1EF;
+	font-style: italic;
+	font-size: 0.9em;
+	padding-top: 0.3em;
+}
+
+
+.social-media {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+.social-media a {
+	color: #F27935;
+	opacity: 0.85;
+}
+
+.social-media a:hover {
+	color: #F2F1EF;
+}
+
+
+/*
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fffeea;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+} */
+
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: #fffeea; /* Black fallback color */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px;
+	font-family: 'Ovo', serif;
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+
+.menuButton {
+	color: #fafafa;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+}
+
+.menuButton p {
+	font-size: 16px;
+	margin-top: 0;
+	text-align: center;
+}
+
+
+
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+	#header-bkg, #dots {
+		height: 480px;
+	}
+
+	header {
+		padding: 6.0em 4.0em 3.0em;
+	}
+
+	aside {
+		padding: 2.0em 4.0em;
+	}
+
+	article {
+		padding: 4.0em;
+	}
+
+	header h1 {
+		font-size: 54px;
+	}
+
+	article h2 {
+		font-size: 38px;
+	}
+
+	.tagline {
+		font-size: 18px;
+	}
+
+	p, li {
+		font-size: 20px;
+	}
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+	#header-bkg, #dots {
+		height: 100%;
+		width: 100%;
+	}
+
+	p, li {
+		font-family: 'Ovo', serif;
+		font-size: 22px;
+		line-height: 1.4em;
+	}
+
+	header h1 {
+		font-size: 60px;
+		position: relative;
+		left: -4px;
+	}
+
+	article h2 {
+		font-size: 48px;
+	}
+
+	.pronunciation {
+		font-size: 30px;
+	}
+
+	header {
+		padding: 8.0em 6.0em 4.0em;
+		max-width: 768px;
+	}
+
+	aside {
+		padding: 2.0em 6.0em;
+		max-width: 768px;
+	}
+
+	article {
+		padding: 4.0em 3.0em 4.0em 6.0em;
+		max-width: 768px;
+	}
+
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+	header {
+		padding: 10.0em 6.0em 4.0em;
+	}
+
+}

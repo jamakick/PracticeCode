@@ -1,0 +1,194 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Browser Upgrade Prompt */
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+/* clearfix - in case you decide to float elements */
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+	width: 1000px;
+	background-image: radial-gradient(ellipse at bottom, #ffd37f 0%, #ffc07f 20%, #ffb37f 40%, #ffa67f 60%, #ff7f7f 80%);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+h3, p, li, input {
+    font-family: 'Ko-Ho', sans-serif;
+    line-height: 1.3em;
+}
+
+h1, h2 {
+	font-family: 'Courgette', cursive;
+	line-height: 1.3em;
+	font-size: 60px;
+	text-align: center;
+}
+
+.smaller {
+	font-size: 30px;
+	text-align: left;
+}
+
+.form {
+	margin: 40px;
+	margin-left: 20px;
+
+}
+
+.form a{
+	text-decoration: none;
+	color: black;
+}
+
+.form a:hover {
+	color: blue;
+}
+
+.form h2 {
+	font-size: 48px;
+	text-align: left;
+	margin-left: 30px;
+	margin-bottom: 15px;
+}
+
+.form input {
+	margin-top: 0;
+	width: 80px;
+	height: 30px;
+	margin-left: 10px;
+}
+
+.form input[type="text"] {
+	width: 300px;
+	height: 35px;
+}
+
+#index {
+	position: absolute;
+	top: 200px;
+	left: 500px;
+}
+
+#textbox {
+	width: 380px;
+	height: 45px;
+	font-size: 18px;
+	font-family: 'Ko-Ho', sans-serif;
+	margin-left: 15px;
+}
+
+#submitButton {
+	background-color: white;
+	border: 1px solid black;
+	color: black;
+	padding: 8px 20px;
+	text-align: center;
+	font-size: 20px;
+	border-radius: 12px;
+	margin-left: 10px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+#submitButton:hover {
+	background-color: #D3D3D3;
+	color: white;
+	cursor: pointer;
+}
+
+#getName {
+	position: fixed;
+	top: 15px;
+	right: 35px;
+}
+
+.results {
+	margin-left: 75px;
+	margin-top: 60px;
+	background-color: white;
+	padding: 15px;
+	width: 50%;
+}
+
+.recommend {
+	background-color: white;
+	position: fixed;
+	top: 50px;
+	right: 50px;
+	width: 400px;
+	height: 500px;
+}
+
+.recommend h2 {
+	text-align: center;
+}
+
+
+
+/* MEDIA QUERIES */
+/* X-Small devices (portait phones, less than 576px) */
+/* All styles up to this point in the stylesheet are for X-Small */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    /* body { background-color: orange; } */
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    /* body { background-color: green; } */
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* body { background-color: blue; } */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* body { background-color: purple; } */
+}

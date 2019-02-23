@@ -1,0 +1,132 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+/*
+    STRUCTURE
+*/
+
+body {
+	background-color: #8B4513;
+}
+
+.container {
+    width: 720px;
+    margin: 35px auto;
+    border: 1px solid black;
+    padding: 50px;
+	background-color: #FAFAFA;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+}
+
+/*
+    TYPOGRAPHY
+*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Book Antiqua', 'Palatino Linotype', Palatino, serif;
+	line-height: 1.2em;
+}
+
+p, td, li, figcaption {
+	font-family: 'Trebuchet MS', 'Helvetica', sans-serif;
+	line-height: 1.2em;
+}
+
+/*
+    IMAGES
+*/
+
+img {
+    width: 100%;
+    display: block;
+}
+
+figure {
+	margin: 1.0em 0 0 0;
+}
+
+figcaption {
+	font-size: 10px;
+	line-height: 1.3em;
+	margin: 1.0em 0 2.0em;
+}
+
+/* clearfix - in case you decide to float elements */
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+    LINKS
+*/
+
+
+a:link, a:visited {
+	color: #D2691E;
+	text-decoration: none;
+}
+
+a:active, a:hover {
+	color: blue;
+
+}
+
+/*
+    TABLES
+*/
+
+td {
+	padding: 1.0em 1.0em;
+	border-top: 1px gray dotted;
+}
+
+th {
+	padding: 0.5em 1.0em;
+	color: brown;
+}
+
+.timeTable {
+	padding-left: 0;
+	border: 1px gray dotted
+}
+
+/*
+    RECIPE PAGE
+*/
+
+h1 {
+	font-size: 36px;
+	margin: 0.5em 0;
+}
+
+
+
+.headline {
+	font-size: 16px;
+	margin: 1.0em 1.5em;
+}

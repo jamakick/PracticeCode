@@ -1,0 +1,297 @@
+/* DEFAULT VIEWPORT : NO MEDIA QUERY */
+/* Extra small devices (portrait phones, less than 576px) */
+
+/* natural box model */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Browser Upgrade Prompt */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* hides an element, but not from screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* no break */
+.nobr {
+  white-space: nowrap;
+}
+
+/*
+  STRUCTURE
+*/
+
+body {
+  background-color: #F1F1F1;
+  /* background-color: red; */ /* for testing media queries */
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.icon .fa-bars:hover, .fa-youtube:hover, .fa-upload:hover, .fa-sign-in-alt:hover {
+	color: #606060;
+}
+
+.up-next {
+	display: flex;
+}
+
+aside section:first-of-type, article section, aside{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-menu {
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.footer-menu-main, .footer-menu-sub {
+	display: flex;
+	flex-direction: row;
+}
+
+/*
+  TYPOGRAPHY
+*/
+h1, h2, h3, h4, h5, h6, p, li, td, figcaption, small {
+  font-family: 'Roboto', sans-serif;
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 14px;
+  margin: 0;
+}
+h4 {
+  font-size: 14px;
+  margin: 0;
+}
+p {
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.2em;
+}
+.publish-date {
+  font-weight: bold;
+  margin: 0.25em 0;
+}
+.author, .views {
+  color: #868686;
+  font-size: 12px;
+}
+
+/*
+  IMAGES
+*/
+img {
+  width: 100%;
+  display: block;
+}
+
+/* clearfix - in case you decide to float elements */
+.group::after {
+content: "";
+display: table;
+clear: both;
+}
+
+/*
+  LINKS
+*/
+a:link, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:active, a:hover {
+  color: blue;
+}
+
+/*
+  HEADER
+*/
+header {
+  background-color: #ffffff;
+  height: 50px;
+  padding: 0.5em 1.5em;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+.branding-name {
+  font-weight: 600;
+  font-size: 24px;
+  position: relative;
+  top: -2px;
+}
+/* no rollover effect on the logo for now */
+a:hover .branding-name {
+  color: #000000;
+}
+
+.icon {
+  display: inline-block;
+  padding: 0 0.5em;
+}
+.fa-bars {
+  color: #a8a8a8;
+  position: relative;
+  top: -6px;
+}
+.fa-youtube {
+  color: #FC0D1B;
+}
+.fa-upload, .fa-sign-in-alt {
+  color: #909090;
+  position: relative;
+  top: 6px;
+}
+
+
+/*
+  MAIN
+*/
+main {
+  max-width: 426px;
+  min-height: 800px;
+  margin: 0 auto;
+  display: block;
+}
+
+/*
+  ARTICLE & ASIDE
+*/
+article, aside {
+  width: 100%;
+}
+
+article section, aside {
+  background-color: #ffffff;
+  border: thin solid rgba(0, 0, 0, 0.1);
+
+  margin: 0.75em 0;
+}
+
+aside {
+  padding: 0.75em;
+}
+
+.details {
+  padding: 0.25em 1.0em 1.5em;
+}
+
+.up-next {
+  padding-bottom: 0.75em;
+}
+
+.up-next-text {
+  padding: 0.25em 0 0 0.5em;
+}
+
+/*
+  FOOTER
+*/
+footer {
+  background-color: #ffffff;
+
+  height: 145px;
+  padding: 0.5em 1.5em;
+}
+.footer-options {
+  font-family: 'Oswald', sans-serif;
+  padding: 0.5em 0 1.0em;
+  border-bottom: 1px solid #d8d8d8;
+}
+.footer-menu {
+  padding: 0.5em;
+}
+.footer-menu-main, .footer-menu-sub {
+  padding-bottom: 0.5em;
+
+}
+.footer-menu-main p {
+  font-weight: 600;
+}
+.footer-menu-sub p {
+  font-size: 12px;
+}
+.footer-menu-sub a:link, .footer-menu-sub a:visited {
+  color: #909090;
+}
+.footer-menu-sub a:active, .footer-menu-sub a:hover {
+  color: blue;
+}
+footer p {
+  padding-right: 0.5em;
+}
+
+/* MEDIA QUERIES */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  /* body { background-color: orange; } */
+  footer p {
+      padding-right: 1.5em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+  main {
+	  max-width: 1020px;
+	  display:flex;
+	  flex-direction: row;
+  }
+
+  article {
+	  margin: 0.75em;
+	  min-width: 640px;
+  }
+
+  aside {
+	  min-width: 300px;
+	  max-width: 416px;
+  }
+
+  /* To-do: Use flexbox to get article and aside next to each in a medium viewport or larger */
+  /* Tip: You'll need to make sure there is a bit of margin between the article and aside once they are seated next to each other */
+  /* Tip: To get a similar effect to what YouTube does, we can use a combination of max-width and min-width for the article and aside (and possibly the main) */
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
